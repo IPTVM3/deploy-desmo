@@ -1,0 +1,16 @@
+.green-background{
+    background-color: gold;
+}
+
+.blue-background{
+    background-color: #24c1dd;
+}
+
+.number-icons {
+    font-size: 48px;
+    color: #24c1dd;
+}
+
+.top-header-area ~ .navbar-top-default{
+    background: #24c1dd;
+}

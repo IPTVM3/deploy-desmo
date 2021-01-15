@@ -1,0 +1,4 @@
+heroku git:remote -a bobers
+git add .
+git commit -m ""
+git push heroku master
