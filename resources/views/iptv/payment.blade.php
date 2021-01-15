@@ -794,7 +794,7 @@ $('#paynow').click(function(){
         payment.success(function (params) {
                 console.log(params);
                 var email = $('#email').val(); 
-                document.location.href = 'https://www.bobres.com/en/payments/paypal/completed/'+email+'/'+{!! json_encode($product->price_after) !!} +'/US/COMPLETED';
+                document.location.href = 'https://www.bobres.co/en/payments/paypal/completed/'+email+'/'+{!! json_encode($product->price_after) !!} +'/US/COMPLETED';
 
         });
         payment.error(function (message, params) {
