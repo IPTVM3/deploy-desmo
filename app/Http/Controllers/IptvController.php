@@ -68,11 +68,6 @@ class IptvController extends Controller
            "https://www.bob-tech.club",
             "AQjF8qdf4cnAfwe7vC_1gOPIzEW9ys-JTqEs2Yd_V7_Zht4HnuSo33avOGNArFzTsm45goYiB8h4sBtr",
              "FRANCE 2 PAYPAL (amirelyazid98@gmail.com)"
-          ), 
-          "4"=>array(
-              "https://www.bob-tech.xyz",
-              "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
-              "UK PAYPAL (howells.kate.97@gmail.com)"
           )
     );
 
