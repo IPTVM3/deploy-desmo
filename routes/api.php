@@ -68,6 +68,9 @@ Route::POST('/register', function (Request $request) {
  
  
  
+
+ 
+ 
  
 Route::POST('/login', function (Request $request) {
 

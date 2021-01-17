@@ -46,25 +46,25 @@ class IptvController extends Controller
           //  "AR-LyFrg4mz5axs92W5NUYw5VEe_Z5GzJmwyQI6QF9vfYlZGKAng0PoAPciT41J67TxPpb4ZV_36EL_v",
             //"FRANCE 1 PAYPAL (lexal.amina@gmail.com)"
         //), 
+       // "2"=>array(
+        //    "https://www.bob-tech.xyz",
+        //    "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
+        //    "UK PAYPAL (howells.kate.97@gmail.com)"
+      //  ),
         
         "1"=>array(
             "https://www.bob-tech.online",
             "AUeRUNejh9Q9gX-IpIL5erP792HYAY-KOyveJbl7AXamj5tmoa3WNVCgWNcDGVjmP5iwTCX-4chyJXl_",
             "GERMANY PAYPAL (bobresworld@gmail.com)"
-        ),
-        "2"=>array(
-            "https://www.bob-tech.xyz",
-            "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
-            "UK PAYPAL (howells.kate.97@gmail.com)"
         )
         ,
-        "3"=>array(
+        "2"=>array(
           "https://www.bob-market.online",
            "AZ0lmZBvprGw8eiFTOrbeEs6n2jTGpYaAPMvmWKyIrolz-KC7jSaAbo9V9RUD8Gbk-0ITeaYp3K1ssRd",
            "QATAR PAYPAL (aissam.qatar@gmail.com)"
          )
          ,
-         "4"=>array(
+         "3"=>array(
            "https://www.bob-tech.club",
             "AQjF8qdf4cnAfwe7vC_1gOPIzEW9ys-JTqEs2Yd_V7_Zht4HnuSo33avOGNArFzTsm45goYiB8h4sBtr",
              "FRANCE 2 PAYPAL (amirelyazid98@gmail.com)"
