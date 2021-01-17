@@ -696,7 +696,7 @@ class IptvController extends Controller
      
         foreach ($this->paypal as $key => $value) {
             if ($value[1] == $store->unit_system ) {
-                dd($this->paypal);
+                dd($value);
             }
         }
 
