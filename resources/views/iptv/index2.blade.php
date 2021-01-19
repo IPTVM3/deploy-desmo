@@ -406,7 +406,7 @@ arallax Section-->
        <p class="parallex-para text-center text-white">@lang('new.test_des')     </p>
           
             <br>
-       <a href="https://www.bobres.com/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn') {{ $month[0]->price_after}} euro</a>
+       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn') {{ $month[0]->price_after}} euro</a>
         
         
          </div>
@@ -426,7 +426,7 @@ arallax Section-->
    
         </div> 
         <div class="modal-footer">
-            <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;"  type="button"  href="https://www.bobres.com/{{ app()->getLocale() }}/payments/161"  class="btn btn-primary">@lang('new.gift_btn_1')</a>
+            <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;"  type="button"  href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161"  class="btn btn-primary">@lang('new.gift_btn_1')</a>
             <button style="width: 100%;   margin-top: 3px;  border-radius: 50px 20px;"  type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
           </div>
@@ -648,7 +648,7 @@ arallax Section-->
                     <a style="width: 100%;    border-radius: 50px 20px;" href="{{ url('payments/'.$seelected_product[0]->id) }}" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> @lang('iptv.prim') - € {{$seelected_product[0]->price_after}}</a>
              
                     @endif
-                    <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.bobres.com/{{ app()->getLocale() }}/payments/{{$product->id}}" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> @lang('iptv.basic') - € {{$product->price_after}}</a>
+                    <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.bobres.co/{{ app()->getLocale() }}/payments/{{$product->id}}" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> @lang('iptv.basic') - € {{$product->price_after}}</a>
            
                    
 
@@ -895,7 +895,7 @@ arallax Section-->
             <div class="col-lg-12 text-center text-white">
                 <p class="parallex-para text-center text-white" style="color: black !important" ><span style="font: caption;"  >@lang('new.new_store_desc')</span> </p>
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 "  >@lang('new.new_store_header')  </h2>
-                <a href="https://www.bobres.com/{{ app()->getLocale() }}/payments/181" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('iptv.purchase_now') - €99</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/181" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('iptv.purchase_now') - €99</a>
          
             </div>
         </div>
