@@ -69,6 +69,12 @@ class IptvController extends Controller
             "AQjF8qdf4cnAfwe7vC_1gOPIzEW9ys-JTqEs2Yd_V7_Zht4HnuSo33avOGNArFzTsm45goYiB8h4sBtr",
              "FRANCE 2 PAYPAL (amirelyazid98@gmail.com)"
           )
+          ,
+          "4"=>array(
+            "https://www.bob-tech.xyz",
+             "Aa6vssxu6GiScANk4_CeOPOrmvrVXtlSWVYhZM8EY2fWvGphk9V-D6fV2FNyW8emMqbIXVzni7Jt5AIA",
+              "FRANCE 3 PAYPAL (xxx@gmail.com)"
+           )
     );
 
     private $stripe_token;
