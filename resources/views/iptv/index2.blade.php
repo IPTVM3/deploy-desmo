@@ -30,11 +30,11 @@
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#about">@lang('new.About') </a>
                     </li>
- 
+ <!--
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#trial" data-toggle="modal" data-target="#testmoremodel">@lang('new.Test_Trial') </a>
                     </li> 
-
+-->
                 </ul>
 
 
@@ -71,9 +71,11 @@
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#about">@lang('new.About')</a>
                     </li>
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#trial" data-toggle="modal" data-target="#testmoremodel">@lang('new.Test_Trial')</a>
                     </li> 
+                    -->
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#price">@lang('new.Pricing')</a>
                     </li> 
