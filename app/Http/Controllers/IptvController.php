@@ -45,12 +45,7 @@ class IptvController extends Controller
            // "https://www.ora-market.com",
           //  "AR-LyFrg4mz5axs92W5NUYw5VEe_Z5GzJmwyQI6QF9vfYlZGKAng0PoAPciT41J67TxPpb4ZV_36EL_v",
             //"FRANCE 1 PAYPAL (lexal.amina@gmail.com)"
-        //), 
-       // "2"=>array(
-        //    "https://www.bob-tech.xyz",
-        //    "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
-        //    "UK PAYPAL (howells.kate.97@gmail.com)"
-      //  ),
+        //)
         
         "1"=>array(
             "https://www.bob-tech.online",
@@ -75,6 +70,18 @@ class IptvController extends Controller
              "Aa6vssxu6GiScANk4_CeOPOrmvrVXtlSWVYhZM8EY2fWvGphk9V-D6fV2FNyW8emMqbIXVzni7Jt5AIA",
               "FRANCE 3 PAYPAL (xxx@gmail.com)"
            )
+           , 
+            "5"=>array(
+                "https://www.bob-tech.xyz",
+                "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
+                "UK PAYPAL (howells.kate.97@gmail.com)"
+            )
+            , 
+            "6"=>array(
+                "https://www.bob-market.online",
+                "AcWlx_UKUtn3UfzjK3LE2sVu_URctObhLXUUr4S2MpcrqoXP6jYnSvk8exkpOT2ozy9YTVFwwV4qKh6b",
+                "UK 3 PAYPAL (xxx@gmail.com)"
+            )
     );
 
     private $stripe_token;
