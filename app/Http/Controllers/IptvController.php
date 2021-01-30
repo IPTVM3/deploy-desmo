@@ -35,12 +35,7 @@ class IptvController extends Controller
     private $secret = 'ECMjLzYAAkipnAfu7Nx2kXO5PTQ1GEIaEY24Oatl0FU-AAJ8pcHwmPlFFd6yRC_W-sp5ueKMeHCCmvag';
     private $paypal =  array(
         
-         //"1"=> array(
-           //  "https://www.re-cod.com",
-           //  "AbS2vbSL9rKbJXruUK2xWgb4yN4Qb7ULNLeJzC2ELWsEfB49xUn92nvQJEnm1giIZFZJY4vAMDkWe6Rf",
-            //"MOROCCO PAYPAL (chakib.mayen@gmail.com)"
-       //  ),
-        
+    
        // "2"=> array(
            // "https://www.ora-market.com",
           //  "AR-LyFrg4mz5axs92W5NUYw5VEe_Z5GzJmwyQI6QF9vfYlZGKAng0PoAPciT41J67TxPpb4ZV_36EL_v",
@@ -53,12 +48,17 @@ class IptvController extends Controller
          //   "GERMANY PAYPAL (bobresworld@gmail.com)"
         //)
         //,
-        "1"=>array(
-          "https://www.bob-market.online",
-           "AZ0lmZBvprGw8eiFTOrbeEs6n2jTGpYaAPMvmWKyIrolz-KC7jSaAbo9V9RUD8Gbk-0ITeaYp3K1ssRd",
-           "QATAR PAYPAL (aissam.qatar@gmail.com)"
-         )
-         ,
+       // "1"=>array(
+         // "https://www.bob-market.online",
+           //"AZ0lmZBvprGw8eiFTOrbeEs6n2jTGpYaAPMvmWKyIrolz-KC7jSaAbo9V9RUD8Gbk-0ITeaYp3K1ssRd",
+          // "QATAR PAYPAL (aissam.qatar@gmail.com)"
+         //)
+         //,
+          "1"=> array(
+           "https://www.re-cod.com",
+           "AbS2vbSL9rKbJXruUK2xWgb4yN4Qb7ULNLeJzC2ELWsEfB49xUn92nvQJEnm1giIZFZJY4vAMDkWe6Rf",
+            "MOROCCO PAYPAL (chakib.mayen@gmail.com)"
+         ),
          "2"=>array(
            "https://www.bob-tech.club",
             "AQjF8qdf4cnAfwe7vC_1gOPIzEW9ys-JTqEs2Yd_V7_Zht4HnuSo33avOGNArFzTsm45goYiB8h4sBtr",
