@@ -81,7 +81,12 @@ class IptvController extends Controller
                 "https://www.bob-market.online",
                 "AcWlx_UKUtn3UfzjK3LE2sVu_URctObhLXUUr4S2MpcrqoXP6jYnSvk8exkpOT2ozy9YTVFwwV4qKh6b",
                 "UK 2 PAYPAL (xxx@gmail.com)"
-            )
+            ),
+            "6"=> array(
+             "https://www.re-cod.com",
+             "AbS2vbSL9rKbJXruUK2xWgb4yN4Qb7ULNLeJzC2ELWsEfB49xUn92nvQJEnm1giIZFZJY4vAMDkWe6Rf",
+              "MOROCCO PAYPAL (chakib.mayen@gmail.com)"
+           )
     );
 
     private $stripe_token;
