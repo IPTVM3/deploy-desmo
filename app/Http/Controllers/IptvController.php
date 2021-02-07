@@ -74,7 +74,14 @@ class IptvController extends Controller
                  "https://www.bob-tech.xyz",
                  "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
                  "UK PAYPAL (howells.kate.97@gmail.com)"
-             ),
+             )
+             ,
+             "7"=>array(
+               "https://www.bob-tech.xyz",
+                "Aa6vssxu6GiScANk4_CeOPOrmvrVXtlSWVYhZM8EY2fWvGphk9V-D6fV2FNyW8emMqbIXVzni7Jt5AIA",
+                 "FRANCE 3 PAYPAL (xxx@gmail.com)"
+              )
+              ,
              "4"=> array(
                  "https://www.re-cod.com",
                  "AbS2vbSL9rKbJXruUK2xWgb4yN4Qb7ULNLeJzC2ELWsEfB49xUn92nvQJEnm1giIZFZJY4vAMDkWe6Rf",
@@ -90,12 +97,7 @@ class IptvController extends Controller
                       "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
                       "UK PAYPAL (howells.kate.97@gmail.com)"
                   )
-             ,
-             "7"=>array(
-               "https://www.bob-tech.xyz",
-                "Aa6vssxu6GiScANk4_CeOPOrmvrVXtlSWVYhZM8EY2fWvGphk9V-D6fV2FNyW8emMqbIXVzni7Jt5AIA",
-                 "FRANCE 3 PAYPAL (xxx@gmail.com)"
-              )
+           
               
            
      );
