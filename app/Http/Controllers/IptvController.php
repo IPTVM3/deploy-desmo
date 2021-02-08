@@ -172,11 +172,50 @@ class IptvController extends Controller
                 $fees = round(0.35 + ($product->price_after * 4.4 / 100), 2) ; 
                 $signature = $this->getFormSignature('mayen.chakib@gmail.com','EUR','Payment description',$product->price_after,'23f107d5aefc756154963e943f541dd0');
              
+                //Auto Paypal Payment
+
+
+
+
+
+
                 foreach ($this->paypal as $key => $value) {
                     if ($value->type != "limited" and $value->is_active != "0") {
-                         return redirect($value->mode."/en/payments?price=".$product->price_after."&clientid=".$value->api_key);
+
+                        $bas_url = "";
+                        $client_id = "";
+                        $paypal_id = 0;
+
+
+                        if($value->id == $store->unit_system and $store->timezone == "2"){
+                            unset($this->paypal[$key]); 
+
+                            dd($this->paypal);
+
+                        }else{
+                            $bas_url = $value->mode;
+                            $client_id = $value->api_key;
+                            $store->unit_system = $paypal_id;
+                            $store->timezone = "2";
+                            $store->update();
+                            return redirect($bas_url."/en/payments?price=".$product->price_after."&clientid=".$client_id);
+                        }
+
+
                     }
                 }
+
+
+    
+
+
+
+
+
+
+
+                //End Paypal Payment
+
                 //return redirect("https://www.re-cod.com//en/payments?price=".$product->price_after."&clientid=".$store->unit_system);
                 //return view('iptv.payment', compact('product','stripe_token','fees','signature'));
             }
