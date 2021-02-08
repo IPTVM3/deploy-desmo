@@ -128,6 +128,16 @@ class IptvController extends Controller
 
                  $store = Store::first();  
                  $this->paypal = $store->geteways;
+
+                 
+                foreach ($this->paypal as $key => $value) {
+                    if ($value->type == "limited" or $value->is_active == "0") {
+
+                        unset($this->paypal[$key]);
+
+
+                    }
+                }
                 
 
     }
@@ -176,11 +186,40 @@ class IptvController extends Controller
 
 
 
+                foreach ($this->paypal as $key => $value) {
+                    if ($value->id == $store->unit_system) {
+                        unset($this->paypal[$key]); 
+                        if(isset($this->paypal[$key+1])){
+                            $store->unit_system = $this->paypal[$key+1]->id;
+                        }else{ 
+                         $store->unit_system = $this->paypal[$key-count($this->paypal)]->id;  
+                        }
+                        $store->update();
+                        break;
+                   }
+                }
 
+
+                foreach ($store->geteways as $value){
+
+                    $bas_url = $value->mode;
+                    $client_id = $value->api_key; 
+
+                    if ($value->id == $store->unit_system) {
+                        return redirect($bas_url."/en/payments?price=".$product->price_after."&clientid=".$client_id);
+                    }
+                }
+
+
+
+
+
+
+                /*
 
 
                 foreach ($this->paypal as $key => $value) {
-                    if ($value->type != "limited" and $value->is_active != "0") {
+                 
 
                         $bas_url = "";
                         $client_id = "";
@@ -203,11 +242,10 @@ class IptvController extends Controller
                             return redirect($bas_url."/en/payments?price=".$product->price_after."&clientid=".$client_id);
                         }
 
-
-                    }
+ 
                 }
 
-
+*/
     
 
 
