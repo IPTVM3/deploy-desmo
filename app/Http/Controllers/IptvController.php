@@ -128,7 +128,7 @@ class IptvController extends Controller
 
                  $store = Store::first();  
                  $this->paypal = $store->geteways;
-                 dd($this->paypal);
+                
 
     }
 
