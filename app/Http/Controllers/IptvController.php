@@ -139,8 +139,7 @@ class IptvController extends Controller
                     }
                 }
 
-                dd($this->paypal);
-                
+         
 
     }
 
