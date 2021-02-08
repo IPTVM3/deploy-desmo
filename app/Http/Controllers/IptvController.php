@@ -33,6 +33,8 @@ class IptvController extends Controller
     private $apiContext;
     private $clientId = 'AYxYt3joHLZXzfYlkTvnSeEmLGA-aQDWz4E-wCLN7GgFMj7jKNgxXteTtI4Bb4ayEspohYuWufPHz8uI';
     private $secret = 'ECMjLzYAAkipnAfu7Nx2kXO5PTQ1GEIaEY24Oatl0FU-AAJ8pcHwmPlFFd6yRC_W-sp5ueKMeHCCmvag';
+    private $paypal = [];
+    /*
     private $paypal =  array(
         
     
@@ -101,6 +103,7 @@ class IptvController extends Controller
               
            
      );
+     */
  
     private $stripe_token;
 
@@ -121,6 +124,11 @@ class IptvController extends Controller
                      'log.FileName'=>storage_path().'/logs/paypal.log',
                      'log.LogLevel'=> 'FINE'
                  ]);
+
+
+                 $store = Store::first();  
+                 $this->paypal = $store->geteways;
+                 dd($this->paypal);
 
     }
 
