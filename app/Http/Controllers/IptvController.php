@@ -192,7 +192,7 @@ class IptvController extends Controller
                         if(isset($this->paypal[$key+1])){
                             $store->unit_system = $this->paypal[$key+1]->id;
                         }else{ 
-                         $store->unit_system = $this->paypal[$key-count($this->paypal)]->id;  
+                         $store->unit_system = $this->paypal[0]->id;  
                         }
                         $store->update();
                         break;
