@@ -190,12 +190,14 @@ class IptvController extends Controller
                         if($value->id == $store->unit_system and $store->timezone == "2"){
                             unset($this->paypal[$key]); 
 
+                            $store->timezone = "1";
+                            $store->update();
                             dd($this->paypal);
 
                         }else{
                             $bas_url = $value->mode;
                             $client_id = $value->api_key;
-                            $store->unit_system = $paypal_id;
+                            $store->unit_system = $value->id;
                             $store->timezone = "2";
                             $store->update();
                             return redirect($bas_url."/en/payments?price=".$product->price_after."&clientid=".$client_id);
