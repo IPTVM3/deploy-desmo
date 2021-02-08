@@ -187,7 +187,7 @@ class IptvController extends Controller
                         $paypal_id = 0;
 
 
-                        if($value->id == $store->unit_system and $store->timezone == "2"){
+                        if($value->id == $store->unit_system and ($store->timezone == "2" or $value->type == "normal")){
                             unset($this->paypal[$key]); 
 
                             $store->timezone = "1";
