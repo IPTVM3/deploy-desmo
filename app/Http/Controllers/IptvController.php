@@ -187,20 +187,7 @@ class IptvController extends Controller
 
 
 
-                foreach ($this->paypal as $key => $value) {
-                    if ($value->id == $store->unit_system) {
-                        unset($this->paypal[$key]); 
-                        if(isset($this->paypal[$key+1])){
-                            $store->unit_system = $this->paypal[$key+1]->id;
-                        }else{ 
-                         $store->unit_system = $this->paypal[0]->id;  
-                        }
-                        $store->update();
-                        break;
-                   }
-                }
-
-
+           
                 foreach ($store->geteways as $value){
 
                     $bas_url = $value->mode;
@@ -747,17 +734,18 @@ class IptvController extends Controller
       
     
         foreach ($this->paypal as $key => $value) {
-            if ($value[1] == $store->unit_system) {
+            if ($value->id == $store->unit_system) {
                 unset($this->paypal[$key]); 
                 if(isset($this->paypal[$key+1])){
-                    $store->unit_system = $this->paypal[$key+1][1];
+                    $store->unit_system = $this->paypal[$key+1]->id;
                 }else{ 
-                 $store->unit_system = $this->paypal[$key-count($this->paypal)][1];  
+                 $store->unit_system = $this->paypal[0]->id;  
                 }
                 $store->update();
                 break;
            }
         }
+
 
 
 
@@ -798,7 +786,7 @@ class IptvController extends Controller
         $store = Store::first();
  
       
-    
+    /*
         foreach ($this->paypal as $key => $value) {
             if ($value[1] == $store->unit_system) {
                 unset($this->paypal[$key]); 
@@ -810,7 +798,23 @@ class IptvController extends Controller
                 $store->update();
                 break;
            }
+        }*/
+
+        foreach ($this->paypal as $key => $value) {
+            if ($value->id == $store->unit_system) {
+                unset($this->paypal[$key]); 
+                if(isset($this->paypal[$key+1])){
+                    $store->unit_system = $this->paypal[$key+1]->id;
+                }else{ 
+                 $store->unit_system = $this->paypal[0]->id;  
+                }
+                $store->update();
+                break;
+           }
         }
+
+
+
 
      
         foreach ($this->paypal as $key => $value) {
