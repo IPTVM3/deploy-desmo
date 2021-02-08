@@ -173,8 +173,8 @@ class IptvController extends Controller
                 $signature = $this->getFormSignature('mayen.chakib@gmail.com','EUR','Payment description',$product->price_after,'23f107d5aefc756154963e943f541dd0');
              
                 foreach ($this->paypal as $key => $value) {
-                    if ($value[1] == $store->unit_system ) {
-                         return redirect($value[0]."/en/payments?price=".$product->price_after."&clientid=".$value[1]);
+                    if ($value->type != "limited" and $value->is_active != "0") {
+                         return redirect($value->mode."/en/payments?price=".$product->price_after."&clientid=".$value->api_key);
                     }
                 }
                 //return redirect("https://www.re-cod.com//en/payments?price=".$product->price_after."&clientid=".$store->unit_system);
