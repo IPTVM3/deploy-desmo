@@ -37,7 +37,7 @@
   <hr> 
 
 *** IF YOU HAVE ANY PROBLEM PLEASE CONTACT US ON WHATSAPP ***  <br>
-+33 7 53 13 32 55 / +33 7 51 36 48 57<br>
++33 7 51 36 48 57<br>
 
 </body>
 </html>

@@ -42,7 +42,7 @@
   
   Si tiene algún problema o pregunta, puede contactarnos, estaremos encantados de ayudarle: <br>
   <br>
-  Cuentas de Whatsapp: <br> +33 7 53 13 32 55 / +33 7 51 36 48 57 <br> <br>
+  Cuentas de Whatsapp: <br>   +33 7 51 36 48 57 <br> <br>
   
   Correo electrónico: Bobres.contact@gmail.com <br>
   saludos <br>
@@ -71,7 +71,7 @@ Www.bobres.com <br>
 
 Wenn Sie Probleme oder Fragen haben, können Sie uns kontaktieren. Wir unterstützen Sie gerne: <br>
 <br>
-WhatsApp-Konten: <br> +33 7 53 13 32 55 / +33 7 51 36 48 57 <br> <br>
+WhatsApp-Konten: <br>  +33 7 51 36 48 57 <br> <br>
 
 E-Mail: Bobres.contact@gmail.com <br>
 Grüße <br>
@@ -100,7 +100,7 @@ Www.bobres.com<br>
 
 If You Have Any Problems Or Questions , you can Contact Us , we will be very happy to support you :<br>
 <br>
-Whatsapp Accounts :  <br> +33 7 53 13 32 55  / +33 7 51 36 48 57<br><br>
+Whatsapp Accounts :  <br>   +33 7 51 36 48 57<br><br>
 
 Email :     Bobres.contact@gmail.com<br>
 regards<br>

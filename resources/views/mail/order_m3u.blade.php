@@ -346,7 +346,7 @@
 
                                                             
                                                             
-                                                            <br><br>Name: <strong>Bobres</strong><br>Username: <strong>{{ $username }}</strong><br>Password: <strong>{{ $password }}</strong><br>Host: <strong>http://{{ $host }}</strong></td>
+                                                            <br>Xtream Code Api<br>Name: <strong>Bobres</strong><br>Username: <strong>{{ $username }}</strong><br>Password: <strong>{{ $password }}</strong><br>Host: <strong>http://{{ $host }}</strong></td>
                                                       </tr>
                                                     </tbody>
                                                   </table>
