@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Trial;
 use App\Store;
 use App\Blogger;
 use App\Visitor;
@@ -23,7 +24,9 @@ class HomeController extends Controller
     {
 
    
-        
+
+        $store = Store::first();
+        $contact = Trial::find($store->apartement);
         $ip = $this->getIp();
         $x = Visitor::where("address",$ip)->first();
         if(!$x){ 
@@ -43,15 +46,14 @@ class HomeController extends Controller
          
         
       
-        
-        $store = Store::first();
+         
         $products = [Product::find(111),Product::find(121),Product::find(131)];
         $seelected_product = [Product::find(11),Product::find(31),Product::find(51)];
         $month = [Product::find(161),Product::find(191)];
         $multidevice = [Product::find(181),Product::find(201)];
 
         $product_prm = [Product::find(111),Product::find(121),Product::find(131)];
-        return view('home' ,compact('store','products','seelected_product','product_prm','month','multidevice'));
+        return view('home' ,compact('store','products','seelected_product','product_prm','month','multidevice','contact'));
     }
 
     public function tohome(){

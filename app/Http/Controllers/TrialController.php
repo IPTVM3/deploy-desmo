@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Trial;
+use App\Store;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use App\Store;
 use Illuminate\Support\Facades\Mail;
 
 class TrialController extends Controller

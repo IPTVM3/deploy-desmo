@@ -407,8 +407,8 @@ arallax Section-->
        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header') </h2>
        <p class="parallex-para text-center text-white">@lang('new.test_des')   <br>
        
-       @lang('new.email') : contact.bobres@gmail.com
-       Phone : +33758412014
+       @lang('new.email') : <b>{{$contact->email}}</b>  <br>
+       Phone : <b>{{$contact->support}}</b>
          </p>
           
             <br>
