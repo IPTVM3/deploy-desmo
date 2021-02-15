@@ -10,11 +10,17 @@ use Illuminate\Support\Facades\Mail;
 class TrialController extends Controller
 {
 
-    private $supports = array(
-        "33751036712",
-        "33751364857",
-        "33000000000"
-    );
+    private $contacts = [];
+
+    public function __construct()
+    {
+
+                
+                 $store = Store::first();  
+                 $this->contacts = Trial::all(); 
+ 
+
+    }
 
     public function index(){
         $trials = Trial::orderBy('id','desc')->paginate(10);
@@ -58,23 +64,31 @@ class TrialController extends Controller
     }
 
     public function contact(){
+ 
+       
+        $store = Store::first();
 
-        $lastTrial = Trial::all()->last(); 
-        $count = 1;
-        foreach ($this->supports as $value) {
-            if ((strcmp($value, $lastTrial->support) === 0) {
-                unset($this->supports[$count]); 
-                if(isset($this->supports[$count+1])){
-                    $lastTrial->support = $this->supports[$count+1];
-                }else{ 
-                 $lastTrial->support = $this->supports[0];
-                }
-           }
-           $count++;
+
+        foreach ($contacts as $key => $value){
+ 
+
+            if ($value->id == $store->apartement) {
+               
+                        unset($this->contacts[$key]); 
+                        if(isset($this->contacts[$key+1])){
+                            $store->apartement = $this->contacts[$key+1]->id;
+                        }else{ 
+                         $store->apartement = $this->contacts[0]->id;  
+                        }
+                        $store->update();
+                        break;
+                  
+
+                return redirect('https://api.whatsapp.com/send?phone='.$value->support);
+            }
         }
-        
-        $lastTrial->update();
          
-        return redirect('https://api.whatsapp.com/send?phone='.$lastTrial->support);
+        return redirect(''.$lastTrial->support);
     }
+
 }
