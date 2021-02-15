@@ -408,7 +408,7 @@ arallax Section-->
        <p class="parallex-para text-center text-white">@lang('new.test_des')   <br>
        
        @lang('new.email') : <b>{{$contact->email}}</b>  <br>
-       Phone : <b>{{$contact->support}}</b>
+       Phone : <b>+{{$contact->support}}</b>
          </p>
           
             <br>

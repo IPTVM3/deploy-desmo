@@ -111,8 +111,11 @@ class DashboardController extends Controller
         $yestardy_visitor = Visitor::whereDate('date', Carbon::yesterday())->get();
 
 
+        if(Auth::id() == '271'){
+            return redirect()->route('orders.index');
+        }
          
-     return view('dashboard.dashboard',compact('lastday','lastday7','lastday15','lastday30','months','months7','today_visitor','yestardy_visitor'));
+        return view('dashboard.dashboard',compact('lastday','lastday7','lastday15','lastday30','months','months7','today_visitor','yestardy_visitor'));
       
     }
 

@@ -23,6 +23,9 @@ class OrderController extends Controller
         $products = Product::all();
         $orders = Order::orderBy('created_at','desc')->paginate(20);
         $orders_undone = Order::whereNull('mac')->orderBy('created_at','desc')->paginate(20);
+ 
+
+
         return view('dashboard.orders.index',compact('orders','products','orders_undone'));
     }
 
