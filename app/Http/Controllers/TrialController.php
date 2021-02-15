@@ -70,7 +70,7 @@ class TrialController extends Controller
         $store = Store::first();
 
 
-        foreach ($contacts as $key => $value){
+        foreach ($this->contacts as $key => $value){
  
 
             if ($value->id == $store->apartement) {
