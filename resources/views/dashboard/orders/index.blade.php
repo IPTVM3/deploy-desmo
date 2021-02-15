@@ -154,7 +154,7 @@
                                     <tr style="    background-color: white;">
                                 @endif
                                     
-                                  @if (($order->mac == 'Aissam Ichibi' and Auth::user()->id == '271')
+                                  @if ($order->mac == 'Aissam Ichibi' and Auth::user()->id == '271')
                                    <!---->
 
                                    @else
@@ -364,7 +364,7 @@
 
 
 
-                                        @if (($order->mac == 'ChaKib Mayen' and Auth::user()->id == '271')
+                                        @if ($order->mac == 'ChaKib Mayen' and Auth::user()->id == '271')
                                    <!---->
 
                                    @else
