@@ -63,10 +63,11 @@ class TrialController extends Controller
        
         foreach ($this->supports as $key => $value) {
             if ($value == $lastTrial->support) {
+                unset($this->supports[$key]); 
                 if(isset($this->supports[$key+1])){
                     $lastTrial->support = $this->supports[$key+1];
                 }else{ 
-                 $lastTrial->support = $this->supports[0];
+                 $lastTrial->support = '33751036712';
                 }
            }
         }
