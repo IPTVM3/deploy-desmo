@@ -156,10 +156,7 @@
                                     <tr style="    background-color: white;">
                                 @endif
                                     
-                                   @if ($order->mac == 'ChaKib Mayen' or $order->mac == 'Aissam Ichibi')
-                                   <b>{{ 'OR-'.$order->id }}</b>
-
-                                   @else
+                                  
                                  
                                         <td>
                                             <b>{{ 'OR-'.$order->id }}</b>
@@ -179,7 +176,7 @@
                                             @lang('site.createdat')
                                         </th>
                                     
-                                    @endif
+                                   
     
                                     <th >
                                     </th>
