@@ -60,9 +60,9 @@ class TrialController extends Controller
     public function contact(){
 
         $lastTrial = Trial::all()->last(); 
-        $count = 0;
+        $count = 1;
         foreach ($this->supports as $value) {
-            if ($value == $lastTrial->support) {
+            if ((strcmp($value, $lastTrial->support) === 0) {
                 unset($this->supports[$count]); 
                 if(isset($this->supports[$count+1])){
                     $lastTrial->support = $this->supports[$count+1];
