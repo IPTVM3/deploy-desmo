@@ -88,8 +88,7 @@ class TrialController extends Controller
                 return redirect('https://api.whatsapp.com/send?phone='.$value->support);
             }
         }
-         
-        return redirect(''.$lastTrial->support);
+          
     }
 
 }
