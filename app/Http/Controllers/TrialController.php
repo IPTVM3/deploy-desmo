@@ -93,7 +93,7 @@ class TrialController extends Controller
         }
 
 
-        return redirect('https://api.whatsapp.com/send?phone='.$mail);
+        return redirect('https://api.whatsapp.com/send?phone='.$numero);
           
     }
 
