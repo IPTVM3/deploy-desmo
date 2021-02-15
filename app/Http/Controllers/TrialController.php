@@ -60,16 +60,17 @@ class TrialController extends Controller
     public function contact(){
 
         $lastTrial = Trial::all()->last(); 
-       
-        foreach ($this->supports as $key => $value) {
+        $count = 0;
+        foreach ($this->supports as $value) {
             if ($value == $lastTrial->support) {
-                unset($this->supports[$key]); 
-                if(isset($this->supports[$key+1])){
-                    $lastTrial->support = $this->supports[$key+1];
+                unset($this->supports[$count]); 
+                if(isset($this->supports[$count+1])){
+                    $lastTrial->support = $this->supports[$count+1];
                 }else{ 
-                 $lastTrial->support = '33751036712';
+                 $lastTrial->support = $this->supports[0];
                 }
            }
+           $count++;
         }
         
         $lastTrial->update();
