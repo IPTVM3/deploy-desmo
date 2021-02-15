@@ -154,7 +154,7 @@
                                     <tr style="    background-color: white;">
                                 @endif
                                     
-                                  @if ($order->mac != 'Rafik Said' or ($order->mac != null)
+                                  @if ($order->mac != 'Rafik Said' or $order->mac != null)
                                    <!---->
 
                                    @else
