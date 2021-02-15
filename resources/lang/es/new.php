@@ -87,7 +87,11 @@ return [
     ,
 
 
-    'few_hours_trial_test_header'=>'Pruebe su servicio de IPTV para acceso completo de 1 día', 
-    'few_hours_trial_test_btn'=>'Acceso completo las 24 horas para'
+   // 'few_hours_trial_test_header'=>'Pruebe su servicio de IPTV para acceso completo de 1 día', 
+    //'few_hours_trial_test_btn'=>'Acceso completo las 24 horas para',
+
+
+    'few_hours_trial_test_header'=>'Pruebe su servicio de IPTV durante unas horas con acceso completo', 
+    'few_hours_trial_test_btn'=>'pocas horas de acceso completo gratis'
 ];
 ?> 

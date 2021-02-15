@@ -92,8 +92,12 @@ return [
     'pack_sport_header'=>'Get 1 Year Special Sport Package For Only',
 
 
-    'few_hours_trial_test_header'=>'Test our IPTV Service for 1-Day Full Accesss', 
-    'few_hours_trial_test_btn'=>'24H Full Access for'
+    //'few_hours_trial_test_header'=>'Test our IPTV Service for 1-Day Full Accesss', 
+    //'few_hours_trial_test_btn'=>'24H Full Access for',
+
+
+    'few_hours_trial_test_header'=>'Test our IPTV service for few hours full accesss', 
+    'few_hours_trial_test_btn'=>'few hours full access for free'
 ];
 
 ?> 

@@ -405,10 +405,15 @@ arallax Section-->
        -->
 
        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header') </h2>
-       <p class="parallex-para text-center text-white">@lang('new.test_des')     </p>
+       <p class="parallex-para text-center text-white">@lang('new.test_des')   <br>
+       
+       @lang('new.email') : contact.bobres@gmail.com
+       Phone : +33758412014
+         </p>
           
             <br>
-       <a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn') {{ $month[0]->price_after}} euro</a>
+       <!--<a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn') {{ $month[0]->price_after}} euro</a>-->
+       <a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn')</a>
         
         
          </div>
