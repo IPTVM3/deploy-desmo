@@ -9,6 +9,13 @@ use Illuminate\Support\Facades\Mail;
 
 class TrialController extends Controller
 {
+
+    private $supports = array(
+        "33751036712",
+        "33751364857",
+        "33000000000"
+    );
+
     public function index(){
         $trials = Trial::orderBy('id','desc')->paginate(10);
         return view('dashboard.trials.index',compact('trials'));
@@ -52,18 +59,21 @@ class TrialController extends Controller
 
     public function contact(){
 
-        $lastTrial = Trial::all() -> last(); 
-        $sup = "https://wa.me/33751364857";
-        if($lastTrial->support == 'ChaKib Mayen'){
-            $sup = 'https://wa.me/33753133255';
-            $lastTrial->support = 'Aissam Ichibi';
-        }else{
-            $sup = 'https://wa.me/33751364857';
-            $lastTrial->support = 'ChaKib Mayen';
+        $lastTrial = Trial::all()->last(); 
+       
+        foreach ($this->supports as $key => $value) {
+            if ($value == $lastTrial->support) {
+                unset($this->supports[$key]); 
+                if(isset($this->supports[$key+1])){
+                    $lastTrial->support = $this->supports[$key+1];
+                }else{ 
+                 $lastTrial->support = $this->supports[0];
+                }
+           }
         }
         
         $lastTrial->update();
          
-        return redirect($sup);
+        return redirect('https://api.whatsapp.com/send?phone='.$lastTrial->support);
     }
 }

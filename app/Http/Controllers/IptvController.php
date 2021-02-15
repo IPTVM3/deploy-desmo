@@ -709,10 +709,18 @@ class IptvController extends Controller
         $order->status = 0;
         if($status == 'COMPLETED'){
              $order->status = 1;
+             $order->total =$amount;
+             $order->type_payement = 'PayPal' ;
+             
         }
+
+        if($status == 'DONE'){
+            $order->status = 1; 
+            $order->total =$amount;
+            $order->type_payement = 'Stripe' ;
+       }
+
         
-        $order->total =$amount;
-        $order->type_payement = 'PayPal' ;
         $order->update();
  
           
