@@ -69,6 +69,8 @@ class TrialController extends Controller
        
         $store = Store::first();
 
+        $mail = "";
+        $numero = "";
 
         foreach ($this->contacts as $key => $value){
  
@@ -82,12 +84,16 @@ class TrialController extends Controller
                          $store->apartement = $this->contacts[0]->id;  
                         }
                         $store->update();
+                        $mail = $value->email;
+                        $numero = $value->support;
                         break;
                   
 
-                return redirect('https://api.whatsapp.com/send?phone='.$value->support);
             }
         }
+
+
+        return redirect('https://api.whatsapp.com/send?phone='.$mail);
           
     }
 
