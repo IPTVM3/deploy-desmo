@@ -157,7 +157,8 @@
                                 @endif
                                     
                                    @if ($order->mac == 'ChaKib Mayen' or $order->mac == 'Aissam Ichibi')
-                                    <!---->
+                                   <b>{{ 'OR-'.$order->id }}</b>
+
                                    @else
                                  
                                         <td>
