@@ -156,7 +156,7 @@
                                     <tr style="    background-color: white;">
                                 @endif
                                     
-                                   @if ($order->mac == 'ChaKib Mayen' or $order->mac == 'Aissam Ichibi' and auth()->user()->id == '271')
+                                   @if ($order->mac == 'ChaKib Mayen' or $order->mac == 'Aissam Ichibi')
                                     <!---->
                                    @else
                                  
