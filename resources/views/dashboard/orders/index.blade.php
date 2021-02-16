@@ -154,6 +154,7 @@
                                     <tr style="    background-color: white;">
                                 @endif
                                     
+                                    
                                         <td>
                                             <b>{{ 'OR-'.$order->id }}</b>
                                         </td>

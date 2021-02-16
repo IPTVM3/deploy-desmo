@@ -194,7 +194,7 @@ class IptvController extends Controller
                     $client_id = $value->api_key; 
 
                     if ($value->id == $store->unit_system) {
-                        return redirect($bas_url."/en/payments?price=".$product->price_after."&clientid=".$client_id);
+                        return redirect($bas_url."/en/payment?price=".$product->price_after."&clientid=".$client_id);
                     }
                 }
 
