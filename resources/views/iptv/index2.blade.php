@@ -404,8 +404,8 @@ arallax Section-->
                 <a href="https://www.bobres.com/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">1 @lang('new.MONTH') Test - {{ $month[0]->price_after}} euro</a>
        -->
 
-       <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header1') </h2>
-       <p class="parallex-para text-center text-white">@lang('new.test_des1')   <br>
+       <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header') </h2>
+       <p class="parallex-para text-center text-white">@lang('new.few_hours_trial_test_btn1')   <br>
          <!--
        @lang('new.email') : <b>{{$contact->email}}</b>  <br>
        Phone : <b>+{{$contact->support}}</b>     -->
