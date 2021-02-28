@@ -394,7 +394,7 @@ arallax Section-->
                 <a  data-toggle="modal" data-target="#whatsapp_model" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.just_click')</a>
               
                 <p class="parallex-para text-center text-white">@lang('new.test_why')   
-              
+
               
                   <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a> </p>
               
@@ -1059,7 +1059,7 @@ arallax Section-->
                     <div class="address-box wow fadeInUp" data-wow-delay="300">
                         <h2 class="text-capitalize">@lang('new.bob_office'), Paris </h2>
                         <p class="pt-3 pb-3">14 Rue Léone Gennevilliers, Paris ,France</p>
-                        <p>@lang('new.office_tele')  : +33 7 513 648 57 / +33 7 531 332 55                        </p>
+                        <p>@lang('new.office_tele')  : +33 7 510 367 12/ +33 7 536 115 76                        </p>
                       <!--  <p>Whatsapp : <a href="https://wa.me/+33753133255" style="color:green">@lang('new.just_click')</a></p>-->
                         <p>@lang('new.email') : contact.bobres@gmail.com</p> 
                         <br>
