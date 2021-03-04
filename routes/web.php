@@ -182,7 +182,7 @@ Route::group([
 
 
         //DASHBOARD ROUTES------------------------------------------------------------------------------------------------------------>
-        Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'middleware' => ['auth', 'admin', 'force_reset_password', 'force_configure_store']], function () {
+        Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'middleware' => ['auth', 'admin', 'force_reset_password']], function () {
             Route::get('/', 'DashboardController@index')->name('index');
 
 
@@ -283,7 +283,7 @@ Route::group([
 
 
         //PAYMENTS ROUTES
-        Route::group(['prefix' => 'payment', 'namespace' => 'Payment', 'middleware' => ['auth', 'admin', 'force_reset_password', 'force_configure_store']], function () {
+        Route::group(['prefix' => 'payment', 'namespace' => 'Payment', 'middleware' => ['auth', 'admin', 'force_reset_password']], function () {
             Route::post('/payment/paypal', ['as' => 'payment.paypal.active', 'uses' => 'PayPalController@active_paypal']);
             Route::delete('/payment/paypal', ['as' => 'payment.paypal.disable', 'uses' => 'PayPalController@disable_paypal']);
             Route::post('/payment/stripe', ['as' => 'payment.stripe.active', 'uses' => 'StripeController@active_stripe']);
