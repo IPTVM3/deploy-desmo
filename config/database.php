@@ -43,9 +43,9 @@ return [
             'driver' => 'mysql',
             'host' => 'us-cdbr-east-02.cleardb.com',
             'port' => '3306',
-            'database' => 'heroku_2a222aa61751bdb',
-            'username' => 'b06ccab8d50c31',
-            'password' => 'c0acd386',
+            'database' => 'heroku_60dba0d3cc376e9',
+            'username' => 'bfcb2d292ea8cd',
+            'password' => 'c5afdc03',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -53,7 +53,6 @@ return [
             'strict' => false,
             'engine' => null,
         ],
-
 
         'pgsql' => [
             'driver' => 'pgsql',
