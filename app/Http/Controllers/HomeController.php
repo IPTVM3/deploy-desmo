@@ -26,7 +26,7 @@ class HomeController extends Controller
    
 
         $store = Store::first();
-        $contact = Trial::find($store->apartement);
+        //$contact = Trial::find($store->apartement);
         $ip = $this->getIp();
         $x = Visitor::where("address",$ip)->first();
         if(!$x){ 
@@ -53,7 +53,7 @@ class HomeController extends Controller
         $multidevice = [Product::find(181),Product::find(201)];
 
         $product_prm = [Product::find(111),Product::find(121),Product::find(131)];
-        return view('home' ,compact('store','products','seelected_product','product_prm','month','multidevice','contact'));
+        return view('home' ,compact('store','products','seelected_product','product_prm','month','multidevice'));
     }
 
     public function tohome(){
