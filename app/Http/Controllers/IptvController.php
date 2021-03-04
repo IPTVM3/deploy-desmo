@@ -152,7 +152,7 @@ class IptvController extends Controller
         $store = Store::first();
       
      
-
+        dd($id);
 
 
         if ($id) {
