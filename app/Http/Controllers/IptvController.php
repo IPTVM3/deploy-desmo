@@ -146,48 +146,20 @@ class IptvController extends Controller
     public function payments(Request $request,$id)
     {
 
-        $ip = $this->getIp();
-        $x = Visitor::where("address",$ip)->first();
-        if(!$x){ 
-            $news = Visitor::create();
-            $news->address = $ip;
-            $news->payment = 1; 
-            $news->date = Carbon::now(); 
-            $news->update();  
- 
-        }else{
-            $x->delete();
-            $news = Visitor::create();
-            $news->address = $ip;
-            $news->payment = 1; 
-            $news->date = Carbon::now(); 
-            $news->update();  
-        }
          
 
 
         $store = Store::first();
-        foreach ($store->geteways as $getway){
-            if ($getway->type == 'Stripe') $this->stripe_token = $getway->secret_key;
-        }
-
-
+      
      
 
 
 
-        if ($request['pid'] || $id) {
+        if ($id) {
             $product = Product::findorfail($id);
-            if ($product) {
-                $stripe_token = $this->stripe_token;
+            if ($product) { 
                 $fees = round(0.35 + ($product->price_after * 4.4 / 100), 2) ; 
-                $signature = $this->getFormSignature('mayen.chakib@gmail.com','EUR','Payment description',$product->price_after,'23f107d5aefc756154963e943f541dd0');
-             
-                //Auto Paypal Payment
-
-
-
-           
+                
                 foreach ($store->geteways as $value){
 
                     $bas_url = $value->mode;
