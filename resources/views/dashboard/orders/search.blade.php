@@ -127,7 +127,7 @@
                     @endif
                         
                             <td>
-                                <b>{{ 'OR-'.$order->id }}</b>
+                                <b>{{ 'N21-'.$order->id }}</b>
                             </td>
                             <td>
                                 {{ $order->email }}
@@ -236,7 +236,7 @@
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Complet Order #<b>{{ 'OR-'.$order->id }}</b></h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Complet Order #<b>{{ 'N21-'.$order->id }}</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

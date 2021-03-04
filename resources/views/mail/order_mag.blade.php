@@ -333,7 +333,7 @@
                                                       <tr>
                                                           
                                                             
-                                                            <br> OrderID: <strong>OR-{{ $id }}</strong><br>Portal: <strong>{{ $portal }}</strong><br>MAC Address: <strong>{{ $mac }}</strong>
+                                                            <br> OrderID: <strong>N21-{{ $id }}</strong><br>Portal: <strong>{{ $portal }}</strong><br>MAC Address: <strong>{{ $mac }}</strong>
                                                         </tr>
                                                     </tbody>
                                                   </table>

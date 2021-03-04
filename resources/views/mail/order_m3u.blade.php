@@ -333,7 +333,7 @@
                                                       <tr>
                                                         <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; letter-spacing: -0.2px; line-height: 24px; font-size: 15px; color: #0e0000" valign="top">
                                                             
-                                                            <br> OrderID <strong>OR-{{ $id }}</strong><br> <br>
+                                                            <br> OrderID <strong>N21-{{ $id }}</strong><br> <br>
                                                             
                                                             M3U link <br><strong>{{ $m3u }}</strong> <br>
                                                             

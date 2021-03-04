@@ -37,7 +37,7 @@
   <hr> 
 
 *** IF YOU HAVE ANY PROBLEM PLEASE CONTACT US ON WHATSAPP ***  <br>
-+33 7 51 36 48 57<br>
+https://www.bobres.co/en/contact <br>
 
 </body>
 </html>
