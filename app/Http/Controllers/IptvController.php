@@ -151,12 +151,11 @@ class IptvController extends Controller
 
         $store = Store::first();
       
-     
-        dd($id);
-
+      
 
         if ($id) {
             $product = Product::findorfail($id);
+            dd($product);
             if ($product) { 
                 $fees = round(0.35 + ($product->price_after * 4.4 / 100), 2) ; 
                 
