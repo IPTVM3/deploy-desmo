@@ -39,13 +39,14 @@ return [
             'prefix' => '',
         ],
 
+
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'us-cdbr-east-02.cleardb.com',
+            'host' => 'us-cdbr-east-03.cleardb.com',
             'port' => '3306',
-            'database' => 'heroku_60dba0d3cc376e9',
-            'username' => 'bfcb2d292ea8cd',
-            'password' => 'c5afdc03',
+            'database' => 'heroku_76335120f18ecac',
+            'username' => 'b6566a1f3f1ce3',
+            'password' => '1d47612d',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
