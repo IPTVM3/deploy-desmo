@@ -696,7 +696,7 @@ class IptvController extends Controller
  
           
         $this->mail = $order->email;
-        $this->orderID = 'OR-'. $order->id;
+        $this->orderID = 'N21-'. $order->id;
         $this->price = $order->total.' ‎‎€';
         
         $data = [
