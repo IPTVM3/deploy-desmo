@@ -235,6 +235,7 @@ return [
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Stripe' => Cartalyst\Stripe\Laravel\Facades\Stripe::class,
+        'AWS' => Aws\Laravel\AwsFacade::class,
     ],
 
 ];
