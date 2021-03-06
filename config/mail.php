@@ -3,15 +3,15 @@
 return [
 
     'driver'     => env('MAIL_DRIVER', 'smtp'),
-    'host'       => env('MAIL_HOST', 'smtp.gmail.com'),
+    'host'       => 'info.bobres@gmail.com',
     'port'       => env('MAIL_PORT', 587),
     'from' => [
-        'address' => 'ehigh.store@gmail.com',
-        'name' => env('MAIL_FROM_NAME', 'Bobres Support'),
+        'address' => 'info.bobres@gmail.com',
+        'name' => 'Bobres Support',
     ],
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-    'username'   => 'ehigh.store@gmail.com',
-    'password'   => 'vezafxlzvcbjrppb',
+    'username'   => 'info.bobres@gmail.com',
+    'password'   => 'cbsyxaxxftwbelbk',
     'sendmail'   => '/usr/sbin/sendmail -bs',
 
     'markdown' => [
