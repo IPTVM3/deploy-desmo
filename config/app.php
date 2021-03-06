@@ -172,6 +172,7 @@ return [
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Cartalyst\Stripe\Laravel\StripeServiceProvider::class,
+        Aws\Laravel\AwsServiceProvider::class,
         /*
          * Application Service Providers...
          */
