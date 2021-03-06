@@ -27,13 +27,13 @@
   
   Oferta especial: <br>
   Prima de 1 año para 2 dispositivos: <br>
-  https://www.bobres.com/en/payments/181 <br>
+  https://www.bobres.co/en/payments/181 <br>
   <br><br>
   Un dispositivo: <br> 
-  12 meses: bobres.com/en/payments/11 <br>
-  6 meses: bobres.com/en/payments/31 <br>
-  3 meses: bobres.com/en/payments/51 <br>
-  1 mes: bobres.com/en/payments/161 <br>
+  12 meses: bobres./en/payments/11 <br>
+  6 meses: bobres.co/en/payments/31 <br>
+  3 meses: bobres.co/en/payments/51 <br>
+  1 mes: bobres.co/en/payments/161 <br>
   <br> <br>
   ¡O puede visitar nuestro sitio web para obtener todas las nuevas actualizaciones! <br>
   <br>
@@ -42,7 +42,7 @@
   
   Si tiene algún problema o pregunta, puede contactarnos, estaremos encantados de ayudarle: <br>
   <br>
-  Cuentas de Whatsapp: <br>   +33 7 51 36 48 57 <br> <br>
+  Cuentas de Whatsapp: <br>  https://www.bobres.co/en/contact <br> <br>
   
   Correo electrónico: Bobres.contact@gmail.com <br>
   saludos <br>
@@ -56,22 +56,22 @@ Wenn Sie an einer Erweiterung des Dienstes interessiert sind, finden Sie hier al
 
 Sonderangebot: <br>
 1 Jahr Prämie für 2 Geräte: <br>
-https://www.bobres.com/de/payments/181 <br>
+https://www.bobres.co/de/payments/181 <br>
 <br><br>
 Ein Gerät: <br>  
-12 Monate: bobres.com/de/payments/11 <br>
-6 Monate: bobres.com/de/payments/31 <br>
-3 Monate: bobres.com/de/payments/51 <br>
-1 Monat: bobres.com/de/payments/161 <br>
+12 Monate: bobres.co/de/payments/11 <br>
+6 Monate: bobres.co/de/payments/31 <br>
+3 Monate: bobres.co/de/payments/51 <br>
+1 Monat: bobres.co/de/payments/161 <br>
 <br> <br>
 Oder besuchen Sie unsere Website, um alle neuen Updates zu erhalten! <br>
 <br>
-Www.bobres.com <br>
+Www.bobres.co <br>
 <br> <br>
 
 Wenn Sie Probleme oder Fragen haben, können Sie uns kontaktieren. Wir unterstützen Sie gerne: <br>
 <br>
-WhatsApp-Konten: <br>  +33 7 51 36 48 57 <br> <br>
+WhatsApp-Konten: <br>  https://www.bobres.co/en/contact<br> <br>
 
 E-Mail: Bobres.contact@gmail.com <br>
 Grüße <br>
@@ -85,17 +85,17 @@ If You Are Interested about Extending the service , here is all the offers that 
 
 Special offer : <br>
 1 year premium for 2 devices : <br>
-https://www.bobres.com/en/payments/181<br>
+https://www.bobres.co/en/payments/181<br>
 <br><br>
 One device  :<br>
-12 months : bobres.com/en/payments/11<br>
-6 months  : bobres.com/en/payments/31<br>
-3 months  : bobres.com/en/payments/51<br>
-1 months : bobres.com/en/payments/161<br>
+12 months : bobres.co/en/payments/11<br>
+6 months  : bobres.co/en/payments/31<br>
+3 months  : bobres.co/en/payments/51<br>
+1 months : bobres.co/en/payments/161<br>
 <br><br>
 Or you can visit our website to get all the new updates ! <br>
 <br>
-Www.bobres.com<br>
+Www.bobres.co<br>
 <br><br>
 
 If You Have Any Problems Or Questions , you can Contact Us , we will be very happy to support you :<br>
