@@ -3,7 +3,7 @@
 return [
 
     'driver'     => env('MAIL_DRIVER', 'smtp'),
-    'host'       => 'info.bobres@gmail.com',
+    'host'       => 'smtp.gmail.com',
     'port'       => env('MAIL_PORT', 587),
     'from' => [
         'address' => 'info.bobres@gmail.com',
