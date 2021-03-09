@@ -386,33 +386,35 @@ arallax Section-->
         <div class="row">
             <div class="col-lg-12 text-center text-white">
 
-                <!--
+               
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.test_des') </h2>
             
-                <p class="parallex-para text-center text-white">@lang('new.try_befor') </p>
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('iptv.get_ur_trial') </h2>
-                <a  data-toggle="modal" data-target="#whatsapp_model" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.just_click')</a>
-              
+                
                 <p class="parallex-para text-center text-white">@lang('new.test_why')   
 
               
                   <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a> </p>
-              
+              <!--  
                 <br>
   
-        
+       
+               <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('iptv.get_ur_trial') </h2>
+                <a  data-toggle="modal" data-target="#whatsapp_model" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.just_click')</a>
+             
+             <p class="parallex-para text-center text-white">@lang('new.try_befor') </p>
+              
                 <a href="https://www.bobres.com/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">1 @lang('new.MONTH') Test - {{ $month[0]->price_after}} euro</a>
        -->
-
+ <!--
        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header') </h2>
        <p class="parallex-para text-center text-white">@lang('new.test_des')   <br>
-         <!--
+        
        @lang('new.email') : <b>{{$contact->email}}</b>  <br>
-       Phone : <b>+{{$contact->support}}</b>     -->
+       Phone : <b>+{{$contact->support}}</b>    
          </p> 
           
             <br>
-       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a> -->
         <!-- <a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn')</a>-->
         
         
