@@ -711,7 +711,10 @@ class IptvController extends Controller
         $store = Store::first();
  
       
-        if(bcadd($this->price,'0',2) > bcadd('5.00','0',2)){
+        $price = (float)$this->price;
+        $compare = (float)'5';
+
+        if( $price > $compare ){
 
             foreach ($this->paypal as $key => $value) {
                 if ($value->id == $store->unit_system) {
