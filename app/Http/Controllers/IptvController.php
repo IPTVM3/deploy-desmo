@@ -711,19 +711,24 @@ class IptvController extends Controller
         $store = Store::first();
  
       
-    
-        foreach ($this->paypal as $key => $value) {
-            if ($value->id == $store->unit_system) {
-                unset($this->paypal[$key]); 
-                if(isset($this->paypal[$key+1])){
-                    $store->unit_system = $this->paypal[$key+1]->id;
-                }else{ 
-                 $store->unit_system = $this->paypal[0]->id;  
-                }
-                $store->update();
-                break;
-           }
+        if(number_format($this->price, 2) < 10){
+
+            foreach ($this->paypal as $key => $value) {
+                if ($value->id == $store->unit_system) {
+                    unset($this->paypal[$key]); 
+                    if(isset($this->paypal[$key+1])){
+                        $store->unit_system = $this->paypal[$key+1]->id;
+                    }else{ 
+                     $store->unit_system = $this->paypal[0]->id;  
+                    }
+                    $store->update();
+                    break;
+               }
+            }
+
         }
+    
+     
 
 
 
