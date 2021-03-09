@@ -435,7 +435,6 @@ arallax Section-->
    
         </div> 
         <div class="modal-footer">
-            <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;"  type="button"  href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161"  class="btn btn-primary">@lang('new.gift_btn_1')</a>
             <button style="width: 100%;   margin-top: 3px;  border-radius: 50px 20px;"  type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
           </div>

@@ -78,8 +78,7 @@ return [
     'test_why'=>'Why we don\'t provide the free test service anymore ?',
     'test_more'=>'learn more',
     'test_body'=>'Our company decided to stop the free service test , because of the spammers people , they always look for the free service without being interested about the subscription . 
-    so if you are not one of those , our team is here for you , we will support you before and after the subscription.<br>
-    You can subscribe for 1 month with all the quality and refund guaranties to test our service as you need .',
+    so if you are not one of those , our team is here for you , we will support you before and after the subscription.',
     'blogger'=>'Blogger',
     'pack_sport'=>'The Bobres sport package , designed especially for the sports  lovers ( football , formula 1 , basketball , PPV ... ) <br>
     Bobres created this server for you to watch your live games , It has less live and vods Compared with the normal package but it give you the best quality over (Fhd / 4K) without cuts.

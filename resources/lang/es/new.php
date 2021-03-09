@@ -75,8 +75,7 @@ return [
     'test_why'=>'¿Por qué ya no proporcionamos el servicio de prueba gratuito?',
     'test_more'=>'aprende más',
     'test_body'=>'Nuestra empresa decidió detener la prueba del servicio gratuito, debido a que los spammers siempre buscan el servicio gratuito sin estar interesados en la suscripción.
-    así que si no eres uno de esos, nuestro equipo está aquí para ti, te apoyaremos antes y después de la suscripción.<br>
-    Puedes suscribirte por 1 mes con todas las garantías de calidad y reembolso para probar nuestro servicio como necesites...' ,
+    así que si no eres uno de esos, nuestro equipo está aquí para ti, te apoyaremos antes y después de la suscripción.' ,
     'pack_sport_header'=>'Obtenga un paquete deportivo especial de 1 año por solo',
     'pack_sport_body'=>'Está optimizado para ser estable en el tiempo de juegos y eventos deportivos (fútbol, fórmula 1, baloncesto, PPV ...)',
     'blogger'=>'Blogger',

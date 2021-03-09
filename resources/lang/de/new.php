@@ -53,8 +53,7 @@ return [
     'test_why'=>'Warum wir den kostenlosen Testdienst nicht mehr anbieten ?',
     'test_more'=>'Lern mehr',
     'test_body'=>'Unser Unternehmen hat beschlossen, den kostenlosen Servicetest abzubrechen, da die Spammer immer nach dem kostenlosen Service suchen, ohne sich für das Abonnement zu interessieren. 
-    Wenn Sie nicht einer von ihnen sind, ist unser Team für Sie da. Wir werden Sie vor und nach dem Abonnement unterstützen.<br>
-    Sie können 1 Monat lang alle Qualitäts- und Rückerstattungsgarantien abonnieren, um unseren Service nach Bedarf zu testen .',
+    Wenn Sie nicht einer von ihnen sind, ist unser Team für Sie da. Wir werden Sie vor und nach dem Abonnement unterstützen.',
     'pack_sport_header'=>'Holen Sie sich 1 Jahr spezielles Sportpaket für nur',
     'pack_sport_body'=>'Es ist so optimiert, dass es in der Spielzeit und bei Sportereignissen (Fußball, Formel 1, Basketball, PPV ...) stabil ist.',
     'blogger'=>'Blogger',
