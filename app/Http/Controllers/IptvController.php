@@ -711,7 +711,7 @@ class IptvController extends Controller
         $store = Store::first();
  
       
-        if(number_format($this->price, 2) < 10){
+        //if(number_format($this->price, 2) < 10){
 
             foreach ($this->paypal as $key => $value) {
                 if ($value->id == $store->unit_system) {
@@ -726,7 +726,7 @@ class IptvController extends Controller
                }
             }
 
-        }
+       // }
     
      
 
