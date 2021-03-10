@@ -126,8 +126,8 @@ class DashboardController extends Controller
     function multi_send(){
 
         $IDs = DB::table('orders')
-        ->where('col', '=', '')
-        ->orWhereNull('col')
+        ->where('cv_code', '=', '')
+        ->orWhereNull('cv_code')
         ->get();
 
         dd($IDs);
