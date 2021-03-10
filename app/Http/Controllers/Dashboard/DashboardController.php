@@ -146,8 +146,9 @@ class DashboardController extends Controller
                $message->to($this->email ,'Bobres IPTV')->subject('Bobres IPTV');  
            });
 
-           $order->cv_code = "exp";
-           $order->update();
+           $myorder = Order::find($order->id);
+           $myorder->cv_code = "exp";
+           $myorder->update();
 
            if($key == 4){
                break;
