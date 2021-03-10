@@ -142,8 +142,8 @@ class DashboardController extends Controller
             $this->email =  $order->email;
     
             
-            Mail::send('mail.mail_expired', $data , function($message) {
-               $message->to($this->email ,'Bobres IPTV')->subject('Bobres IPTV');  
+            Mail::send('mail.update', $data , function($message) {
+               $message->to($this->email ,'Auto-reply from BobresIPTV')->subject('Bobres IPTV - Amazing Updates');  
            });
 
            $myorder = Order::find($order->id);
