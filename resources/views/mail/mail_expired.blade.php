@@ -44,7 +44,7 @@
   <br>
   Cuentas de Whatsapp: <br>  https://www.bobres.co/en/contact <br> <br>
   
-  Correo electrónico: Bobres.contact@gmail.com <br>
+  Correo electrónico: contact.Bobres@gmail.com <br>
   saludos <br>
   
 @elseif ($local == 'DE') 
@@ -73,7 +73,7 @@ Wenn Sie Probleme oder Fragen haben, können Sie uns kontaktieren. Wir unterstü
 <br>
 WhatsApp-Konten: <br>  https://www.bobres.co/en/contact<br> <br>
 
-E-Mail: Bobres.contact@gmail.com <br>
+E-Mail: contact.Bobres@gmail.com <br>
 Grüße <br>
  
 @else 
@@ -102,7 +102,7 @@ If You Have Any Problems Or Questions , you can Contact Us , we will be very hap
 <br>
 Whatsapp Accounts :  <br>   https://www.bobres.co/en/contact<br><br>
 
-Email :     Bobres.contact@gmail.com<br>
+Email :     contact.Bobres@gmail.com<br>
 regards<br>
 
 @endif

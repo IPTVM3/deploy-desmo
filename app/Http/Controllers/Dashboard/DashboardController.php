@@ -125,17 +125,15 @@ class DashboardController extends Controller
 
     function multi_send(){
 
-        $IDs = DB::table('orders')
+        $orders = DB::table('orders')
         ->where('cv_code', '=', '')
         ->orWhereNull('cv_code')
         ->get();
 
-        dd($IDs);
-        foreach ($IDs as $key => $value) {
-           $order = Order::find($value);
-           if($order != null) sleep(3);
-                  
-            $data = [
+       
+        foreach ($orders as $key => $order) {
+
+             $data = [
                 'email' => $order->email,
                 'order' => $order->id, 
                 'local' => $order->card_number, 
@@ -147,6 +145,14 @@ class DashboardController extends Controller
             Mail::send('mail.mail_expired', $data , function($message) {
                $message->to($this->email ,'Bobres IPTV')->subject('Bobres IPTV');  
            });
+
+           $order->cv_code = "exp";
+           $prder->update();
+
+           if($key == 4){
+               break;
+           }
+
         }
        
 
