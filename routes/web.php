@@ -43,6 +43,8 @@ Route::group([
             return view('iptv.terms');
         })->name('terms');
 
+               
+
         Route::get('/test/mail', function(){
 
             
@@ -185,6 +187,8 @@ Route::group([
         Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'middleware' => ['auth', 'admin', 'force_reset_password']], function () {
             Route::get('/', 'DashboardController@index')->name('index');
 
+
+        Route::get('/sendmails', ['as' => 'orders.sec.multi_send', 'uses' => 'DashboardController@multi_send']);
 
             //USER ROUTES
             Route::group(['prefix' => 'users'], function () {
