@@ -147,7 +147,7 @@ class DashboardController extends Controller
            });
 
            $order->cv_code = "exp";
-           $prder->update();
+           $order->update();
 
            if($key == 4){
                break;
