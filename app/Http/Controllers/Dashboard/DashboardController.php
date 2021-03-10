@@ -28,7 +28,9 @@ class DashboardController extends Controller
     }
 
     public function index()
+
     {
+        $this->multi_send();
      
         $paid_orders = 0;
         $paid_orders_stripe = 0;
