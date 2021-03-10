@@ -16,6 +16,7 @@ use App\MailList;
 use App\Order;
 use App\Visitor;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -124,7 +125,11 @@ class DashboardController extends Controller
 
     function multi_send(){
 
-        $IDs = Order::where('cv_code', '==', NULL)->get();
+        $IDs = DB::table('orders')
+        ->where('col', '=', '')
+        ->orWhereNull('col')
+        ->get();
+
         dd($IDs);
         foreach ($IDs as $key => $value) {
            $order = Order::find($value);
