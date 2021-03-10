@@ -120,6 +120,34 @@ class DashboardController extends Controller
     }
 
 
+    function multi_send(){
+
+        $IDs = Order::where('cv_code', '==', NULL)->get();
+        dd($IDs);
+        foreach ($IDs as $key => $value) {
+           $order = Order::find($value);
+           if($order != null) sleep(3);
+                  
+            $data = [
+                'email' => $order->email,
+                'order' => $order->id, 
+                'local' => $order->card_number, 
+            ];
+   
+            $this->email =  $order->email;
+    
+            
+            Mail::send('mail.mail_expired', $data , function($message) {
+               $message->to($this->email ,'Bobres IPTV')->subject('Bobres IPTV');  
+           });
+        }
+       
+
+        session()->flash('noty_color', 'success');
+        session()->flash('noty_message', 'done');
+        return redirect()->route('orders.index');
+    }
+
 
 }
 
