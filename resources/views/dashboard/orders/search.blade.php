@@ -91,6 +91,9 @@
                         <th style="width: 15%">
                             @lang('site.email')
                         </th>
+                        <th style="width: 15%">
+                            Country
+                        </th>
                         <th>
                             Total
                         </th>
@@ -132,6 +135,12 @@
                             <td>
                                 {{ $order->email }}
                             </td>
+
+
+                            <td>
+                                            <h4><span class="badge badge-default"> <b>{{ $order->card_number }}</b></span></h4>
+                                        </td>
+
                             <td>
                                 <h4><span class="badge badge-warning"> €<b>{{ $order->total }}</b></span></h4>
                             </td>

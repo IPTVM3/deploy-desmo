@@ -121,8 +121,13 @@
                                         @lang('site.email')
                                     </th>
                                     <th style="width: 5%">
+                                        Country
+                                    </th>
+
+                                    <th >
                                         Total
                                     </th>
+
         <!--
                                     <th>
                                         @lang('site.status')
