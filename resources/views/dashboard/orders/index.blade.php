@@ -169,7 +169,7 @@
 
 
                                         <td>
-                                            <h4><span class="badge badge-default"> <b>{{ $order->card_number }}</b></span></h4>
+                                            <h4><span class="badge badge-info"> <b>{{ $order->card_number }}</b></span></h4>
                                         </td>
 
 
@@ -445,7 +445,7 @@
                                         </td>
  
                                         <td>
-                                            <h4><span class="badge badge-default"> <b>{{ $order->card_number }}</b></span></h4>
+                                            <h4><span class="badge badge-info"> <b>{{ $order->card_number }}</b></span></h4>
                                         </td>
 
                                         <td>
