@@ -39,24 +39,18 @@ class IptvController extends Controller
         
     
         // "2"=> array(
-            // "https://www.ora-market.com",
-           //  "AR-LyFrg4mz5axs92W5NUYw5VEe_Z5GzJmwyQI6QF9vfYlZGKAng0PoAPciT41J67TxPpb4ZV_36EL_v",
-             //"FRANCE 1 PAYPAL (lexal.amina@gmail.com)"
+            // "https://www.bob-market.online",
+           //  "AYJp58GxGCHrV-Q7vVxliZhtdNbOX7yWG4jQfhIyQy5dkg6RsIkeEYwEUQ1UXoNYkL-2EpdFp6D41maN",
+             //"MOROCCO PAYPAL (hemzaalilou@gmail.com)"
          //)
          
        
          //,
         // "1"=>array(
           // "https://www.bob-market.online",
-            //"AZ0lmZBvprGw8eiFTOrbeEs6n2jTGpYaAPMvmWKyIrolz-KC7jSaAbo9V9RUD8Gbk-0ITeaYp3K1ssRd",
-           // "QATAR PAYPAL (aissam.qatar@gmail.com)"
-          //)
-          //,
-          //"5"=>array(
-             //"https://www.bob-market.online",
-            // "AcWlx_UKUtn3UfzjK3LE2sVu_URctObhLXUUr4S2MpcrqoXP6jYnSvk8exkpOT2ozy9YTVFwwV4qKh6b",
-            // "UK 2 PAYPAL (xxx@gmail.com)"
-         //),
+            //"AekgwOELs1xWq9gVPqVmsYg5-44cnNVAWeAkTr9GJwH8gguhT_XFgPNf6_55ULMVN_hV1-LQAh6hTbIY",
+           // "FRANCE PAYPAL (bobres.service@gmail.com)"
+          //) 
         // "2"=>array(
            //  "https://www.bob-tech.club",
             //  "AQjF8qdf4cnAfwe7vC_1gOPIzEW9ys-JTqEs2Yd_V7_Zht4HnuSo33avOGNArFzTsm45goYiB8h4sBtr",
