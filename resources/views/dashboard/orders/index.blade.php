@@ -114,13 +114,13 @@
                             <table class="table table-striped projects">
                                 <thead>
                                 <tr>
-                                    <th style="width: 15%">
+                                    <th style="width: 10%">
                                         #ID
                                     </th>
                                     <th style="width: 15%">
                                         @lang('site.email')
                                     </th>
-                                    <th>
+                                    <th style="width: 5%">
                                         Total
                                     </th>
         <!--
@@ -161,6 +161,13 @@
                                         <td>
                                             {{ $order->email }}
                                         </td>
+
+
+                                        <td>
+                                            <h4><span class="badge badge-default"> <b>{{ $order->card_number }}</b></span></h4>
+                                        </td>
+
+
                                         <td>
                                             <h4><span class="badge badge-warning"> €<b>{{ $order->total }}</b></span></h4>
                                         </td>
