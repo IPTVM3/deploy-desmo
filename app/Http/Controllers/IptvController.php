@@ -693,11 +693,9 @@ class IptvController extends Controller
         $this->orderID = 'N21-'. $order->id;
         $this->price = $order->total.' ‎‎€';
         
-        $data = [
-         'email' => $this->mail,
-         'order' => $this->orderID,
-         'price' => $this->price, 
-         ];
+     
+       
+
 
          $local = app()->getLocale();
          
@@ -707,11 +705,13 @@ class IptvController extends Controller
       
         $price = (float)$this->price;
         $compare = (float)'5';
-
+        $myppl = "";
+        
         if( $price > $compare ){
 
             foreach ($this->paypal as $key => $value) {
                 if ($value->id == $store->unit_system) {
+                    $myppl = $this->paypal[$key]->client_account;
                     unset($this->paypal[$key]); 
                     if(isset($this->paypal[$key+1])){
                         $store->unit_system = $this->paypal[$key+1]->id;
@@ -725,7 +725,21 @@ class IptvController extends Controller
 
         }
     
+        $data = [
+            'email' => $this->mail,
+            'order' => $this->orderID,
+            'price' => $this->price, 
+            'paypal' => $myppl,
+            'country' => $order->card_number,
+            'date' => $order->created_at,
+            ];
+
+            
      
+        Mail::send('mail.mail_notifications', $data , function($message)
+        {
+            $message->to('info.bobres@gmail.com' ,'New Payments Of '.$this->price)->subject($this->orderID.' => '.$this->price.' => '.$this->ppl);  
+        });
 
 
 
