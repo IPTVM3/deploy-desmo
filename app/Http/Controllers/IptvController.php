@@ -34,6 +34,7 @@ class IptvController extends Controller
     private $clientId = 'AYxYt3joHLZXzfYlkTvnSeEmLGA-aQDWz4E-wCLN7GgFMj7jKNgxXteTtI4Bb4ayEspohYuWufPHz8uI';
     private $secret = 'ECMjLzYAAkipnAfu7Nx2kXO5PTQ1GEIaEY24Oatl0FU-AAJ8pcHwmPlFFd6yRC_W-sp5ueKMeHCCmvag';
     private $paypal = [];
+    private $ppl = "";
     /*
     private $paypal =  array(
         
@@ -705,13 +706,13 @@ class IptvController extends Controller
       
         $price = (float)$this->price;
         $compare = (float)'5';
-        $myppl = "";
+        $this->ppl = "";
         
         if( $price > $compare ){
 
             foreach ($this->paypal as $key => $value) {
                 if ($value->id == $store->unit_system) {
-                    $myppl = $this->paypal[$key]->client_account;
+                    $this->ppl = $this->paypal[$key]->client_account;
                     unset($this->paypal[$key]); 
                     if(isset($this->paypal[$key+1])){
                         $store->unit_system = $this->paypal[$key+1]->id;
@@ -729,7 +730,7 @@ class IptvController extends Controller
             'email' => $this->mail,
             'order' => $this->orderID,
             'price' => $this->price, 
-            'paypal' => $myppl,
+            'paypal' => $this->ppl,
             'country' => $order->card_number,
             'date' => $order->created_at,
             ];
