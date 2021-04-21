@@ -246,7 +246,7 @@
 					<li>24 @lang('amos.months')  = 1.8 credit</li> 
 				</ul>
 				
-				<a href="/contact" >@lang('amos.PreOrder')</a>
+				<a href="/contact" target="_blank"  >@lang('amos.PreOrder')</a>
 				</div>
 				<!-- end price-box --> 
       		</div> 
@@ -280,7 +280,7 @@
             <br>
             password: 123456789
 </p>
-        <a href="#">@lang('amos.iptvdemopanel_btn')</a> </div>
+        <a target="_blank"  href="https://mytvpanel.net/index">@lang('amos.iptvdemopanel_btn')</a> </div>
       <!-- end col-6 -->
       <div class="col-md-6 col-md-offset-2">
         <div class="content-image"><img src="https://iptvtree.com/img/bg-img/demopanel.png" alt="Image"> </div>
