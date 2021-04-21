@@ -78,8 +78,10 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#collapse-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="/home"> <img src="{{ asset('iptvamos/images/logo-light.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptvamos/images/logo-dark.png')}}" alt="Image" class="logo-dark"> <span class="since">8<br>
-        <small>years</small></span></a> </div>
+        <a class="navbar-brand" href="/home"> 
+        <img src="{{ asset('iptv_update/images/logo_light_up.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptv_update/images/logo_dark_up.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
+        <small>years</small></span> </a> 
+        </div>
       <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="collapse-nav">
         <ul class="top-menu visible-xs">
 				<li><a href="/contact">@lang('amos.our_whatsapp')</a></li>
