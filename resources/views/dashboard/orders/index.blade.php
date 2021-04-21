@@ -114,19 +114,27 @@
                             <table class="table table-striped projects">
                                 <thead>
                                 <tr>
-                                    <th style="width: 10%">
+                                    <th>
                                         #ID
                                     </th>
-                                    <th style="width: 15%">
+                                    <th >
                                         @lang('site.email')
                                     </th>
-                                    <th style="width: 5%">
+                                    <th>
                                         Country
                                     </th>
 
+
                                     <th >
-                                        Total
+                                        Product
                                     </th>
+
+
+
+                                    <th >
+                                        Amount
+                                    </th>
+ 
 
         <!--
                                     <th>
@@ -140,6 +148,10 @@
                                     <th>
                                         @lang('site.createdat')
                                     </th>
+                                    <th>
+                                        Paypal                            
+                                    </th> 
+
                                     <th>
                                         Panel                            
                                     </th> 
@@ -174,6 +186,11 @@
 
 
                                         <td>
+                                            {{$order->productName}}
+                                        </td>
+
+
+                                        <td>
                                             <h4><span class="badge badge-warning"> €<b>{{ $order->total }}</b></span></h4>
                                         </td>
         <!--
@@ -199,6 +216,12 @@
                                         <td>
                                             <b> {{ $order->created_at }}  ({{ $order->created_at->diffForHumans()  }})</b>
                                         </td>
+
+                                        <td>
+                                            <b> {{ $order->paypal }}</b>
+                                        </td>
+
+                                        
                                         <td> 
                                            <span class="badge badge-secondary">
                                             @if($order->support == '' OR $order->support == '' )

@@ -176,10 +176,14 @@ Route::group([
 
         
         
+        
+        Route::get('/test',function (){  return view('iptv.iptvfamos'); })->name('testnewsite');
         Route::get('/channels',function (){  return view('iptv.channels_'); })->name('channels');
         Route::get('/movies',function (){  return view('iptv.movies'); })->name('movies');
         Route::get('/series',function (){  return view('iptv.series'); })->name('series');
-
+        Route::get('/mentions',function (){  return view('iptv.mentionLegal'); })->name('mentionLegal');
+        Route::get('/conditions',function (){  return view('iptv.condition'); })->name('condition');
+        Route::get('/resseling',function (){  return view('iptv.resselling'); })->name('resseling');
 
         //DASHBOARD ROUTES------------------------------------------------------------------------------------------------------------>
         Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'middleware' => ['auth', 'admin', 'force_reset_password']], function () {
