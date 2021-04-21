@@ -1108,17 +1108,17 @@
 	  <div class="circles">
 		<div class="row">
 		  <div class="col-md-4 col-sm-4 col-xs-12 text-left">
-			<div class="icon-border"> <i  onclick="window.location='{{ url('channels') }}'" target="_blank" class="flaticon-057-analytics-2"></i> <span>@lang('amos.channels')</span> </div>
+			<div class="icon-border"> <i  onclick="window.location='{{ route('channels') }}'" target="_blank" class="flaticon-057-analytics-2"></i> <span>@lang('amos.channels')</span> </div>
 			<!-- end icon-border -->
 		  </div>
 		  <!-- end col-4 -->
 		  <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-			<div class="icon-border"> <i  onclick="window.location='{{ url('series') }}'" target="_blank" class="flaticon-029-binder"></i> <span>@lang('amos.series')</span> </div>
+			<div class="icon-border"> <i  onclick="window.location='{{ route('series') }}'" target="_blank" class="flaticon-029-binder"></i> <span>@lang('amos.series')</span> </div>
 			<!-- end icon-border -->
 		  </div>
 		  <!-- end col-4 -->
 		  <div class="col-md-4 col-sm-4 col-xs-12 text-right">
-			<div class="icon-border"> <i onclick="window.location='{{ url('movies') }}'" target="_blank" class="flaticon-034-computer"></i> <span>@lang('amos.movies')</span> </div>
+			<div class="icon-border"> <i onclick="window.location='{{ route('movies') }}'" target="_blank" class="flaticon-034-computer"></i> <span>@lang('amos.movies')</span> </div>
 			<!-- end icon-border -->
 		  </div>
 		  <!-- end col-4 --> 
