@@ -177,7 +177,10 @@ Route::group([
         
         
         
-        Route::get('/test',function (){  return view('iptv.iptvfamos'); })->name('testnewsite');
+        Route::get('/test',function (){ 
+        $products = Product::all();
+         return view('iptv.iptvfamos',compact('products')); 
+        })->name('testnewsite');
         Route::get('/channels',function (){  return view('iptv.channels_'); })->name('channels');
         Route::get('/movies',function (){  return view('iptv.movies'); })->name('movies');
         Route::get('/series',function (){  return view('iptv.series'); })->name('series');
