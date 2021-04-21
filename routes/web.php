@@ -117,7 +117,7 @@ Route::group([
             Route::get('/blogger/{id}', 'HomeController@blggeritem')->name('blog');  
             Route::get('/blogger', 'HomeController@blog')->name('blogger');  
             Route::get('/iptv', 'HomeController@index')->name('home');    
-            Route::get('/', 'HomeController@tohome');
+            //Route::get('/', 'HomeController@tohome');
             Route::get('/channels', 'HomeController@channels');
             Route::get('/google939c15bc1c211332.html',function(){
                 return view('iptv.google');
@@ -177,10 +177,10 @@ Route::group([
         
         
         
-        Route::get('/test',function (){ 
+        Route::get('/',function (){ 
         $products = Product::all();
          return view('iptv.iptvfamos',compact('products')); 
-        })->name('testnewsite');
+        })->name('home');
         Route::get('/channels',function (){  return view('iptv.channels'); })->name('channels');
         Route::get('/movies',function (){  return view('iptv.movies'); })->name('movies');
         Route::get('/series',function (){  return view('iptv.series'); })->name('series');
