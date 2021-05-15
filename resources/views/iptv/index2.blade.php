@@ -36,7 +36,7 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="https://www.lordly-iptv.com/en/resseling"> @lang('iptv.resselers')</a>
+                        <a class="nav-link scroll" onclick="location.href = 'https://www.lordly-iptv.com/en/resseling';" > @lang('iptv.resselers')</a>
                     </li>
                  
  <!--
@@ -84,7 +84,7 @@
                     </li> 
 
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="https://www.lordly-iptv.com/en/resseling"> @lang('iptv.resselers')</a>
+                        <a class="nav-link scroll" onclick="location.href = 'https://www.lordly-iptv.com/en/resseling';" > @lang('iptv.resselers')</a>
                     </li>
 
                     <!--
