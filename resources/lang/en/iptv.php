@@ -91,7 +91,7 @@ At Susan IPTV, we believe that quality and reliability is what you deserve and w
     'try_now'=>'Try Now',
     'country'=>'Country',
 
-    'resselers'=>'Resselers',
+    'resselers'=>'Reselling',
     'contact_whatsapp'=>'Whatsapp',
     
     'thanks'=> 'Thanks for choosing us we\'re happy to make you our customer',

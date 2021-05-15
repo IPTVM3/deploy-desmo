@@ -27,9 +27,18 @@
                         <a class="nav-link scroll" href="#home">@lang('new.home')</a>
                     </li>
 
+
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#about">@lang('new.About') </a>
+                        <a class="nav-link scroll" href="#price">@lang('new.Pricing') </a>
+                    </li>  
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="https://www.lordly-iptv.com/en/resseling"> @lang('new.resselers')</a>
                     </li>
+                 
  <!--
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#trial" data-toggle="modal" data-target="#testmoremodel">@lang('new.Test_Trial') </a>
@@ -40,16 +49,17 @@
 
                 <ul class="navbar-nav ml-auto nav-color nav-white">
 
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#price">@lang('new.Pricing') </a>
-                    </li>  
+                
+                
 
-                    <li class="nav-item"   onclick="window.location.href= '{{ route('blogger') }}';">
-                        <a class="nav-link scroll" href="{{ route('blogger') }}">@lang('new.blogger')</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#about">@lang('new.About') </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#contact"> </a>
+
+                    <li class="nav-item"   >
+                        <a class="nav-link scroll" href="#contact">@lang('new.contact_us')</a>
                     </li>
                 </ul>
 
@@ -68,20 +78,27 @@
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#home">@lang('new.home')</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#about">@lang('new.About')</a>
+                        <a class="nav-link scroll" href="#price">@lang('new.Pricing')</a>
+                    </li> 
+                    
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="https://www.lordly-iptv.com/en/resseling"> @lang('new.resselers')</a>
                     </li>
+
                     <!--
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#trial" data-toggle="modal" data-target="#testmoremodel">@lang('new.Test_Trial')</a>
                     </li> 
                     -->
+               
+                  
+                    
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#price">@lang('new.Pricing')</a>
-                    </li> 
-                    <li class="nav-item"  onclick="window.location.href= '{{ route('blogger') }}';">
-                        <a class="nav-link scroll" >@lang('new.blogger')</a>
+                        <a class="nav-link scroll" href="#about">@lang('new.About')</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#contact">@lang('new.Office')</a>
                     </li>
