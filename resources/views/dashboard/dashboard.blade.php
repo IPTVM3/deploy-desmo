@@ -48,14 +48,75 @@
         <section class="content">
             <div class="container-fluid">
               <!-- Small boxes (Stat box) -->
+
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-info">
+                            <div class="inner">
+                                <h3>€ {{   round($todayOrders, 2)   }}</h3>
+
+                                <p>Today</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-bag"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-success">
+                            <div class="inner">
+                                <h3>€ {{   round($lastDayOrders, 2)   }} </h3>
+
+                                <p>Yesterday</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-stats-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-warning">
+                            <div class="inner">
+                                <h3>€ {{  round($last15Days, 2)   }}<sup style="font-size: 20px"></sup></h3>
+
+                                <p>Last 15 Days</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-danger">
+                            <div class="inner">
+                                <h3>€ {{ round($last30days, 2)   }}<sup style="font-size: 20px"></sup></h3>
+
+
+                                <p>Last 30 Days</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+                <hr>
               <div class="row">
                 <div class="col-lg-3 col-6">
                   <!-- small box -->
                   <div class="small-box bg-info">
                     <div class="inner">
-                      <h3>€ {{   round($lastday, 2)   }} ({{ $months }} Months)</h3>
+                      <h3>{{   count($today_visitor)   }} </h3>
       
-                      <p>Today</p>
+                      <p>Today Visitors</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-bag"></i>
@@ -67,9 +128,9 @@
                   <!-- small box -->
                   <div class="small-box bg-success">
                     <div class="inner">
-                      <h3>€ {{   round($lastday7, 2)   }} ({{ $months7 }} Months)</h3>
+                      <h3> {{   count($yestardy_visitor)   }}</h3>
       
-                      <p>Yesterday</p>
+                      <p>Yesterday Visitors</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-stats-bars"></i>
@@ -81,9 +142,9 @@
                   <!-- small box -->
                   <div class="small-box bg-warning">
                     <div class="inner">
-                      <h3> {{  count($today_visitor)  }}<sup style="font-size: 20px"></sup></h3>
+                      <h3> {{  count($last15days_visitor)  }}<sup style="font-size: 20px"></sup></h3>
       
-                      <p>Today Visitors</p>
+                      <p>Last 15 Days Visitors</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-person-add"></i>
@@ -95,10 +156,10 @@
                   <!-- small box -->
                   <div class="small-box bg-danger">
                     <div class="inner">
-                      <h3> {{ count($yestardy_visitor)  }}<sup style="font-size: 20px"></sup></h3>
+                      <h3> {{ count($last30days_visitor)  }}<sup style="font-size: 20px"></sup></h3>
       
       
-                      <p>Yesterday Visitors</p>
+                      <p>Last 30 Days Visitors</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-pie-graph"></i>
@@ -107,10 +168,29 @@
                 </div>
                 <!-- ./col -->
               </div>
- 
-            
-  
-                <!-- ./col -->
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6 col-6">
+
+                        {!! $chart_1_months->html() !!}
+
+                    </div>
+
+                    <div class="col-lg-6 col-6">
+
+                        {!! $chart_3_months->html() !!}
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+
+                        {!!$chart_months->html() !!}
+
+                    </div>
+                </div>
+            <!-- ./col -->
               </div>
               <!-- /.row --> 
 
@@ -122,6 +202,11 @@
       
     </section>
 
+
+    {!! Charts::scripts() !!}
+    {!! $chart_3_months->script() !!}
+    {!! $chart_1_months->script() !!}
+    {!! $chart_months->script() !!}
 @endsection
 
 

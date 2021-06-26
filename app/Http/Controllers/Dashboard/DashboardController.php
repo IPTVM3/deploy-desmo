@@ -2,24 +2,19 @@
 
 namespace App\Http\Controllers\Dashboard;
 
-use App\Frais;
-use App\Notifications\ResetPasswordMail;
-use App\Notifications\SimpleMail;
-use App\Notifications\TaskCompleted;
-use App\Product;
-use App\Store;
 use App\User;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\MailList;
 use App\Order;
 use App\Visitor;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
+use Charts;
+
 
 class DashboardController extends Controller
 {
@@ -29,137 +24,102 @@ class DashboardController extends Controller
     }
 
     public function index()
-
     {
-        //$this->multi_send();
-     
-        $paid_orders = 0;
-        $paid_orders_stripe = 0;
-        $lastday = 0;
-        $lastday7 = 0;
-        $lastday15 = 0;
-        $lastday30 = 0;
-        $Ungrous = 0;
-        $Ungrous7 = 0;
-        $count_mail_list = MailList::all()->count(); 
-
-        $lastdayorders = Order::whereDate('created_at', Carbon::today())->get();
-        $lastdayorders7 = Order::whereDate("created_at", Carbon::yesterday())->get();
-        $lastdayorders15 = Order::where("created_at",">", Carbon::now()->subDays(15))->get();
-        $lastdayorders30 =Order::where("created_at",">", Carbon::now()->subDays(30))->get();
-
-        $months = 0 ;
-        $months7 = 0 ;
-      
-
-        foreach ($lastdayorders as $key => $order) {
-            $lastday = $lastday + ($order->total - (0.35 + ($order->total * 4.4 / 100 ))); 
-            if($order->total == '59.99' ||$order->total == '59.98' || $order->total == '49.98'|| $order->total == '49.99' || $order->total == '39.99'  || $order->total == '40.99'|| $order->total == '40'){
-                $Ungrous = $Ungrous +  16;
-                $months = $months + 12;
-            }
-            if($order->total == '38.98' || $order->total == '29.98' || $order->total == '42.98 '){
-                $Ungrous =  $Ungrous + 16/2;
-                $months = $months + 6;
-            }
-            if($order->total == '29.97'  || $order->total == '22.98' ||  $order->total =='32.99'){
-                $Ungrous =  $Ungrous + 16/4;
-                $months = $months + 3;
-            } 
-            if($order->total == '13.99'|| $order->total == '18.99'){
-                $Ungrous =  $Ungrous + 16/12;
-                $months = $months + 1;
-            }
-            if($order->total == '89.98'|| $order->total == '109.98'){
-                $Ungrous =  $Ungrous + 16 * 2;
-                $months = $months + 24;
-            }
-
+        //TOP 10 COUNTRIES - LAST 3 MONTHS(€)
+        $today = Carbon::today();
+        $order_of_last_3_months  = DB::select('select card_number as country , sum(total) as amount from orders o where created_at between ? and ? group by country order by amount desc;',[Carbon::now()->subMonth(3) , $today ]);
+        $label = [];
+        $values = [];
+        foreach($order_of_last_3_months as $key => $order){
+            $label[$key] = $order->country;
+            $values[$key] = $order->amount;
+            if($key == 10) break;
         }
-        foreach ($lastdayorders7 as $key => $order) {    $lastday7 = $lastday7 + ($order->total - (0.35 + ($order->total * 4.4 / 100 ))); 
-            if($order->total == '59.99' ||$order->total == '59.98' || $order->total == '49.98'|| $order->total == '49.99' || $order->total == '39.99'  || $order->total == '40.99'|| $order->total == '40'){
-                $Ungrous7 = $Ungrous7 +  16;
-                $months7 = $months7 + 12;
-            }
-            if($order->total == '38.98' || $order->total == '29.98' || $order->total == '42.98 '){
-                $Ungrous7 =  $Ungrous7 + 16/2;
-                $months7 = $months7 + 6;
-            }
-            if($order->total == '29.97'  || $order->total == '22.98' ||  $order->total =='32.99'){
-                $Ungrous7 =  $Ungrous7 + 16/4;
-                $months7 = $months7 + 3;
-            } 
-            if($order->total == '13.99'|| $order->total == '18.99'){
-                $Ungrous7 =  $Ungrous7 + 16/12;
-                $months7 = $months7 + 1;
-            }
-            if($order->total == '89.98'|| $order->total == '109.98'){
-                $Ungrous7 =  $Ungrous7 + 16 * 2;
-                $months7 = $months7 + 24;
-            }
+        $chart_3_months = Charts::create('donut', 'highcharts')
+            ->title('TOP 10 COUNTRIES - LAST 3 MONTHS(€)')
+            ->labels($label)
+            ->values($values)
+            ->dimensions(500,500)
+            ->responsive(true);
+
+
+        //TOP 10 COUNTRIES - LAST 1 MONTHS(€)
+        $today = Carbon::today();
+        $order_of_last_1_months  = DB::select('select card_number as country , sum(total) as amount from orders o where created_at between ? and ? group by country order by amount desc;',[Carbon::now()->subMonth(1) , $today ]);
+        $label = [];
+        $values = [];
+        foreach($order_of_last_1_months as $key => $order){
+            $label[$key] = $order->country;
+            $values[$key] = $order->amount;
+            if($key == 10) break;
+        }
+        $chart_1_months = Charts::create('donut', 'highcharts')
+            ->title('TOP 10 COUNTRIES - LAST 1 MONTH(€)')
+            ->labels($label)
+            ->values($values)
+            ->dimensions(500,500)
+            ->responsive(true);
+
+
+
+        //ORDERS AMOUNT BY MONTHS
+        $allOrders  = Order::select(
+            DB::raw('sum(total) as sums'),
+            DB::raw("DATE_FORMAT(created_at,'%m') as monthKey")
+            )
+            ->whereYear('created_at', date('Y'))
+            ->groupBy('monthKey')
+            ->orderBy('created_at', 'ASC')
+            ->get();
+
+
+        $label = [];
+        $values = [];
+        foreach($allOrders as $key => $order){
+            $label[$key] = $order->monthKey;
+            $values[$key] = $order->sums;
         }
 
-        foreach ($lastdayorders15 as $key => $order) {
-            $lastday15 = $lastday15 + ($order->total - (0.35 + ($order->total * 4.4 / 100 ))); 
-        }
-        foreach ($lastdayorders30 as $key => $order) {
-            $lastday30 = $lastday30 + ($order->total - (0.35 + ($order->total * 4.4 / 100 ))); 
-        }
- 
-        $lastday = $lastday - $Ungrous ;
-        $lastday7 = $lastday7 - $Ungrous7 ;
+        $chart_months = Charts::create('line', 'highcharts')
+            ->title('TOTAl AMOUNTS BY MONTHS')
+            ->elementLabel('AMONTS €')
+            ->labels($label)
+            ->values($values)
+            ->dimensions(500,500)
+            ->responsive(true);
+
+        //STATISTICS ONE DAY
+        $todayOrders = $this->getAmountNet(Order::whereDate('created_at', Carbon::today())->get());
+        $lastDayOrders = $this->getAmountNet(Order::whereDate('created_at', Carbon::yesterday())->get());
+        $last15Days = $this->getAmountNet(Order::where("created_at",">", Carbon::now()->subDays(15))->get());
+        $last30days = $this->getAmountNet(Order::where("created_at",">", Carbon::now()->subDays(30))->get());
+
+
 
         Visitor::where("date","<", Carbon::yesterday())->delete();
         $today_visitor = Visitor::whereDate('date', Carbon::today())->get();
         $yestardy_visitor = Visitor::whereDate('date', Carbon::yesterday())->get();
+        $last15days_visitor = Visitor::whereDate('date', Carbon::now()->subDay(15))->get();
+        $last30days_visitor = Visitor::whereDate('date', Carbon::now()->subDay(30))->get();
 
 
-        if(Auth::id() == '271'){
-            return redirect()->route('orders.index');
-        }
-         
-        return view('dashboard.dashboard',compact('lastday','lastday7','lastday15','lastday30','months','months7','today_visitor','yestardy_visitor'));
+
+        return view('dashboard.dashboard',compact('last30days_visitor','last15days_visitor','todayOrders','lastDayOrders','last15Days','last30days','today_visitor','yestardy_visitor','chart_1_months','chart_3_months','chart_months'));
       
     }
 
-
-    function multi_send(){
-
-        $orders = DB::table('orders')
-        ->where('cv_code', '=', '')
-        ->orWhereNull('cv_code')
-        ->get();
-
-       
-        foreach ($orders as $key => $order) {
-
-             $data = [
-                'email' => $order->email,
-                'order' => $order->id, 
-                'local' => $order->card_number, 
-            ];
-   
-            $this->email =  $order->email;
-    
-            
-            Mail::send('mail.update', $data , function($message) {
-               $message->to($this->email ,'Auto-reply from BobresIPTV')->subject('Bobres IPTV - Amazing Updates');  
-           });
-
-           $myorder = Order::find($order->id);
-           $myorder->cv_code = "exp";
-           $myorder->update();
-
-           if($key == 4){
-               break;
-           }
-
+    public function getAmountNet($orders){
+        $valueOfRowMetrial = 18;
+        $todayOrders = 0;
+        foreach($orders as $key => $order){
+            $todayOrders = $todayOrders + ($order->total - (0.35 + ($order->total * 4.4 / 100 )));
+            if($order->id == 11 or $order->id == 111) $todayOrders = $todayOrders - $valueOfRowMetrial;
+            if($order->id == 31 or $order->id == 121) $todayOrders = $todayOrders - $valueOfRowMetrial/2;
+            if($order->id == 51 or $order->id == 131) $todayOrders = $todayOrders - $valueOfRowMetrial/3;
+            if($order->id == 181) $todayOrders = $todayOrders - $valueOfRowMetrial*2;
+            if($order->id == 211) $todayOrders = $todayOrders - $valueOfRowMetrial+4;
         }
-       
-
-        session()->flash('noty_color', 'success');
-        session()->flash('noty_message', 'done');
-        return redirect()->route('orders.index');
+        return $todayOrders;
     }
 
 
