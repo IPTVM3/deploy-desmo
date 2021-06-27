@@ -116,11 +116,11 @@ class DashboardController extends Controller
         $todayOrders = 0;
         foreach($orders as $key => $order){
             $todayOrders = $todayOrders + ($order->total - (0.35 + ($order->total * 4.4 / 100 )));
-            if($order->id == 11 or $order->id == 111) $todayOrders = $todayOrders - $valueOfRowMetrial;
-            if($order->id == 31 or $order->id == 121) $todayOrders = $todayOrders - $valueOfRowMetrial/2;
-            if($order->id == 51 or $order->id == 131) $todayOrders = $todayOrders - $valueOfRowMetrial/3;
-            if($order->id == 181) $todayOrders = $todayOrders - $valueOfRowMetrial*2;
-            if($order->id == 211) $todayOrders = $todayOrders - $valueOfRowMetrial+4;
+            if($order->id == '11' or $order->id == '111') $todayOrders = $todayOrders - $valueOfRowMetrial;
+            if($order->id == '31' or $order->id == '121') $todayOrders = $todayOrders - $valueOfRowMetrial/2;
+            if($order->id == '51' or $order->id == '131') $todayOrders = $todayOrders - $valueOfRowMetrial/3;
+            if($order->id == '181') $todayOrders = $todayOrders - $valueOfRowMetrial*2;
+            if($order->id == '211') $todayOrders = $todayOrders - $valueOfRowMetrial+4;
         }
         return $todayOrders;
     }
