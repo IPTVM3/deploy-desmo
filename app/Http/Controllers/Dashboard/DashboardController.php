@@ -112,7 +112,7 @@ class DashboardController extends Controller
     }
 
     public function getAmountNet($orders){
-        $valueOfRowMetrial = 18;
+        $valueOfRowMetrial = 17;
         $todayOrders = 0;
         foreach($orders as $key => $order){
             $todayOrders = $todayOrders + ($order->total - (0.35 + ($order->total * 4.4 / 100 )));
