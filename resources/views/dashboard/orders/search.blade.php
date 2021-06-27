@@ -91,6 +91,9 @@
                         <th style="width: 15%">
                             @lang('site.email')
                         </th>
+                        <th style="width: 15%">
+                            Country
+                        </th>
                         <th>
                             Total
                         </th>
@@ -127,11 +130,17 @@
                     @endif
                         
                             <td>
-                                <b>{{ 'OR-'.$order->id }}</b>
+                                <b>{{ 'N21-'.$order->id }}</b>
                             </td>
                             <td>
                                 {{ $order->email }}
                             </td>
+
+
+                            <td>
+                                            <h4><span class="badge badge-info"> <b>{{ $order->card_number }}</b></span></h4>
+                                        </td>
+
                             <td>
                                 <h4><span class="badge badge-warning"> €<b>{{ $order->total }}</b></span></h4>
                             </td>
@@ -236,7 +245,7 @@
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Complet Order #<b>{{ 'OR-'.$order->id }}</b></h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Complet Order #<b>{{ 'N21-'.$order->id }}</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

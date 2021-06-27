@@ -118,8 +118,8 @@ Route::group([
             Route::get('/shipping', 'HomeController@shipping'); 
             Route::get('/blogger/{id}', 'HomeController@blggeritem')->name('blog');  
             Route::get('/blogger', 'HomeController@blog')->name('blogger');  
-            Route::get('/iptv', 'HomeController@index')->name('home');    
-            Route::get('/', 'HomeController@tohome');
+            Route::get('/', 'HomeController@index')->name('home');    
+            //Route::get('/', 'HomeController@tohome');
             Route::get('/channels', 'HomeController@channels');
             Route::get('/google939c15bc1c211332.html',function(){
                 return view('iptv.google');
@@ -178,10 +178,17 @@ Route::group([
 
         
         
-        Route::get('/channels',function (){  return view('iptv.channels_'); })->name('channels');
+        
+        Route::get('/v1',function (){ 
+        $products = Product::all();
+         return view('iptv.iptvfamos',compact('products')); 
+        })->name('v1');
+        Route::get('/channels',function (){  return view('iptv.channels'); })->name('channels');
         Route::get('/movies',function (){  return view('iptv.movies'); })->name('movies');
         Route::get('/series',function (){  return view('iptv.series'); })->name('series');
-
+        Route::get('/mentions',function (){  return view('iptv.mentionLegal'); })->name('mentionLegal');
+        Route::get('/conditions',function (){  return view('iptv.condition'); })->name('condition');
+        Route::get('/resseling',function (){  return view('iptv.resselling'); })->name('resseling');
 
         //DASHBOARD ROUTES------------------------------------------------------------------------------------------------------------>
         Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'middleware' => ['auth', 'admin', 'force_reset_password']], function () {

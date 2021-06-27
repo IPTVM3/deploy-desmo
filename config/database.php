@@ -42,6 +42,22 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
+            'host' => 'us-cdbr-east-02.cleardb.com',
+            'port' => '3306',
+            'database' => 'heroku_60dba0d3cc376e9',
+            'username' => 'bfcb2d292ea8cd',
+            'password' => 'c5afdc03',
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
+
+       /*
+        'mysql' => [
+            'driver' => 'mysql',
             'host' => 'us-cdbr-east-03.cleardb.com',
             'port' => '3306',
             'database' => 'heroku_76335120f18ecac',
@@ -53,8 +69,7 @@ return [
             'prefix' => '',
             'strict' => false,
             'engine' => null,
-        ],
-
+        ], */
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),

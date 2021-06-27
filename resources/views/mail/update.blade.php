@@ -284,7 +284,11 @@
                                         <td class="pc-fb-font" valign="top" style="padding: 0 10px; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #ffffff;">WE ARE VERY HAPPY TO MAKE YOU OUR CLIENT.</td>
                                       </tr>
                                       <tr>
+<<<<<<< HEAD
                                         <td class="pc-xs-fs-30 pc-xs-lh-42 pc-fb-font" valign="top" style="padding: 13px 10px 0; letter-spacing: -0.7px; line-height: 46px; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; color: #f0b92d">We're changing our domain to Bobres.co</td>
+=======
+                                        <td class="pc-xs-fs-30 pc-xs-lh-42 pc-fb-font" valign="top" style="padding: 13px 10px 0; letter-spacing: -0.7px; line-height: 46px; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; color: #f0b92d">We're changing our website to Bobres.co</td>
+>>>>>>> 3ea1ff39ff23ba99db3afcb5ee2aadd860d78dbc
                                       </tr>
                                     </tbody>
                                   </table>

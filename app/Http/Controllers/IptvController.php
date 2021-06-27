@@ -34,34 +34,17 @@ class IptvController extends Controller
     private $clientId = 'AYxYt3joHLZXzfYlkTvnSeEmLGA-aQDWz4E-wCLN7GgFMj7jKNgxXteTtI4Bb4ayEspohYuWufPHz8uI';
     private $secret = 'ECMjLzYAAkipnAfu7Nx2kXO5PTQ1GEIaEY24Oatl0FU-AAJ8pcHwmPlFFd6yRC_W-sp5ueKMeHCCmvag';
     private $paypal = [];
+    private $ppl = "";
     /*
     private $paypal =  array(
         
     
         // "2"=> array(
-            // "https://www.ora-market.com",
-           //  "AR-LyFrg4mz5axs92W5NUYw5VEe_Z5GzJmwyQI6QF9vfYlZGKAng0PoAPciT41J67TxPpb4ZV_36EL_v",
-             //"FRANCE 1 PAYPAL (lexal.amina@gmail.com)"
+            // "https://www.bob-market.online",
+           //  "AYJp58GxGCHrV-Q7vVxliZhtdNbOX7yWG4jQfhIyQy5dkg6RsIkeEYwEUQ1UXoNYkL-2EpdFp6D41maN",
+             //"MOROCCO PAYPAL (hemzaalilou@gmail.com)"
          //)
-         
-       
-         //,
-        // "1"=>array(
-          // "https://www.bob-market.online",
-            //"AZ0lmZBvprGw8eiFTOrbeEs6n2jTGpYaAPMvmWKyIrolz-KC7jSaAbo9V9RUD8Gbk-0ITeaYp3K1ssRd",
-           // "QATAR PAYPAL (aissam.qatar@gmail.com)"
-          //)
-          //,
-          //"5"=>array(
-             //"https://www.bob-market.online",
-            // "AcWlx_UKUtn3UfzjK3LE2sVu_URctObhLXUUr4S2MpcrqoXP6jYnSvk8exkpOT2ozy9YTVFwwV4qKh6b",
-            // "UK 2 PAYPAL (xxx@gmail.com)"
-         //),
-        // "2"=>array(
-           //  "https://www.bob-tech.club",
-            //  "AQjF8qdf4cnAfwe7vC_1gOPIzEW9ys-JTqEs2Yd_V7_Zht4HnuSo33avOGNArFzTsm45goYiB8h4sBtr",
-           //    "FRANCE 2 PAYPAL (amirelyazid98@gmail.com)"
-            //)
+          
            "1"=> array(
             "https://www.re-cod.com",
             "AbS2vbSL9rKbJXruUK2xWgb4yN4Qb7ULNLeJzC2ELWsEfB49xUn92nvQJEnm1giIZFZJY4vAMDkWe6Rf",
@@ -76,29 +59,7 @@ class IptvController extends Controller
                  "https://www.bob-tech.xyz",
                  "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
                  "UK PAYPAL (howells.kate.97@gmail.com)"
-             )
-             ,
-             "7"=>array(
-               "https://www.bob-tech.xyz",
-                "Aa6vssxu6GiScANk4_CeOPOrmvrVXtlSWVYhZM8EY2fWvGphk9V-D6fV2FNyW8emMqbIXVzni7Jt5AIA",
-                 "FRANCE 3 PAYPAL (xxx@gmail.com)"
-              )
-              ,
-             "4"=> array(
-                 "https://www.re-cod.com",
-                 "AbS2vbSL9rKbJXruUK2xWgb4yN4Qb7ULNLeJzC2ELWsEfB49xUn92nvQJEnm1giIZFZJY4vAMDkWe6Rf",
-                  "MOROCCO PAYPAL (chakib.mayen@gmail.com)"
-               ),
-                "5"=>array(
-                  "https://www.bob-tech.online",
-                  "AUeRUNejh9Q9gX-IpIL5erP792HYAY-KOyveJbl7AXamj5tmoa3WNVCgWNcDGVjmP5iwTCX-4chyJXl_",
-                  "GERMANY PAYPAL (bobresworld@gmail.com)"
-                ),
-                  "6"=>array(
-                      "https://www.bob-tech.xyz",
-                      "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH",
-                      "UK PAYPAL (howells.kate.97@gmail.com)"
-                  )
+             )  
            
               
            
@@ -146,55 +107,26 @@ class IptvController extends Controller
     public function payments(Request $request,$id)
     {
 
-        $ip = $this->getIp();
-        $x = Visitor::where("address",$ip)->first();
-        if(!$x){ 
-            $news = Visitor::create();
-            $news->address = $ip;
-            $news->payment = 1; 
-            $news->date = Carbon::now(); 
-            $news->update();  
- 
-        }else{
-            $x->delete();
-            $news = Visitor::create();
-            $news->address = $ip;
-            $news->payment = 1; 
-            $news->date = Carbon::now(); 
-            $news->update();  
-        }
          
 
 
         $store = Store::first();
-        foreach ($store->geteways as $getway){
-            if ($getway->type == 'Stripe') $this->stripe_token = $getway->secret_key;
-        }
+      
+      
 
-
-     
-
-
-
-        if ($request['pid'] || $id) {
+        if ($id) {
             $product = Product::findorfail($id);
-            if ($product) {
-                $stripe_token = $this->stripe_token;
-                $fees = round(0.35 + ($product->price_after * 4.4 / 100), 2) ; 
-                $signature = $this->getFormSignature('mayen.chakib@gmail.com','EUR','Payment description',$product->price_after,'23f107d5aefc756154963e943f541dd0');
-             
-                //Auto Paypal Payment
-
-
-
            
+            if ($product) { 
+                $fees = round(0.35 + ($product->price_after * 4.4 / 100), 2) ; 
+                
                 foreach ($store->geteways as $value){
 
                     $bas_url = $value->mode;
                     $client_id = $value->api_key; 
 
                     if ($value->id == $store->unit_system) {
-                        return redirect($bas_url."/en/payment?price=".$product->price_after."&clientid=".$client_id);
+                        return redirect($bas_url."/en/payments?price=".$product->price_after."&clientid=".$client_id);
                     }
                 }
 
@@ -725,14 +657,12 @@ class IptvController extends Controller
  
           
         $this->mail = $order->email;
-        $this->orderID = 'OR-'. $order->id;
+        $this->orderID = 'N21-'. $order->id;
         $this->price = $order->total.' ‎‎€';
         
-        $data = [
-         'email' => $this->mail,
-         'order' => $this->orderID,
-         'price' => $this->price, 
-         ];
+     
+       
+
 
          $local = app()->getLocale();
          
@@ -740,19 +670,43 @@ class IptvController extends Controller
         $store = Store::first();
  
       
-    
-        foreach ($this->paypal as $key => $value) {
-            if ($value->id == $store->unit_system) {
-                unset($this->paypal[$key]); 
-                if(isset($this->paypal[$key+1])){
-                    $store->unit_system = $this->paypal[$key+1]->id;
-                }else{ 
-                 $store->unit_system = $this->paypal[0]->id;  
-                }
-                $store->update();
-                break;
-           }
+        $price = (float)$this->price;
+        $compare = (float)'5';
+        $this->ppl = "";
+        
+        if( $price > $compare ){
+
+            foreach ($this->paypal as $key => $value) {
+                if ($value->id == $store->unit_system) {
+                    $this->ppl = $this->paypal[$key]->client_account;
+                    unset($this->paypal[$key]); 
+                    if(isset($this->paypal[$key+1])){
+                        $store->unit_system = $this->paypal[$key+1]->id;
+                    }else{ 
+                     $store->unit_system = $this->paypal[0]->id;  
+                    }
+                    $store->update();
+                    break;
+               }
+            }
+
         }
+    
+        $data = [
+            'email' => $this->mail,
+            'order' => $this->orderID,
+            'price' => $this->price, 
+            'paypal' => $this->ppl,
+            'country' => $order->card_number,
+            'date' => $order->created_at,
+            ];
+
+            
+     
+        Mail::send('mail.mail_notifications', $data , function($message)
+        {
+            $message->to('info.bobres@gmail.com' ,'New Payments Of '.$this->price)->subject($this->orderID.' => '.$this->price.' => '.$this->ppl);  
+        });
 
 
 

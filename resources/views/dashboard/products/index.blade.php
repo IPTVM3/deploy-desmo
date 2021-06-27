@@ -71,7 +71,11 @@
                                 @lang('site.name')
                             </th>
                             <th >
-                                Period
+                                Band
+                            </th>
+
+                            <th >
+                                Categorie
                             </th>
                             <th >
                                 Price
@@ -97,6 +101,13 @@
 
                                 </td>
                               
+                                <td>
+
+                                        <span class="badge badge-dark" style="font-size: 12px;">    {{ $product->Categorie->name }} </span>
+
+                                </td>
+
+
                                 <td class="project-state">
                                     <span class="badge badge-dark" style="font-size: 12px;">   {{ $product->price_after }} Euro </span>
                                 </td>

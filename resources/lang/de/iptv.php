@@ -90,7 +90,7 @@ Wir bei Susan IPTV glauben, dass Qualität und Zuverlässigkeit das sind, was Si
     'day'=>'Eines Tages',
     'try_now'=>'Versuche es jetzt',
      
-    'resselers'=>'Resselers',
+    'resselers'=>'Weiterverkauf',
     'contact_whatsapp'=>'Whatsapp',
 
     'thanks'=> 'Vielen Dank, dass Sie sich für uns entschieden haben. Wir freuen uns, Sie zu unserem Kunden zu machen',

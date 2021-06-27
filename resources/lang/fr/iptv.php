@@ -87,7 +87,7 @@ Chez Susan IPTV, nous croyons que la qualité et la fiabilité sont ce que vous 
     'success_description'=>'Notre équipe d\'travail  vous enverra votre compte IPTV sur votre email, et ils vous soutiendront après cela. <br> Merci de nous avoir choisis.',
 
     
-    'resselers'=>'Resselers',
+    'resselers'=>'Revendre',
     'contact_whatsapp'=>'Whatsapp',
 
      'thanks'=> 'Merci de nous avoir choisis, nous sommes heureux de faire de vous notre client',

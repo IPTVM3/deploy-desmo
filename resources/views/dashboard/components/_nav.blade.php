@@ -51,7 +51,7 @@
                 </a>
                 <div class="dropdown-divider"></div>
 
-                <a href="{{route('messenger')}}" class="dropdown-item dropdown-footer">@lang('messenger.go_to_messenger')</a>
+                <a href="" class="dropdown-item dropdown-footer">@lang('messenger.go_to_messenger')</a>
             </div>
         </li>
         <!-- Notifications Dropdown Menu -->

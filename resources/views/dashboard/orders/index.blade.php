@@ -114,15 +114,28 @@
                             <table class="table table-striped projects">
                                 <thead>
                                 <tr>
-                                    <th style="width: 15%">
+                                    <th>
                                         #ID
                                     </th>
-                                    <th style="width: 15%">
+                                    <th >
                                         @lang('site.email')
                                     </th>
                                     <th>
-                                        Total
+                                        Country
                                     </th>
+
+
+                                    <th >
+                                        Product
+                                    </th>
+
+
+
+                                    <th >
+                                        Amount
+                                    </th>
+ 
+
         <!--
                                     <th>
                                         @lang('site.status')
@@ -135,6 +148,10 @@
                                     <th>
                                         @lang('site.createdat')
                                     </th>
+                                    <th>
+                                        Paypal                            
+                                    </th> 
+
                                     <th>
                                         Panel                            
                                     </th> 
@@ -156,11 +173,23 @@
                                     
                                     
                                         <td>
-                                            <b>{{ 'OR-'.$order->id }}</b>
+                                            <b>{{ 'N21-'.$order->id }}</b>
                                         </td>
                                         <td>
                                             {{ $order->email }}
                                         </td>
+
+
+                                        <td>
+                                            <h4><span class="badge badge-info"> <b>{{ $order->card_number }}</b></span></h4>
+                                        </td>
+
+
+                                        <td>
+                                            {{$order->productName}}
+                                        </td>
+
+
                                         <td>
                                             <h4><span class="badge badge-warning"> €<b>{{ $order->total }}</b></span></h4>
                                         </td>
@@ -187,6 +216,12 @@
                                         <td>
                                             <b> {{ $order->created_at }}  ({{ $order->created_at->diffForHumans()  }})</b>
                                         </td>
+
+                                        <td>
+                                            <b> {{ $order->paypal }}</b>
+                                        </td>
+
+                                        
                                         <td> 
                                            <span class="badge badge-secondary">
                                             @if($order->support == '' OR $order->support == '' )
@@ -262,7 +297,7 @@
                             <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Complet Order #<b>{{ 'OR-'.$order->id }}</b></h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Complet Order #<b>{{ 'N21-'.$order->id }}</b></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -315,6 +350,7 @@
                                                                 <select class="form-control" id="exampleFormControlSelect1" name="portal">
                                                                     <option value="http://line.hi-ott.net/c/">http://line.hi-ott.net/c/</option>
                                                                     <option value="http://mag.crystalott.net/c/">http://mag.crystalott.net/c/</option>
+                                                                    <option value="http://promaxhd.com:8080/c/">http://promaxhd.com:8080/c/</option>
                                                                     <option value="http://dream4k.co:8080/c/">http://dream4k.co:8080/c/</option>
                                                                     <option value="http://v3.ott.rip:80/c">http://v3.ott.rip:80/c</option>
                                                                     <option value="http://king365-tv.cf:2103/c/">http://king365-tv.cf:2103/c/</option> 
@@ -391,8 +427,13 @@
                                         @lang('site.email')
                                     </th>
                                     <th>
+                                        Country
+                                    </th>
+                                    <th>
                                         Total
                                     </th>
+
+                                    
         <!--
                                     <th>
                                         @lang('site.status')
@@ -421,11 +462,16 @@
                                 @endif
                                     
                                         <td>
-                                            <b>{{ 'OR-'.$order->id }}</b>
+                                            <b>{{ 'N21-'.$order->id }}</b>
                                         </td>
                                         <td>
                                             {{ $order->email }}
                                         </td>
+ 
+                                        <td>
+                                            <h4><span class="badge badge-info"> <b>{{ $order->card_number }}</b></span></h4>
+                                        </td>
+
                                         <td>
                                             <h4><span class="badge badge-warning"> €<b>{{ $order->total }}</b></span></h4>
                                         </td>

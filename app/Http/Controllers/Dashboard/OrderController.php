@@ -137,7 +137,7 @@ class OrderController extends Controller
 
         Mail::send('mail.mail_undone', $data , function($message){
                 
-            $message->to($this->email ,'Bobres IPTV | OR-'.$this->id)->subject('Bobres IPTV | OR-'.$this->id);  
+            $message->to($this->email ,'Bobres IPTV | N21-'.$this->id)->subject('Bobres IPTV | N21-'.$this->id);  
         });
 
         return redirect()->route('orders.index');
@@ -251,7 +251,7 @@ class OrderController extends Controller
                 
                 Mail::send('mail.order_m3u', $data , function($message)
                 {
-                    $message->to($this->mail ,'Bobres IPTV | OR-'.$this->id)->subject('Bobres IPTV | OR-'.$this->id);  
+                    $message->to($this->mail ,'Bobres IPTV | N21-'.$this->id)->subject('Bobres IPTV | N21-'.$this->id);  
                 });
  
 
@@ -268,7 +268,7 @@ class OrderController extends Controller
                 $order->support = $request->portal;
                 Mail::send('mail.order_mag', $data , function($message)
                 {
-                    $message->to($this->mail ,'Bobres IPTV | OR-'.$this->id)->subject('Bobres IPTV | OR-'.$this->id);  
+                    $message->to($this->mail ,'Bobres IPTV | N21-'.$this->id)->subject('Bobres IPTV | N21-'.$this->id);  
                 });
             }
             $order->exp_date = Carbon::now();
