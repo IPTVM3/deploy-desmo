@@ -27,6 +27,7 @@ class DashboardController extends Controller
     {
         //TOP 10 COUNTRIES - LAST 3 MONTHS(€)
         $today = Carbon::today();
+        /*
         $order_of_last_3_months  = DB::select('select card_number as country , sum(total) as amount from orders o where created_at between ? and ? group by country order by amount desc;',[Carbon::now()->subMonth(3) , $today ]);
         $label = [];
         $values = [];
@@ -87,6 +88,7 @@ class DashboardController extends Controller
             ->values($values)
             ->dimensions(500,500)
             ->responsive(true);
+            */
 
         //STATISTICS ONE DAY
         $todayOrders = $this->getAmountNet(Order::whereDate('created_at', Carbon::today())->get());
@@ -104,7 +106,8 @@ class DashboardController extends Controller
 
 
 
-        return view('dashboard.dashboard',compact('last30days_visitor','last15days_visitor','todayOrders','lastDayOrders','last15Days','last30days','today_visitor','yestardy_visitor','chart_1_months','chart_3_months','chart_months'));
+        return view('dashboard.dashboard',compact('last30days_visitor','last15days_visitor','todayOrders','lastDayOrders','last15Days','last30days','today_visitor','yestardy_visitor'));
+        //return view('dashboard.dashboard',compact('last30days_visitor','last15days_visitor','todayOrders','lastDayOrders','last15Days','last30days','today_visitor','yestardy_visitor','chart_1_months','chart_3_months','chart_months'));
       
     }
 

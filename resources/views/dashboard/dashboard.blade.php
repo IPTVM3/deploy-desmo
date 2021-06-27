@@ -169,27 +169,7 @@
                 <!-- ./col -->
               </div>
                 <hr>
-                <div class="row">
-                    <div class="col-lg-6 col-6">
-
-                        {!! $chart_1_months->html() !!}
-
-                    </div>
-
-                    <div class="col-lg-6 col-6">
-
-                        {!! $chart_3_months->html() !!}
-
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-
-                        {!!$chart_months->html() !!}
-
-                    </div>
-                </div>
+               
             <!-- ./col -->
               </div>
               <!-- /.row --> 
@@ -203,10 +183,7 @@
     </section>
 
 
-    {!! Charts::scripts() !!}
-    {!! $chart_3_months->script() !!}
-    {!! $chart_1_months->script() !!}
-    {!! $chart_months->script() !!}
+     
 @endsection
 
 
