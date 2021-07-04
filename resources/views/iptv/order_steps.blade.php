@@ -17,6 +17,22 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
     
+    <!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-647729613');
+</script>
+<!-- Event snippet for SALE conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-647729613/KZ3xCM-wtc8CEM2j7rQC',
+      'transaction_id': ''
+  });
+</script>
 
 </head>
 <body >

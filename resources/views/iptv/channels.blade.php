@@ -27,6 +27,20 @@
     <link rel="dns-prefetch" href="//s.w.org">
     <link rel="alternate" type="application/rss+xml" title="The Best IPTV Service » Feed" href="https://www.iptvpark.com/feed/">
     <link rel="alternate" type="application/rss+xml" title="The Best IPTV Service » Comments Feed" href="https://www.iptvpark.com/comments/feed/">
+
+
+
+    <!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-647729613');
+</script>
+
+
     <script src="https://www.iptvpark.com/wp-includes/js/wp-emoji-release.min.js?ver=5.3.3" type="text/javascript" defer=""></script>
             <style type="text/css">
     img.wp-smiley,

@@ -59,16 +59,16 @@
 
         gtag('config', 'G-JY98F9S9HS');
         </script>
+        
+<!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-647729613');
-        </script>
+  gtag('config', 'AW-647729613');
+</script>
 
         
 </head>

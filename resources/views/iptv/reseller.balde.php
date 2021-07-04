@@ -42,6 +42,15 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/base.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-647729613');
+</script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

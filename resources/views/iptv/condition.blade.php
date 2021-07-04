@@ -22,6 +22,17 @@
       <link href="{{ asset('iptvamos/css/base.css') }}" rel="stylesheet">
 <link href="{{ asset('iptvamos/css/style.css') }}" rel="stylesheet"> 
 
+
+<!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-647729613');
+</script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <!-- Google Tag Manager --> 
