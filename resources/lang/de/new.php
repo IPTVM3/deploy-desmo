@@ -70,7 +70,8 @@ return [
 
 
     'few_hours_trial_test_header'=>'Testen Sie unseren IPTV-Dienst für einige Stunden uneingeschränkten Zugriff', 
-    'few_hours_trial_test_btn'=>'wenige Stunden voller Zugang kostenlos'
+    'few_hours_trial_test_btn'=>'wenige Stunden voller Zugang kostenlos',
+    'test_one_month'=> '30-TÄGIGE TESTPLÄNE TESTEN ERHALTEN, UNSER TEAM UNTERSTÜTZT SIE NACH DEM ABONNIEREN.',  
 ];
 
 ?> 

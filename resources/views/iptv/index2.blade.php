@@ -440,7 +440,7 @@
               
         <p class="parallex-para text-center text-white">@lang('new.test_why')   
 
-              <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">bbb</a> 
+              <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a></a> 
         </p>
 
        <br>
