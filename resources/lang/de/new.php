@@ -66,7 +66,7 @@ return [
 
 
   'few_hours_trial_test_header1'=>'Testen Sie Ihren IPTV-Dienst für 1 Tag Vollzugriff', 
-   'few_hours_trial_test_btn1'=>'24H Vollzugang für ',
+   'few_hours_trial_test_btn1'=>'1 Monat Vollzugriff für ',
 
 
     'few_hours_trial_test_header'=>'Testen Sie unseren IPTV-Dienst für einige Stunden uneingeschränkten Zugriff', 

@@ -87,7 +87,7 @@ return [
 
 
    'few_hours_trial_test_header1'=>'Pruebe su servicio de IPTV para acceso completo de 1 día', 
-   'few_hours_trial_test_btn1'=>'Acceso completo las 24 horas para',
+   'few_hours_trial_test_btn1'=>'1 mes de acceso completo para',
 
 
     'few_hours_trial_test_header'=>'Pruebe su servicio de IPTV durante unas horas con acceso completo', 
