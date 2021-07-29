@@ -436,7 +436,7 @@
 
 
 
-        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">aaa </h2>
+        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.test_one_month')   </h2>
               
         <p class="parallex-para text-center text-white">@lang('new.test_why')   
 
