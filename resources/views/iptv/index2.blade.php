@@ -397,12 +397,12 @@
   </div>
 
    -->
- 
+  
 <section id="trial" class="parallex-section parallax parallaxie img-size" style="background-image: url(https://images.unsplash.com/photo-1551101674-b7fe1fe084ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-size: cover; background-repeat: no-repeat; ">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-
+<!-- 
                
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.test_des') </h2>
             
@@ -421,7 +421,7 @@
              <p class="parallex-para text-center text-white">@lang('new.try_befor') </p>
               
                 <a href="https://www.bobres.com/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">1 @lang('new.MONTH') Test - {{ $month[0]->price_after}} euro</a>
-       -->
+     
  
        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header') </h2>
        <p class="parallex-para text-center text-white">@lang('new.test_des')   <br>
@@ -429,14 +429,29 @@
   
          </p> 
           
-            <br>
+            <br>   --> <!--
        <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a> -->
         <!-- <a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn')</a>-->
-        
+       
+
+
+
+        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">aaa </h2>
+              
+        <p class="parallex-para text-center text-white">@lang('new.test_why')   
+
+              <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">bbb</a> 
+        </p>
+
+       <br>
+       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a> -->
+     
+              
         
          </div>
         </div>
     </div> 
+    
     <!-- end container-->
     <!-- Modal -->
 <div class="modal fade" id="testmoremodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
