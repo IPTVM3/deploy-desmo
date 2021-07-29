@@ -396,8 +396,7 @@
     </div>
   </div>
 
-arallax Section-->
-
+ 
 <section id="trial" class="parallex-section parallax parallaxie img-size" style="background-image: url(https://images.unsplash.com/photo-1551101674-b7fe1fe084ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-size: cover; background-repeat: no-repeat; ">
     <div class="container-fluid">
         <div class="row">
@@ -411,7 +410,7 @@ arallax Section-->
 
               
                   <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a> </p>
-              <!--  
+           
                 <br>
   
        
@@ -422,7 +421,7 @@ arallax Section-->
               
                 <a href="https://www.bobres.com/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">1 @lang('new.MONTH') Test - {{ $month[0]->price_after}} euro</a>
        -->
- <!--
+ 
        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header') </h2>
        <p class="parallex-para text-center text-white">@lang('new.test_des')   <br>
         
