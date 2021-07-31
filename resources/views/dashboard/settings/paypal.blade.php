@@ -151,7 +151,7 @@
                                 <div class="col-sm-12">
                                     <!-- text input -->
                                     <div class="form-group">
-                                        <label>@lang('site.name')</label>
+                                        <label>(Name) Email	</label>
                                         <input type="text" class="form-control" name="name"
                                                value="{{ old('name') }}"
                                                placeholder="@lang('site.name') ...">
@@ -164,7 +164,7 @@
                                 <div class="col-sm-12">
 
                                     <div class="form-group">
-                                        <label for="exampleInputFile">PayPal</label>
+                                        <label for="exampleInputFile">API KEY</label>
                                         <select class="form-control" name="api_key">
                                             @foreach($paypal as $pp)
                                                 <option value="{{$pp[1]}}">{{ $pp[0].'-'. $pp[1] }}</option>
