@@ -337,7 +337,7 @@
                                                             
                                                             M3U link <br><strong>{{ $m3u }}</strong> <br>
                                                             
-                                                           @if($host == "line.cdn-ott.net")
+                                                           @if($host == "line.cdn-ott.net" or $host == "line.mytv-gold.com" )
                                                            <br>EPG link <br><strong>http://line.myott.net/xmltv.php?username={{ $username }}&amp;password={{ $password }}</strong> <br>
                                                            @elseif($host == "line.crystalott.net:80")
                                                            <br>EPG link <br><strong>http://line.crystalott.net:80/xmltv.php?username={{ $username }}&password={{ $password }}</strong> <br>
