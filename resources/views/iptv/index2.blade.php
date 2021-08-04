@@ -1037,11 +1037,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <p class="parallex-para text-center text-white" style="color: white !important" >
+            <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: white !important"  >@lang('new.test_one_month')  </h2>
+              
+               <p class="parallex-para text-center text-white" style="color: white !important" >
                     @lang('new.test_why')                 <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a></a>
 
                 </p>
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: white !important"  >@lang('new.test_one_month')  </h2>
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
 
             </div>

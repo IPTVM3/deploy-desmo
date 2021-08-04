@@ -96,7 +96,7 @@ return [
 
     'few_hours_trial_test_header'=>'Testez notre service IPTV pendant quelques heures en accès complet', 
     'few_hours_trial_test_btn'=>'quelques heures d\'accès complet gratuit',
-    'test_one_month'=> 'OBTENEZ UN ESSAI DES PLANS DE TEST DE 30 JOURS, NOTRE ÉQUIPE VOUS ASSISTERA APRÈS VOTRE ABONNEMENT.',
+    'test_one_month'=> 'OBTENEZ UN ESSAI DES PLANS DE TEST DE 30 JOURS, ACCES COMPLET.',
 ];
 
 ?> 

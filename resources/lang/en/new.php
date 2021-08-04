@@ -95,9 +95,9 @@ return [
     'few_hours_trial_test_btn1'=>'1 mes de acceso completo para',
 
 
-    'few_hours_trial_test_header'=>'Test our IPTV service for few hours full accesss', 
+    'few_hours_trial_test_header'=>'Test our IPTV service for few hours full access', 
     'few_hours_trial_test_btn'=>'few hours full access for free',
-    'test_one_month'=> 'GET 30-DAY TEST PLANS TRIAL, OUR TEAM WILL ASSIST YOU AFTER SUBSCRIBING.',
+    'test_one_month'=> 'GET 30-DAY TEST PLANS TRIAL, FULL ACCESS',
 ];
 
 ?> 

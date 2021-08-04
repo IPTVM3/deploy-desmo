@@ -92,6 +92,6 @@ return [
 
     'few_hours_trial_test_header'=>'Pruebe su servicio de IPTV durante unas horas con acceso completo', 
     'few_hours_trial_test_btn'=>'pocas horas de acceso completo gratis',
-    'test_one_month'=> 'OBTENGA LA PRUEBA DE PLANES DE PRUEBA DE 30 DÍAS, NUESTRO EQUIPO LE AYUDARÁ DESPUÉS DE SUSCRIBIRSE.',
+    'test_one_month'=> 'OBTENGA LA PRUEBA DE PLANES DE PRUEBA DE 30 DÍAS, ACCESO COMPLETO.',
 ];
 ?> 
