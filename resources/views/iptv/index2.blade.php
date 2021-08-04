@@ -1043,6 +1043,7 @@
                     @lang('new.test_why')                 <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a></a>
 
                 </p>
+                <br>
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
 
             </div>
