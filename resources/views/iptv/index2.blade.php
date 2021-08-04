@@ -952,8 +952,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <h2 style="    color: black !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Our Special Offers</h2>
-                <p style="    color: black !important;"  class="parallex-para text-center text-white">IPTV service - Get access to thousands of IPTV channels. BobresIPTV is the best premuim IPTV subscription service and IPTV provider in the market. </p>
+                <h2 style="    color: black !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.3free')</h2>
+                <p style="    color: black !important;"  class="parallex-para text-center text-white">@lang('new.Instant_Activation_desc')</p>
            </div>
         </div>
     </div>
@@ -1021,8 +1021,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <p class="parallex-para text-center text-white" style="color: black !important" ><span style="font: caption;color: black !important;" >@lang('new.new_store_desc')</span> </p>
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: black !important;"  >@lang('new.new_store_header')  </h2>
+                <p   style="    color: black !important;" class="parallex-para text-center text-white"  ><span style="font: caption;color: black !important;" >@lang('new.new_store_desc')</span> </p>
+                <h2  style="    color: black !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 "    >@lang('new.new_store_header')  </h2>
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/181" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('iptv.purchase_now') - €99</a>
 
             </div>
