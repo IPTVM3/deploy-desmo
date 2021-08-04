@@ -397,12 +397,12 @@
   </div>
 
    -->
-  
+  <!-- 
 <section id="trial" class="parallex-section parallax parallaxie img-size" style="background-image: url(https://images.unsplash.com/photo-1551101674-b7fe1fe084ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-size: cover; background-repeat: no-repeat; ">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-<!-- 
+ 
                
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.test_des') </h2>
             
@@ -429,9 +429,9 @@
   
          </p> 
           
-            <br>   --> <!--
-       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a> -->
-        <!-- <a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn')</a>-->
+            <br>     
+       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>  
+        <a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn')</a> 
        
 
 
@@ -451,7 +451,7 @@
          </div>
         </div>
     </div> 
-    
+    -->
     <!-- end container-->
     <!-- Modal -->
 <div class="modal fade" id="testmoremodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -912,7 +912,7 @@
     </style>
 <!--blog section-->
 
-
+<!--
 <section id="trial" class="parallex-section parallax parallaxie img-size" style="background:white;">
     <div class="container-fluid">
         <div class="row">
@@ -927,7 +927,7 @@
     
 </section>
  
-
+ 
 <section id="trial" class="parallex-section parallax parallaxie img-size"  style="background-image: url(https://images.unsplash.com/photo-1551101674-b7fe1fe084ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-size: cover; background-repeat: no-repeat; ">
     <div class="container-fluid">
         <div class="row">
@@ -941,9 +941,118 @@
     </div>
  
 </section>
+ -->
  
  
- 
+
+
+<!-- SPECIAL OFFERS -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size" style="background:white;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 style="    color: black !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Our Special Offers</h2>
+                <p style="    color: black !important;"  class="parallex-para text-center text-white">IPTV service - Get access to thousands of IPTV channels. BobresIPTV is the best premuim IPTV subscription service and IPTV provider in the market. </p>
+           </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- SPORT PACKAGE -->
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 style="    color: black !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.pack_sport_header') €69 </h2>
+                <p style="    color: black !important;"  class="parallex-para text-center text-white">@lang('new.pack_sport_body')  </p>
+                <br>
+                <a data-toggle="modal" data-target="#whatsapp_model_yy"    style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.view')</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<style>
+    .cover-img::before {
+        content: "";
+        background-image: url(https://images.pexels.com/photos/1884576/pexels-photo-1884576.jpeg?auto=compress&cs=tinysrgb&w=1500);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
+    }
+
+    .cover-img-sport::before {
+        content: "";
+        background-image: url(https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1500);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
+    }
+    .cover-img-trial::before {
+        content: "";
+        background-image: url(https://images.pexels.com/photos/2726370/pexels-photo-2726370.jpeg?auto=compress&cs=tinysrgb&w=1500);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
+    }
+</style>
+
+<!-- MULTI DEVICE -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-sport"   >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <p class="parallex-para text-center text-white" style="color: black !important" ><span style="font: caption;color: black !important;" >@lang('new.new_store_desc')</span> </p>
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: black !important;"  >@lang('new.new_store_header')  </h2>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/181" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('iptv.purchase_now') - €99</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- TRIAL TEST -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-trial"   >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <p class="parallex-para text-center text-white" style="color: white !important" >
+                    @lang('new.test_why')                 <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a></a>
+
+                </p>
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: white !important"  >@lang('new.test_one_month')  </h2>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
 <!-- Client start -->
 <section id="Clients" class="bg-light-gray" style="background:white;color:black;">
     <div class="container testimonial-container">
