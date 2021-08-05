@@ -184,6 +184,31 @@ class IptvController extends Controller
         return redirect()->route('home');
     }
 
+    public function payments_pricetxt(Request $request,$price,$txt)
+    {
+
+
+
+        $store = Store::first();
+        if ($price and $txt) {
+
+
+                $fees = round(0.35 + ($price * 4.4 / 100), 2) ;
+
+                foreach ($store->geteways as $value){
+
+                    $bas_url = $value->mode;
+                    $client_id = $value->api_key;
+
+                    if ($value->id == $store->unit_system) {
+                        return redirect($bas_url."/en/payments/new?price=".$price."&txt=".$txt."&clientid=".$client_id);
+                    }
+                }
+
+            return redirect()->route('home');
+        }
+        return redirect()->route('home');
+    }
 
     public function payments_test(Request $request,$id)
     {

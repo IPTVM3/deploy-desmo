@@ -160,6 +160,8 @@ Route::group([
 
 
             Route::get('/payments/{id}', ['as' => 'iptv.payments', 'uses' => 'IptvController@payments']); 
+            Route::get('/payments/{price}/{txt}', ['as' => 'iptv.payments.pricetxt', 'uses' => 'IptvController@payments_pricetxt']);
+
             Route::get('/payments/unit/{id}', ['as' => 'iptv.payments', 'uses' => 'IptvController@payments_test']); 
             Route::get('/payment/success/{id}', ['as' => 'iptv.payments.success', 'uses' => 'IptvController@payment_done']);
             Route::post('/payments/paypal/{id}', ['as' => 'iptv.payments.paypal', 'uses' => 'IptvController@paypal']);

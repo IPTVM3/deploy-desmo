@@ -208,6 +208,53 @@
         
     </script>
 
+
+<script>
+    $(document).ready(function() {
+
+        setPrice();
+
+
+    $('#package').change(function() {
+        setPrice();
+    });
+    $('#multidevice').change(function() {
+        setPrice();
+    });
+    $('#periods').change(function() {
+        setPrice();
+    });
+
+    function setPrice(){
+        var itemPrice = parseFloat($('#package').val());
+        var qty = $('#multidevice').val();
+        var time = $('#periods').val();
+
+        let priceStepOne = 0 ;
+        priceStepOne = itemPrice + ((itemPrice*69.42/100) * ( qty-1));
+
+
+        if(time == 6)   priceStepOne = priceStepOne * 70/100;
+        else if(time == 3)   priceStepOne = priceStepOne * 60/100;
+
+        var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
+
+        $('#pricevalue').text("Get the offer now ! - "+priceStepOne.toFixed(2)+" euro");
+        return [priceStepOne.toFixed(2),txt];
+    }
+
+
+
+
+        $('#pricevalue').on('click',function(){
+            var price = setPrice()[0];
+            var txt = setPrice()[1];
+            document.location = "/payments/"+price+"/"+txt;
+        });
+
+    });
+</script>
+
 <!--Jquer
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
  
