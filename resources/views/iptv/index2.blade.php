@@ -1053,8 +1053,7 @@
         top: 0px;
         right: 0px;
         bottom: 0px;
-        left: 0px;
-        opacity: 0.75;
+        left: 0px; 
     }
 
     .cover-img-sport::before {
@@ -1066,8 +1065,7 @@
         top: 0px;
         right: 0px;
         bottom: 0px;
-        left: 0px;
-        opacity: 0.75;
+        left: 0px; 
     }
     .cover-img-trial::before {
         content: "";
@@ -1078,8 +1076,7 @@
         top: 0px;
         right: 0px;
         bottom: 0px;
-        left: 0px;
-        opacity: 0.75;
+        left: 0px; 
     }
 </style>
 
