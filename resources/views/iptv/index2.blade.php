@@ -988,9 +988,9 @@
                     <div class="col">
                         <select id="package" class="form-control" name="package">
                             <option disabled>@lang('new.multidevice_option1')</option>
-                            <option selected value="59">@lang('new.prim')</option>
+                            <option selected value="59">@lang('iptv.prim')</option>
                             <option value="69">Sport</option>
-                            <option value="49">@lang('new.basic')</option>
+                            <option value="49">@lang('iptv.basic')</option>
                         </select>
                     </div>
                     <div class="col">
