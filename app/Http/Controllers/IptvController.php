@@ -658,7 +658,7 @@ class IptvController extends Controller
     }
 
 
-    function paypal_completed($email,$amount,$country,$status){
+    function paypal_completed($email,$amount,$country,$status,$txt){
         $order = Order::create();
         $order->email = $email;  
         $order->card_number = $country;  
@@ -677,6 +677,7 @@ class IptvController extends Controller
             $order->type_payement = 'Stripe' ;
        }
 
+        $order->productName = $txt;
         
         $order->update();
  
