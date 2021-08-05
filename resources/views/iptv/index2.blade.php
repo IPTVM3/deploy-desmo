@@ -951,7 +951,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <h2 style="    color: black !important;font-size: 35px;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated font-weight-bold" >Special Offers</h2>
+                <h2 style="    color: black !important;font-size: 35px;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated font-weight-bold" >🔥 @lang('new.3free') 🔥</h2>
             </div>
         </div>
     </div>
@@ -964,7 +964,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special Sport Package</h2>
-                <p style="    color: white !important;"  class="parallex-para text-center text-white">Get 1 Year Sport Package optimized to be stable in the games time and sports events</p>
+                <p style="    color: white !important;font-size:17px !important;"  class="parallex-para text-center text-white">Get 1 Year Sport Package optimized to be stable in the games time and sports events</p>
                 <br>
 
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Get it now !</a>
@@ -982,7 +982,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >Multi Devices package  </h2>
-                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;" >Enjoy our IPTV services on many devices , with reduced price !</span> </p>
+                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:17px !important;" >Enjoy our IPTV services on many devices , with reduced price !</span> </p>
                 <br>
                 <div class="form-row">
                     <div class="col">
@@ -1028,9 +1028,8 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >30-day package ! </h2>
-                <p class="parallex-para text-center text-white" style="color: white !important" >
-                    You can get 30 day full access to try our services now !<br> @lang('new.test_why')                 <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a></a>
-
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:17px !important;" >
+                    You can get 30 day full access to try our services now !      
                 </p>
                 <br>
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
