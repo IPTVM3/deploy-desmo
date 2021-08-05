@@ -964,7 +964,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.sport_package')</h2>
-                <p style="    color: white !important;font-size:17px !important;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
+                <p style="    color: white !important;font-size:19px !important;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
                 <br>
 
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:rgb(36, 193, 221) !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
@@ -982,7 +982,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >@lang('new.multidevice')</h2>
-                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:17px !important;" >@lang('new.multidevice_desc')</span> </p>
+                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:19px !important;" >@lang('new.multidevice_desc')</span> </p>
                 <br>
                 <div class="form-row">
                     <div class="col">
@@ -1028,7 +1028,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >30-day package ! </h2>
-                <p class="parallex-para text-center text-white" style="color: white !important;font-size:17px !important;" >
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;" >
                         @lang('new.test_trial')
                     </p>
                 <br>
