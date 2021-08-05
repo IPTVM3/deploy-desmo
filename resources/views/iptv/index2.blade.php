@@ -967,7 +967,7 @@
                 <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
                 <br>
 
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:rgb(36, 193, 221) !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:rgb(36, 193, 221) !important;FONT:caption;font-weight: bold;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
             </div>
         </div>
     </div>
@@ -1012,7 +1012,7 @@
 
                 </div>
                 <br>
-                <a  style="background:rgb(36, 193, 221) !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.multidevice_desc_button') - <span id="pricevalue"></span></a>
+                <a  style="background:rgb(36, 193, 221) !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;font-weight: bold;">@lang('new.multidevice_desc_button') - <span id="pricevalue"></span></a>
 
             </div>
         </div>
@@ -1028,7 +1028,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >30-day package ! </h2>
-                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;" >
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
                         @lang('new.test_trial')
                     </p>
                 <br>
