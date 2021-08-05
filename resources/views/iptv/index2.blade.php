@@ -964,7 +964,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.sport_package')</h2>
-                <p style="    color: white !important;font-size:19px !important;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
+                <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
                 <br>
 
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:rgb(36, 193, 221) !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
@@ -982,7 +982,7 @@
         <div class="row">
             <div class="col-lg-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >@lang('new.multidevice')</h2>
-                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:19px !important;" >@lang('new.multidevice_desc')</span> </p>
+                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:19px !important;font-weight: bold;" >@lang('new.multidevice_desc')</span> </p>
                 <br>
                 <div class="form-row">
                     <div class="col">
@@ -1032,7 +1032,7 @@
                         @lang('new.test_trial')
                     </p>
                 <br>
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important;FONT:caption;font-weight: bold;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
 
             </div>
         </div>
