@@ -92,12 +92,25 @@ return [
 
 
     'few_hours_trial_test_header1'=>'Test our IPTV Service for 1-Day Full Accesss', 
-    'few_hours_trial_test_btn1'=>'1 mes de acceso completo para',
+    'few_hours_trial_test_btn1'=>'1 month full access for',
 
 
     'few_hours_trial_test_header'=>'Test our IPTV service for few hours full access', 
     'few_hours_trial_test_btn'=>'few hours full access for free',
     'test_one_month'=> 'GET 30-DAY TEST PLANS TRIAL, FULL ACCESS',
+
+
+    'sport_package'=>'Special Sport Package',
+    'sport_package_desc'=>'Get 1 Year Sport Package optimized to be stable in the games time and sports events.',
+    'sport_package_button'=>'Get It Now!',
+    'multidevice'=>'Multi Devices package',
+    'multidevice_option1'=>'Choose Package Type',
+    'multidevice_option2'=>'Choose Number Of Devices ( Screens or Persons )',
+    'multidevice_option3'=>'Choose The Period of Subscription',
+    'multidevice_desc'=>'Enjoy our IPTV services on many devices , with reduced price !',
+    'multidevice_desc_button'=>'Get The Offer Now',
+    'device'=>'Devices',
+    'test_trial'=>'You can get 30 day full access to try our services now ! ' 
 ];
 
 ?> 

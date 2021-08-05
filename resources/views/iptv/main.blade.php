@@ -239,7 +239,7 @@
 
         var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
 
-        $('#pricevalue').text("Get the offer now ! - "+priceStepOne.toFixed(2)+" euro");
+        $('#pricevalue').text(priceStepOne.toFixed(2)+" euro");
         return [priceStepOne.toFixed(2),txt];
     }
 

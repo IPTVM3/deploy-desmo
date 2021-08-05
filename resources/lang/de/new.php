@@ -72,6 +72,19 @@ return [
     'few_hours_trial_test_header'=>'Testen Sie unseren IPTV-Dienst für einige Stunden uneingeschränkten Zugriff', 
     'few_hours_trial_test_btn'=>'wenige Stunden voller Zugang kostenlos',
     'test_one_month'=> '30-TÄGIGE TESTPLÄNE TESTEN ERHALTEN, VOLLER ZUGRIFF',  
+
+
+    'sport_package'=>'Spezielles Sportpaket',
+    'sport_package_desc'=>'Erhalte ein 1-Jahres-Sportpaket, das so optimiert ist, dass es in der Spielzeit und bei Sportereignissen stabil ist.',
+    'sport_package_button'=>'Jetzt holen!',
+    'multidevice'=>'Multi Devices-Paket',
+    'multidevice_option1'=>'Pakettyp wählen',
+    'multidevice_option2'=>'Anzahl der Geräte auswählen (Bildschirme oder Personen)',
+    'multidevice_option3'=>'Wählen Sie den Abonnementzeitraum',
+    'multidevice_desc'=>'Genießen Sie unsere IPTV-Dienste auf vielen Geräten zum reduzierten Preis!',
+    'multidevice_desc_button'=>'Jetzt Angebot anfordern',
+    'device'=>'Geräte',
+    'test_trial'=>'Sie können jetzt 30 Tage uneingeschränkten Zugang erhalten, um unsere Dienste auszuprobieren! '
 ];
 
 ?> 

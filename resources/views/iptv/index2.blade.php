@@ -963,11 +963,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special Sport Package</h2>
-                <p style="    color: white !important;font-size:17px !important;"  class="parallex-para text-center text-white">Get 1 Year Sport Package optimized to be stable in the games time and sports events</p>
+                <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.sport_package')</h2>
+                <p style="    color: white !important;font-size:17px !important;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
                 <br>
 
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Get it now !</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
             </div>
         </div>
     </div>
@@ -981,38 +981,38 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >Multi Devices package  </h2>
-                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:17px !important;" >Enjoy our IPTV services on many devices , with reduced price !</span> </p>
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >@lang('new.multidevice')</h2>
+                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:17px !important;" >@lang('new.multidevice_desc')</span> </p>
                 <br>
                 <div class="form-row">
                     <div class="col">
                         <select id="package" class="form-control" name="package">
-                            <option disabled>Choose Package Type</option>
-                            <option selected value="59">Premuim</option>
+                            <option disabled>@lang('new.multidevice_option1')</option>
+                            <option selected value="59">@lang('new.prim')</option>
                             <option value="69">Sport</option>
-                            <option value="49">Basic</option>
+                            <option value="49">@lang('new.basic')</option>
                         </select>
                     </div>
                     <div class="col">
                         <select id="multidevice" class="form-control" name="multidevice">
-                            <option disabled>Choose Number Of Devices</option>
-                            <option selected value="2">2 devices</option>
-                            <option value="3">3 devices</option>
-                            <option value="4">4 devices</option>
+                            <option disabled>@lang('new.multidevice_option2')</option>
+                            <option selected value="2">2 @lang('new.device')</option>
+                            <option value="3">3 @lang('new.device')</option>
+                            <option value="4">4 @lang('new.device')</option>
                         </select>
                     </div>
                     <div class="col">
                         <select id="periods" class="form-control" name="periods">
-                            <option disabled>Choose The Period</option>
-                            <option value="3">3 Months</option>
-                            <option value="6">6 Months</option>
-                            <option selected value="12">1 Year</option>
+                            <option disabled>@lang('new.multidevice_option3')</option>
+                            <option value="3">3 @lang('iptv.mounth')</option>
+                            <option value="6">6 @lang('iptv.mounth')</option>
+                            <option selected value="12">1 @lang('iptv.yr')</option>
                         </select>
                     </div>
 
                 </div>
                 <br>
-                <a id="pricevalue" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('iptv.purchase_now') - €99</a>
+                <a  style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.multidevice_desc_button') - <span id="pricevalue"></span></a>
 
             </div>
         </div>
@@ -1029,8 +1029,8 @@
             <div class="col-lg-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >30-day package ! </h2>
                 <p class="parallex-para text-center text-white" style="color: white !important;font-size:17px !important;" >
-                    You can get 30 day full access to try our services now !      
-                </p>
+                        @lang('new.test_trial')
+                    </p>
                 <br>
                 <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
 

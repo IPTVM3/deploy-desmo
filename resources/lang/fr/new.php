@@ -97,6 +97,19 @@ return [
     'few_hours_trial_test_header'=>'Testez notre service IPTV pendant quelques heures en accès complet', 
     'few_hours_trial_test_btn'=>'quelques heures d\'accès complet gratuit',
     'test_one_month'=> 'OBTENEZ UN ESSAI DES PLANS DE TEST DE 30 JOURS, ACCES COMPLET.',
+
+
+    'sport_package'=>'Forfait Spécial Sport',
+    'sport_package_desc'=>'Obtenez un forfait sport d\'un an optimisé pour être stable pendant la durée des jeux et des événements sportifs.',
+    'sport_package_button'=>'Get It Now!',
+    'multidevice'=>'Pack multi-périphériques',
+    'multidevice_option1'=>'Choisir le type de package',
+    'multidevice_option2'=>'Choisissez le nombre d\'appareils (écrans ou personnes)',
+    'multidevice_option3'=>'Choisir la période d\'abonnement',
+    'multidevice_desc'=>'Profitez de nos services IPTV sur de nombreux appareils, à prix réduit !',
+    'multidevice_desc_button'=>'Obtenir l\'offre maintenant',
+    'appareil'=>'Appareils',
+    'test_trial'=>'Vous pouvez obtenir un accès complet de 30 jours pour essayer nos services maintenant ! '
 ];
 
 ?> 
