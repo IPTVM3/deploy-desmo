@@ -658,7 +658,116 @@ class IptvController extends Controller
     }
 
 
-    function paypal_completed($email,$amount,$country,$status,$txt){
+    function paypal_completed($email,$amount,$country,$status){
+        $order = Order::create();
+        $order->email = $email;  
+        $order->card_number = $country;  
+
+        $order->status = 0;
+        if($status == 'COMPLETED'){
+             $order->status = 1;
+             $order->total =$amount;
+             $order->type_payement = 'PayPal' ;
+             
+        }
+
+        if($status == 'DONE'){
+            $order->status = 1; 
+            $order->total =$amount;
+            $order->type_payement = 'Stripe' ;
+       }
+ 
+        
+        $order->update();
+ 
+          
+        $this->mail = $order->email;
+        $this->orderID = 'N21-'. $order->id;
+        $this->price = $order->total.' ‎‎€';
+        
+     
+       
+
+
+         $local = app()->getLocale();
+         
+
+        $store = Store::first();
+ 
+      
+        $price = (float)$this->price;
+        $compare = (float)'5';
+        $this->ppl = "";
+        
+        if( $price > $compare ){
+
+            foreach ($this->paypal as $key => $value) {
+                if ($value->id == $store->unit_system) {
+                    $this->ppl = $this->paypal[$key]->client_account;
+                    unset($this->paypal[$key]); 
+                    if(isset($this->paypal[$key+1])){
+                        $store->unit_system = $this->paypal[$key+1]->id;
+                    }else{ 
+                     $store->unit_system = $this->paypal[0]->id;  
+                    }
+                    $store->update();
+                    break;
+               }
+            }
+
+        }
+    
+        $data = [
+            'email' => $this->mail,
+            'order' => $this->orderID,
+            'price' => $this->price, 
+            'paypal' => $this->ppl,
+            'country' => $order->card_number,
+            'date' => $order->created_at,
+            ];
+
+            
+     
+        Mail::send('mail.mail_notifications', $data , function($message)
+        {
+            $message->to('info.bobres@gmail.com' ,'New Payments Of '.$this->price)->subject($this->orderID.' => '.$this->price.' => '.$this->ppl);  
+        });
+
+
+
+
+     
+
+         if($local == 'es'){
+   
+             Mail::send('mail.mail_order_es', $data , function($message)
+             {
+                 $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+             });
+           
+         }elseif($local == 'de'){
+   
+             Mail::send('mail.mail_order_de', $data , function($message)
+             {
+                 $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+             });
+   
+         }else{
+   
+            
+           Mail::send('mail.mail_order_en', $data , function($message)
+           {
+               $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+           }); 
+   
+         }
+
+
+
+        return redirect()->route('iptv.orders.steps',$order->id);
+    }
+
+    function paypal_completedNew($email,$amount,$country,$status,$txt){
         $order = Order::create();
         $order->email = $email;  
         $order->card_number = $country;  
