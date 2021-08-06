@@ -967,7 +967,7 @@
                 <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
                 <br>
 
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
             </div>
         </div>
     </div>
@@ -1012,7 +1012,7 @@
 
                 </div>
                 <br>
-                <a  style="background:gold !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;font-weight: bold;">@lang('new.multidevice_desc_button') - <span id="pricevalue"></span></a>
+                <a  style="background:gold !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;font-weight: bold;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:red;"></span></a>
 
             </div>
         </div>
@@ -1032,7 +1032,7 @@
                         @lang('new.test_trial')
                     </p>
                 <br>
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:gold !important;FONT:caption;font-weight: bold;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
 
             </div>
         </div>
