@@ -53,12 +53,7 @@ class GetewayController extends Controller
                     "GERMANY 2 PAYPAL (Pplgermany2@outlook.com)",
                     "AU0Qm0Q_4BGtHVXtANBpB5-DArCZ63M9sue4GecE7eQyD74gmcKTny-QYj6rCYmV-o2n8bmB1EOE8WfE"
                 )
-
-            ,
-                array(
-                    "GERMANY PAYPAL (bobresworld@gmail.com)",
-                    "AUeRUNejh9Q9gX-IpIL5erP792HYAY-KOyveJbl7AXamj5tmoa3WNVCgWNcDGVjmP5iwTCX-4chyJXl_"
-                )
+ 
               );
           
 
