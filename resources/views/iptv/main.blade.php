@@ -225,6 +225,7 @@
         setPrice();
     });
 
+
     function setPrice(){
         var itemPrice = parseFloat($('#package').val());
         var qty = $('#multidevice').val();

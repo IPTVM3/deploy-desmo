@@ -1057,7 +1057,7 @@
 
     .cover-img-sport::before {
         content: "";
-        background-image: url({{ asset('iptv_update/images/1.jpg') }});
+        background-image: url({{ asset('iptv_update/images/new.jpg') }});
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
