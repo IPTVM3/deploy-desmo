@@ -1050,12 +1050,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >30-day package ! </h2>
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >BECOME AN IPTV RESELLER</h2>
                 <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
-                        @lang('new.test_trial')
+                Our IPTV reseller program helps you to live up to the expectations of your customers. Join the ship and enjoy dozens of perks with our program now.
                     </p>
                 <br>
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+                <a href="https://www.bobres.co/en/contact" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">Contact Us</a>
 
             </div>
         </div>
@@ -1101,7 +1101,7 @@
     }
     .cover-img-reselling::before {
         content: "";
-        background-image: url({{ asset('iptv_update/images/lll.jpg') }});
+        background-image: url(https://www.oec.oil.gov.iq/uploads/files/planning.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
