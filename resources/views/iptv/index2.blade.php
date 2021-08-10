@@ -977,7 +977,7 @@
 
 <!-- MULTI DEVICE -->
 
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-sport"   >
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-sport"  style="margin-top: 1px;margin-bottom: 1px;" >
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
