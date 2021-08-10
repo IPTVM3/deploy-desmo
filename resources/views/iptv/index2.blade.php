@@ -986,7 +986,7 @@
                 <br>
                 <div class="form-row" style="width:60%;margin-left: 20%;">
                     <div class="col-md-6" style="display: none;">
-                        <select id="package" class="form-control" name="package">
+                        <select id="package" class="form-control" name="package" style="font-weight: bold">
                             <option disabled>@lang('new.multidevice_option1')</option>
                             <option selected value="59">@lang('iptv.prim')</option>
                             <option value="69">Sport</option>
@@ -995,7 +995,7 @@
                     </div>
                 
                     <div class="col-md-6">
-                        <select id="multidevice" class="form-control" name="multidevice">
+                        <select id="multidevice" class="form-control" name="multidevice" style="font-weight: bold">
                             <option disabled>@lang('new.multidevice_option2')</option>
                             <option selected value="2">2 @lang('new.device')</option>
                             <option value="3">3 @lang('new.device')</option>
@@ -1003,7 +1003,7 @@
                         </select>
                     </div>
                     <div class="col">
-                        <select id="periods" class="form-control" name="periods">
+                        <select id="periods" class="form-control" name="periods" style="font-weight: bold">
                             <option disabled>@lang('new.multidevice_option3')</option>
                             <option value="3">3 @lang('iptv.mounth')</option>
                             <option value="6">6 @lang('iptv.mounth')</option>
