@@ -1000,6 +1000,8 @@
                             <option selected value="2">2 @lang('new.device')</option>
                             <option value="3">3 @lang('new.device')</option>
                             <option value="4">4 @lang('new.device')</option>
+                            <option value="5">5 @lang('new.device')</option>
+                            <option value="6">6 @lang('new.device')</option>
                         </select>
                     </div>
                     <div class="col">
@@ -1042,6 +1044,25 @@
 </section>
 
 
+<!-- RESELLING TEST -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling"   >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >30-day package ! </h2>
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
+                        @lang('new.test_trial')
+                    </p>
+                <br>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
 
 <style>
     .cover-img::before {
@@ -1068,6 +1089,17 @@
         left: 0px; 
     }
     .cover-img-trial::before {
+        content: "";
+        background-image: url({{ asset('iptv_update/images/lll.jpg') }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
+    .cover-img-reselling::before {
         content: "";
         background-image: url({{ asset('iptv_update/images/lll.jpg') }});
         background-size: cover;
