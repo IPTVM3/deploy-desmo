@@ -984,7 +984,7 @@
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >@lang('new.multidevice')</h2>
                 <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:19px !important;font-weight: bold;" >@lang('new.multidevice_desc')</span> </p>
                 <br>
-                <div class="form-row" style="width:70%;margin-left: 15%;">
+                <div class="form-row" style="width:60%;margin-left: 20%;">
                     <div class="col-md-6" style="display: none;">
                         <select id="package" class="form-control" name="package">
                             <option disabled>@lang('new.multidevice_option1')</option>
