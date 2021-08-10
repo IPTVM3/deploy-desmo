@@ -959,7 +959,7 @@
 </section>
 
 <!-- SPORT PACKAGE -->
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img" >
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
@@ -1026,7 +1026,7 @@
 
 <!-- TRIAL TEST -->
 
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-trial"   >
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-trial"  style="margin-top: 1px;margin-bottom: 1px;" >
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
@@ -1046,7 +1046,7 @@
 
 <!-- RESELLING TEST -->
 
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling"   >
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style="margin-top: 1px;margin-bottom: 1px;"  >
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
