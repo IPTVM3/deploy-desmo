@@ -985,7 +985,7 @@
                 <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:19px !important;font-weight: bold;" >@lang('new.multidevice_desc')</span> </p>
                 <br>
                 <div class="form-row">
-                    <div class="col">
+                    <div class="col" style="display: none;">
                         <select id="package" class="form-control" name="package">
                             <option disabled>@lang('new.multidevice_option1')</option>
                             <option selected value="59">@lang('iptv.prim')</option>
