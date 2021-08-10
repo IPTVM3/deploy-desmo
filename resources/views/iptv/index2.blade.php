@@ -979,13 +979,13 @@
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-sport"  style="margin-top: 1px;margin-bottom: 1px;" >
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center text-white">
+        <div class="row justify-content-md-center"> 
+            <div class="col-md-12 text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >@lang('new.multidevice')</h2>
                 <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:19px !important;font-weight: bold;" >@lang('new.multidevice_desc')</span> </p>
                 <br>
                 <div class="form-row">
-                    <div class="col" style="display: none;">
+                    <div class="col-md-6" style="display: none;">
                         <select id="package" class="form-control" name="package">
                             <option disabled>@lang('new.multidevice_option1')</option>
                             <option selected value="59">@lang('iptv.prim')</option>
@@ -993,8 +993,8 @@
                             <option value="49">@lang('iptv.basic')</option>
                         </select>
                     </div>
-                    <br>
-                    <div class="col">
+                
+                    <div class="col-md-6">
                         <select id="multidevice" class="form-control" name="multidevice">
                             <option disabled>@lang('new.multidevice_option2')</option>
                             <option selected value="2">2 @lang('new.device')</option>
