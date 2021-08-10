@@ -130,7 +130,7 @@ At Susan IPTV, we believe that quality and reliability is what you deserve and w
     'get_ur_trial'=>'Get Your Free Trial Now.',
     'whatsapp_para'=>'After Submitting the Form We Will Send You Your IPTV Trial. ',
     'basic'=>'Basic',
-    'prim'=>'Premuim',
+    'prim'=>'Premium',
     'Refound'=>'Refund ',
     'Updates'=>'Updates',
     '2device'=>'Two Connections'

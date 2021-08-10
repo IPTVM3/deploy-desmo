@@ -106,7 +106,7 @@ return [
     'multidevice_option1'=>'Choisir le type de package',
     'multidevice_option2'=>'Choisissez le nombre d\'appareils (écrans ou personnes)',
     'multidevice_option3'=>'Choisir la période d\'abonnement',
-    'multidevice_desc'=>'Profitez de nos services IPTV sur de nombreux appareils, à prix réduit !',
+    'multidevice_desc'=>'Profitez de nos services IPTV premium sur de nombreux appareils, à prix réduit !',
     'multidevice_desc_button'=>'Obtenir l\'offre maintenant',
     'appareil'=>'Appareils',
     'test_trial'=>'Vous pouvez obtenir un accès complet de 30 jours pour essayer nos services maintenant ! '

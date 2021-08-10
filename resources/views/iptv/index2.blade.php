@@ -993,6 +993,7 @@
                             <option value="49">@lang('iptv.basic')</option>
                         </select>
                     </div>
+                    <br>
                     <div class="col">
                         <select id="multidevice" class="form-control" name="multidevice">
                             <option disabled>@lang('new.multidevice_option2')</option>
