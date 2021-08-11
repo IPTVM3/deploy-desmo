@@ -322,7 +322,10 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="recipient-name" class="col-form-label">EMAIl</label>
-                                                    <input type="email" class="form-control" value="{{ $order->email }}" name="email">
+                                                    <select class="form-control" id="exampleFormControlSelect1" name="email">
+                                                         <option value="{{ $order->email }}">{{$order->email }}</option> 
+                                                         <option value="{{ $order->zip }}">{{$order->zip }}</option> 
+                                                    </select> 
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="recipient-name" class="col-form-label">TYPE</label>
