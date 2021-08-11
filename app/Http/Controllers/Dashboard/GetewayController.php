@@ -48,10 +48,20 @@ class GetewayController extends Controller
                     "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH"
                 )
 
-            ,
+                ,
                 array(
                     "GERMANY 2 PAYPAL (Pplgermany2@outlook.com)",
                     "AU0Qm0Q_4BGtHVXtANBpB5-DArCZ63M9sue4GecE7eQyD74gmcKTny-QYj6rCYmV-o2n8bmB1EOE8WfE"
+                )
+                ,
+                array(
+                    "paypal hemza maroc",
+                    "AYJp58GxGCHrV-Q7vVxliZhtdNbOX7yWG4jQfhIyQy5dkg6RsIkeEYwEUQ1UXoNYkL-2EpdFp6D41maN"
+                )
+                ,
+                array(
+                    "paypal france X",
+                    "AYhASIyCgx_nwEIHXJF46EN2LgLjgp5YGM-X5g19Q3-S0K4RXbC-ptEI2_Ea7WEdF1Ghp0q1NbthAQVd"
                 )
  
               );
