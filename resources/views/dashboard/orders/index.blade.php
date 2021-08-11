@@ -176,7 +176,8 @@
                                             <b>{{ 'N21-'.$order->id }}</b>
                                         </td>
                                         <td>
-                                            {{ $order->email }}
+                                            {{ $order->email }} / 
+                                            {{ $order->zip }}
                                         </td>
 
 
