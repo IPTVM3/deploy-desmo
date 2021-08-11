@@ -557,7 +557,48 @@ class IptvController extends Controller
         $order->zip = $request->email;
         $order->update();
 
+        $this->mail = $order->email;
+        if($order->zip) {
+            $this->mail = $order->zip;
+        }
+          
+        $this->mail = $order->email;
+        $this->orderID = 'N21-'. $order->id;
+        $this->price = $order->total.' ‎‎€';
 
+        $data = [
+            'email' => $this->mail,
+            'order' => $this->orderID,
+            'price' => $this->price, 
+            'paypal' => "",
+            'country' => $order->card_number,
+            'date' => $order->created_at,
+            ];
+
+
+        if($local == 'es'){
+   
+            Mail::send('mail.mail_order_es', $data , function($message)
+            {
+                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+            });
+          
+        }elseif($local == 'de'){
+  
+            Mail::send('mail.mail_order_de', $data , function($message)
+            {
+                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+            });
+  
+        }else{
+  
+           
+          Mail::send('mail.mail_order_en', $data , function($message)
+          {
+              $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+          }); 
+  
+        }
 
         return view('iptv.done',compact('order'));
     }
@@ -737,30 +778,6 @@ class IptvController extends Controller
 
 
      
-
-         if($local == 'es'){
-   
-             Mail::send('mail.mail_order_es', $data , function($message)
-             {
-                 $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
-             });
-           
-         }elseif($local == 'de'){
-   
-             Mail::send('mail.mail_order_de', $data , function($message)
-             {
-                 $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
-             });
-   
-         }else{
-   
-            
-           Mail::send('mail.mail_order_en', $data , function($message)
-           {
-               $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
-           }); 
-   
-         }
 
 
 

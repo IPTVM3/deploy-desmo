@@ -131,8 +131,12 @@ class OrderController extends Controller
          'local' => $order->card_number, 
          ];
 
-         
+
          $this->email =  $order->email; 
+        if($order->zip){
+            $this->email =  $order->zip; 
+        }
+         
          $this->id =  $order->id;
 
         Mail::send('mail.mail_undone', $data , function($message){
