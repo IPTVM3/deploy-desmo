@@ -323,8 +323,14 @@
                                                 <div class="form-group">
                                                     <label for="recipient-name" class="col-form-label">EMAIl</label>
                                                     <select class="form-control" id="exampleFormControlSelect1" name="email">
-                                                         <option value="{{ $order->zip }}">{{$order->zip }}</option> 
+
+                                                    @if(strtolower(trim($order->email)) == strtolower(trim($order->zip)) )
+                                                      <option value="{{ $order->email }}">{{$order->email }}</option> 
+                                                    @else 
+                                                    <option value="{{ $order->zip }}">{{$order->zip }}</option> 
                                                          <option value="{{ $order->email }}">{{$order->email }}</option> 
+                                                    @endif
+
                                                     </select> 
                                                 </div>
                                                 <div class="form-group">
