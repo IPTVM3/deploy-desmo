@@ -176,8 +176,14 @@
                                             <b>{{ 'N21-'.$order->id }}</b>
                                         </td>
                                         <td>
-                                            {{ $order->email }} / 
+
+                                        @if(strtolower(trim($order->email)) == strtolower(trim($order->zip)) )
+                                             {{ $order->email }}
+                                        @else
+                                              {{ $order->email }} / 
                                             {{ $order->zip }}
+                                        @endif
+                                            
                                         </td>
 
 
