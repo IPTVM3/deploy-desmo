@@ -202,7 +202,7 @@ left: 35%;
 
         <div class="form-group">
           <label for="exampleInputEmail1">Your Email</label>
-          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="{{ $order->email }}" required>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"   required>
           <small id="emailHelp" class="form-text text-muted">You will get the activation code on this email</small>
         </div>
     
