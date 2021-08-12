@@ -1124,7 +1124,7 @@
     <div class="container">
         <div class="row text-center" >
             <div class="col-xs-12" style="margin-bottom: 50px;">
-                <h6>@lang('amos.boxs_desc')</h6>
+                
                 <h2>@lang('amos.boxs_header')  </h2>
 
 
@@ -1138,7 +1138,7 @@
 
 
 
-                    <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom:20px;" >
+                    <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom:30px;" >
 
                         <div class="card price-box">
                             <img class="card-img" src="{{ asset('img/'.$product->img1) }}" alt="Vans">
