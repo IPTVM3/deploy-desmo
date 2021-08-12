@@ -1127,7 +1127,7 @@
                 
 
             <h2>Devices Offer</h2>
-            <h6>@lang('amos.boxs_header')  </h6>
+            <p>@lang('amos.boxs_header')  </p>
 
 
 
