@@ -1125,7 +1125,9 @@
         <div class="row text-center" >
             <div class="col-xs-12" style="margin-bottom: 50px;">
                 
-                <h2>@lang('amos.boxs_header')  </h2>
+
+            <h2>Devices Offer</h2>
+            <h6>@lang('amos.boxs_header')  </h6>
 
 
 
