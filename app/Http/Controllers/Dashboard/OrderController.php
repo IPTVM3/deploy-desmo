@@ -123,12 +123,15 @@ class OrderController extends Controller
 
         $order = Order::find($id);
         
+
+        $local = "en";
+        if($order->card_number) $local = $order->card_number;
          
         $data = [
          'email' => $order->email,
          'order' => $order->id,
          'price' => $order->total, 
-         'local' => $order->card_number, 
+         'local' => $local, 
          ];
 
 
@@ -196,6 +199,7 @@ class OrderController extends Controller
            $order = Order::find($value);
            if($order != null) sleep(3);
                   
+
             $data = [
                 'email' => $order->email,
                 'order' => $order->id, 
@@ -225,6 +229,12 @@ class OrderController extends Controller
         if($order){
             $type = $request->type; 
             $email = $request->email;
+
+
+            $local = "en";
+            if($order->card_number) $local = $order->card_number;
+
+
             if($request->m3u != "" and $request->mac == ""){
 
                 $query = parse_url($request->m3u, PHP_URL_QUERY);
@@ -247,7 +257,7 @@ class OrderController extends Controller
                     'username' => $username,
                     'password' => $password,
                     'host' => $base,
-                    'local' => $order->card_number, 
+                    'local' => $local, 
                 ];
                 
                 $order->support = $base;
@@ -266,7 +276,7 @@ class OrderController extends Controller
                     'email' => $email,
                     'mac'=> $request->mac, 
                     'portal' => $request->portal, 
-                    'local' => $order->card_number, 
+                    'local' => $local, 
                 ];
 
                 $order->support = $request->portal;
