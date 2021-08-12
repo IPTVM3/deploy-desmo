@@ -1125,9 +1125,7 @@
         <div class="row text-center" >
             <div class="col-xs-12" style="margin-bottom: 50px;">
                 
-
-            <h2>Devices Offer</h2>
-            <p>@lang('amos.boxs_header')  </p>
+                <h2>@lang('amos.boxs_header')  </h2>
 
 
 
@@ -1202,7 +1200,6 @@
         border: 2px solid transparent;
     }
 
-
     .pur_button:hover{
         height: 50px;
         line-height: 52px;
@@ -1214,6 +1211,8 @@
         border-radius: 56px; 
         border: 2px solid transparent;
     }
+
+    
 
 
     .card-notify-year {
