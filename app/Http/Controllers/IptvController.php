@@ -533,7 +533,8 @@ class IptvController extends Controller
 
     function payment_done(Request $request,$id){ 
 
-        
+        $local = app()->getLocale();
+
 
         $order = Order::find($id);
         if($request->optradio == "1"){
@@ -775,11 +776,7 @@ class IptvController extends Controller
         });
 
 
-
-
-     
-
-
+ 
 
         return redirect()->route('iptv.orders.steps',$order->id);
     }
