@@ -613,7 +613,7 @@
                                               </tbody>
                                               <tbody>
                                                 <tr>
-                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">Wenn Sie ein Problem oder eine Frage haben, kontaktieren Sie uns bitte <br><strong>Bobres.contact@gmail.com</strong> <br><strong>Www.bobres.com</strong></td>
+                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">Wenn Sie ein Problem oder eine Frage haben, kontaktieren Sie uns bitte <br><strong>contact.bobres@gmail.com</strong> <br><strong>Www.bobres.com</strong></td>
                                                 </tr>
                                                 <tr>
                                                   <td class="pc-sm-h-20" height="15" style="line-height: 1px; font-size: 1px">&nbsp;</td>
