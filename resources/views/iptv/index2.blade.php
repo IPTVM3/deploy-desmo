@@ -1380,6 +1380,208 @@
     </div><!--end container-->
 </section>
 
+
+
+<!-- FAQs -->
+
+
+
+
+<section class="faq transition text-center" id="faq">
+    <div class="container">
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center wow zoomIn">
+                        <h1>Frequently Asked Questions</h1>
+                        <span></span>
+                        <p>@lang('amos.Quest')</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        @lang('amos.accessDevice')
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p> @lang('amos.accessDetails')</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        @lang('new.test_why')                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+            <p>                                  @lang('new.test_body')
+            </p>
+                                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        @lang('amos.servicePro')                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>                                  @lang('amos.serviceDetails')
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        @lang('amos.macAddr')                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>                                    @lang('amos.macDetails')
+                                    </p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        @lang('amos.stbug')                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>                                  @lang('amos.stbugDetails')
+                                    </p>
+                                    <p>
+                                        @lang('amos.stbugDetails2')
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSex">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSex" aria-expanded="false" aria-controls="collapseSex">
+                                        @lang('amos.multiData')                                  </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSex" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSex">
+                                <div class="panel-body">
+                                    <p>                                                                  @lang('amos.multiDetails')
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+
+
+    </div>
+</section>
+<style>
+    .template_faq {
+        background: #edf3fe none repeat scroll 0 0;
+    }
+    .panel-group {
+        background: #fff none repeat scroll 0 0;
+        border-radius: 3px;
+        box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.04);
+        margin-bottom: 0;
+        padding: 30px;
+    }
+    #accordion .panel {
+        border: medium none;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0 0 15px 10px;
+    }
+    #accordion .panel-heading {
+        border-radius: 30px;
+        padding: 0;
+    }
+    #accordion .panel-title a {
+        background: #ffb900 none repeat scroll 0 0;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 12px 20px 12px 50px;
+        position: relative;
+        transition: all 0.3s ease 0s;
+    }
+    #accordion .panel-title a.collapsed {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #ddd;
+        color: #333;
+    }
+    #accordion .panel-title a::after, #accordion .panel-title a.collapsed::after {
+        background: #ffb900 none repeat scroll 0 0;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+        color: #fff;
+        content: "";
+        font-family: fontawesome;
+        font-size: 25px;
+        height: 55px;
+        left: -20px;
+        line-height: 55px;
+        position: absolute;
+        text-align: center;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        width: 55px;
+    }
+    #accordion .panel-title a.collapsed::after {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #ddd;
+        box-shadow: none;
+        color: #333;
+        content: "";
+    }
+    #accordion .panel-body {
+        background: transparent none repeat scroll 0 0;
+        border-top: medium none;
+        padding: 20px 25px 10px 9px;
+        position: relative;
+    }
+    #accordion .panel-body p {
+        border-left: 1px dashed #8c8c8c;
+        padding-left: 25px;
+    }
+</style>
+
+
+
+
+
+
 <section class="blog-section" id="contact" style="background:white;">
     <div class="container">
         <div class="container">
