@@ -45,7 +45,8 @@ class HomeController extends Controller
         }
          
         
-      
+        $products_boxs = [Product::find(214),Product::find(224),Product::find(234)];
+
          
         $products = [Product::find(111),Product::find(121),Product::find(131)];
         $seelected_product = [Product::find(11),Product::find(31),Product::find(51)];
@@ -53,7 +54,7 @@ class HomeController extends Controller
         $multidevice = [Product::find(181),Product::find(201)];
 
         $product_prm = [Product::find(111),Product::find(121),Product::find(131)];
-        return view('home' ,compact('store','products','seelected_product','product_prm','month','multidevice'));
+        return view('home' ,compact('store','products','seelected_product','product_prm','month','multidevice','products_boxs'));
     }
 
     public function tohome(){
