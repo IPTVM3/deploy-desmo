@@ -1201,6 +1201,19 @@
     }
 
 
+    .pur_button:hover{
+        height: 50px;
+        line-height: 52px;
+        padding: 0 40px;
+        display: inline-block;
+        color: black;
+        background: rgb(36, 193, 221) !important;
+        font-weight: 500;
+        border-radius: 56px; 
+        border: 2px solid transparent;
+    }
+
+
     .card-notify-year {
 
         position: absolute;
