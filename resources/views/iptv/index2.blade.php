@@ -1120,7 +1120,7 @@
 
 
 
-<section class="pricing" style="margin-bottom: -110px;" id="products">
+<section class="pricing"   id="products">
     <div class="container">
         <div class="row text-center" >
             <div class="col-xs-12" style="margin-bottom: 50px;">
@@ -1138,7 +1138,7 @@
 
 
 
-                    <div class="col-md-4 col-sm-4 col-xs-12" >
+                    <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom:10px;" >
 
                         <div class="card price-box">
                             <img class="card-img" src="{{ asset('img/'.$product->img1) }}" alt="Vans">
