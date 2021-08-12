@@ -967,7 +967,7 @@
                 <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
                 <br>
 
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button')</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button') - 69 euros</a>
             </div>
         </div>
     </div>
@@ -1138,7 +1138,7 @@
 
 
 
-                    <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom:10px;" >
+                    <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom:20px;" >
 
                         <div class="card price-box">
                             <img class="card-img" src="{{ asset('img/'.$product->img1) }}" alt="Vans">
@@ -1194,7 +1194,7 @@
         padding: 0 40px;
         display: inline-block;
         color: black;
-        background: gold;
+        background: rgb(36, 193, 221) !important;
         font-weight: 500;
         border-radius: 56px; 
         border: 2px solid transparent;
