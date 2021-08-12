@@ -1114,6 +1114,116 @@
 
 
 
+<!-- BOXs Section -->
+
+
+
+
+
+<section class="pricing" style="margin-bottom: -110px;" id="products">
+    <div class="container">
+        <div class="row text-center" >
+            <div class="col-xs-12" style="margin-bottom: 50px;">
+                <h6>@lang('amos.boxs_desc')</h6>
+                <h2>@lang('amos.boxs_header')  </h2>
+
+
+
+            </div>
+            <!-- end col-12 -->
+
+
+
+            @foreach($products_boxs as $product)
+
+
+
+                    <div class="col-md-4 col-sm-4 col-xs-12" >
+
+                        <div class="card price-box">
+                            <img class="card-img" src="{{ asset('img/'.$product->img1) }}" alt="Vans">
+
+                            <span class="card-notify-year">@lang('amos.plus_one')</span>
+
+                            <div class="card-body">
+                                <h4 class="card-title">   {{$product->title}}     </h4>
+                                <div class="ratings">
+                                    <p>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        ( {{$product->order}}  @lang('amos.reviews'))
+                                    </p>
+                                </div>
+                                <h3 class="cost">    <span style="color:#ff3f58;">€  {{$product->price_after}} </span>  <small class="pre-cost"> €   {{$product->price_before}}   </small></h3>
+
+                                <p class="card-text" style="margin-bottom: 20px;">
+                                    {{$product->description}}           </p>
+
+
+                               <a class="pur_button"  href="https://www.bobres.co/{{ app()->getLocale() }}/payments/{{$product->id}}" >@lang('amos.buy_now')</a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+        @endforeach
+
+        <!-- end col-4 -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>
+
+<style>
+    .like {
+        font-size: 1.5rem;
+    }
+
+
+
+    .pur_button{
+        height: 50px;
+        line-height: 52px;
+        padding: 0 40px;
+        display: inline-block;
+        color: black;
+        background: gold;
+        font-weight: 500;
+        border-radius: 56px; 
+        border: 2px solid transparent;
+    }
+
+
+    .card-notify-year {
+
+        position: absolute;
+        left: -10px;
+        top: -20px;
+        background: #f2d900;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color: #000;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .glyphicon {
+        font-size: 13px !important;
+        display: contents !important;
+        color: #8a39ee;
+    }
+
+
+</style>
+
+
 
 
 
