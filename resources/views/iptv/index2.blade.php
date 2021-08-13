@@ -1578,43 +1578,115 @@
 
 
 
-
-
-
-
-
-<section class="blog-section" id="contact" style="background:white;">
+<!-- CONTACT SECTION -->
+<section id="contact" class="parallax-section">
     <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="address-box wow fadeInUp" data-wow-delay="300">
-                        <h2 class="text-capitalize">@lang('new.bob_office'), Nice </h2>
-                        <p class="pt-3 pb-3">13 Rue Paul Déroulède, 06000 Nice, France</p>
-                        <p>@lang('new.office_tele')  : +33 7 510 367 12/ +33 7 536 115 76                        </p>
-                      <!--  <p>Whatsapp : <a href="https://wa.me/+33753133255" style="color:green">@lang('new.just_click')</a></p>-->
-                        <p>@lang('new.email') : contact.bobres@gmail.com</p> 
-                        <br>
-                    </div>
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <!-- SECTION TITLE -->
+                <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                    <h2>Get in touch</h2>
+                    <p>
+                        We believe in the timeliness of customer service, and would like to do everything to satisfy our customers. If you have any problems, comments or suggestions, please contact our customer service representatives.
+
+                    </p>
                 </div>
-                <div class="col-lg-6 wow fadeInUp">
-                    <!--Location Map here-->
-    
-                    <div  class="bg-light-gray ">
-                        <img   src="https://www.google.com/maps/d/thumbnail?mid=14oIus4D9ENmVMFj0CZQXLm4s4w8&hl=en"/>
-                    </div>
-    
-                    <!-- ends map -->
-                    
-                </div>
-    
-    
             </div>
+
+            <div class="col-md-7 col-sm-10">
+                <!-- CONTACT FORM HERE -->
+                <div class="wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="alert alert-danger" id="error_message" role="alert">  </div>
+                    <form id="contact-form" action="#" method="get">
+                        <div class="col-md-6 col-sm-6">
+                            <input type="text" class="form-control" name="ordernumber" id="ordernumber" placeholder="Order Number" >
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <input type="text" class="form-control" id="Subject" name="Subject" placeholder="Subject" required="">
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <textarea class="form-control" rows="5" id="massage" name="message" placeholder="Message" required=""></textarea>
+                        </div>
+                        <div class="col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6">
+                            <button id="submit_button" type="button" class="form-control" name="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 col-sm-8">
+                <!-- CONTACT INFO -->
+                <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
+                    <div class="section-title">
+                        <h2>Contact Info</h2>
+                        <p>
+                            All subscription (accounts) will send to your email, please check carefully.
+                            If you don't find anything, please check the junk mail!
+                            Or send message to this email: contact.bobres@gmail.com, we will response to you within 24 hours!
+                        </p>
+                    </div>
+<br>
+                    <p><i class="fa fa-map-marker"></i> 13 Rue Paul Déroulède, 06000 Nice, FRANCE</p>
+                    <p><i class="fa fa-comment"></i> <a href="contact.bobres@gmail.com">contact.bobres@gmail.com</a></p>
+                    <p><i class="fa fa-phone"></i> <a href="/contcat">Click Here</a></p>
+                </div>
+            </div>
+
         </div>
-        </div>
-    </div><!--end container-->
+    </div>
 </section>
 
+<style>
+    /*---------------------------------------
+  Contact section
+-----------------------------------------*/
+
+    .contact-info .fa {
+        padding-right: 5px;
+    }
+
+    #contact .form-control {
+        border: none;
+        border-bottom: 2px solid #f0f0f0;
+        border-radius: 0px;
+        box-shadow: none;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-transition: all ease-in-out 0.4s;
+        transition: all ease-in-out 0.4s;
+    }
+
+    #contact .form-control:focus {
+        border-bottom-color: #999999;
+    }
+
+    #contact input {
+        height: 55px;
+    }
+
+    #contact button#submit {
+        background: #2b2b2b;
+        border: none;
+        border-radius: 50px;
+        color: #ffffff;
+        height: 50px;
+        margin-top: 24px;
+    }
+
+    #contact button#submit:hover {
+        background: #7682cc;
+        color: #ffffff;
+    }
+
+
+</style>
 <!--end blog section-->
  
 

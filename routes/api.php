@@ -26,7 +26,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/checkout/paypal/order/completed', 'API\PaymentController@completed');
 Route::post('/sendmail', 'API\PaymentController@sendMail');
-
+Route::post('/contact/message', function (Request $request){ 
+    return Response::json([
+        'isSuccessful'=> true
+    ], 200);
+});
  
 Route::POST('/register', function (Request $request) {
    $user = null;

@@ -291,6 +291,55 @@ $('a.page-scroll').on('click', function(e){
 });
 
 });
+
+
+
+
+$(document).ready(function() {
+        $("#submit_button").click(function (){
+            var order_number = $("#ordernumber").val();
+            var subject = $("#Subject").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
+
+            if(message != "" && subject != "" && email != ""){
+
+
+                return fetch('http://localhost:8000/en/api/contact/message', {
+                    method: 'post',
+                    headers: {
+                        'content-type': 'application/json',
+                        "X-Requested-With": "XMLHttpRequest",
+                    },
+                    body: JSON.stringify({
+                        order_number:order_number,
+                        subject: subject,
+                        email:email,
+                        message:message
+                    })
+                })
+                    .then(function(response){
+                        // redirect to the completed page if paid
+                        $("#error_message").remove() ;
+
+                        console.log(response);
+                         alert("Message Sended");
+
+                    })
+                    .catch(function(error) {
+                        $("#error_message").text("Contact Message Failed !") ;
+
+
+                    });
+            }else{
+                $("#error_message").text("All Field Are Required !") ;
+            }
+
+
+        });
+    });
+
+
 </script>
 
 <!--Jquer
