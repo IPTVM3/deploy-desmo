@@ -305,7 +305,7 @@ $(document).ready(function() {
             if(message != "" && subject != "" && email != ""){
 
 
-                return fetch('http://localhost:8000/en/api/contact/message', {
+                return fetch('/api/contact/message', {
                     method: 'post',
                     headers: {
                         'content-type': 'application/json',
