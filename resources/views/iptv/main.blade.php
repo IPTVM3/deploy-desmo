@@ -134,7 +134,7 @@
                         <li><a class="wow fadeInDown mail-bg-hvr" href="mailto:contact.bobres@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <p class="company-about fadeIn grey-text text-capitalize">© 2020 Bobres. @lang('new.made_by') <a href="javascript:void(0);">Recod</a></p>
+                <p class="company-about fadeIn grey-text text-capitalize">© 2021 Bobres. @lang('new.made_by') <a href="https://www.re-cod.com">Recod</a></p>
             </div>
         </div>
     </div>
