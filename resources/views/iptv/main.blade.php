@@ -320,7 +320,7 @@ $(document).ready(function() {
                 })
                     .then(function(response){
                         // redirect to the completed page if paid
-                        $("#error_message").remove() ;
+                        $("#error_message").css("display", "none");
 
                         console.log(response);
                          alert("Message Sended");
@@ -328,11 +328,13 @@ $(document).ready(function() {
                     })
                     .catch(function(error) {
                         $("#error_message").text("Contact Message Failed !") ;
+                        $("#error_message").css("display", "block");
 
 
                     });
             }else{
                 $("#error_message").text("All Field Are Required !") ;
+                        $("#error_message").css("display", "block");
             }
 
 

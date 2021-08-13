@@ -1597,7 +1597,7 @@
             <div class="col-md-7 col-sm-10">
                 <!-- CONTACT FORM HERE -->
                 <div class="wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="alert alert-danger" id="error_message" role="alert">  </div>
+                    <div style="display:none;" class="alert alert-danger" id="error_message" role="alert">  </div>
                     <form id="contact-form" action="#" method="get">
                         <div class="col-md-6 col-sm-6">
                             <input type="text" class="form-control" name="ordernumber" id="ordernumber" placeholder="Order Number" >
