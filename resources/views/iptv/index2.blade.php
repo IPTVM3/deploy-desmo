@@ -1239,149 +1239,6 @@
 
 
 
-
-
-<!-- Client start -->
-<section id="Clients" class="bg-light-gray" style="background:white;color:black;">
-    <div class="container testimonial-container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="title text-center"> 
-                    <h2 class="gradient-text1 mb-3 mb-20 text-capitalize" style="color: black">@lang('new.happy_client')</h2>
-                 </div>
-            </div>
-        </div>
-        <div class="row m-0">
-            <div class="col-sm-12 align-items-center">
-                <div class="owl-testimonial owl-carousel owl-theme">
-                    <div class="testimonial-item item text-center">
-                        <div class="testimonial-box">
-                            <div class="testimonial-text position-relative mb-4" style="background: gold;">
-                                <p style="color: black;">Perfecto, recomiendo a este vendedor que responde y encuentra soluciones. </p>
-                                <span class="testimonial-date">March 06, 2019</span>
-                                <span class="testimonial-arrow position-absolute" ></span>
-                            </div>
-                        </div>
-                        <div class="testimonial-photo"><img alt="" src="https://pbs.twimg.com/profile_images/446726159347113984/h0YoGOnC.jpeg"></div>
-                        <h5 class="text-capitalize color-black mt-3 mb-1">Andrew Cusik</h5>
-                        <p class="color-pink blue">@lang('new.clients')</p>
-                    </div>
-                    <div class="testimonial-item item text-center">
-                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
-                            <p style="color: black;">Muy bien vendedor. respondí a todas mis preguntas y me ayudó cuando tuve problemas con los canales en los últimos años. la segunda vez que compro suscripciones nuevas y caja nueva. vendedor recomendado. </p>
-                            <span class="testimonial-date">March 20, 2018</span>
-                            <span class="testimonial-arrow position-absolute"  ></span>
-                        </div>
-
-                        <div class="testimonial-photo"><img alt="" src="data:image/jpeg;base64,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"></div>
-                        <h5 class="text-capitalize color-black mt-3 mb-1">Sara Jennifer</h5>
-                        <p class="color-pink blue">@lang('new.clients')</p>
-                    </div>
-                    <div class="testimonial-item item text-center">
-                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
-                            <p style="color: black;">very Good seller. answear on all my questions and helped me when problem with channels the past years. the second time i buy New subscriptions and New box. recommend seller. </p>
-                            <span class="testimonial-date">April 18, 2019</span>
-                            <span class="testimonial-arrow position-absolute"  ></span>
-                        </div>
-
-
-                        <div class="testimonial-photo"><img alt="" src="https://pbs.twimg.com/profile_images/378800000054677091/304c16d26b06e606de4666e8cfeef6f7_400x400.jpeg"></div>
-                        <h5 class="text-capitalize color-black mt-3 mb-1">Robin willson</h5>
-                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
-                    </div>
-                    <div class="testimonial-item  item text-center">
-                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
-                            <p style="color: black;">Vendedor excelente. ¡Gran servicio! Muy complaciente y me dio varias oportunidades para probar antes de comprar. Altamente recomendado.. </p>
-                            <span class="testimonial-date">Feb 10, 2019</span>
-                            <span class="testimonial-arrow position-absolute"  ></span>
-                        </div>
-                        <div class="testimonial-photo"><img alt="" src="https://cdn-otf-cas.prfct.cc/dfs1/eyJkIjo3MiwidyI6MzgwLCJoIjozODAsInVybCI6Imh0dHA6XC9cL2FkYXMtb3JlZ29uLWNhcy1vYml0cy5zMy5hbWF6b25hd3MuY29tXC9waG90b3NcL2NyZWF0ZV9zdG9yeVwvNWM0Nzc3MzFhZTQ0OFwvMDUzNTY3MDAyODE1NDg5NTAyNTEyZDkxMTY3MS5qcGciLCJtIjoiSlBHIn0="></div>
-                        <h5 class="text-capitalize color-black mt-3 mb-1">Jane Anderson</h5>
-                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
-                    </div>
-
-
-                    <div class="testimonial-item item text-center">
-                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
-                            <p style="color: black;">بائع ممتاز. خدمة عظيمة! مريح للغاية وأعطاني العديد من الفرص للاختبار قبل أن أشتري. موصى بة بشدة </p>
-                            <span class="testimonial-date">April 18, 2020</span>
-                            <span class="testimonial-arrow position-absolute"  ></span>
-                        </div>
-
-
-                        <div class="testimonial-photo"><img alt="" src="data:image/jpeg;base64,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"></div>
-                        <h5 class="text-capitalize color-black mt-3 mb-1">محمد علي</h5>
-                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
-                    </div>
-                    <div class="testimonial-item  item text-center">
-                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
-                            <p style="color: black;">Très bon vendeur. répondre à toutes mes questions et m'a aidé en cas de problème avec les chaînes ces dernières années. la deuxième fois que j'achète de nouveaux abonnements et une nouvelle boîte. recommander le vendeur. </p>
-                            <span class="testimonial-date">April 27, 2018</span>
-                            <span class="testimonial-arrow position-absolute" s ></span>
-                        </div>
-                        <div class="testimonial-photo"><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0PBZJo0m4-s7qf-iZRvnFqUHDrZ_TDIn6UKpPMfZO21SNJ3dg&usqp=CAU"></div>
-                        <h5 class="text-capitalize color-black mt-3 mb-1">Antoine Naris</h5>
-                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Client ends -->
-<style>
-    .testimonial-date{ color:black;}
-    .testimonial-text p { color:white;}
-    </style>
-
-<section class="number-section stats num-img-con parallax parallaxie"  style="background: black;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
-                <h2 class="number-heading text-center font-weight-600 img-clr" style="color: white">@lang('new.stati')</h2> 
-            </div>
-
-            <div class="row w-100 ml-auto mr-auto">
-                <div class="col-md-3">
-                    <div class="setting icon-hover-effect d-table">
-                        <span class="number-icons d-table-cell"><i class="fa fa-briefcase briefcase-icon img-clr-con"></i></span>
-                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">12</span>
-                        <p style="color:white;" class="digi-para">Servers</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="setting icon-hover-effect d-table">
-                        <span class="number-icons d-table-cell"><i class="fa fa-clock-o clock-icon img-clr-con"></i></span>
-                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">2465</span>
-                        <p style="color:white;" class="digi-para">@lang('new.work_h') </p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="setting icon-hover-effect d-table">
-                        <span class="number-icons d-table-cell"><i class="fa fa-star star-icon img-clr-con"></i></span>
-                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">612</span>
-                        <p style="color:white;" class="digi-para">@lang('new.pos')</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="setting icon-hover-effect d-table">
-                        <span class="number-icons d-table-cell"><i class="fa fa-heart heart-icon img-clr-con"></i></span>
-                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">735</span>
-                        <p style="color:white;" class="digi-para">@lang('new.happy_client')</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div><!--end container-->
-</section>
-
-
-
 <!-- FAQs -->
 
 
@@ -1576,6 +1433,150 @@
         padding-left: 25px;
     }
 </style>
+
+
+
+<!-- Client start -->
+<section id="Clients" class="bg-light-gray" style="background:white;color:black;">
+    <div class="container testimonial-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title text-center"> 
+                    <h2 class="gradient-text1 mb-3 mb-20 text-capitalize" style="color: black">@lang('new.happy_client')</h2>
+                 </div>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-sm-12 align-items-center">
+                <div class="owl-testimonial owl-carousel owl-theme">
+                    <div class="testimonial-item item text-center">
+                        <div class="testimonial-box">
+                            <div class="testimonial-text position-relative mb-4" style="background: gold;">
+                                <p style="color: black;">Perfecto, recomiendo a este vendedor que responde y encuentra soluciones. </p>
+                                <span class="testimonial-date">March 06, 2019</span>
+                                <span class="testimonial-arrow position-absolute" ></span>
+                            </div>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="https://pbs.twimg.com/profile_images/446726159347113984/h0YoGOnC.jpeg"></div>
+                        <h5 class="text-capitalize color-black mt-3 mb-1">Andrew Cusik</h5>
+                        <p class="color-pink blue">@lang('new.clients')</p>
+                    </div>
+                    <div class="testimonial-item item text-center">
+                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
+                            <p style="color: black;">Muy bien vendedor. respondí a todas mis preguntas y me ayudó cuando tuve problemas con los canales en los últimos años. la segunda vez que compro suscripciones nuevas y caja nueva. vendedor recomendado. </p>
+                            <span class="testimonial-date">March 20, 2018</span>
+                            <span class="testimonial-arrow position-absolute"  ></span>
+                        </div>
+
+                        <div class="testimonial-photo"><img alt="" src="data:image/jpeg;base64,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"></div>
+                        <h5 class="text-capitalize color-black mt-3 mb-1">Sara Jennifer</h5>
+                        <p class="color-pink blue">@lang('new.clients')</p>
+                    </div>
+                    <div class="testimonial-item item text-center">
+                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
+                            <p style="color: black;">very Good seller. answear on all my questions and helped me when problem with channels the past years. the second time i buy New subscriptions and New box. recommend seller. </p>
+                            <span class="testimonial-date">April 18, 2019</span>
+                            <span class="testimonial-arrow position-absolute"  ></span>
+                        </div>
+
+
+                        <div class="testimonial-photo"><img alt="" src="https://pbs.twimg.com/profile_images/378800000054677091/304c16d26b06e606de4666e8cfeef6f7_400x400.jpeg"></div>
+                        <h5 class="text-capitalize color-black mt-3 mb-1">Robin willson</h5>
+                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
+                    </div>
+                    <div class="testimonial-item  item text-center">
+                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
+                            <p style="color: black;">Vendedor excelente. ¡Gran servicio! Muy complaciente y me dio varias oportunidades para probar antes de comprar. Altamente recomendado.. </p>
+                            <span class="testimonial-date">Feb 10, 2019</span>
+                            <span class="testimonial-arrow position-absolute"  ></span>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="https://cdn-otf-cas.prfct.cc/dfs1/eyJkIjo3MiwidyI6MzgwLCJoIjozODAsInVybCI6Imh0dHA6XC9cL2FkYXMtb3JlZ29uLWNhcy1vYml0cy5zMy5hbWF6b25hd3MuY29tXC9waG90b3NcL2NyZWF0ZV9zdG9yeVwvNWM0Nzc3MzFhZTQ0OFwvMDUzNTY3MDAyODE1NDg5NTAyNTEyZDkxMTY3MS5qcGciLCJtIjoiSlBHIn0="></div>
+                        <h5 class="text-capitalize color-black mt-3 mb-1">Jane Anderson</h5>
+                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
+                    </div>
+
+
+                    <div class="testimonial-item item text-center">
+                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
+                            <p style="color: black;">بائع ممتاز. خدمة عظيمة! مريح للغاية وأعطاني العديد من الفرص للاختبار قبل أن أشتري. موصى بة بشدة </p>
+                            <span class="testimonial-date">April 18, 2020</span>
+                            <span class="testimonial-arrow position-absolute"  ></span>
+                        </div>
+
+
+                        <div class="testimonial-photo"><img alt="" src="data:image/jpeg;base64,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"></div>
+                        <h5 class="text-capitalize color-black mt-3 mb-1">محمد علي</h5>
+                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
+                    </div>
+                    <div class="testimonial-item  item text-center">
+                        <div class="testimonial-text position-relative mb-4" style="background: gold;">
+                            <p style="color: black;">Très bon vendeur. répondre à toutes mes questions et m'a aidé en cas de problème avec les chaînes ces dernières années. la deuxième fois que j'achète de nouveaux abonnements et une nouvelle boîte. recommander le vendeur. </p>
+                            <span class="testimonial-date">April 27, 2018</span>
+                            <span class="testimonial-arrow position-absolute" s ></span>
+                        </div>
+                        <div class="testimonial-photo"><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0PBZJo0m4-s7qf-iZRvnFqUHDrZ_TDIn6UKpPMfZO21SNJ3dg&usqp=CAU"></div>
+                        <h5 class="text-capitalize color-black mt-3 mb-1">Antoine Naris</h5>
+                        <p class="color-pink blue text-capitalize">@lang('new.clients')</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Client ends -->
+<style>
+    .testimonial-date{ color:black;}
+    .testimonial-text p { color:white;}
+    </style>
+
+<section class="number-section stats num-img-con parallax parallaxie"  style="background: black;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+                <h2 class="number-heading text-center font-weight-600 img-clr" style="color: white">@lang('new.stati')</h2> 
+            </div>
+
+            <div class="row w-100 ml-auto mr-auto">
+                <div class="col-md-3">
+                    <div class="setting icon-hover-effect d-table">
+                        <span class="number-icons d-table-cell"><i class="fa fa-briefcase briefcase-icon img-clr-con"></i></span>
+                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">12</span>
+                        <p style="color:white;" class="digi-para">Servers</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="setting icon-hover-effect d-table">
+                        <span class="number-icons d-table-cell"><i class="fa fa-clock-o clock-icon img-clr-con"></i></span>
+                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">2465</span>
+                        <p style="color:white;" class="digi-para">@lang('new.work_h') </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="setting icon-hover-effect d-table">
+                        <span class="number-icons d-table-cell"><i class="fa fa-star star-icon img-clr-con"></i></span>
+                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">612</span>
+                        <p style="color:white;" class="digi-para">@lang('new.pos')</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="setting icon-hover-effect d-table">
+                        <span class="number-icons d-table-cell"><i class="fa fa-heart heart-icon img-clr-con"></i></span>
+                        <span class="digi-number font-weight-600 num-scrolling img-clr-con-1">735</span>
+                        <p style="color:white;" class="digi-para">@lang('new.happy_client')</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><!--end container-->
+</section>
+
+
+
 
 
 
