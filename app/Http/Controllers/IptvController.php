@@ -577,29 +577,7 @@ class IptvController extends Controller
             ];
 
 
-        if($local == 'es'){
-   
-            Mail::send('mail.mail_order_es', $data , function($message)
-            {
-                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
-            });
-          
-        }elseif($local == 'de'){
-  
-            Mail::send('mail.mail_order_de', $data , function($message)
-            {
-                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
-            });
-  
-        }else{
-  
-           
-          Mail::send('mail.mail_order_en', $data , function($message)
-          {
-              $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
-          }); 
-  
-        }
+      
 
         return view('iptv.done',compact('order'));
     }
@@ -776,6 +754,29 @@ class IptvController extends Controller
         });
 
 
+        if($local == 'es'){
+   
+            Mail::send('mail.mail_order_es', $data , function($message)
+            {
+                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+            });
+          
+        }elseif($local == 'de'){
+  
+            Mail::send('mail.mail_order_de', $data , function($message)
+            {
+                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+            });
+  
+        }else{
+  
+           
+          Mail::send('mail.mail_order_en', $data , function($message)
+          {
+              $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+          }); 
+  
+        }
  
 
         return redirect()->route('iptv.orders.steps',$order->id);
