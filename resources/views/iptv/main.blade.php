@@ -324,6 +324,10 @@ $(document).ready(function() {
 
                         console.log(response);
                          alert("Message Sended");
+                        $("#ordernumber").text("");
+                        $("#Subject").text("");
+                        $("#email").text("");
+                        $("#message").text("");
 
                     })
                     .catch(function(error) {
