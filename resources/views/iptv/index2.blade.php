@@ -1589,8 +1589,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="address-box wow fadeInUp" data-wow-delay="300">
-                        <h2 class="text-capitalize">@lang('new.bob_office'), Paris </h2>
-                        <p class="pt-3 pb-3">14 Rue Léone Gennevilliers, Paris ,France</p>
+                        <h2 class="text-capitalize">@lang('new.bob_office'), Nice </h2>
+                        <p class="pt-3 pb-3">13 Rue Paul Déroulède, 06000 Nice, France</p>
                         <p>@lang('new.office_tele')  : +33 7 510 367 12/ +33 7 536 115 76                        </p>
                       <!--  <p>Whatsapp : <a href="https://wa.me/+33753133255" style="color:green">@lang('new.just_click')</a></p>-->
                         <p>@lang('new.email') : contact.bobres@gmail.com</p> 
@@ -1601,7 +1601,7 @@
                     <!--Location Map here-->
     
                     <div  class="bg-light-gray ">
-                        <img   src="{{ asset('iptv_update/images/map.JPG') }} "/>
+                        <img   src="https://www.google.com/maps/d/thumbnail?mid=14oIus4D9ENmVMFj0CZQXLm4s4w8&hl=en"/>
                     </div>
     
                     <!-- ends map -->
