@@ -186,9 +186,9 @@ Route::group([
         $products = Product::all();
          return view('iptv.iptvfamos',compact('products')); 
         })->name('v1');
-        Route::get('/channels',function (){  return view('iptv.channels_'); })->name('channels');
-        Route::get('/movies',function (){  return view('iptv.movies'); })->name('movies');
-        Route::get('/series',function (){  return view('iptv.series'); })->name('series');
+        Route::get('/iptv-channels-list',function (){  return view('iptv.channels_'); })->name('channels');
+        Route::get('/iptv-movies-list',function (){  return view('iptv.movies'); })->name('movies');
+        Route::get('/iptv-series-list',function (){  return view('iptv.series'); })->name('series');
         Route::get('/mentions',function (){  return view('iptv.mentionLegal'); })->name('mentionLegal');
         Route::get('/conditions',function (){  return view('iptv.condition'); })->name('condition');
         Route::get('/resseling',function (){  return view('iptv.resselling'); })->name('resseling');
