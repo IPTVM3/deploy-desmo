@@ -3,7 +3,8 @@
 
 
 @section('title')
-Customers Messgaes@endsection
+Customers Messgaes
+@endsection
 
  
 
