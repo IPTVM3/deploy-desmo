@@ -223,8 +223,7 @@ class OrderController extends Controller
     function done(Request $request,$id){
         $order = Order::find($id);
         $this->id = $id;
-        $this->mail = $request->email;
-        if($order->zip) $this->mail = $order->zip;
+        $this->mail = $request->email; 
         $data = [];
         if($order){
             $type = $request->type; 
