@@ -1610,7 +1610,7 @@
                             <input type="text" class="form-control" id="Subject" name="Subject" placeholder="Subject" required="">
                         </div>
                         <div class="col-md-12 col-sm-12">
-                            <textarea class="form-control" rows="5" id="massage" name="message" placeholder="Message" required=""></textarea>
+                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message" required=""></textarea>
                         </div>
                         <div class="col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6">
                             <button id="submit_button" type="button" class="form-control" name="submit">Send Message</button>

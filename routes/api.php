@@ -31,7 +31,7 @@ Route::post('/contact/message', function (Request $request){
 
     $message = \App\Review::create();
     $message->by = $request['email'].' '.$request['order_number'];
-    $message->body = $request['subject'].' \n\n '.$request['message'];
+    $message->body = $request['subject'].' -- '.$request['message'];
     $message->update();
 
 
