@@ -822,7 +822,7 @@
 
 <style>
     #cover{
-        background-color: white !important;
+        background-color: black !important;
         background-size: cover !important;
         text-align: center !important;
     }
@@ -900,7 +900,7 @@
 
 
     h3{
-        color:gold !important;
+        color:black !important;
     }
 
 </style>
