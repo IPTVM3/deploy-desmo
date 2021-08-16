@@ -66,10 +66,11 @@ Route::group([
             Route::get('/trials', ['as' => 'trials.index', 'uses' => 'TrialController@index']);
             Route::post('/whastapp/save', ['as' => 'whatsapp.save', 'uses' => 'TrialController@store']);
             Route::get('/trials/{id}/done', ['as' => 'trials.done', 'uses' => 'TrialController@done']);
-       
-           
+
+
 
         Route::get('/maillist', ['as' => 'maillist.index', 'uses' => 'MailListController@index']);
+        Route::get('/customer_messgaes', ['as' => 'messages.index', 'uses' => 'MailListController@messages']);
         Route::get('/maillist/send/{id}', function($id){
                 
             $email = MailList::find($id);

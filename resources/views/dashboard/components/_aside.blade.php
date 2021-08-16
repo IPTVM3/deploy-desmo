@@ -74,6 +74,14 @@
                                 <p>Mail List</p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('messages.index') }}"
+                               class="nav-link ">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Messages</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 

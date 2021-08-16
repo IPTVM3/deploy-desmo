@@ -27,6 +27,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/checkout/paypal/order/completed', 'API\PaymentController@completed');
 Route::post('/sendmail', 'API\PaymentController@sendMail');
 Route::post('/contact/message', function (Request $request){ 
+
+
+    $message = \App\Review::create();
+    $message->by = $request['email'].' '.$request['order_number'];
+    $message->body = $request['subject'].' \n\n '.$request['message'];
+    $message->update();
+
+
+
+
     return Response::json([
         'isSuccessful'=> true
     ], 200);
