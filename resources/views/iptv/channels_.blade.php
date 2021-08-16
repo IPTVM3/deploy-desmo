@@ -67,7 +67,7 @@
     <link href="{{ asset('iptvamos/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('iptvamos/css/style.css') }}" rel="stylesheet">
 
-    !-- Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
