@@ -141,7 +141,7 @@
 <section id="cover" class="min-vh-100" style="padding-top: 50px;">
 
     <div>
-        <h2 class="d-inline-flex" id="titre">@lang('amos.ChannelList')</h2>
+        <h2 class="d-inline-flex" id="titre">@lang('amos.ChannelList') (August 2021)</h2>
     </div>
     <div  class="container" style="padding-top: 30px;">
 
