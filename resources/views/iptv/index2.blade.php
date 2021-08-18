@@ -1634,7 +1634,7 @@
 <br>
                     <p><i class="fa fa-map-marker"></i> 13 Rue Paul Déroulède, 06000 Nice, FRANCE</p>
                     <p><i class="fa fa-comment"></i> <a href="contact.bobres@gmail.com">contact.bobres@gmail.com</a></p>
-                    <p><i class="fa fa-phone"></i> <a href="/contcat">Click Here</a></p>
+                    <p><i class="fa fa-phone"></i> <a href="/contact">Click Here</a></p>
                 </div>
             </div>
 
