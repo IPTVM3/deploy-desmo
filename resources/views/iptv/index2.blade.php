@@ -310,9 +310,9 @@
 
                 <br>
                    
-                <a href="{{ route('channels') }}" target="_blank" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Channels</a>
-                <a   href="{{ route('movies') }}" target="_blank" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Movies</a>
-                <a href="{{ route('series') }}" target="_blank" style="background:green !important" class="custom-btn   hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Series</a>
+                <a href="{{ route('channels') }}"  class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Channels</a>
+                <a   href="{{ route('movies') }}"   style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Movies</a>
+                <a href="{{ route('series') }}"  style="background:green !important" class="custom-btn   hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">Series</a>
                 
             
             
