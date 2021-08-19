@@ -323,11 +323,11 @@ $(document).ready(function() {
                         $("#error_message").css("display", "none");
 
                         console.log(response);
+                        $("#ordernumber").val('');
+                        $("#Subject").val('');
+                        $("#email").val('');
+                        $("#message").val('');
                          alert("Message Sended");
-                        $("#ordernumber").text("");
-                        $("#Subject").text("");
-                        $("#email").text("");
-                        $("#message").text("");
 
                     })
                     .catch(function(error) {
