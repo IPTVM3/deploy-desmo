@@ -67,6 +67,15 @@ Route::group([
             Route::post('/whastapp/save', ['as' => 'whatsapp.save', 'uses' => 'TrialController@store']);
             Route::get('/trials/{id}/done', ['as' => 'trials.done', 'uses' => 'TrialController@done']);
 
+
+            Route::group(['middleware' => ['auth', 'admin']], function () {
+
+
+                Route::get('/maillist', ['as' => 'maillist.index', 'uses' => 'MailListController@index']);
+                Route::get('/customer_messgaes', ['as' => 'messages.index', 'uses' => 'MailListController@messages']);
+
+            });
+
         Route::get('/maillist/send/{id}', function($id){
                 
             $email = MailList::find($id);
@@ -281,13 +290,6 @@ Route::group([
             //Route::get('/reset/reset_password_without_token',  'AccountsController@validateEmailRequest')->name('validateEmailRequest');
             //Route::post('/reset/reset_password_with_token', 'AccountsController@resetPassword');
 
-
-            //MESSAGES
-
-
-
-             Route::get('/maillist', ['as' => 'maillist.index', 'uses' => 'MailListController@index']);
-             Route::get('/customer_messgaes', ['as' => 'messages.index', 'uses' => 'MailListController@messages']);
 
             //Frais
             Route::group(['prefix' => 'frais'], function () {
