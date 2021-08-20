@@ -125,11 +125,13 @@
     <h2 class="d-none">hidden</h2>
         <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
             <div id="banner-main" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
-                <ul>
+                <ul> 
+
+
                     <!-- SLIDE  -->
                     <li   data-index="rs-01" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500">
                         <!-- MAIN IMAGE -->
-                        <img   src="{{  asset('iptv_update/images/b1.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10"  data-no-retina>
+                        <img   src="{{  asset('iptv_update/images/b1.jpg') }}" title="Best IPTV Subscription Service Provider 2021"  alt="Best IPTV Subscription Service Provider 2021" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10"  data-no-retina>
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption tp-resizeme"
                              data-x="['left','center','center','center']" data-hoffset="['10','0','0','0']"
@@ -181,7 +183,7 @@
                         <!-- SLIDE 2  -->
                     <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" >
                         <!-- MAIN IMAGE -->
-                        <img src="{{  asset('iptv_update/images/b 2.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                        <img src="{{  asset('iptv_update/images/b 2.jpg') }}" title="the lowest cost. for resellers"  alt="the lowest cost. for resellers"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                         <!-- LAYER NR. 2 -->
                         <div class="tp-caption tp-resizeme"
                              data-x="['right','right','right','center']" data-hoffset="['0','0','0','0']"
@@ -238,7 +240,7 @@
                     <!-- SLIDE 3  -->
                     <li data-index="rs-03" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" >
                         <!-- MAIN IMAGE -->
-                        <img src="{{  asset('iptv_update/images/b3.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                        <img src="{{  asset('iptv_update/images/b3.jpg') }}" title="Most IPTV services provide thousands of live TV channels"  alt="Most IPTV services provide thousands of live TV channels"   data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                         <!-- LAYER NR. 3 -->
                         <div class="tp-caption tp-resizeme"
                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -302,7 +304,7 @@
         <div class="row">
             <div class="col-lg-6 pr-5 wow fadeInLeft">
                 <div style="background:white;" class="rare-box"></div>
-                <img src="{{ asset('iptv_update/images/pk.png') }}" class="image-about position-relative w-100" style="margin-left: 16px;top: -180px;" alt="">
+                <img src="{{ asset('iptv_update/images/pk.png') }}" class="image-about position-relative w-100" style="margin-left: 16px;top: -180px;"  title="Over 150000 TV channels list and also 100000 to 240000 VODs"  alt="Over 150000 TV channels list and also 100000 to 240000 VODs"  >
             </div>
             <div class="col-lg-6 pl-6 center-about">
                 <h2 class="wow fadeInUp" data-wow-delay="400ms">  <span class="green" style="text-transform: uppercase;">@lang('new.slider_one_header') </span>  </h2> 
@@ -1141,7 +1143,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom:30px;" >
 
                         <div class="card price-box">
-                            <img class="card-img" src="{{ asset('img/'.$product->img1) }}" alt="Vans">
+                            <img class="card-img" src="{{ asset('img/'.$product->img1) }}"  title="The Best IPTV Boxes Available" alt="The Best IPTV Boxes Available">
 
                             <span class="card-notify-year">@lang('amos.plus_one')</span>
 
