@@ -63,6 +63,11 @@ class GetewayController extends Controller
                     "paypal france X",
                     "AYhASIyCgx_nwEIHXJF46EN2LgLjgp5YGM-X5g19Q3-S0K4RXbC-ptEI2_Ea7WEdF1Ghp0q1NbthAQVd"
                 )
+                ,
+                array(
+                    "paypal bnbihi",
+                    "AdfAF_Et7FsT0XaFiRnojjSByq-ShnQkULfe1xQyR-HNYRNAUAdKXLr__JRLMb5FNnqz5pF260LY9tYd"
+                )
  
               );
           
