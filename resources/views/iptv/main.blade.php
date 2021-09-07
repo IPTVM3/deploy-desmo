@@ -239,6 +239,13 @@
         setPrice();
 
 
+        $('#pricevalueMM').on('click',function(){
+            var price = setPrice()[0];
+            var txt = setPrice()[1];
+            document.location = "/payments/"+price+"/"+txt;
+        });
+
+
     $('#package').change(function() {
         setPrice();
     });
@@ -271,11 +278,7 @@
 
 
 
-        $('#pricevalueMM').on('click',function(){
-            var price = setPrice()[0];
-            var txt = setPrice()[1];
-            document.location = "/payments/"+price+"/"+txt;
-        });
+      
 
     });
 
