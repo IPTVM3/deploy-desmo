@@ -183,8 +183,7 @@
 <script src="{{ asset('iptv_update/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 <script src="{{ asset('iptv_update/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
 <script src="{{ asset('iptv_update/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script> 
-<!-- map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs4APPDpT3CRGCgk3Cmv9xBvEK5Lq3HGo"></script>
+<!-- map --> 
 <script src="{{ asset('iptv_update/js/maps.min.js') }}"></script>
 <!-- custom script -->
 <script src="{{ asset('iptv_update/js/script.js') }} "></script>
