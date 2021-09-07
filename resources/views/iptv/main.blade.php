@@ -271,7 +271,7 @@
 
 
 
-        $('#pricevalue').on('click',function(){
+        $('#pricevalueMM').on('click',function(){
             var price = setPrice()[0];
             var txt = setPrice()[1];
             document.location = "/payments/"+price+"/"+txt;
