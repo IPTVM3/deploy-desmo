@@ -235,18 +235,20 @@
 
 <script>
 
-        $('#pricevalueMM').on('click',function(){
-            var price = setPrice()[0];
-            var txt = setPrice()[1];
-            console.log("/payments/"+price+"/"+txt);
-            document.location = "/payments/"+price+"/"+txt;
-        });
+     
 
 
     $(document).ready(function() {
 
         setPrice();
 
+        $('#pricevalueMM').on('click',function(){
+            console.log('fuck u bitch.............');
+            var price = setPrice()[0];
+            var txt = setPrice()[1];
+            console.log("/payments/"+price+"/"+txt);
+            document.location = "/payments/"+price+"/"+txt;
+        });
 
      
 
