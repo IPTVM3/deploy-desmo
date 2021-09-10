@@ -1017,7 +1017,7 @@
 
                 </div>
                 <br>
-                <a  style="background:gold !important;FONT:caption;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;font-weight: bold;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:red;"></span></a>
+                <a  style="background:gold !important;FONT:caption;" id="pricevalueMM" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;font-weight: bold;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:red;"></span></a>
 
             </div>
         </div>
