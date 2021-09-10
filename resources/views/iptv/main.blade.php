@@ -266,6 +266,9 @@
 
             $('#pricevalue').text(priceStepOne.toFixed(2)+" euro");
 
+
+            var price = setPrice()[0];
+            var txt = setPrice()[1];
             var a = document.getElementById('pricevalueMM'); //or grab it by tagname etc
             a.href = "/payments/"+price+"/"+txt;
             return [priceStepOne.toFixed(2),txt];
