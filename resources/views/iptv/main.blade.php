@@ -265,12 +265,9 @@
             var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
 
             $('#pricevalue').text(priceStepOne.toFixed(2)+" euro");
-
-
-            var price = setPrice()[0];
-            var txt = setPrice()[1];
+ 
             var a = document.getElementById('pricevalueMM'); //or grab it by tagname etc
-            a.href = "/payments/"+price+"/"+txt;
+            a.href = "/payments/"+priceStepOne.toFixed(2)+"/"+txt;
             return [priceStepOne.toFixed(2),txt];
         }
 
