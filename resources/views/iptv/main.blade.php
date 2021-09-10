@@ -240,7 +240,37 @@
 
     $(document).ready(function() {
 
+        function setPrice(){
+            var itemPrice = parseFloat($('#package').val());
+            var qty = $('#multidevice').val();
+            var time = $('#periods').val();
+
+            let priceStepOne = 0 ;
+            priceStepOne = itemPrice + ((itemPrice*79.42/100) * ( qty-1));
+
+
+            if(time == 6)   priceStepOne = priceStepOne * 80/100;
+            else if(time == 3)   priceStepOne = priceStepOne * 70/100;
+
+            var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
+
+            $('#pricevalue').text(priceStepOne.toFixed(2)+" euro");
+            return [priceStepOne.toFixed(2),txt];
+        }
+
         setPrice();
+
+        $('#package').change(function() {
+        setPrice();
+        });
+        $('#multidevice').change(function() {
+            setPrice();
+        });
+        $('#periods').change(function() {
+            setPrice();
+        });
+        
+       
 
         $('#pricevalueMM').on('click',function(){
             console.log('fuck u bitch.............');
@@ -251,55 +281,21 @@
         });
 
      
-
-
-    $('#package').change(function() {
-        setPrice();
-    });
-    $('#multidevice').change(function() {
-        setPrice();
-    });
-    $('#periods').change(function() {
-        setPrice();
-    });
-
-
-    function setPrice(){
-        var itemPrice = parseFloat($('#package').val());
-        var qty = $('#multidevice').val();
-        var time = $('#periods').val();
-
-        let priceStepOne = 0 ;
-        priceStepOne = itemPrice + ((itemPrice*79.42/100) * ( qty-1));
-
-
-        if(time == 6)   priceStepOne = priceStepOne * 80/100;
-        else if(time == 3)   priceStepOne = priceStepOne * 70/100;
-
-        var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
-
-        $('#pricevalue').text(priceStepOne.toFixed(2)+" euro");
-        return [priceStepOne.toFixed(2),txt];
-    }
-
-
-
-
-      
+ 
 
     });
 
     jQuery(document).on('ready', function(){
 
-$('a.page-scroll').on('click', function(e){
-    var anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top - 50
-    }, 1500);
-    e.preventDefault();
-});
+        $('a.page-scroll').on('click', function(e){
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top - 50
+            }, 1500);
+            e.preventDefault();
+        });
 
-});
+    });
 
 
 
