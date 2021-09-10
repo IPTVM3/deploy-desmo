@@ -235,7 +235,7 @@
 
 <script>
 
-     
+     /*
        $('#pricevalueMM').on('click',function(){
             console.log('fuck u bitch.............');
             var price = setPrice()[0];
@@ -244,6 +244,7 @@
             document.location = "/payments/"+price+"/"+txt;
         });
 
+*/
 
 
 
@@ -264,6 +265,9 @@
             var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
 
             $('#pricevalue').text(priceStepOne.toFixed(2)+" euro");
+
+            var a = document.getElementById('pricevalueMM'); //or grab it by tagname etc
+            a.href = "/payments/"+price+"/"+txt;
             return [priceStepOne.toFixed(2),txt];
         }
 
