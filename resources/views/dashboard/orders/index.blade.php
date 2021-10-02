@@ -364,6 +364,7 @@
                                                             <div class="form-group"  >
                                                                 <label for="message-text" class="col-form-label">Portal URl</label>
                                                                 <select class="form-control" id="exampleFormControlSelect1" name="portal">
+                                                                    <option value="http://mag.mytv-gold.com/c/">http://mag.mytv-gold.com/c/</option>
                                                                     <option value="http://line.hi-ott.net/c/">http://line.hi-ott.net/c/</option>
                                                                     <option value="http://mag.crystalott.net/c/">http://mag.crystalott.net/c/</option>
                                                                     <option value="http://promaxhd.com:8080/c/">http://promaxhd.com:8080/c/</option>
