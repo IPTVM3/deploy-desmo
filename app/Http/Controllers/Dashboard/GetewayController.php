@@ -53,6 +53,18 @@ class GetewayController extends Controller
                     "paypal bnbihi",
                     "AdfAF_Et7FsT0XaFiRnojjSByq-ShnQkULfe1xQyR-HNYRNAUAdKXLr__JRLMb5FNnqz5pF260LY9tYd"
                 )
+
+                ,
+                array(
+                    "paypal khadija (pplkhadija@outlook.com)",
+                    "AZSLDfjLfrBacuVmkOIjUA9vFGiVHgSkuO3yluX6l9_hpNigAkLacz_UpZ3kjCc6Mx8O0mkzIIkzS2st"
+                )
+
+                ,
+                array(
+                    "paypal chafik (paypal chafik)",
+                    "AWhPhTxl4gtr9ArEL4lN_-i_59ZF-h1KxQaPbIVLSNprWOnalZk2RocAvc67HPC8Bj-j9L4vxKw-e1-O"
+                )
  
               );
           
