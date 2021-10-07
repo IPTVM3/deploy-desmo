@@ -45,7 +45,7 @@ class GetewayController extends Controller
                 ) 
                 ,
                 array(
-                    "paypal hemza maroc",
+                    "paypal hemza maroc ( hemzaalilou@gmail.com )",
                     "AYJp58GxGCHrV-Q7vVxliZhtdNbOX7yWG4jQfhIyQy5dkg6RsIkeEYwEUQ1UXoNYkL-2EpdFp6D41maN"
                 ) 
                 ,
@@ -62,8 +62,14 @@ class GetewayController extends Controller
 
                 ,
                 array(
-                    "paypal chafik (paypal chafik)",
+                    "paypal chafik ( pplchafik@outlook.com )",
                     "AWhPhTxl4gtr9ArEL4lN_-i_59ZF-h1KxQaPbIVLSNprWOnalZk2RocAvc67HPC8Bj-j9L4vxKw-e1-O"
+                )
+
+                ,
+                array(
+                    "paypal ilyas (pplilyas@outlook.com )",
+                    "Adana9-DQql8WNnt30S1-CdY2-DNMZnyRt5qZb7IPkHX0uebFaQLkvueNe0VxgiFVt6X0NCsD_2kKOv5"
                 )
  
               );
