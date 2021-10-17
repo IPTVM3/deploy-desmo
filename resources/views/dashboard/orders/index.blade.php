@@ -111,7 +111,7 @@
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="card-body p-0">
                         @if($orders->count() > 0)
-                            <table class="table table-striped projects table-dark" style="color:white;">
+                            <table class="table table-striped projects table-dark" style="color:black;">
                                 <thead>
                                 <tr>
                                     <th>
