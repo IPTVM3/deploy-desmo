@@ -46,7 +46,7 @@ return [
             'port' => '3306',
             'database' => 'heroku_60dba0d3cc376e9',
             'username' => 'bfcb2d292ea8cd',
-            'password' => 'c5afdc03',
+            'password' => 'd485bf7b9f9c434',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
