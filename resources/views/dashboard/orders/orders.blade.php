@@ -591,9 +591,9 @@
                 if(input.target.value = "") makeGetRequest();
             });*/
             document.getElementById('order_filter').onkeypress = function(e){
-                 //if (!e) e = window.event;
-                   //var keyCode = e.code || e.key;
-                   //if (keyCode == 'Enter'){
+                 if (!e) e = window.event;
+                   var keyCode = e.code || e.key;
+                   
                        loading(true);
                         let filredOrders = [];
                         if(e.target.value.toString() != ""){
@@ -601,9 +601,9 @@
                                    .then(response => { insertOrders(response.data); })
                                     .catch(error => {  console.log(error)  }
                           )
-                       }
+                     
                     return false;
-                  //}
+                  }
             }
 
             makeGetRequest(30);
