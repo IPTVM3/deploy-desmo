@@ -137,7 +137,7 @@
                   <div class="col col-xs-8 text-right">
 
                   <div class="input-group">
-                     <div class="input-group-append">
+                     <div class="input-group-append btn-group-sm">
                    <button onclick="sort('subscibed-no-order')" class="btn btn-primary">Subscibed/no-order</button>
                    <button onclick="sort('subscibed-no-service')" class="btn btn-primary">Subscibed/no-service</button>
                    <button onclick="sort('interssted-reselling')" class="btn btn-primary">Interssted/reselling</button>
