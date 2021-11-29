@@ -1609,7 +1609,15 @@
                         </div>
 
                         <div class="col-md-6 col-sm-6">
-                            <input type="text" class="form-control" id="Subject" name="Subject" placeholder="Subject" required="">
+                            <select type="text" class="form-control" id="Subject" name="Subject" placeholder="Subject" required="">
+
+                              <option value="subscibed-no-order">I subscibed, but I did recieved my order !</option>
+                              <option value="subscibed-no-service">I subscibed, but service is not working !</option>
+                              <option value="interssted-reselling">Im interssted in reselling plan</option>
+                              <option value="need-informations">I want to subscribe but i need first some informations</option>
+                              <option value="need-tria">Im interssted in your service but i need few hours trial test</option>
+                              <option value="other">other</option>
+                            </select>
                         </div>
                         <div class="col-md-12 col-sm-12">
                             <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message" required=""></textarea>

@@ -73,6 +73,7 @@ Route::group([
 
                 Route::get('/maillist', ['as' => 'maillist.index', 'uses' => 'MailListController@index']);
                 Route::get('/customer_messgaes', ['as' => 'messages.index', 'uses' => 'MailListController@messages']);
+                Route::get('/allmessages', ['as' => 'messages.allmessages', 'uses' => 'MailListController@allmessages']);
 
             });
 
@@ -181,7 +182,7 @@ Route::group([
 
             //MAIL LIST
             Route::post('/maillist', ['as' => 'maillist.store', 'uses' => 'MailListController@store']);
-         
+
 
         });
 

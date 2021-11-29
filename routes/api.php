@@ -5,6 +5,7 @@ use App\MailList;
 use App\Order;
 use App\Trial;
 use App\User;
+use App\Review;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -32,8 +33,10 @@ Route::post('/contact/message', function (Request $request){
 
 
     $message = \App\Review::create();
-    $message->by = $request['email'].' '.$request['order_number'];
-    $message->body = $request['subject'].' -- '.$request['message'];
+    $message->by = $request['email'];
+    $message->ordernumber = $request['order_number'];
+    $message->body = $request['message'];
+    $message->subject = $request['subject'];
     $message->update();
 
 
@@ -261,6 +264,42 @@ Route::get('/orders/notify', function (Request $request) {
        'isSuccessful'=> true,
        'message' => 'Cutomer Notifyed'
      ], 200)->header('Content-Type', 'application/json');
+});
+
+
+Route::get('/messages', function (Request $request) {
+    $reviews = Review::orderBy('created_at','desc')->get();
+    return response($reviews, 200)
+        ->header('Content-Type', 'application/json');
+});
+
+Route::get('/messages/size', function (Request $request) {
+    $reviews = Review::orderBy('created_at','desc')->paginate($request->size);
+    return response($reviews, 200)
+        ->header('Content-Type', 'application/json');
+});
+
+Route::post('/messages/send', function (Request $request) {
+         $data = [
+             'email' => $request->email,
+             'question' => $request->oldmessage,
+             'answer' => $request->newmessage
+         ];
+
+        Review::find($request->id)->delete();
+
+        Mail::send('mail.mail_answermessage', $data , function($message) use ($request) {
+
+            $message->to($request->email ,'Bobres IPTV About Your Question')->subject('Bobres IPTV ');
+        });
+
+});
+
+Route::get('/messages/getone', function (Request $request) {
+
+    $order = Review::findOrFail($request->id);
+    return response($order, 200)
+        ->header('Content-Type', 'application/json');
 });
 
 
