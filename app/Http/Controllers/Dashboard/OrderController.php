@@ -29,6 +29,12 @@ class OrderController extends Controller
         return view('dashboard.orders.index',compact('orders','products','orders_undone'));
     }
 
+
+    public function new(){
+
+        return view('dashboard.orders.orders');
+    }
+    
     public function create(){
         $products = Product::all();
         return view('dashboard.orders.create',compact('products'));
