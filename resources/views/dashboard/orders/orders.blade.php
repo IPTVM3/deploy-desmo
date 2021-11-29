@@ -591,9 +591,9 @@
                 if(input.target.value = "") makeGetRequest();
             });*/
             document.getElementById('order_filter').onkeypress = function(e){
-                 if (!e) e = window.event;
-                   var keyCode = e.code || e.key;
-                   if (keyCode == 'Enter'){
+                 //if (!e) e = window.event;
+                   //var keyCode = e.code || e.key;
+                   //if (keyCode == 'Enter'){
                        loading(true);
                         let filredOrders = [];
                         if(e.target.value.toString() != ""){
@@ -603,7 +603,7 @@
                           )
                        }
                     return false;
-                  }
+                  //}
             }
 
             makeGetRequest(30);
