@@ -5,6 +5,8 @@ use App\MailList;
 use App\Order;
 use App\Trial;
 use App\User;
+use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 /*
@@ -104,13 +106,163 @@ Route::POST('/login', function (Request $request) {
         'message' => 'Email Or Password Incorrect !'
     ], 200);   
 });
- 
+
+Route::POST('/orders/create', function (Request $request) {
+
+     $order = Order::create();
+     $order->email = $request->email;
+     $order->productName = $request->productName;
+     $order->card_number = $request->country;
+     $order->total = $request->total;
+     $order->status = 0;
+     $order->update();
+
+    return Response::json([
+        'isSuccessful'=> true,
+        'order' => $order,
+        'message' => 'Order Created'
+    ], 200);
+});
 
 Route::get('/orders', function () {
     $orders = Order::orderBy('created_at','desc')->get();
     return response($orders, 200)
         ->header('Content-Type', 'application/json');
 });
+
+
+Route::get('/orders/size', function (Request $request) {
+    $orders = Order::orderBy('created_at','desc')->paginate($request->size);
+    return response($orders, 200)
+        ->header('Content-Type', 'application/json');
+});
+
+
+Route::get('/orders/search', function (Request $request) {
+
+        $orders = Order::where('email', $request->txt)
+                             ->orWhere('email', 'like', '%' . $request->txt . '%')
+                             ->orWhere('zip', 'like', '%' . $request->txt . '%')
+                             ->orWhere('id', 'like', '%' . $request->txt . '%')->get();
+    return response($orders, 200)
+        ->header('Content-Type', 'application/json');
+});
+
+Route::get('/orders/getone', function (Request $request) {
+
+    $order = Order::findOrFail($request->id);
+    return response($order, 200)
+        ->header('Content-Type', 'application/json');
+});
+
+Route::post('/orders/completed', function (Request $request) {
+    $order = Order::findOrFail($request['id']);
+    $data = [];
+
+        if($request->m3u != "" and $request->mac == ""){
+            $query = parse_url($request->m3u, PHP_URL_QUERY);
+            parse_str($query, $params);
+            $username =  $params['username'];
+            $password =  $params['password'];
+
+            $parse = parse_url($request->m3u);
+            $base = $parse['host'];
+            $port = parse_url($request->m3u, PHP_URL_PORT);
+            if($port) $base = $base.':'.$port;
+
+
+             $data = [
+                     'id' => $request->id,
+                     'email' => $request->email,
+                     'm3u' => $request->m3u,
+                     'username' => $username,
+                     'password' => $password,
+                     'host' => $base,
+                     'local' => $order->card_number,
+             ];
+
+
+              Mail::send('mail.order_m3u', $data , function($message) use ($request)
+                 {
+                   $message->to($request->email ,'Bobres IPTV | N21-'.$request->id)->subject('Bobres IPTV | N21-'.$request->id);
+               });
+
+
+
+        }else{
+            $data = [
+                  'id' => $request->id,
+                  'email' => $request->email,
+                  'mac'=> $request->mac,
+                  'portal' => $request->portal,
+                  'local' => $order->card_number,
+            ];
+
+            Mail::send('mail.order_mag', $data , function($message) use ($request)
+             {
+                  $message->to($request->email ,'Bobres IPTV | N21-'.$request->id)->subject('Bobres IPTV | N21-'.$request->id);
+            });
+        }
+        $order->exp_date = Carbon::now();
+        $order->mac = $request->support;
+        $order->update();
+
+
+     return response([
+       'isSuccessful'=> true,
+       'message' => 'Order Completed'
+     ], 200)->header('Content-Type', 'application/json');
+
+});
+
+Route::delete('/orders/delete', function (Request $request) {
+
+    Order::find($request->id)->delete();
+     return response([
+       'isSuccessful'=> true,
+       'message' => 'Order Deleted'
+     ], 200)->header('Content-Type', 'application/json');
+});
+
+Route::get('/orders/submited', function (Request $request) {
+
+    $order = Order::findOrFail($request->id);
+    $order->exp_date = Carbon::now();
+    $order->mac = $request->support;
+    $order->update();
+
+     return response([
+       'isSuccessful'=> true,
+       'message' => 'Order Submited'
+     ], 200)->header('Content-Type', 'application/json');
+});
+
+
+Route::get('/orders/notify', function (Request $request) {
+
+    $order = Order::find($request->id);
+    $local = "en";
+        if($order->card_number) $local = $order->card_number;
+
+        $data = [
+         'email' => $order->email,
+         'order' => $order->id,
+         'price' => $order->total,
+         'local' => $local,
+         ];
+
+
+        Mail::send('mail.mail_undone', $data , function($message) use ($request) {
+
+            $message->to($request->email ,'Bobres IPTV | N21-'.$request->id)->subject('Bobres IPTV | N21-'.$request->id);
+        });
+
+     return response([
+       'isSuccessful'=> true,
+       'message' => 'Cutomer Notifyed'
+     ], 200)->header('Content-Type', 'application/json');
+});
+
 
 Route::get('/trials', function () {
     $trials = Trial::orderBy('created_at','desc')->get();

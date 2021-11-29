@@ -246,6 +246,13 @@
                                 </a>
                             </li>
 
+                            <li class="nav-item">
+                                <a href="{{ url('dashboard/orders/new')  }} "
+                                   class="nav-link ">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p> New List Of Orders </p>
+                                </a>
+                            </li>
                             <!-- /.User Model -->
                         </ul>
                     </li>
