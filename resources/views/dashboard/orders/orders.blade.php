@@ -519,8 +519,7 @@
                   .then( res => {
                         makeGetRequest(30);
                         $('#exampleModal').modal('hide');
-                     $("#notificationmodel").modal();
-
+                     alert('Operation Done');
                      document.getElementById('m3u').value = "";
                      document.getElementById('portal').value = "";
                      document.getElementById('mac').value = "";
@@ -538,8 +537,7 @@
                  .then(response => {
                      makeGetRequest(30);
                      $('#exampleModal').modal('hide');
-                     $("#notificationmodel").modal();
-                     setTimeout(function(){ $('#notificationmodel').modal('hide');  }, 1500);
+                     alert('Operation Done');
 
 
                   })
@@ -553,8 +551,7 @@
                              .then(response => {
                                  makeGetRequest(30);
                                  $('#exampleModal').modal('hide');
-                     $("#notificationmodel").modal();
-                     setTimeout(function(){ $('#notificationmodel').modal('hide');  }, 1500);
+                     alert('Operation Done');
 
                               })
                              .catch(error => {  console.log(error)  })
@@ -567,8 +564,7 @@
                                     .then(response => {
                                     makeGetRequest(30);
                                     $('#exampleModal').modal('hide');
-                     $("#notificationmodel").modal();
-                     setTimeout(function(){ $('#notificationmodel').modal('hide');  }, 1500);
+                     alert('Operation Done');
                             })
                                          .catch(error => {  console.log(error)  })
                             loading(false);
