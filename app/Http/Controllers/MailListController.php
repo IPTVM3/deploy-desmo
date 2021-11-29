@@ -17,6 +17,11 @@ class MailListController extends Controller
     }
 
 
+    public function allmessages(){
+        return view('dashboard.maillist.allmessages');
+    }
+
+
     public function messages(){
         $messgaes = Review::orderBy('created_at','desc')->paginate(20);
         return view('dashboard.maillist.messages',compact('messgaes'));
