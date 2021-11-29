@@ -192,7 +192,6 @@
 			</div>
 			<div class="modal-body">
       <div class="form-group">
-          <label for="recipient-name" class="col-form-label">ORDER ID</label>
           <input type="text" class="form-control" id="model-id" disabled="" >
       </div>
       <div class="form-group" style="display:none;" >
@@ -201,12 +200,10 @@
       </div>
 
       <div class="form-group">
-          <label for="recipient-name" class="col-form-label">EMAIL</label>
           <input type="email" class="form-control" id="model-email"  name="email" disabled="">
       </div>
 
         <div class="form-group" >
-          <label for="recipient-name" class="col-form-label">Device & Price</label>
           <div id="orderdetails">
 
           </div>
