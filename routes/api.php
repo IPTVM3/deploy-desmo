@@ -174,7 +174,7 @@ Route::post('/orders/completed', function (Request $request) {
             $port = parse_url($request->m3u, PHP_URL_PORT);
             if($port) $base = $base.':'.$port;
 
-
+            $order->support = $base;
              $data = [
                      'id' => $request->id,
                      'email' => $request->email,
@@ -194,6 +194,8 @@ Route::post('/orders/completed', function (Request $request) {
 
 
         }else{
+
+            $order->support = $request->portal; 
             $data = [
                   'id' => $request->id,
                   'email' => $request->email,
