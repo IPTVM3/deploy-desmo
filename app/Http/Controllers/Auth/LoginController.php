@@ -22,7 +22,7 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
 
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/dashboard/overview';
 
 
     public function __construct()

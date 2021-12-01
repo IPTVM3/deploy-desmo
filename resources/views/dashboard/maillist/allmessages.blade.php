@@ -130,7 +130,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="/dashboard">Home </a>
+          <a class="nav-link" href="/dashboard/overview">Home </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/dashboard/orders/new">Orders</a>
