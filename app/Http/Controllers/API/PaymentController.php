@@ -8,6 +8,10 @@ use App\MailList;
 use App\Order;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
+
+
+use App\Visitor;
 
 class PaymentController extends Controller
 {
@@ -90,5 +94,81 @@ class PaymentController extends Controller
    
    }
 
-  
+      public function index()
+      {
+          //TOP 10 COUNTRIES - LAST 3 MONTHS(€)
+          $today = Carbon::today();
+
+
+          //STATISTICS ONE DAY
+          $todayOrders = $this->getAmountNet(Order::whereDate('created_at', Carbon::today())->get());
+          $lastDayOrders = $this->getAmountNet(Order::whereDate('created_at', Carbon::yesterday())->get());
+          $last15Days = $this->getAmountNet(Order::where("created_at",">", Carbon::now()->subDays(15))->get());
+          $last30days = $this->getAmountNet(Order::where("created_at",">", Carbon::now()->subDays(30))->get());
+
+
+
+          Visitor::where("date","<", Carbon::yesterday())->delete();
+          $today_visitor = Visitor::whereDate('date', Carbon::today())->get();
+          $yestardy_visitor = Visitor::whereDate('date', Carbon::yesterday())->get();
+
+            $months = Order::select(
+                   DB::raw('sum(total) as `sums`'),
+                   DB::raw("DATE_FORMAT(created_at,'%M %Y') as months"),
+                   DB::raw('max(created_at) as createdAt')
+            )
+          ->where("created_at", ">", \Carbon\Carbon::now()->subMonths(12))
+          ->orderBy('createdAt', 'desc')
+          ->groupBy('months')
+          ->get();
+
+
+             $country = DB::table('orders')
+               ->select(DB::raw('sum(total) as totalamount, card_number'))
+               ->groupBy('card_number')
+               ->orderBy('totalamount', 'desc')
+               ->take(10)
+               ->get();
+
+
+             $typeorders = DB::table('orders')
+               ->select(DB::raw('count(*) as numberoforders, total'))
+               ->where("created_at", ">", Carbon::now()->subDays(30))
+               ->groupBy('total')
+               ->orderBy('numberoforders', 'desc')
+               ->take(10)
+               ->get();
+
+        $dataX = [
+              'typeorders' => $typeorders,
+              'country' => $country,
+              'orders' =>  $months,
+              'today_visitor' => count($today_visitor),
+              'yestardy_visitor' => count($yestardy_visitor),
+              'todayOrders' => $todayOrders,
+              'lastDayOrders' => $lastDayOrders,
+              'todayOrders_count' => count(Order::whereDate('created_at', Carbon::today())->get()),
+              'lastDayOrders_count' => count(Order::whereDate('created_at', Carbon::yesterday())->get()),
+              'last15Days' => $last15Days,
+              'last30days' => $last30days,
+         ];
+
+        return response($dataX, 200)
+         ->header('Content-Type', 'application/json');
+      }
+
+      function getAmountNet($orders){
+          $valueOfRowMetrial = 17;
+          $todayOrders = 0;
+          foreach($orders as $key => $order){
+              $todayOrders = $todayOrders + ($order->total - (0.35 + ($order->total * 4.4 / 100 )));
+              if($order->total == '59.98' or $order->total == '49.99') $todayOrders = $todayOrders - $valueOfRowMetrial;
+              if($order->total == '48.99' or $order->total == '39.99') $todayOrders = $todayOrders - $valueOfRowMetrial/2;
+              if($order->total == '39.97' or $order->total == '29.98') $todayOrders = $todayOrders - $valueOfRowMetrial/3;
+              if($order->total == '99.98') $todayOrders = $todayOrders - $valueOfRowMetrial*2;
+              if($order->total == '69.99') $todayOrders = $todayOrders - $valueOfRowMetrial+4;
+          }
+          return $todayOrders;
+      }
+
 }

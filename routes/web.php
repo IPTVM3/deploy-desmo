@@ -203,9 +203,11 @@ Route::group([
         //DASHBOARD ROUTES------------------------------------------------------------------------------------------------------------>
         Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'middleware' => ['auth', 'admin', 'force_reset_password']], function () {
             Route::get('/', 'DashboardController@index')->name('index');
+            Route::get('/overview', ['as' => 'dashboard.overview', 'uses' => 'DashboardController@overview']);
 
 
-        Route::get('/sendmails', ['as' => 'orders.sec.multi_send', 'uses' => 'DashboardController@multi_send']);
+            Route::get('/sendmails', ['as' => 'orders.sec.multi_send', 'uses' => 'DashboardController@multi_send']);
+
 
             //USER ROUTES
             Route::group(['prefix' => 'users'], function () {

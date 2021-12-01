@@ -6,6 +6,7 @@ use App\Order;
 use App\Trial;
 use App\User;
 use App\Review;
+use App\Visitor;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -321,60 +322,21 @@ Route::get('/frais', function () {
         ->header('Content-Type', 'application/json');
 });
 
-Route::get('/overview', function () {
-
-    $paid_orders = 0;
-    $paid_orders_stripe = 0;
-    $paid_orders_paypal = 0;
-    $Ungrous_profit = 0;
-    $count_mail_list = MailList::all()->count(); 
-
-    foreach (Order::all() as $key => $order) {
-        if ($order->status == 1) {
-            if($order->type_payement == 'Stripe'){
-                $paid_orders_stripe = $paid_orders_stripe + ($order->total - (0.25 + ($order->total * 1.4 / 100 )));
-            }else{
-                $paid_orders_paypal = $paid_orders_paypal + ($order->total - (0.35 + ($order->total * 4.4 / 100 )));
+    function getAmountNet($orders){
+                $valueOfRowMetrial = 17;
+                $todayOrders = 0;
+                foreach($orders as $key => $order){
+                    $todayOrders = $todayOrders + ($order->total - (0.35 + ($order->total * 4.4 / 100 )));
+                    if($order->total == '59.98' or $order->total == '49.99') $todayOrders = $todayOrders - $valueOfRowMetrial;
+                    if($order->total == '48.99' or $order->total == '39.99') $todayOrders = $todayOrders - $valueOfRowMetrial/2;
+                    if($order->total == '39.97' or $order->total == '29.98') $todayOrders = $todayOrders - $valueOfRowMetrial/3;
+                    if($order->total == '99.98') $todayOrders = $todayOrders - $valueOfRowMetrial*2;
+                    if($order->total == '69.99') $todayOrders = $todayOrders - $valueOfRowMetrial+4;
+                }
+                return $todayOrders;
             }
-             
-        } 
-    }
 
-    $facebook_ads = 0;
-    $google_ads = 0;
-    $other = 0;
-    $row = 0;
-    
-    foreach (Frais::all() as $fr) {
-        if($fr->type == 'facebook'){
-            $facebook_ads = $facebook_ads + $fr->value;
-        }elseif($fr->type == 'materials'){
-            $row = $row + $fr->value;
-        }elseif($fr->type == 'google'){
-            $google_ads = $google_ads + $fr->value;
-        }else{
-            $other = $other + $fr->value;
-        } 
-    }
-    $Ungrous_profit = $facebook_ads +  $google_ads + $other + $row;
-
-    $paid_orders =  $paid_orders_stripe + $paid_orders_paypal;
-
-    $dataX = [
-        'paypal'=>$paid_orders_paypal,
-        'stripe'=>$paid_orders_stripe,
-        'facebook'=> $facebook_ads,
-        'row'=> $row,
-        'other'=> $other,
-        'google'=>$google_ads,
-        'mail',$count_mail_list,
-        'spend'=>$Ungrous_profit,
-        'recieved'=>$paid_orders
-    ];
-
-    return response($dataX, 200)
-        ->header('Content-Type', 'application/json');
-});
+Route::get('/overview','API\PaymentController@index' );
 
 
 

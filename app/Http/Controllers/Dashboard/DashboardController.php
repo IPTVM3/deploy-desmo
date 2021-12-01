@@ -125,6 +125,11 @@ class DashboardController extends Controller
         return $todayOrders;
     }
 
+    function overview(){
+         return view('dashboard.overview');
+
+    }
+
 
 }
 
