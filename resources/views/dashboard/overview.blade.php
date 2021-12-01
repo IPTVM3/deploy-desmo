@@ -482,7 +482,7 @@
             options: {
               title: {
                 display: true,
-                text: 'Top 10 Countries'
+                text: 'Top 10 Countries Of This Month'
               }
             }
         });

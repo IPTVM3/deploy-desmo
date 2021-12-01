@@ -125,6 +125,7 @@ class PaymentController extends Controller
 
              $country = DB::table('orders')
                ->select(DB::raw('sum(total) as totalamount, card_number'))
+               ->where("created_at", ">", Carbon::now()->subDays(30))
                ->groupBy('card_number')
                ->orderBy('totalamount', 'desc')
                ->take(10)
