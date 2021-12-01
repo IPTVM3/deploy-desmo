@@ -727,6 +727,20 @@
             loading(false);
             }
 
+            async function makeGetRequestOfStatic() {
+                               await axios.get('/api/overview')
+                               .then(response => {
+                                 document.getElementById('todayOrders').innerHTML = response.data.todayOrders.toFixed(2)+'€ <br> '+response.data.todayOrders_count+' Orders' ;
+                                 document.getElementById('lastDayOrders').innerHTML = response.data.lastDayOrders.toFixed(2)+'€ <br> '+response.data.lastDayOrders_count+' Orders' ;
+
+                                 document.getElementById('today_visitor').innerHTML = response.data.today_visitor+' Visitor' ;
+                                 document.getElementById('yestardy_visitor').innerHTML = response.data.yestardy_visitor+' Visitor' ;
+                                loading(false);
+                               }).catch(error => {
+                               console.log(error)
+                                })
+                }
+
         //MAIN
         $(document).ready(function(){
 
@@ -747,6 +761,7 @@
             }
 
             makeGetRequest(30);
+            makeGetRequestOfStatic();
             //insertOrders(orders);
 
         });
