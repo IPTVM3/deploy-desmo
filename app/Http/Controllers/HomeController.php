@@ -61,6 +61,12 @@ class HomeController extends Controller
         return redirect()->route('home');
     }
 
+
+    public function checkout(){
+        return view('iptv.checkout' );
+    }
+
+
     public function v1(){
         $store = Store::first();
         $products = Product::all();

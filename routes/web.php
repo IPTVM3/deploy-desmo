@@ -122,7 +122,8 @@ Route::group([
 
             
           
-            Route::get('/v1/iptv', 'HomeController@v1');  
+            Route::get('/v1/iptv', 'HomeController@v1'); 
+            Route::get('/checkout', 'HomeController@checkout');  
             Route::get('/shipping', 'HomeController@shipping'); 
             Route::get('/blogger/{id}', 'HomeController@blggeritem')->name('blog');  
             Route::get('/blogger', 'HomeController@blog')->name('blogger');  
