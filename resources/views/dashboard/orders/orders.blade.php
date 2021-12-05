@@ -523,7 +523,7 @@
 
         const resultat = orders.find( order => order.id == id);
         document.getElementById("model-id").value = resultat.id;
-        if(user.name == "Said Rafiq") resultat.total = "? ";
+        //if(user.name == "Said Rafiq") resultat.total = "? ";
         document.getElementById("model-email").value = resultat.email;
         document.getElementById("orderdetails").insertAdjacentHTML(
         'beforeend','<span class="badge badge-light">'+resultat.productName+'</span ></br> <span class="badge badge-dark">'+resultat.total+'€</span> <span class="badge badge-success">'+resultat.card_number+'</span > <span class="badge badge-warning">'+resultat.cv_code+'</span >');
@@ -601,7 +601,7 @@
             var color = "white";
             if (order.exp_date == null){ color="#9494dd"; order.mac = ""; order.support = "";}
             if (order.cv_code == null){ cv_code = "";}
-            if(user.name == "Said Rafiq") order.total = "? ";
+           // if(user.name == "Said Rafiq") order.total = "? ";
             if (order.zip != null){
               if(
                 order.email.toUpperCase() !== order.zip.toUpperCase() &&
