@@ -218,6 +218,11 @@
           <li class="nav-item">
             <a class="nav-link" href="/allmessages">Messages</a>
           </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">LogOut</a>
+          </li>
         </ul>
       </div>
     </nav>
