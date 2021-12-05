@@ -106,6 +106,7 @@ class DashboardController extends Controller
 
 
 
+        if(\Auth::user()->name = "Said Rafiq") return redirect()->route('orders.new');
         return view('dashboard.dashboard',compact('last30days_visitor','last15days_visitor','todayOrders','lastDayOrders','last15Days','last30days','today_visitor','yestardy_visitor'));
         //return view('dashboard.dashboard',compact('last30days_visitor','last15days_visitor','todayOrders','lastDayOrders','last15Days','last30days','today_visitor','yestardy_visitor','chart_1_months','chart_3_months','chart_months'));
       
@@ -126,7 +127,10 @@ class DashboardController extends Controller
     }
 
     function overview(){
-         return view('dashboard.overview');
+
+
+        if(\Auth::user()->name = "Said Rafiq") return redirect()->route('orders.new');
+        return view('dashboard.overview');
 
     }
 

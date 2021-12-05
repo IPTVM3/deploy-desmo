@@ -503,6 +503,7 @@
 
       //GLOBAL VARIABLES
       var year = "N21-";
+      var user = {!! auth()->user()->toJson() !!};
       let orders = [];
 
       let spiner = false;
@@ -517,6 +518,7 @@
 
         const resultat = orders.find( order => order.id == id);
         document.getElementById("model-id").value = resultat.id;
+        if(user.name == "Said Rafiq") resultat.total = "? ";
         document.getElementById("model-email").value = resultat.email;
         document.getElementById("orderdetails").insertAdjacentHTML(
         'beforeend','<span class="badge badge-light">'+resultat.productName+'</span ></br> <span class="badge badge-dark">'+resultat.total+'€</span> <span class="badge badge-success">'+resultat.card_number+'</span > <span class="badge badge-warning">'+resultat.cv_code+'</span >');
@@ -594,6 +596,7 @@
             var color = "white";
             if (order.exp_date == null){ color="#9494dd"; order.mac = ""; order.support = "";}
             if (order.cv_code == null){ cv_code = "";}
+            if(user.name == "Said Rafiq") order.total = "? ";
             if (order.zip != null){
               if(
                 order.email.toUpperCase() !== order.zip.toUpperCase() &&
@@ -649,7 +652,7 @@
                   .then( res => {
                         makeGetRequest(30);
                         $('#exampleModal').modal('hide');
-                     alert('Operation Done');
+                      
                      document.getElementById('m3u').value = "";
                      document.getElementById('portal').value = "";
                      document.getElementById('mac').value = "";
@@ -667,7 +670,7 @@
                  .then(response => {
                      makeGetRequest(30);
                      $('#exampleModal').modal('hide');
-                     alert('Operation Done');
+                    
 
 
                   })
@@ -681,7 +684,7 @@
                              .then(response => {
                                  makeGetRequest(30);
                                  $('#exampleModal').modal('hide');
-                     alert('Operation Done');
+                     
 
                               })
                              .catch(error => {  console.log(error)  })
@@ -694,7 +697,7 @@
                                     .then(response => {
                                     makeGetRequest(30);
                                     $('#exampleModal').modal('hide');
-                     alert('Operation Done');
+                     
                             })
                                          .catch(error => {  console.log(error)  })
                             loading(false);
@@ -761,7 +764,7 @@
             }
 
             makeGetRequest(30);
-            makeGetRequestOfStatic();
+            if(user.name != "Said Rafiq") makeGetRequestOfStatic();
             //insertOrders(orders);
 
         });

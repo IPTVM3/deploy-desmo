@@ -29,7 +29,7 @@ class TrialController extends Controller
     }
 
     public function store(Request $request){
- 
+        /*
         $lastTrial = Trial::all() -> last(); 
         $sup = "";
         if($lastTrial->support == 'ChaKib Mayen'){
@@ -48,7 +48,7 @@ class TrialController extends Controller
 
      
  
-
+            */
         return redirect()->route('home');
     }
 
