@@ -63,6 +63,7 @@ Route::group([
         });
             //TRIALS LIST
             Route::get('/contact', ['as' => 'whatsapp.contact', 'uses' => 'TrialController@contact']);
+            Route::get('/fast-support', ['as' => 'whatsapp.fastsupport', 'uses' => 'TrialController@fastsupport']);
             Route::get('/trials', ['as' => 'trials.index', 'uses' => 'TrialController@index']);
             Route::post('/whastapp/save', ['as' => 'whatsapp.save', 'uses' => 'TrialController@store']);
             Route::get('/trials/{id}/done', ['as' => 'trials.done', 'uses' => 'TrialController@done']);

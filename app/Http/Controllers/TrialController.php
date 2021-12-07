@@ -97,4 +97,10 @@ class TrialController extends Controller
           
     }
 
+    public function fastsupport(){
+        $store = Store::first();
+
+        return redirect('https://api.whatsapp.com/send?phone='.$store->phone);
+    }
+
 }
