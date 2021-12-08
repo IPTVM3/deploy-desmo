@@ -1057,7 +1057,7 @@
                 Our IPTV reseller program helps you to live up to the expectations of your customers. Join the ship and enjoy dozens of perks with our program now.
                     </p>
                 <br>
-                <a href="https://www.bobres.co/en/contact" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">Contact Us</a>
+                <a href="https://www.bobres.co/en/support" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">Contact Us</a>
 
             </div>
         </div>
@@ -1644,7 +1644,7 @@
 <br>
                     <p><i class="fa fa-map-marker"></i> 13 Rue Paul Déroulède, 06000 Nice, FRANCE</p>
                     <p><i class="fa fa-comment"></i> <a href="contact.bobres@gmail.com">contact.bobres@gmail.com</a></p>
-                    <p><i class="fa fa-phone"></i> <a href="/contact">Click Here</a></p>
+                    <p><i class="fa fa-phone"></i> <a href="/support">Click Here</a></p>
                 </div>
             </div>
 

@@ -37,7 +37,7 @@
   <hr> 
 
 *** IF YOU HAVE ANY PROBLEM PLEASE CONTACT US ON WHATSAPP ***  <br>
-https://www.bobres.co/en/contact <br>
+https://www.bobres.co/en/support <br>
 
 </body>
 </html>

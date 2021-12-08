@@ -23,5 +23,11 @@
  Answer: <br>
  {{ $answer }}
 
+ <br><br>
+ <br>
+
+
+ WHATSAPP: www.bobres.co/en/support
+
 </body>
 </html>
