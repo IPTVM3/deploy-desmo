@@ -31,7 +31,9 @@ class PaymentController extends Controller
 
                        $order = Order::create();
                        $order->email = $request['payerEmail'];  
-                       $order->card_number = $request['country'];  
+                       $order->card_number = $request['country']; 
+                       $order->tested = 'NO';  
+                       if($request['tested']) $order->tested = 'YES';  
 
                        $order->status = 0;
                        if($request['status'] == 'COMPLETED'){
