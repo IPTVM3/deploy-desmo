@@ -400,12 +400,11 @@
             <div class="form-group">
             <label for="message-text" class="col-form-label">Portal URl</label>
             <select class="form-control" id="portal" name="portal">
-                <option value="http://mag.mytv-gold.com/c/">http://mag.mytv-gold.com/c/</option>
-                <option value="http://line.hi-ott.net/c/">http://line.hi-ott.net/c/</option>
+                <option value="http://mag.mytv-gold.com/c/">http://mag.mytv-gold.com/c/</option> 
                 <option value="http://mag.crystalott.net/c/">http://mag.crystalott.net/c/</option>
                 <option value="http://promaxhd.com:8080/c/">http://promaxhd.com:8080/c/</option>
                 <option value="http://dream4ktv.info:2082/c">http://dream4ktv.info:2082/c</option>
-                <option value="http://v3.ott.rip:80/c">http://v3.ott.rip:80/c</option>
+                <option value="http://link4tv.info:2082/c">http://link4tv.info:2082/c</option>
                 <option value="http://king365-tv.cf:2103/c/">http://king365-tv.cf:2103/c/</option>
             </select>
           </div>

@@ -129,7 +129,7 @@ class DashboardController extends Controller
     function overview(){
 
 
-        if(\Auth::user()->name = "Said Rafiq") return redirect()->route('orders.new');
+        if(\Auth::user()->name == "Said Rafiq") return redirect()->route('orders.new');
         return view('dashboard.overview');
 
     }
