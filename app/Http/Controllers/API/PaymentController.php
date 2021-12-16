@@ -39,6 +39,30 @@ class PaymentController extends Controller
                        if($request['status'] == 'COMPLETED'){
                             $order->status = 1;
                        }
+
+                       switch ($request['price']) {
+                           //ONE MONTH
+                        case "18.99":
+                          $order->period_sub_days = 30;
+                          break;
+                          //6 MONTHS
+                        case "48.99":
+                          $order->period_sub_days = 183;
+                          break; 
+                        case "39.99":
+                            $order->period_sub_days = 183;
+                            break;
+                            //3 MONTHS
+                        case "39.97":
+                            $order->period_sub_days = 91;
+                            break;  
+                        case "29.98":
+                            $order->period_sub_days = 91;
+                            break; 
+                            //ONE YEAR
+                        default:
+                          $order->period_sub_days = 365;
+                      }
  
                        
                        $order->total =$request['price'];
