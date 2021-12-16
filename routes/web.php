@@ -277,6 +277,7 @@ Route::group([
             Route::group(['prefix' => 'orders'], function () {
                 Route::get('/', ['as' => 'orders.index', 'uses' => 'OrderController@index']);
                 Route::get('/new', ['as' => 'orders.new', 'uses' => 'OrderController@new']);
+                Route::get('/expired', ['as' => 'orders.expired', 'uses' => 'OrderController@expired_orders']);
                 Route::get('/create', ['as' => 'orders.create', 'uses' => 'OrderController@create']);
                 Route::post('/store', ['as' => 'orders.store', 'uses' => 'OrderController@store']);
                 Route::delete('/destroy/{id}', ['as' => 'orders.destroy', 'uses' => 'OrderController@destroy']);

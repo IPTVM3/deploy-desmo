@@ -215,6 +215,11 @@
           <li class="nav-item">
             <a class="nav-link" href="/dashboard/orders/new">Orders</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/orders/expired">Expired SOON !</a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="/allmessages">Messages</a>
           </li>

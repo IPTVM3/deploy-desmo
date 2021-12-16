@@ -34,6 +34,13 @@ class OrderController extends Controller
 
         return view('dashboard.orders.orders');
     }
+
+    public function expired_orders(){
+
+        return view('dashboard.orders.expired');
+
+    }
+
     
     public function create(){
         $products = Product::all();
