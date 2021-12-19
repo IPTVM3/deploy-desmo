@@ -182,6 +182,22 @@ class DashboardController extends Controller
 
 
                               }
+
+
+                              if($diff->format("%a") == 3 && $order->period_expired != "3"){
+
+                                $order->period_expired = "3";
+                             Mail::send('mail.mail_expired', $this->data , function($message) use ($order)
+                                                {
+                                                      $message->to($order->email ,'Bobres IPTV | Your Order About To Expire ')
+                                                      ->subject('Bobres IPTV | Your Order About To Expire ');
+                                         $order->update();
+                                                                                                             });
+
+
+                            }
+
+
                               /*
                                  elseif($diff->format("%a") == 15 && $order->period_expired != "15"){
 
