@@ -126,9 +126,150 @@ class DashboardController extends Controller
         return $todayOrders;
     }
 
+
+    function send_email_auto_extend(){
+
+        try {
+
+            $store = Store::first();
+            $key = "";
+
+            foreach ($store->geteways as $value){
+
+                  $bas_url = $value->mode;
+                  $client_id = $value->api_key;
+
+                 if ($value->id == $store->unit_system) {
+                        $key = $client_id;
+                        //return redirect($bas_url."/en/payments?price=".$product->price_after."&txt=".$product->title."&clientid=".$client_id);
+                  }
+             }
+
+            $orders = Order::orderBy('created_at','desc')->get();
+            foreach ($orders as $order) {
+                if($order->period_sub_days){
+                 $end = date('Y-m-d', strtotime($order->created_at->format('Y-m-d'). ' + '.$order->period_sub_days.' days'));
+                 $date = new DateTime($end);
+                 $now = new DateTime();
+
+                $diff = date_diff($date, $now);
+
+                   $this->data = [
+                        'id' => $order->id,
+                        'email' => $order->email,
+                        'days_left' => $diff->format("%a"),
+                        'created_at' => $order->created_at,
+                        'paid_amount' => $order->total.' €',
+                        'period_sub_days' => $order->period_sub_days,
+                        'expired_at' => $end,
+                        'local' => $order->card_number,
+                        'client_id' => $key,
+                   ];
+
+
+
+                if($diff->format("%a") == 1 && $order->period_expired != "1"){
+
+                                  $order->period_expired = "1";
+                               Mail::send('mail.mail_expired', $this->data , function($message) use ($order)
+                                                  {
+                                                        $message->to($order->email ,'Bobres IPTV | Your Order About To Expire ')
+                                                        ->subject('Bobres IPTV | Your Order About To Expire ');
+                                           $order->update();
+                                                                                                               });
+
+
+                              }
+                              /*
+                                 elseif($diff->format("%a") == 15 && $order->period_expired != "15"){
+
+                                                   $order->period_expired = "15";
+                                                Mail::send('mail.mail_expired', $this->data , function($message) use ($order)
+                                                                   {
+                                                                         $message->to($order->email ,'Bobres IPTV | Your Order About To Expire ')
+                                                                         ->subject('Bobres IPTV | Your Order About To Expire ');
+                                                         $order->update();
+                                                                                                                             });
+
+
+                                               }
+                                               elseif($diff->format("%a") == 5 && $order->period_expired != "5"){
+
+
+                    $order->period_expired = "5";
+                    Mail::send('mail.mail_expired', $this->data , function($message) use ($order)
+                     {
+                           $message->to($order->email ,'Bobres IPTV | Your Order About To Expire ')
+                           ->subject('Bobres IPTV | Your Order About To Expire ');
+                    $order->update();
+                                                                                        });
+
+
+
+
+                }elseif($diff->format("%a") == 10 && $order->period_expired != "10"){
+
+
+                    $order->period_expired = "10";
+                     Mail::send('mail.mail_expired', $this->data , function($message) use ($order)
+                                      {
+                                            $message->to($order->email ,'Bobres IPTV | Your Order About To Expire ')
+                                            ->subject('Bobres IPTV | Your Order About To Expire ');
+                                       $order->update();
+                                                                                                           });
+
+
+
+
+                }elseif($diff->format("%a") == 0  && $order->period_expired != "0"){
+
+
+                                     $order->period_expired = "0";
+                                       Mail::send('mail.mail_expired', $this->data , function($message) use ($order)
+                                                        {
+                                                              $message->to($order->email ,'Bobres IPTV | Your Order About To Expire ')
+                                                              ->subject('Bobres IPTV | Your Order About To Expire ');
+                                                       $order->update();
+                                                                                                                           });
+
+
+
+                                 }
+
+                                 elseif($diff->format("%a") < 0  && $diff->format("%a") < -3  && $order->period_expired != "-1"){
+
+
+                                                     $order->period_expired = "-1";
+                                                       Mail::send('mail.mail_expired', $this->data , function($message) use ($order)
+                                                                        {
+                                                                              $message->to($order->email ,'Bobres IPTV | Your Order About To Expire ')
+                                                                              ->subject('Bobres IPTV | Your Order About To Expire ');
+                                                                              $order->update();
+                                                                       });
+
+
+                                                 }
+*/
+
+
+            }
+
+
+            }
+
+
+            } catch (\Exception $e) {
+
+                return $e->getMessage();
+            }
+
+            }
+
+
     function overview(){
 
 
+        $this->send_email_auto_extend();
         if(\Auth::user()->name == "Said Rafiq") return redirect()->route('orders.new');
         return view('dashboard.overview');
 

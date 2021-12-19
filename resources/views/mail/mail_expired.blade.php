@@ -1,113 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--LOGO-->
-  <link rel="icon" href="{{asset('img/'.\App\Store::first()->logo)}}">
-  <link rel="stylesheet" href="{{ asset('iptv_update/css/bootstrap.min.css') }} ">
-  <title>Bobres System</title>
-</head>
-<body>
-  
-  
-<div class="container text-center">
-  <a href="#." title="Logo" class="logo scroll"><img style="width: 100px;" src="https://www.bobres.com/iptv_update/images/logo_dark_up.png" class="logo-dark" alt="logo">
-    
-  </a>
-  <br>   <br> 
 
-  @if ($local == 'ES')  
 
-  Hola, este es el equipo de Bobres. <br>
-  Estamos muy contentos de que elija nuestra empresa <br>
-  ¡Su suscripción Iptv está a punto de caducar o ya caducó! <br>
-  Si está interesado en ampliar el servicio, aquí están todas las ofertas que ofrecemos: <br> <br>
-  
-  Oferta especial: <br>
-  Prima de 1 año para 2 dispositivos: <br>
-  https://www.bobres.co/en/payments/181 <br>
-  <br><br>
-  Un dispositivo: <br> 
-  12 meses: bobres./en/payments/11 <br>
-  6 meses: bobres.co/en/payments/31 <br>
-  3 meses: bobres.co/en/payments/51 <br>
-  1 mes: bobres.co/en/payments/161 <br>
-  <br> <br>
-  ¡O puede visitar nuestro sitio web para obtener todas las nuevas actualizaciones! <br>
-  <br>
-  Www.bobres.com <br>
-  <br> <br>
-  
-  Si tiene algún problema o pregunta, puede contactarnos, estaremos encantados de ayudarle: <br>
-  <br>
-  Cuentas de Whatsapp: <br>  https://www.bobres.co/en/contact <br> <br>
-  
-  Correo electrónico: contact.Bobres@gmail.com <br>
-  saludos <br>
-  
+
+@if ($local == 'ES')
+
+Hola, este es el equipo de IPTV de Bobres. <br>
+Estamos muy contentos de que haya elegido nuestra empresa <br>
+Su suscripción actual a IPTV: <br> <br>
+ NÚMERO DE PEDIDO: <b> {{$id}} </b> <br>
+ CORREO ELECTRÓNICO: <b> {{$email}} </b> <br>
+ SUSCRITO EN: <b> {{$created_at}} </b> <br>
+ EXPIRÓ EL: <b> {{$expired_at}} </b> <br>
+ MONTO PAGADO: <b> {{$importe_pagado}} </b> <br> <br>
+
+ Está a punto de caducar después de <b>  {{$days_left}} </b> días <br>
+Si está interesado en <b> ampliar </b> el servicio, aquí están todas las ofertas que ofrecemos: <br> <br>
+
+Servicio premium de 1 año por 59 € (UN DISPOSITIVO): <a href = "https://www.re-cod.com/en/payments?price=59.98&txt=N21-{{$id}} Extender a 1 año Servicio Premium&clientid={{$client_id}} "> Pago LINK </a> <br>
+Servicio premium de 2 años por 99 € (DOS DISPOSITIVOS): <a href = "https://www.re-cod.com/en/payments?price=99.98&txt=N21-{{$id}} Extender a 1 año Servicio Premium (DOS DISPOSITIVOS)&clientid={{$client_id}} "> Payment LINK </a> <br>
+Servicio premium de 6 meses por 48 €: <a href = "https://www.re-cod.com/en/payments?price=48.99&txt=N21-{{$id}} Extienda a servicio premium de 6 meses&clientid={{$client_id}} "> Pago LINK </a> <br>
+3 meses de servicio premium por 39 €: <a href = "https://www.re-cod.com/en/payments?price=39.97&txt=N21-{{$id}} extender a 3 meses de servicio premium&clientid={{$client_id}} "> Pago LINK </a> <br>
+<br> <br>
+¡O puede visitar nuestro sitio web para obtener todas las actualizaciones! <br>
+<br> Www.bobres.co <br>
+<br> <br>
+Si tiene algún problema o pregunta, puede contactarnos, estaremos encantados de ayudarle: <br>
+<br>
+Cuentas de Whatsapp: <a href="https://www.bobres.co/en/support"> Aquí </a> <br>
+Correo electrónico: contact.Bobres@gmail.com <br>
+saludos <br>
+
 @elseif ($local == 'DE') 
 
-Hallo, das ist das Bobres-Team. <br>
-Wir freuen uns sehr, dass Sie sich für unser Unternehmen entschieden haben
-Ihr Iptv-Abonnement läuft bald ab oder ist bereits abgelaufen! <br>
-Wenn Sie an einer Erweiterung des Dienstes interessiert sind, finden Sie hier alle Angebote, die wir anbieten: <br> <br>
+Hallo, das ist das Bobres IPTV-Team.<br>
+Wir freuen uns sehr, dass Sie sich für unser Unternehmen entschieden haben<br>
+Ihr aktuelles IPTV-Abonnement:<br><br>
+ BESTELLNUMMER : <b>{{$id}}</b> <br>
+ E-MAIL : <b>{{$email}}</b> <br>
+ ABONNIERT BEI : <b>{{$created_at}}</b> <br>
+ ABGELAUFEN AM: <b>{{$expired_at}}</b> <br>
+ BEZAHLTER BETRAG: <b>{{$paid_amount}}</b> <br><br>
 
-Sonderangebot: <br>
-1 Jahr Prämie für 2 Geräte: <br>
-https://www.bobres.co/de/payments/181 <br>
+ Läuft nach <b>+{{ $days_left }}</b> Tagen ab<br>
+Wenn Sie daran interessiert sind, den Service <b>zu erweitern</b> , finden Sie hier alle Angebote, die wir anbieten: <br><br>
+
+1 Jahr Premium-Service für 59€ (EIN GERÄT): <a href="https://www.re-cod.com/en/payments?price=59.98&txt=N21-{{$id}} Auf 1 Jahr verlängern Premium Service&clientid={{$client_id}}">Zahlungs-LINK </a><br>
+2 Jahre Premium-Service für 99€ (ZWEI GERÄTE): <a href="https://www.re-cod.com/en/payments?price=99.98&txt=N21-{{$id}} Auf 1 Jahr verlängern Premium-Dienst (ZWEI GERÄTE)&clientid={{$client_id}}">Zahlungs-LINK </a><br>
+6 Monate Premium Service für 48€: <a href="https://www.re-cod.com/en/payments?price=48.99&txt=N21-{{$id}} Verlängerung auf 6 Monate Premium Service&clientid={{$client_id}}">Zahlungs-LINK </a><br>
+3 Monate Premium-Service für 39€: <a href="https://www.re-cod.com/en/payments?price=39.97&txt=N21-{{$id}} Verlängerung auf 3 Monate Premium-Service&clientid={{$client_id}}">Zahlungs-LINK </a><br>
 <br><br>
-Ein Gerät: <br>  
-12 Monate: bobres.co/de/payments/11 <br>
-6 Monate: bobres.co/de/payments/31 <br>
-3 Monate: bobres.co/de/payments/51 <br>
-1 Monat: bobres.co/de/payments/161 <br>
-<br> <br>
 Oder besuchen Sie unsere Website, um alle neuen Updates zu erhalten! <br>
+<br>Www.bobres.co<br>
+<br><br>
+Bei Problemen oder Fragen können Sie uns kontaktieren, wir unterstützen Sie sehr gerne:<br>
 <br>
-Www.bobres.co <br>
-<br> <br>
+WhatsApp-Konten: <a href="https://www.bobres.co/en/support">Hier</a><br>
+E-Mail: contact.Bobres@gmail.com<br>
+Grüße<br>
 
-Wenn Sie Probleme oder Fragen haben, können Sie uns kontaktieren. Wir unterstützen Sie gerne: <br>
-<br>
-WhatsApp-Konten: <br>  https://www.bobres.co/en/contact<br> <br>
-
-E-Mail: contact.Bobres@gmail.com <br>
-Grüße <br>
- 
 @else 
 
-Hello, This Is The Bobres Team.<br>
+Hello, This Is The Bobres IPTV Team.<br>
 We are very happy that you choosed our company<br>
-Your Iptv Subscription Is About To expire or it is already expired !<br>
-If You Are Interested about Extending the service , here is all the offers that we provide : <br><br>
+Your current IPTV subscription:<br><br>
+ ORDER NUMBER : <b>{{$id}}</b> <br>
+ EMAIL : <b>{{$email}}</b> <br>
+ SUBSCRIBED AT : <b>{{$created_at}}</b> <br>
+ EXPIRED AT: <b>{{$expired_at}}</b> <br>
+ PAID AMOUNT: <b>{{$paid_amount}}</b> <br><br>
 
-Special offer : <br>
-1 year premium for 2 devices : <br>
-https://www.bobres.co/en/payments/181<br>
-<br><br>
-One device  :<br>
-12 months : bobres.co/en/payments/11<br>
-6 months  : bobres.co/en/payments/31<br>
-3 months  : bobres.co/en/payments/51<br>
-1 months : bobres.co/en/payments/161<br>
+ Is about to expire after <b>+{{ $days_left }}</b> days<br>
+If You Are Interested about <b>Extending</b> the service , here is all the offers that we provide : <br><br>
+
+1 Year Premium Service For 59€ (ONE DEVICE): <a href="https://www.re-cod.com/en/payments?price=59.98&txt=N21-{{$id}} Extend To 1 Year Premium Service&clientid={{$client_id}}">Payment LINK </a><br>
+2 Year Premium Service For 99€ (TWO DEVICES): <a href="https://www.re-cod.com/en/payments?price=99.98&txt=N21-{{$id}} Extend To 1 Year Premium Service (TWO DEVICES)&clientid={{$client_id}}">Payment LINK </a><br>
+6 Months Premium Service For 48€: <a href="https://www.re-cod.com/en/payments?price=48.99&txt=N21-{{$id}} Extend To 6 Months Premium Service&clientid={{$client_id}}">Payment LINK </a><br>
+3 Months Premium Service For 39€: <a href="https://www.re-cod.com/en/payments?price=39.97&txt=N21-{{$id}} Extend To 3 Months Premium Service&clientid={{$client_id}}">Payment LINK </a><br>
 <br><br>
 Or you can visit our website to get all the new updates ! <br>
-<br>
-Www.bobres.co<br>
+<br>Www.bobres.co<br>
 <br><br>
-
 If You Have Any Problems Or Questions , you can Contact Us , we will be very happy to support you :<br>
 <br>
-Whatsapp Accounts :  <br>   https://www.bobres.co/en/contact<br><br>
-
-Email :     contact.Bobres@gmail.com<br>
+Whatsapp Accounts :  <a href="https://www.bobres.co/en/support">Here</a><br>
+Email :  contact.Bobres@gmail.com<br>
 regards<br>
+
 
 @endif
 
  
-
-</body>
-</html>
