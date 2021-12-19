@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\MailList;
 use App\Order;
 use App\Visitor;
+use App\Store;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
