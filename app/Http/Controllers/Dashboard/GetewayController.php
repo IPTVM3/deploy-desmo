@@ -79,6 +79,14 @@ class GetewayController extends Controller
                     "paypal khalid ( pplkhalid@outlook.com )",
                     "AYLqV6bkACzfPBDv2h0oRmgPy3qQhqC5MPNVPWR4XGl9rAClbo2OboFK5zt0heDNCRfgf4oU_OwSTUOZ"
                 )
+
+ 
+
+                ,
+                array(
+                    "paypal BnBihi 2 ( mohamed4benbihi@gmail.com )",
+                    "AcZucxo3JxFQgzMsE4BacC2rs8bV7TwrQlodVDAJkoIXOV-8Bjwk4vsWjJGxFCaTyuNtKcYFc0hUSCVi"
+                )
  
               );
           
