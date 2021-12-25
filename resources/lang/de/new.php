@@ -84,7 +84,9 @@ return [
     'multidevice_desc'=>'Genießen Sie unsere Premium-IPTV-Dienste auf vielen Geräten zum reduzierten Preis!',
     'multidevice_desc_button'=>'Jetzt Angebot anfordern',
     'device'=>'Geräte',
-    'test_trial'=>'Sie können jetzt 30 Tage uneingeschränkten Zugang erhalten, um unsere Dienste auszuprobieren! '
+    'test_trial'=>'Sie können jetzt 30 Tage uneingeschränkten Zugang erhalten, um unsere Dienste auszuprobieren! ',
+    'sport_new_package'=>'Spezielle 4K / FHD- und PPV-Events',
+    'sport_new_package_desc'=>'Erhalte ein 1-Jahres-Spezialpaket, optimiert mit 4k- und Full-HD-Streaming-Qualität mit auch PPV-Sportereignissen.',
 ];
 
 ?> 

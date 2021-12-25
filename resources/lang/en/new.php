@@ -110,7 +110,9 @@ return [
     'multidevice_desc'=>'Enjoy our premium IPTV services on many devices , with reduced price !',
     'multidevice_desc_button'=>'Get The Offer Now',
     'device'=>'Devices',
-    'test_trial'=>'You can get 30 day full access to try our services now ! ' 
+    'test_trial'=>'You can get 30 day full access to try our services now ! ' ,
+    'sport_new_package'=>'Special 4K / FHD and PPV  Events',
+    'sport_new_package_desc'=>'Get 1 Year Special Package optimized with 4k and Full HD streaming quality with also PPV sports events.'
 ];
 
 ?> 

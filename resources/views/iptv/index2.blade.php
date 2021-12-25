@@ -965,11 +965,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
-                <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.sport_package')</h2>
-                <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_package_desc')</p>
+                <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.sport_new_package')</h2>
+                <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_new_package_desc')</p>
                 <br>
 
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button') - 69 euros</a>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button') - 79 euros</a>
             </div>
         </div>
     </div>
