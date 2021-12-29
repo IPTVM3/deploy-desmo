@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bobres - @lang('amos.ChannelList') (August 2021)</title>
+    <title>Bobres - @lang('amos.ChannelList') (2022)</title>
 
     <meta name="verification" content="349278a8fd82d8e1efbdd2873f9295" />
     <meta name="google-site-verification" content="TMke9839CMeHz5lagagBuWa3qE9OaV4GMwkHsfL5q14" />
@@ -141,7 +141,7 @@
 <section id="cover" class="min-vh-100" style="padding-top: 50px;">
 
     <div>
-        <h2 class="d-inline-flex" id="titre">@lang('amos.ChannelList') (August 2021)</h2>
+        <h2 class="d-inline-flex" id="titre">@lang('amos.ChannelList') (2022)</h2>
     </div>
     <div  class="container" style="padding-top: 30px;">
 

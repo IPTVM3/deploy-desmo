@@ -131,7 +131,7 @@
                     <!-- SLIDE  -->
                     <li   data-index="rs-01" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500">
                         <!-- MAIN IMAGE -->
-                        <img   src="{{  asset('iptv_update/images/b1.jpg') }}" title="Best IPTV Subscription Service Provider 2021"  alt="Best IPTV Subscription Service Provider 2021" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10"  data-no-retina>
+                        <img   src="{{  asset('iptv_update/images/b1.jpg') }}" title="Best IPTV Subscription Service Provider 2022"  alt="Best IPTV Subscription Service Provider 2022" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10"  data-no-retina>
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption tp-resizeme"
                              data-x="['left','center','center','center']" data-hoffset="['10','0','0','0']"
