@@ -126,7 +126,7 @@ class IptvController extends Controller
                     $client_id = $value->api_key; 
 
                     if ($value->id == $store->unit_system) {
-                        return redirect($bas_url."/en/payments?price=".$product->price_after."&txt=".$product->title."&clientid=".$client_id);
+                        return redirect($bas_url."/en/payments?price=".$product->price_after."&txt=".$product->title."&clientid=".$client_id."&tested=0");
                     }
                 }
 
@@ -717,11 +717,16 @@ class IptvController extends Controller
              
         }
 
+        
         if($status == 'DONE'){
             $order->status = 1; 
             $order->total =$amount;
             $order->type_payement = 'Stripe' ;
        }
+
+
+
+       
  
        switch ($amount) {
         //ONE MONTH
@@ -832,7 +837,7 @@ class IptvController extends Controller
         return redirect()->route('iptv.orders.steps',$order->id);
     }
 
-    function paypal_completedNew($email,$amount,$country,$status,$txt){
+    function paypal_completedNew($email,$amount,$country,$status,$txt,$tested){
         $order = Order::create();
         $order->email = $email;  
         $order->card_number = $country;  
@@ -852,6 +857,8 @@ class IptvController extends Controller
        }
 
         $order->productName = $txt;
+
+       if($tested == '1') $order->tested = 1;   
 
 
        switch ($amount) {

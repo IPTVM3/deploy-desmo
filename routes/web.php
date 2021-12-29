@@ -35,7 +35,7 @@ Route::group([
          
  
         //PAYEMNT LAST VERSION
-        Route::get('/payments/paypal/completed/{email}/{amount}/{country}/{status}/{txt}', ['as' => 'iptv.paypal.completed', 'uses' => 'IptvController@paypal_completedNew']);
+        Route::get('/payments/paypal/completed/{email}/{amount}/{country}/{status}/{txt}/{tested}', ['as' => 'iptv.paypal.completed', 'uses' => 'IptvController@paypal_completedNew']);
         Route::get('/payments/paypal/completed/{email}/{amount}/{country}/{status}', ['as' => 'iptv.paypal.ss', 'uses' => 'IptvController@paypal_completed']);
 
         Route::get('/reselling', ['as' => 'iptv.reselling', 'uses' => 'IptvController@reselling']);
