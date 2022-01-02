@@ -300,7 +300,7 @@ Route::get('/orders/case', function (Request $request) {
 
 
 
-Route::get('/orders/case', function (Request $request) {
+Route::get('/orders/case/close', function (Request $request) {
 
     $order = Order::findOrFail($request->id);
     $order->case = 'closed'; 
