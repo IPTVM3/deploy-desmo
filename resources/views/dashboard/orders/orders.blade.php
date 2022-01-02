@@ -725,9 +725,9 @@
                 !order.email.toLowerCase().includes(order.zip.toLowerCase())
                 ) email = order.email + " </span><br> <span class='badge badge-success'>"+order.zip+"</span>";
               }
-                tr += '<tr id="'+order.id+'" onclick="showOrderDetails('+order.id+')"  style="background-color:'+color+' !important;" data-toggle="collapse" data-target="#collapse'+order.id+'" aria-expanded="true" aria-controls="#collapse'+order.id+'">';
+                tr += '<tr id="'+order.id+'"  style="background-color:'+color+' !important;" data-toggle="collapse" data-target="#collapse'+order.id+'" aria-expanded="true" aria-controls="#collapse'+order.id+'">';
                 tr +='<th scope="row" ><span class="badge badge-primary" >'+year+''+order.id+'</span> <br><span class="badge badge-success">'+email+'</span><br><span class="badge badge-info">'+order.created_at+' ('+fromNow(order.created_at)+')</span>';
-                tr +='<br><span class="badge badge-light">'+order.productName+'</span ></br> <span class="badge badge-dark">'+order.total+'€</span> <span class="badge badge-success">'+order.card_number+'</span > <span class="badge badge-warning">'+order.mac+'</span> <span class="badge badge-danger">'+order.cv_code+'</span><br> <span class="badge badge-dark">'+order.support+'</span>'+tested+'</th>';
+                tr +='<br><span class="badge badge-light">'+order.productName+'</span ></br> <span class="badge badge-dark">'+order.total+'€</span> <span class="badge badge-success">'+order.card_number+'</span > <span class="badge badge-warning">'+order.mac+'</span> <span class="badge badge-danger">'+order.cv_code+'</span><br> <span class="badge badge-dark">'+order.support+'</span>'+tested+'<br> <button onclick="closeCase('+order.id+')"  class="btn btn-danger">CLOSE THE CASE !</button></th>';
 
                 tr +=' </tr>';
 
@@ -867,6 +867,21 @@
             async function caseOpened(){
                 loading(true);
                 await axios.get('/api/orders/case?id='+document.getElementById('model-id').value.toString().trim())
+                             .then(response => {
+                                 makeGetRequest(30);
+                                 $('#exampleModal').modal('hide');
+                     
+
+                              })
+                             .catch(error => {  console.log(error)  })
+                loading(false);
+            }
+
+
+
+            async function closeCase(id){
+                loading(true);
+                await axios.get('/api/orders/case/close?id='+id)
                              .then(response => {
                                  makeGetRequest(30);
                                  $('#exampleModal').modal('hide');

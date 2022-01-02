@@ -299,6 +299,21 @@ Route::get('/orders/case', function (Request $request) {
 });
 
 
+
+Route::get('/orders/case', function (Request $request) {
+
+    $order = Order::findOrFail($request->id);
+    $order->case = 'closed'; 
+    $order->update();
+ 
+
+     return response([
+       'isSuccessful'=> true,
+       'message' => 'Case Closed'
+     ], 200)->header('Content-Type', 'application/json');
+});
+
+
 Route::get('/orders/notify', function (Request $request) {
 
     $order = Order::find($request->id);
