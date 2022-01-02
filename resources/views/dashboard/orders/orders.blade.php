@@ -760,7 +760,8 @@
 
                         await axios.get('/api/orders/cases')
                        .then(response => { 
-                          insertCases(response.data.data); 
+                          console.log(response);
+                          insertCases(response.data); 
                        }).catch(error => {
                        console.log(error)
                         })
