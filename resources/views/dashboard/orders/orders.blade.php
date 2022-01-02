@@ -314,7 +314,7 @@
                          </div>
 
  
-                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                         <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="pills-orders-tab" data-toggle="pill" href="#pills-orders" role="tab" aria-controls="pills-orders" aria-selected="true">All Orders</a>
                     </li>
