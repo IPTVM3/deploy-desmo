@@ -285,6 +285,34 @@
           </div>
         </div>
  
+
+                     <hr>
+                
+                      <div class="row mb-3">
+                         <div class="col-xl-6 col-lg-12">
+                           <div class="card card-inverse card-success">
+                             <div class="card-block bg-success">
+                               <div class="rotate">
+                                 <i class="fa fa-user fa-5x"></i>
+                               </div>
+                               <h6 class="text-uppercase">Last Month</h6>
+                               <h1 class="display-1" id="worker_last_month"></h1>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="col-xl-6 col-lg-12">
+                           <div class="card card-inverse card-danger">
+                             <div class="card-block bg-danger">
+                               <div class="rotate">
+                                 <i class="fa fa-list fa-4x"></i>
+                               </div>
+                               <h6 class="text-uppercase">Current Month</h6>
+                               <h1 class="display-1" id="worker_current_month"></h1>
+                             </div>
+                           </div>
+                         </div>
+                         </div>
+
  
 
 
@@ -747,7 +775,11 @@
 
                                  document.getElementById('today_visitor').innerHTML = response.data.today_visitor+' Visitor' ;
                                  document.getElementById('yestardy_visitor').innerHTML = response.data.yestardy_visitor+' Visitor' ;
-                                loading(false);
+                                
+
+                                 document.getElementById('worker_current_month').innerHTML = response.data.testOrders[0].toFixed(2)+' €' ;
+                                 document.getElementById('worker_last_month').innerHTML = response.data.testOrders[1].toFixed(2)+' €' ;
+                                 loading(false);
                                }).catch(error => {
                                console.log(error)
                                 })

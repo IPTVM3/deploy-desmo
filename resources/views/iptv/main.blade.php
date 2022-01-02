@@ -13,11 +13,11 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <meta name="verification" content="349278a8fd82d8e1efbdd2873f9295" />
-    <title>Bobres - The Best IPTV Service Provider for 2021 | Channel list (August 2021) </title>
-    <meta name="description" content="The best IPTV provider in August 2021 !! Get Access to thousands of IPTV channels through one IPTV Subscription. bobres.co is the best premium IPTV subscription service provider in the market" />
+    <title>Bobres - The Best IPTV Service Provider for 2022 | Channel list (2022) </title>
+    <meta name="description" content="The best IPTV provider in 2022 !! Get Access to thousands of IPTV channels through one IPTV Subscription. bobres.co is the best premium IPTV subscription service provider in the market" />
     <meta name="keywords" content="best iptv provider for USA, best iptv deal, secure payment, iptv reseller, american channels, asian channels list, 
                                  european channels list, how to install iptv, channel list, arabic channels list, iptv subscription, holidays offer, better than netflix, iptv smarters, iptv box, iptv player,cobra,king 365,ott,m3u,mag,smart iptv,test,messi
-                                 iptv price, iptv box, best iptv provider, best iptv alternative, quality, premium iptv subscription, 12 months premium iptv subscription, best iptv provider for August 2021, full channel list, iptv on firestick 4k, iptv reddit, iptv smarters pro" />
+                                 iptv price, iptv box, best iptv provider, best iptv alternative, quality, premium iptv subscription, 12 months premium iptv subscription, best iptv provider for 2022, full channel list, iptv on firestick 4k, iptv reddit, iptv smarters pro" />
     <meta property="og:site_name" content="IPTV provider" />
     <meta property="og:url" content="bobres.co"/>
     <meta property="og:title" content="IPTV Provider | The best IPTV Service Provider" />
@@ -134,7 +134,7 @@
                         <li><a class="wow fadeInDown mail-bg-hvr" href="mailto:contact.bobres@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <p class="company-about fadeIn grey-text text-capitalize">© 2021 Bobres. @lang('new.made_by') <a href="https://www.re-cod.com">Recod</a></p>
+                <p class="company-about fadeIn grey-text text-capitalize">© 2022 Bobres. @lang('new.made_by') <a href="https://www.re-cod.com">Recod</a></p>
             </div>
         </div>
     </div>
