@@ -361,12 +361,6 @@
 
                                                   <tbody id="tbadyoforders">
                                                   </tbody>
-
-
-                                                  <tbody id="tbadyofcases">
-                                                  </tbody>
-
-                                                  
                                                 </table>
                                               </div>
                                             </div>
@@ -397,7 +391,24 @@
 
               
               
-                         
+                            <div class="tab-pane fade" id="pills-cases" role="tabpanel" aria-labelledby="pills-cases-tab" >
+              
+                                   <div class="panel-body">
+                                              <div class="table-wrap" id="tableofcases">
+                                                <table class="table myaccordion table-hover" id="accordion">
+                                                  <thead>
+                                                    <tr>
+                                                      <th>#EPPCSDD</th>
+                                                    </tr>
+                                                  </thead>
+
+                                                  <tbody id="tbadyofcases">
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </div>
+                             
+                            </div>
    
                           </div>
 
@@ -893,17 +904,17 @@
             if(user.name != "Said Rafiq") makeGetRequestOfStatic();
             //insertOrders(orders);
 
-            document.getElementById('tbadyofcases').style.display = 'none';
-            document.getElementById('tbadyoforders').style.display = 'block';           // Hide
+            document.getElementById('pills-cases').style.display = 'none';
+            document.getElementById('pills-orders').style.display = 'block';           // Hide
 
             document.getElementById('pills-orders-tab').addEventListener("click", ()=>{
-                            document.getElementById('tbadyoforders').style.display = 'block';           // Hide
-                            document.getElementById('tbadyofcases').style.display = 'none';
+                            document.getElementById('pills-orders').style.display = 'block';           // Hide
+                            document.getElementById('pills-cases').style.display = 'none';
                         });
 
             document.getElementById('pills-cases-tab').addEventListener("click", ()=>{
-                            document.getElementById('tbadyoforders').style.display = 'none';           // Hide
-                            document.getElementById('tbadyofcases').style.display = 'block';
+                            document.getElementById('pills-orders').style.display = 'none';           // Hide
+                            document.getElementById('pills-cases').style.display = 'block';
                         });
 
         });
