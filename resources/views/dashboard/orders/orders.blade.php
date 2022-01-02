@@ -863,7 +863,7 @@
                                  document.getElementById('worker_current_month').innerHTML = response.data.testOrders[0].toFixed(2)+' €' ;
                                  document.getElementById('worker_last_month').innerHTML = response.data.testOrders[1].toFixed(2)+' €' ;
                                  
-                                 insertOrders(response.data.response.data.testedOrders);
+                                 insertOrders(response.data.testedOrders);
                                  
                                  loading(false);
                                }).catch(error => {
