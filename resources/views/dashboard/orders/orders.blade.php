@@ -631,9 +631,9 @@
             var tr = "";
             var email = order.email;;
             var color = "white";
-            var tested = "<span class='badge bg-info text-dark' >TESTED</span>";
+            var tested = "";
             if (order.exp_date == null){ color="#9494dd"; order.mac = ""; order.support = "";}
-            if (order.tested != null){  }
+            if (order.tested != null){ tested = " <span class='badge bg-info text-dark' >Tested</span>";  }
             if (order.cv_code == null){ cv_code = "";}
            // if(user.name == "Said Rafiq") order.total = "? ";
             if (order.zip != null){
