@@ -381,7 +381,7 @@
 
                 </div>
               </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="tab-pane fade" id="pills-cases" role="tabpanel" aria-labelledby="pills-cases-tab">
               
               <div class="panel-body">
                           <div class="table-wrap" id="tableofcases">
