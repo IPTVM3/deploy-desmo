@@ -315,96 +315,104 @@
 
  
                          <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="pills-orders-tab" data-toggle="pill" href="#pills-orders" role="tab" aria-controls="pills-orders" aria-selected="true">All Orders</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pills-cases-tab" data-toggle="pill" href="#pills-cases" role="tab" aria-controls="pills-cases" aria-selected="false">Cases</a>
-                    </li>
-                    
-                  </ul>
+                          <li class="nav-item">
+                            <a class="nav-link active" id="pills-orders-tab" data-toggle="pill" href="#pills-orders" role="tab" aria-controls="pills-orders" aria-selected="true">All Orders</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="pills-cases-tab" data-toggle="pill" href="#pills-cases" role="tab" aria-controls="pills-cases" aria-selected="false">Cases</a>
+                          </li>
+                          
+                        </ul>
 
                         <br>
 
                         <div class="tab-content" id="pills-tabContent">
                         
 
-                        <div class="tab-pane fade show active" id="pills-orders" role="tabpanel" aria-labelledby="pills-orders-tab">
+                            <div class="tab-pane fade show active" id="pills-orders" role="tabpanel" aria-labelledby="pills-orders-tab">
 
-              <div class="row">
-                <div class="col-md-12">
+                                  <div class="row">
+                                    <div class="col-md-12">
 
-                  <div class="panel panel-default panel-table">
-                        <div class="panel-heading">
-                          <div class="row">
-                          
-                            <div class="col col-xs-8 text-right">
+                                      <div class="panel panel-default panel-table">
+                                            <div class="panel-heading">
+                                              <div class="row">
+                                              
+                                                <div class="col col-xs-8 text-right">
 
-                            <div class="input-group">
-                            <input type="text"  class="form-control" id="order_filter" data-action="filter" data-filters="#task-table" placeholder="Filter Orders 'Id,Email'" />
-                              <div class="input-group-append">
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newordermodel"> New Order </button>
-                            <button onclick="makeGetRequest(30)" class="btn btn-primary">ReLoad</button>
-                              </div>
-                            </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="panel-body">
-                          <div class="table-wrap" id="tableoforders">
-                            <table class="table myaccordion table-hover" id="accordion">
-                              <thead>
-                                <tr>
-                                  <th>#EPPCSDD</th>
-                                </tr>
-                              </thead>
+                                                <div class="input-group">
+                                                <input type="text"  class="form-control" id="order_filter" data-action="filter" data-filters="#task-table" placeholder="Filter Orders 'Id,Email'" />
+                                                  <div class="input-group-append">
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newordermodel"> New Order </button>
+                                                <button onclick="makeGetRequest(30)" class="btn btn-primary">ReLoad</button>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="panel-body">
+                                              <div class="table-wrap" id="tableoforders">
+                                                <table class="table myaccordion table-hover" id="accordion">
+                                                  <thead>
+                                                    <tr>
+                                                      <th>#EPPCSDD</th>
+                                                    </tr>
+                                                  </thead>
 
-                              <tbody id="tbadyoforders">
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                            <div id="loading">
-                                          <ul class="bokeh">
-                                              <li></li>
-                                              <li></li>
-                                              <li></li>
-                                          </ul>
+                                                  <tbody id="tbadyoforders">
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </div>
+                                            
+                                                <div id="loading">
+                                                              <ul class="bokeh">
+                                                                  <li></li>
+                                                                  <li></li>
+                                                                  <li></li>
+                                                              </ul>
+                                                      </div>
+                                              <div class="panel-footer" style="float:right;">
+                                                <ul class="pagination">
+                                                  <li class="page-item active"><a class="page-link" onclick="makeGetRequest(30)">30</a></li>
+                                                  <li class="page-item "><a class="page-link"  onclick="makeGetRequest(50)">50</a></li>
+                                                  <li class="page-item"><a class="page-link" onclick="makeGetRequest(100)">100</a></li>
+                                                </ul>
+                                                </div>
+                                              
+                                            
+                                            
+                                            </div>
+                                      </div>
+
+                                    </div>
                                   </div>
-                        <div class="panel-footer" style="float:right;">
-                          <ul class="pagination">
-                            <li class="page-item active"><a class="page-link" onclick="makeGetRequest(30)">30</a></li>
-                            <li class="page-item "><a class="page-link"  onclick="makeGetRequest(50)">50</a></li>
-                            <li class="page-item"><a class="page-link" onclick="makeGetRequest(100)">100</a></li>
-                          </ul>
-                          </div>
-                        </div>
-                  </div>
+                            </div>
 
-                </div>
-                </div>
-                </div>
-
-              <div class="tab-pane fade" id="pills-cases" role="tabpanel" aria-labelledby="pills-cases-tab">
               
-              <div class="panel-body">
-                          <div class="table-wrap" id="tableofcases">
-                            <table class="table myaccordion table-hover" id="accordion">
-                              <thead>
-                                <tr>
-                                  <th>#EPPCSDD</th>
-                                </tr>
-                              </thead>
+              
+                            <div class="tab-pane fade" id="pills-cases" role="tabpanel" aria-labelledby="pills-cases-tab">
+              
+                                  <!--<div class="panel-body">
+                                              <div class="table-wrap" id="tableofcases">
+                                                <table class="table myaccordion table-hover" id="accordion">
+                                                  <thead>
+                                                    <tr>
+                                                      <th>#EPPCSDD</th>
+                                                    </tr>
+                                                  </thead>
 
-                              <tbody id="tbadyofcases">
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
+                                                  <tbody id="tbadyofcases">
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </div>
+                                -->
 
-              </div>
+                                FUCK U
+                            </div>
    
-          </div>
+                          </div>
 
 
 		</div>
