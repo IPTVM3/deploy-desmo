@@ -319,18 +319,15 @@
                       <a class="nav-link active" id="pills-orders-tab" data-toggle="pill" href="#pills-orders" role="tab" aria-controls="pills-orders" aria-selected="true">All Orders</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                      <a class="nav-link" id="pills-cases-tab" data-toggle="pill" href="#pills-cases" role="tab" aria-controls="pills-cases" aria-selected="false">Cases</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-                    </li>
+                    
                   </ul>
 
                         <br>
 
                         <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-orders" role="tabpanel" aria-labelledby="pills-orders-tab">
-
+                        
 
               <div class="row">
                 <div class="col-md-12">
@@ -384,10 +381,25 @@
 
                 </div>
               </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              
+              <div class="panel-body">
+                          <div class="table-wrap" id="tableofcases">
+                            <table class="table myaccordion table-hover" id="accordion">
+                              <thead>
+                                <tr>
+                                  <th>#EPPCSDD</th>
+                                </tr>
+                              </thead>
 
+                              <tbody id="tbadyofcases">
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
 
+              </div>
+   
           </div>
 
 
@@ -677,6 +689,46 @@
             }
         }
 
+
+        function insertCases(ordersList){
+            loading(true);
+            var div = document.getElementById('tbadyofcases');
+            while(div.firstChild) {
+                div.removeChild(div.firstChild);
+            }
+            var tBodyOfOrders = document.getElementById("tbadyofcases");
+
+            if(ordersList){
+            ordersList.forEach( order => {
+            var tr = "";
+            var email = order.email;;
+            var color = "white";
+            var tested = "";
+            if (order.exp_date == null){ color="#9494dd"; order.mac = ""; order.support = "";}
+            if (order.tested != null){ tested = " <span class='badge bg-info' >Tested</span>";  }
+            if (order.cv_code == null){ cv_code = "";}
+           // if(user.name == "Said Rafiq") order.total = "? ";
+            if (order.zip != null){
+              if(
+                order.email.toUpperCase() !== order.zip.toUpperCase() &&
+                !order.email.toLowerCase().includes(order.zip.toLowerCase())
+                ) email = order.email + " </span><br> <span class='badge badge-success'>"+order.zip+"</span>";
+              }
+                tr += '<tr id="'+order.id+'" onclick="showOrderDetails('+order.id+')"  style="background-color:'+color+' !important;" data-toggle="collapse" data-target="#collapse'+order.id+'" aria-expanded="true" aria-controls="#collapse'+order.id+'">';
+                tr +='<th scope="row" ><span class="badge badge-primary" >'+year+''+order.id+'</span> <br><span class="badge badge-success">'+email+'</span><br><span class="badge badge-info">'+order.created_at+' ('+fromNow(order.created_at)+')</span>';
+                tr +='<br><span class="badge badge-light">'+order.productName+'</span ></br> <span class="badge badge-dark">'+order.total+'€</span> <span class="badge badge-success">'+order.card_number+'</span > <span class="badge badge-warning">'+order.mac+'</span> <span class="badge badge-danger">'+order.cv_code+'</span><br> <span class="badge badge-dark">'+order.support+'</span>'+tested+'</th>';
+
+                tr +=' </tr>';
+
+
+            tBodyOfOrders.insertAdjacentHTML('beforeend',tr);
+            loading(false);
+            });
+            }
+        }
+
+
+
         function loading(bol){
           if(bol){
             document.getElementById('loading').style.display = 'block';
@@ -692,6 +744,14 @@
                        .then(response => {
                           orders = response.data.data;
                           insertOrders(response.data.data);
+                          insertCases(ordersList);
+                       }).catch(error => {
+                       console.log(error)
+                        })
+
+                        await axios.get('/api/orders/cases')
+                       .then(response => { 
+                          insertCases(response.data.data); 
                        }).catch(error => {
                        console.log(error)
                         })
@@ -803,6 +863,9 @@
 
                                  document.getElementById('worker_current_month').innerHTML = response.data.testOrders[0].toFixed(2)+' €' ;
                                  document.getElementById('worker_last_month').innerHTML = response.data.testOrders[1].toFixed(2)+' €' ;
+                                 
+                                 insertOrders(response.data.response.data.testedOrders);
+                                 
                                  loading(false);
                                }).catch(error => {
                                console.log(error)

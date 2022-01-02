@@ -168,12 +168,18 @@ class PaymentController extends Controller
 
 
 
-                //GET TESTED Order
-         $testOrdersThisMonth = DB::table('orders')
-         ->where('tested',1)
-         ->whereYear('created_at', Carbon::now()->year)
-         ->whereMonth('created_at', Carbon::now()->month)
-         ->get();
+           
+                    //GET ALL TESTED Order
+            $testedOrders = DB::table('orders')
+            ->where('tested',1) 
+            ->get();
+
+                 
+                 $testOrdersThisMonth = DB::table('orders')
+                 ->where('tested',1)
+                 ->whereYear('created_at', Carbon::now()->year)
+                 ->whereMonth('created_at', Carbon::now()->month)
+                 ->get();
 
             $amountofthismonth = 0;
             foreach($testOrdersThisMonth as $key => $order){
@@ -205,6 +211,7 @@ class PaymentController extends Controller
               'lastDayOrders_count' => count(Order::whereDate('created_at', Carbon::yesterday())->get()),
               'last15Days' => $last15Days,
               'last30days' => $last30days,
+              'testedOrders' => $testedOrders,
               'testOrders' => [
                     $amountofthismonth,
                     $amountofPerviousmonth
