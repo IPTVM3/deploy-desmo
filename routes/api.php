@@ -167,7 +167,7 @@ Route::get('/orders/size', function (Request $request) {
 });
 
 Route::get('/orders/cases', function (Request $request) {
-    $cases = Order::where('case','==','opened')->get(); 
+    $cases = Order::where('case','==','opened'); 
     return response($cases, 200)
         ->header('Content-Type', 'application/json');
 });
