@@ -329,6 +329,8 @@
                         <div class="tab-content" id="pills-tabContent">
                         
 
+                        <div class="tab-pane fade" id="pills-orders" role="tabpanel" aria-labelledby="pills-orders-tab">
+
               <div class="row">
                 <div class="col-md-12">
 
@@ -380,7 +382,9 @@
                   </div>
 
                 </div>
-              </div>
+                </div>
+                </div>
+
               <div class="tab-pane fade" id="pills-cases" role="tabpanel" aria-labelledby="pills-cases-tab">
               
               <div class="panel-body">
