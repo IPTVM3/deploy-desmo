@@ -280,6 +280,18 @@ Route::get('/orders/case', function (Request $request) {
     $order->case = 'opened'; 
     $order->update();
 
+    $data = [
+        'id' => $request->id,
+        'email' => $order->email,   
+        'local' => $order->card_number,
+  ];
+
+  Mail::send('mail.mail_cases', $data , function($message) use ($order)
+   {
+        $message->to($order->email ,'Bobres IPTV - Resolve Subscription Problems')->subject('Bobres IPTV - Resolve Subscription Problems | N21-'.$order->id);
+  });
+
+
      return response([
        'isSuccessful'=> true,
        'message' => 'Case Opened'
