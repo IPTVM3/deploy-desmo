@@ -314,61 +314,79 @@
                          </div>
 
  
+                         <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab" aria-controls="orders" aria-selected="true">Orders</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                          </li>
+                        </ul>
+
+          <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="orders" role="tabpanel" aria-labelledby="orders-tab">
 
 
+              <div class="row">
+                <div class="col-md-12">
 
-			<div class="row">
-				<div class="col-md-12">
+                  <div class="panel panel-default panel-table">
+                        <div class="panel-heading">
+                          <div class="row">
+                            <div class="col col-xs-4">
+                              <h3 class="panel-title">ALL ORDERS</h3>
+                            </div>
+                            <div class="col col-xs-8 text-right">
 
-        <div class="panel panel-default panel-table">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col col-xs-4">
-                    <h3 class="panel-title">ALL ORDERS</h3>
-                  </div>
-                  <div class="col col-xs-8 text-right">
-
-                  <div class="input-group">
-                  <input type="text"  class="form-control" id="order_filter" data-action="filter" data-filters="#task-table" placeholder="Filter Orders 'Id,Email'" />
-                    <div class="input-group-append">
-                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newordermodel"> New Order </button>
-                  <button onclick="makeGetRequest(30)" class="btn btn-primary">ReLoad</button>
-                    </div>
-                  </div>
-                   </div>
-                </div>
-              </div>
-              <div class="panel-body">
-                <div class="table-wrap" id="tableoforders">
-                  <table class="table myaccordion table-hover" id="accordion">
-                    <thead>
-                      <tr>
-                        <th>#EPPCSDD</th>
-                      </tr>
-                    </thead>
-
-                    <tbody id="tbadyoforders">
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-                  <div id="loading">
-                                <ul class="bokeh">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                            <div class="input-group">
+                            <input type="text"  class="form-control" id="order_filter" data-action="filter" data-filters="#task-table" placeholder="Filter Orders 'Id,Email'" />
+                              <div class="input-group-append">
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newordermodel"> New Order </button>
+                            <button onclick="makeGetRequest(30)" class="btn btn-primary">ReLoad</button>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
                         </div>
-              <div class="panel-footer" style="float:right;">
-                <ul class="pagination">
-                  <li class="page-item active"><a class="page-link" onclick="makeGetRequest(30)">30</a></li>
-                  <li class="page-item "><a class="page-link"  onclick="makeGetRequest(50)">50</a></li>
-                  <li class="page-item"><a class="page-link" onclick="makeGetRequest(100)">100</a></li>
-                </ul>
+                        <div class="panel-body">
+                          <div class="table-wrap" id="tableoforders">
+                            <table class="table myaccordion table-hover" id="accordion">
+                              <thead>
+                                <tr>
+                                  <th>#EPPCSDD</th>
+                                </tr>
+                              </thead>
+
+                              <tbody id="tbadyoforders">
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                            <div id="loading">
+                                          <ul class="bokeh">
+                                              <li></li>
+                                              <li></li>
+                                              <li></li>
+                                          </ul>
+                                  </div>
+                        <div class="panel-footer" style="float:right;">
+                          <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" onclick="makeGetRequest(30)">30</a></li>
+                            <li class="page-item "><a class="page-link"  onclick="makeGetRequest(50)">50</a></li>
+                            <li class="page-item"><a class="page-link" onclick="makeGetRequest(100)">100</a></li>
+                          </ul>
+                          </div>
+                        </div>
+                  </div>
+
                 </div>
               </div>
-				</div>
-			</div>
+          </div>
+
+
 		</div>
 	</section>
 
@@ -633,7 +651,7 @@
             var color = "white";
             var tested = "";
             if (order.exp_date == null){ color="#9494dd"; order.mac = ""; order.support = "";}
-            if (order.tested != null){ tested = " <span class='badge bg-info text-dark' >Tested</span>";  }
+            if (order.tested != null){ tested = " <span class='badge bg-info' >Tested</span>";  }
             if (order.cv_code == null){ cv_code = "";}
            // if(user.name == "Said Rafiq") order.total = "? ";
             if (order.zip != null){
