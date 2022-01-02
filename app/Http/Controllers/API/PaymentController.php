@@ -212,7 +212,9 @@ class PaymentController extends Controller
                      break; 
                      //ONE YEAR
                  default:
-                 $amountofthismonth += $order->total * 0.015;
+                    $amountofthismonth += $order->total * 0.015;
+                
+                 }
 
 
                  
@@ -257,6 +259,8 @@ class PaymentController extends Controller
                      //ONE YEAR
                  default:
                     $amountofPerviousmonth += $order->total * 0.015;
+
+                 }
             }
 
 
