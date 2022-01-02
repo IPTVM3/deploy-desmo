@@ -691,7 +691,7 @@
 
 
         function insertCases(ordersList){
-            loading(true);
+             
             var div = document.getElementById('tbadyofcases');
             while(div.firstChild) {
                 div.removeChild(div.firstChild);
@@ -722,7 +722,7 @@
 
 
             tBodyOfOrders.insertAdjacentHTML('beforeend',tr);
-            loading(false);
+            
             });
             }
         }
