@@ -325,6 +325,7 @@
                             <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
                           </li>
                         </ul>
+                        <br>
 
           <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="orders" role="tabpanel" aria-labelledby="orders-tab">
@@ -336,9 +337,7 @@
                   <div class="panel panel-default panel-table">
                         <div class="panel-heading">
                           <div class="row">
-                            <div class="col col-xs-4">
-                              <h3 class="panel-title">ALL ORDERS</h3>
-                            </div>
+                          
                             <div class="col col-xs-8 text-right">
 
                             <div class="input-group">
@@ -384,6 +383,9 @@
 
                 </div>
               </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+
           </div>
 
 
