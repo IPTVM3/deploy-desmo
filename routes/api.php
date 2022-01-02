@@ -274,6 +274,18 @@ Route::get('/orders/submited', function (Request $request) {
      ], 200)->header('Content-Type', 'application/json');
 });
 
+Route::get('/orders/case', function (Request $request) {
+
+    $order = Order::findOrFail($request->id);
+    $order->case = 'opened'; 
+    $order->update();
+
+     return response([
+       'isSuccessful'=> true,
+       'message' => 'Case Opened'
+     ], 200)->header('Content-Type', 'application/json');
+});
+
 
 Route::get('/orders/notify', function (Request $request) {
 

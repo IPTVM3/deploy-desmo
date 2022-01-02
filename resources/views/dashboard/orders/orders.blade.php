@@ -491,6 +491,7 @@
             <button type="button"  onclick="deleteOrder()" class="btn btn-danger btn-large">Delete Order</button>
             <button type="button" onclick="notifyCustomer()" class="btn btn-dark">Notify Customer</button>
             <button type="button"  onclick="orderCompleted()" class="btn btn-success">Order Completed</button>
+            <button type="button"  onclick="caseOpened()" class="btn btn-info">Case Opened</button>
           </div>
 
 
@@ -860,6 +861,22 @@
 
             loading(false);
             }
+
+
+
+            async function caseOpened(){
+                loading(true);
+                await axios.get('/api/orders/case?id='+document.getElementById('model-id').value.toString().trim())
+                             .then(response => {
+                                 makeGetRequest(30);
+                                 $('#exampleModal').modal('hide');
+                     
+
+                              })
+                             .catch(error => {  console.log(error)  })
+                loading(false);
+            }
+
 
             async function makeGetRequestOfStatic() {
                                await axios.get('/api/overview')
