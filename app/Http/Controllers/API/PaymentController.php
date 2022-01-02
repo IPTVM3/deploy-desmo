@@ -231,32 +231,32 @@ class PaymentController extends Controller
                 switch ($order->total) {
                     //ONE MONTH
                  case "18.99":
-                    $amountofthismonth += $order->total * 0.02;
+                    $amountofPerviousmonth += $order->total * 0.02;
                    break;
                    //6 MONTHS
                  case "48.99":
-                    $amountofthismonth += $order->total * 0.035;
+                    $amountofPerviousmonth += $order->total * 0.035;
                    break; 
                  case "39.99":
-                    $amountofthismonth += $order->total * 0.02;
+                    $amountofPerviousmonth += $order->total * 0.02;
                      break;
                      //3 MONTHS
                  case "39.97":
-                    $amountofthismonth += $order->total * 0.03;
+                    $amountofPerviousmonth += $order->total * 0.03;
                      break;  
                 case "29.98":
-                    $amountofthismonth += $order->total * 0.01;
+                    $amountofPerviousmonth += $order->total * 0.01;
                     break; 
                 case "59.98":
-                    $amountofthismonth += $order->total * 0.035;
+                    $amountofPerviousmonth += $order->total * 0.035;
                     break; 
                     //ONE YEAR  
                  case "49.99":
-                    $amountofthismonth += $order->total * 0.02;
+                    $amountofPerviousmonth += $order->total * 0.02;
                      break; 
                      //ONE YEAR
                  default:
-                 $amountofthismonth += $order->total * 0.015;
+                    $amountofPerviousmonth += $order->total * 0.015;
             }
 
 
