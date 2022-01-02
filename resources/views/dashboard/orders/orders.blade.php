@@ -743,8 +743,7 @@
                        await axios.get('/api/orders/size?size='+size)
                        .then(response => {
                           orders = response.data.data;
-                          insertOrders(response.data.data);
-                          insertCases(ordersList);
+                          insertOrders(response.data.data); 
                        }).catch(error => {
                        console.log(error)
                         })
