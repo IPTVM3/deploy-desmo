@@ -599,7 +599,7 @@
         copyToClipboard(year+''+id);
 
         const resultat = orders.find( order => order.id == id);
-        document.getElementById("model-id").value = resultat.id;
+        document.getElementById("model-id").value = id;
         //if(user.name == "Said Rafiq") resultat.total = "? ";
         document.getElementById("model-email").value = resultat.email;
         document.getElementById("orderdetails").insertAdjacentHTML(
@@ -761,7 +761,7 @@
 
                         await axios.get('/api/orders/cases')
                        .then(response => { 
-                          console.log(response);
+                     
                           insertCases(response.data); 
                        }).catch(error => {
                        console.log(error)
