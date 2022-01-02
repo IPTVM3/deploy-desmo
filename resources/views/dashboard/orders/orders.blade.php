@@ -314,21 +314,18 @@
                          </div>
 
  
-                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab" aria-controls="orders" aria-selected="true">Orders</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-                          </li>
-                        </ul>
+                         <nav>
+                          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-orders-tab" data-toggle="tab" href="#nav-orders" role="tab" aria-controls="nav-orders" aria-selected="true">All Orders</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                          </div>
+                        </nav>
+
                         <br>
 
-          <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                        <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-orders" role="tabpanel" aria-labelledby="nav-orders-tab">
 
 
               <div class="row">
@@ -383,8 +380,9 @@
 
                 </div>
               </div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+
 
           </div>
 
@@ -552,10 +550,9 @@
 
 
 	<script src="{{ asset('table-08/js/jquery.min.js')}}"></script>
-  <script src="{{ asset('table-08/js/popper.js')}}"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  
+  <script src="{{ asset('table-08/js/popper.js')}}"></script>
   <script src="{{ asset('table-08/js/bootstrap.min.js')}}"></script>
-   <script src="{{ asset('table-08/js/main.js')}}"></script>
+  <script src="{{ asset('table-08/js/main.js')}}"></script>
 
   <script type="text/javascript">
 
