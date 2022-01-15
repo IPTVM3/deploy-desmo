@@ -340,7 +340,7 @@
         ADDRESS: <b style="color:red;">TransferWise Europe SA Avenue Louise 54, Room S52 Brussels 1050 Belgium</b>
 
         <br><br>
-        <b  style="color:red;">IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
+        <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
 
 
         </p>
