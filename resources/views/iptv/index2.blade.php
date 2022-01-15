@@ -1057,7 +1057,7 @@
                 Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
                     </p>
                 <br>
-                <a href="/resseling" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">Contact Us</a>
+                <a href="/resseling" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">INFO</a>
 
             </div>
         </div>
