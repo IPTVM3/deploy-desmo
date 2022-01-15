@@ -85,12 +85,7 @@
     <div class="top-bar">
       <div class="container">
         <div class="row"> <div class="col-md-6 col-sm-6 hidden-xs">
-            <ul class="top-menu">
-				<li><a href="/contact">@lang('amos.our_whatsapp')</a></li>
-				<li><a href="{{ url('/mentions') }}">@lang('amos.legal')</a></li> 
-          		<li><a href="{{ url('/conditions') }}">@lang('amos.conditions')</a></li>
-				<li><a href="#faq">FAQs</a></li>
-            </ul>
+            
             <!-- end top-menu --> 
           </div>
           <!-- end col-6 -->
@@ -111,35 +106,7 @@
       <!-- end container --> 
     </div>
     <!-- end top-bar -->
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#collapse-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="/home"> 
-        <img src="{{ asset('iptv_update/images/logo_light_up.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptv_update/images/logo_dark_up.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
-        <small>years</small></span> </a> 
-        </div>
-      <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="collapse-nav">
-        <ul class="top-menu visible-xs">
-				<li><a href="/contact">@lang('amos.our_whatsapp')</a></li>
-				<li><a href="{{ url('/mentions') }}">@lang('amos.legal')</a></li> 
-          		<li><a href="{{ url('/conditions') }}">@lang('amos.conditions')</a></li>
-				<li><a href="#faq">FAQs</a></li>
-            </ul>
-            <!-- end top-menu --> 
-        <ul class="nav navbar-nav">
-		  <li><a href="/">@lang('amos.home')</a></li> 
-          <li><a href="/#PLAYLIST">@lang('amos.playlist')</a></li>
-          <li><a href="/#FEATURES">@lang('amos.features')</a></li>
-          <li><a href="/#PRICING">@lang('amos.pricing')</a></li> 
-          <li><a href="/#reseller">@lang('amos.reseller')</a></li>
-          <li><a href="/#MULTIPLEDEVICE">@lang('amos.multidevice')</a></li>
-		  <li><a  href="/#CONTACT"> @lang('amos.contact') </a></li>
-           
-        </ul> 
-        <!-- end search --> 
-      </div>
-      <!-- end navbar-collapse --> 
-    </div>
+    
     <!-- end container --> 
   </nav>
   <!-- end navbar-default -->
@@ -406,61 +373,7 @@
 <!-- end featured-projects -->
 <!-- end support-bar -->
 <footer class="footer transition">
-  <div class="footer-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12">
-		<ul class="social-media">
-            <li><a href="#">contact.lordlyiptv@gmail.com</li> 
-          </ul>
-          <!-- end social-media --> 
-        </div>
-        <!-- end col-6 -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <address>
-          <i class="fa fa-phone" aria-hidden="true"></i> @lang('amos.get_intouch') <small>@lang('amos.contact_any_question')
-          </address>
-        </div>
-        <!-- end col-3 -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <address>
-          <i class="fa fa-map-marker" aria-hidden="true"></i>2 Rue victor hugo
-		   <small>Paris, FRANCE</small>
-          </address>
-        </div>
-        <!-- end col-3 --> 
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </div>
-  <!-- end footer-bar -->
-  <div class="container" id="CONTACT">
-    <div class="row">
-      <div class="col-md-7 col-sm-12 col-xs-12">
-        <h4 class="footer-title">@lang('amos.conatct_newsletter')</h4>
-		<form class="newsletter" role="form" method="POST" action="{{ route('maillist.store') }}"
-                    enctype="multipart/form-data">
-                    {{ csrf_field() }}
-                    {{ method_field('POST') }}
-        
-          <input type="text" placeholder="@lang('iptv.entre_em')..." name="email">
-          <button type="submit">@lang('amos.submit')</button>
-          <small>@lang('amos.submit_desc')</small>
-        </form>
-        <h4 class="footer-title">{{config('app.name')}} </h4>
-        <p>@lang('amos.iptvamos_desc')</p>
-      </div>
-      <!-- end col-4 -->
-      <div class="col-md-3 col-sm-12 col-xs-12">
-        <h4 class="footer-title">@lang('amos.promo_video')</h4>
-        <div class="video"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Black_Screen.jpg" alt="Image"> <a href="https://www.youtube.com/embed/CvkyKS5Jjyo?controls=0" class="play-btn fancybox" data-type="iframe" ><i class="fa fa-play" aria-hidden="true"></i></a> </div>
-        <!-- end video --> </div>
-     
-      <!-- end col-4 --> 
-    </div>
-    <!-- end row --> 
-  </div>
+ 
 
   <!-- end container -->
   <div class="sub-footer">
