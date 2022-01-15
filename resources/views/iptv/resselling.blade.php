@@ -318,15 +318,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><b>Start your own iptv reseller business and start making money</b></h5>
+        <h5 class="modal-title" id="exampleModalLabel"><b>Start your own iptv reseller business</b></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
       
-      <b>To be our Official IPTV Reseller, you will need to purchase Credits, after buying credits we will send you your login and access for the reseller panel </b><br>
-      <b>Credit Base (Easily yon can add credits into your reseller account and create new clients. )</b><br>
+      <p><b>To be our Official IPTV Reseller, you will need to purchase Credits, after buying credits we will send you your login and access for the reseller panel </b><br>
       <b>Minimum to become a reseller is 350 EUR, the credit does not expire at all you can keep credit until you sell all.</b><br>
       <br><br><b> How Can I Purchase Credits </b>
       <br><br>
@@ -335,16 +334,16 @@
 
         <br><br>
         <b>OUR WISE BANK DETAILS : </b><br>
-        Name: <b>Othmane LACHAGR</b><br>
-        BIC: <b>TRWIBEB1XXX</b><br>
-        IBAN: <b>BE53 9671 8597 7153/b><br>
-        ADDRESS: <b>TransferWise Europe SA Avenue Louise 54, Room S52 Brussels 1050 Belgium</b>
+        Name: <b style="color:red;">Othmane LACHAGR</b><br>
+        BIC: <b style="color:red;">TRWIBEB1XXX</b><br>
+        IBAN: <b style="color:red;">BE53 9671 8597 7153</b><br>
+        ADDRESS: <b style="color:red;">TransferWise Europe SA Avenue Louise 54, Room S52 Brussels 1050 Belgium</b>
 
         <br><br>
-        <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
+        <b  style="color:red;">IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
 
 
-          
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>        
