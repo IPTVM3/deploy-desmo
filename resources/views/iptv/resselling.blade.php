@@ -95,7 +95,7 @@
           </div>
           <!-- end col-6 -->
           <div class="col-md-6 col-sm-6 col-xs-12">
-           <span class="social-text">contact.lordlyiptv@gmail.com</span> 
+           <span class="social-text">contact.bobres@gmail.com</span> 
             <!-- end social-text --> 
         
             <!-- end social-media -->
@@ -115,7 +115,7 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#collapse-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a class="navbar-brand" href="/home"> 
-        <img src="{{ asset('iptvamos/images/logo-light.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptvamos/images/logo-dark.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
+        <img src="{{ asset('iptv_update/images/logo_light_up.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptv_update/images/logo_dark_up.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
         <small>years</small></span> </a> 
         </div>
       <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="collapse-nav">
@@ -264,11 +264,62 @@
 			<div class="col-md-4 col-sm-4 col-xs-12">
 				<div class="price-box">
 				<div class="price-header">
-					<h3>  @lang('amos.credits')</h3>
+					<h3> 10 @lang('amos.credits')</h3>
 					<h5>@lang('amos.prop_3')</h5>
 				</div>
 				<!-- end price-header --> 
-				<span class="price"><span>€</span>  <small>.99</small></span> 
+				<span class="price"><span>€</span>350<small>.99</small></span> 
+				
+					<i class="glyph-icon flaticon-072-bank-1"></i>
+				<ul>
+					<li>24 @lang('amos.free_test') = 0 credit</li> 
+					<li>1 @lang('amos.months') = 0.1 credit</li> 
+					<li>3 @lang('amos.months')  = 0.3 credit</li> 
+					<li>6 @lang('amos.months')  = 0.5 credit</li> 
+					<li>12 @lang('amos.months')  = 1 credit</li> 
+					<li>24 @lang('amos.months')  = 1.8 credit</li> 
+				</ul>
+				
+				<a href="/contact" target="_blank"  >@lang('amos.PreOrder')</a>
+				</div>
+				<!-- end price-box --> 
+      		</div> 
+
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="price-box">
+				<div class="price-header">
+					<h3> 20 @lang('amos.credits')</h3>
+					<h5>@lang('amos.prop_3')</h5>
+				</div>
+				<!-- end price-header --> 
+				<span class="price"><span>€</span>599<small>.99</small></span> 
+				
+					<i class="glyph-icon flaticon-072-bank-1"></i>
+				<ul>
+					<li>24 @lang('amos.free_test') = 0 credit</li> 
+					<li>1 @lang('amos.months') = 0.1 credit</li> 
+					<li>3 @lang('amos.months')  = 0.3 credit</li> 
+					<li>6 @lang('amos.months')  = 0.5 credit</li> 
+					<li>12 @lang('amos.months')  = 1 credit</li> 
+					<li>24 @lang('amos.months')  = 1.8 credit</li> 
+				</ul>
+				
+				<a href="/contact" target="_blank"  >@lang('amos.PreOrder')</a>
+				</div>
+				<!-- end price-box --> 
+      		</div> 
+
+
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="price-box">
+				<div class="price-header">
+					<h3> 30 @lang('amos.credits')</h3>
+					<h5>@lang('amos.prop_3')</h5>
+				</div>
+				<!-- end price-header --> 
+				<span class="price"><span>€</span>820<small>.99</small></span> 
 				
 					<i class="glyph-icon flaticon-072-bank-1"></i>
 				<ul>
@@ -311,11 +362,11 @@
         <b>@lang('amos.req2')</b>  
     </p>
 <br>
-        <p> username: myiptvpanel
+        <p> username: demo-bobres-panel
             <br>
             password: 123456789
 </p>
-        <a target="_blank"  href="https://mytvpanel.net/index">@lang('amos.iptvdemopanel_btn')</a> </div>
+        <a target="_blank"  href="http://crystalpanel.net/index">@lang('amos.iptvdemopanel_btn')</a> </div>
     
    
    
