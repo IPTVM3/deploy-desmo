@@ -201,7 +201,9 @@ class IptvController extends Controller
                     $client_id = $value->api_key;
 
                     if ($value->id == $store->unit_system) {
-                        return redirect($bas_url."/en/payments/new?price=".$price."&txt=".$txt."&clientid=".$client_id);
+
+                        return redirect($bas_url."/en/payments?price=".$price."&txt=".$txt."&clientid=".$client_id."&tested=0&fees=0");
+                        //return redirect($bas_url."/en/payments/new?price=".$price."&txt=".$txt."&clientid=".$client_id);
                     }
                 }
 
@@ -849,13 +851,7 @@ class IptvController extends Controller
              $order->type_payement = 'PayPal' ;
              
         }
-
-        if($status == 'DONE'){
-            $order->status = 1; 
-            $order->total =$amount;
-            $order->type_payement = 'Stripe' ;
-       }
-
+ 
         $order->productName = $txt;
 
        if($tested == '1') $order->tested = 1;   
