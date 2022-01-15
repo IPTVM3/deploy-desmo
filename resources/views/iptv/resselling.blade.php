@@ -259,9 +259,7 @@
 		<!-- end col-12 -->
 
 
-
-		@foreach(\App\Product::all() as $product)
-			@if($product->Categorie->id == 54)
+ 
 
 			<div class="col-md-4 col-sm-4 col-xs-12">
 				<div class="price-box">
@@ -288,9 +286,7 @@
       		</div> 
 
 										
-
-	  			@endif
-			@endforeach
+ 
     
       <!-- end col-4 --> 
 		</div>
