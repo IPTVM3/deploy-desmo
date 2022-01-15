@@ -127,7 +127,7 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="breadcrumb">
-          <li><a href="#">@lang('amos.home')</a></li> 
+          <li><a href="/">@lang('amos.home')</a></li> 
           <li class="active">@lang('amos.reseller')</li>
         </ul>
       </div>
@@ -247,7 +247,7 @@
 					<li>24 @lang('amos.months')  = 1.8 credit</li> 
 				</ul>
 				
-				<a href="/contact" target="_blank"  >@lang('amos.PreOrder')</a>
+				<a href="#"  data-toggle="modal" data-target="#exampleModal"  >@lang('amos.PreOrder')</a>
 				</div>
 				<!-- end price-box --> 
       		</div> 
@@ -272,7 +272,7 @@
 					<li>24 @lang('amos.months')  = 1.8 credit</li> 
 				</ul>
 				
-				<a href="/contact" target="_blank"  >@lang('amos.PreOrder')</a>
+				<a  href="#"  data-toggle="modal" data-target="#exampleModal"   >@lang('amos.PreOrder')</a>
 				</div>
 				<!-- end price-box --> 
       		</div> 
@@ -298,7 +298,7 @@
 					<li>24 @lang('amos.months')  = 1.8 credit</li> 
 				</ul>
 				
-				<a href="/contact" target="_blank"  >@lang('amos.PreOrder')</a>
+				<a href="#"  data-toggle="modal" data-target="#exampleModal"    >@lang('amos.PreOrder')</a>
 				</div>
 				<!-- end price-box --> 
       		</div> 
@@ -313,7 +313,25 @@
 	<!-- end container -->
 </section>
 
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PAYMENT PROCCESS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="left-side-content transition">
  <div class="side-image"> <img src="images/side-image3.jpg" alt="Image" class="bg-image"> 
@@ -325,13 +343,13 @@
         <h6>@lang('amos.header2_btn')</h6>
         <h2>@lang('amos.iptvdemopanel')</h2>
         <p>@lang('amos.iptvdemopanel_desc') <br><br>
-        <b>@lang('amos.req1')</b>  <br>
-        <b>@lang('amos.req2')</b>  
+        <b>WE PROVIDE MORE SERVERS OF IPTV RESELLER PANELS</b>  <br>
+        <b>WE ARE THE OWNER OF OUR ALL IPTV SERVERS</b>  
     </p>
 <br>
-        <p> username: demo-bobres-panel
+        <p> username: <b>demo-bobres-panel</b>
             <br>
-            password: 123456789
+            password: <b>123456789</b>
 </p>
         <a target="_blank"  href="http://crystalpanel.net/index">@lang('amos.iptvdemopanel_btn')</a> </div>
     
