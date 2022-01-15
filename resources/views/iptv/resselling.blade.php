@@ -324,9 +324,18 @@
         </button>
       </div>
       <div class="modal-body">
-      <p>Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
+      To be our Official IPTV Reseller, you will need to purchase Credits, after buying credits we will send you your login and access for the reseller panel :<br>
+      Reseller Panel Features :<br>
+      Trial accounts ( you can create free test for your customers)<br>
+      Credit Base (Easily yon can add credits into your reseller account and create new clients. )<br>
+      <b>Minimum to become a reseller is 350 EUR, the credit does not expire at all you can keep credit until you sell all.</b><br>
+      Extend (You can renew your expired clients via panel)<br>   
+      24/7 Support (100% support)<br>
+      MAG Device (you can setup accounts for Mag Devices)<br>
+      Sub Resellers(You can Have your Own Sub Resellers) and many more features<br>
 
-and start selling IPTV to the worldwide there is more than Trillions customers awaiting for you ! so what are you waiting for? Start your business now and make more sales with our iptv reseller plan.</p>
+
+          
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
