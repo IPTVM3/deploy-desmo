@@ -318,27 +318,38 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">PAYMENT PROCCESS</h5>
+        <h5 class="modal-title" id="exampleModalLabel"><b>Start your own iptv reseller business and start making money</b></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-      To be our Official IPTV Reseller, you will need to purchase Credits, after buying credits we will send you your login and access for the reseller panel :<br>
-      Reseller Panel Features :<br>
-      Trial accounts ( you can create free test for your customers)<br>
-      Credit Base (Easily yon can add credits into your reseller account and create new clients. )<br>
+      
+      <b>To be our Official IPTV Reseller, you will need to purchase Credits, after buying credits we will send you your login and access for the reseller panel </b><br>
+      <b>Credit Base (Easily yon can add credits into your reseller account and create new clients. )</b><br>
       <b>Minimum to become a reseller is 350 EUR, the credit does not expire at all you can keep credit until you sell all.</b><br>
-      Extend (You can renew your expired clients via panel)<br>   
-      24/7 Support (100% support)<br>
-      MAG Device (you can setup accounts for Mag Devices)<br>
-      Sub Resellers(You can Have your Own Sub Resellers) and many more features<br>
+      <br><br><b> How Can I Purchase Credits </b>
+      <br><br>
+      <b>Send exactly " € 350.99 or € 599.99 or € 820.99 " depending on offer that you prefer by a bank transfer ( our bank account detials is in this text  below ) . <b><br>
+       <b>Then contact us on email or whatsapp ( provide us the screenshot of the transaction ).</b>
+
+        <br><br>
+        <b>OUR WISE BANK DETAILS : </b><br>
+        Name: <b>Othmane LACHAGR</b><br>
+        BIC: <b>TRWIBEB1XXX</b><br>
+        IBAN: <b>BE53 9671 8597 7153/b><br>
+        ADDRESS: <b>TransferWise Europe SA Avenue Louise 54, Room S52 Brussels 1050 Belgium</b>
+
+        <br><br>
+        <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
 
 
           
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>        
+         <a type="button" class="btn btn-primary" href="/contact">WHATSAPP SUPPORT</a>
+
       </div>
     </div>
   </div>
