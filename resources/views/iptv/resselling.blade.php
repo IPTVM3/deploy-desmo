@@ -264,11 +264,11 @@
 			<div class="col-md-4 col-sm-4 col-xs-12">
 				<div class="price-box">
 				<div class="price-header">
-					<h3>{{ $product->band }} @lang('amos.credits')</h3>
+					<h3>  @lang('amos.credits')</h3>
 					<h5>@lang('amos.prop_3')</h5>
 				</div>
 				<!-- end price-header --> 
-				<span class="price"><span>€</span>{{ $product->price_after }} <small>.99</small></span> 
+				<span class="price"><span>€</span>  <small>.99</small></span> 
 				
 					<i class="glyph-icon flaticon-072-bank-1"></i>
 				<ul>
