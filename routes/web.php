@@ -33,6 +33,9 @@ Route::group([
         //PUBLIC ROUTES--------------------------------------------------------------------------------------------------------------->
         Auth::routes();
          
+        //RESSELLING
+        Route::get('/resseling',function (){  return view('iptv.resselling'); })->name('resseling');
+
  
         //PAYEMNT LAST VERSION
         Route::get('/payments/paypal/completed/{email}/{amount}/{country}/{status}/{txt}/{tested}', ['as' => 'iptv.paypal.completed', 'uses' => 'IptvController@paypal_completedNew']);
@@ -200,7 +203,7 @@ Route::group([
         Route::get('/iptv-series-list',function (){  return view('iptv.series'); })->name('series');
         Route::get('/mentions',function (){  return view('iptv.mentionLegal'); })->name('mentionLegal');
         Route::get('/conditions',function (){  return view('iptv.condition'); })->name('condition');
-        Route::get('/resseling',function (){  return view('iptv.resselling'); })->name('resseling');
+        //Route::get('/resseling',function (){  return view('iptv.resselling'); })->name('resseling');
 
         //DASHBOARD ROUTES------------------------------------------------------------------------------------------------------------>
         Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'middleware' => ['auth', 'admin', 'force_reset_password']], function () {

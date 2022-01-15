@@ -59,16 +59,16 @@
 
         gtag('config', 'G-JY98F9S9HS');
         </script>
-        
-<!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-647729613');
-</script>
+        <!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-647729613');
+        </script>
 
         
 </head>
@@ -95,13 +95,9 @@
           </div>
           <!-- end col-6 -->
           <div class="col-md-6 col-sm-6 col-xs-12">
-           <span class="social-text">@lang('amos.connect')</span> 
+           <span class="social-text">contact.lordlyiptv@gmail.com</span> 
             <!-- end social-text --> 
-            <ul class="social-media">
-              <li><a href="#"><i style="color:blue;" class="fa fa-facebook" aria-hidden="true"></i></a></li> 
-              <li><a href="#"><i style="color:red;" class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
+        
             <!-- end social-media -->
             <div class="language">  <span>@lang('amos.capital')</span>
               <!-- end dropdown --> 
@@ -119,7 +115,7 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#collapse-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a class="navbar-brand" href="/home"> 
-        <img src="{{ asset('iptv_update/images/logo_light_up.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptv_update/images/logo_dark_up.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
+        <img src="{{ asset('iptvamos/images/logo-light.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptvamos/images/logo-dark.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
         <small>years</small></span> </a> 
         </div>
       <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="collapse-nav">
@@ -314,13 +310,19 @@
       <div class="col-md-4">
         <h6>@lang('amos.header2_btn')</h6>
         <h2>@lang('amos.iptvdemopanel')</h2>
-        <p>@lang('amos.iptvdemopanel_desc')</p>
+        <p>@lang('amos.iptvdemopanel_desc') <br><br>
+        <b>@lang('amos.req1')</b>  <br>
+        <b>@lang('amos.req2')</b>  
+    </p>
 <br>
         <p> username: myiptvpanel
             <br>
             password: 123456789
 </p>
         <a target="_blank"  href="https://mytvpanel.net/index">@lang('amos.iptvdemopanel_btn')</a> </div>
+    
+   
+   
       <!-- end col-6 -->
       <div class="col-md-6 col-md-offset-2">
         <div class="content-image"><img src="https://iptvtree.com/img/bg-img/demopanel.png" alt="Image"> </div>
@@ -362,9 +364,7 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 col-xs-12">
 		<ul class="social-media">
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li> 
+            <li><a href="#">contact.lordlyiptv@gmail.com</li> 
           </ul>
           <!-- end social-media --> 
         </div>
