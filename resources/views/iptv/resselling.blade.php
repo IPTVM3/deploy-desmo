@@ -324,7 +324,9 @@
         </button>
       </div>
       <div class="modal-body">
-        
+      <p>Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
+
+and start selling IPTV to the worldwide there is more than Trillions customers awaiting for you ! so what are you waiting for? Start your business now and make more sales with our iptv reseller plan.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
