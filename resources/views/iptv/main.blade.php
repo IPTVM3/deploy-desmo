@@ -256,7 +256,11 @@
             var time = $('#periods').val();
 
             let priceStepOne = 0 ;
-            priceStepOne = itemPrice + ((itemPrice*73.42/100) * ( qty-1)) + 0.01;
+
+            let fees = round(0.35 + (itemPrice * 4.4 / 100), 2) ;
+
+
+            priceStepOne = itemPrice + ((itemPrice*79.42/100) * ( qty-1)) - fees ;
 
 
             if(time == 6)   priceStepOne = priceStepOne * 80/100;
