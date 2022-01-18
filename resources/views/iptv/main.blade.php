@@ -257,7 +257,7 @@
 
             let priceStepOne = 0 ;
 
-            let fees = round(0.35 + (itemPrice * 4.4 / 100), 2) ;
+            let fees = Math.round(0.35 + (itemPrice * 4.4 / 100), 2) ;
 
 
             priceStepOne = itemPrice + ((itemPrice*79.42/100) * ( qty-1)) - fees ;
