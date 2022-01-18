@@ -256,11 +256,11 @@
             var time = $('#periods').val();
 
             let priceStepOne = 0 ;
-            priceStepOne = itemPrice + ((itemPrice*81.42/100) * ( qty-1));
+            priceStepOne = itemPrice + ((itemPrice*77.42/100) * ( qty-1));
 
 
-            if(time == 6)   priceStepOne = priceStepOne * 82/100;
-            else if(time == 3)   priceStepOne = priceStepOne * 73/100;
+            if(time == 6)   priceStepOne = priceStepOne * 80/100;
+            else if(time == 3)   priceStepOne = priceStepOne * 70/100;
 
             var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
 
