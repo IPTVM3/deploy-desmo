@@ -256,7 +256,7 @@
             var time = $('#periods').val();
 
             let priceStepOne = 0 ;
-            priceStepOne = itemPrice + ((itemPrice*74.42/100) * ( qty-1));
+            priceStepOne = itemPrice + ((itemPrice*73.42/100) * ( qty-1));
 
 
             if(time == 6)   priceStepOne = priceStepOne * 80/100;
