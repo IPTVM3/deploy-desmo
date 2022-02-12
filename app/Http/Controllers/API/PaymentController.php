@@ -120,6 +120,24 @@ class PaymentController extends Controller
    
    }
 
+        public function getTopCountriesRecievedAmountByDay($datestart,$dateend)
+        {
+            //TOP COUNTRIES RECIEVED AMOUNT FROM TODAY
+            $country_BY_TODAY = DB::table('orders')
+                ->select(DB::raw('sum(total) as totalamount, card_number'))
+                ->whereBetween('created_at', [$datestart, $dateend])
+                ->groupBy('card_number')
+                ->orderBy('totalamount', 'desc')
+                ->take(10)
+                ->get();
+
+            $dataX = [
+                'country_BY_TODAY' => $country_BY_TODAY
+            ];
+
+            return response($dataX, 200)
+                ->header('Content-Type', 'application/json');
+        }
       public function index()
       {
           //TOP 10 COUNTRIES - LAST 3 MONTHS(€)
@@ -133,7 +151,7 @@ class PaymentController extends Controller
           $last30days = $this->getAmountNet(Order::where("created_at",">", Carbon::now()->subDays(30))->get());
 
 
-
+ 
           Visitor::where("date","<", Carbon::yesterday())->delete();
           $today_visitor = Visitor::whereDate('date', Carbon::today())->get();
           $yestardy_visitor = Visitor::whereDate('date', Carbon::yesterday())->get();
@@ -148,7 +166,7 @@ class PaymentController extends Controller
           ->groupBy('months')
           ->get();
 
-
+               //TOP COUNTRIES RECIEVED AMOUNT FOR LAST 30 DAYS
              $country = DB::table('orders')
                ->select(DB::raw('sum(total) as totalamount, card_number'))
                ->where("created_at", ">", Carbon::now()->subDays(30))
@@ -156,6 +174,8 @@ class PaymentController extends Controller
                ->orderBy('totalamount', 'desc')
                ->take(10)
                ->get();
+
+
 
 
              $typeorders = DB::table('orders')

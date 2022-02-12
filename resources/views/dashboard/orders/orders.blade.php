@@ -490,7 +490,13 @@
           <div class="list-group list-group-horizontal">
             <button type="button"  onclick="deleteOrder()" class="btn btn-danger btn-large">Delete Order</button>
             <button type="button" onclick="notifyCustomer()" class="btn btn-dark">Notify Customer</button>
-            <button type="button"  onclick="orderCompleted()" class="btn btn-success">Order Completed</button>
+              <button type="button"  onclick="orderCompleted()" class="btn btn-success">Order Completed</button>
+
+
+              @if(Auth::user()->name != 'Said Rafiq' )
+              <button type="button"  onclick="customerTested()" class="btn btn-light">Customer Tested</button>
+              @endif
+
             <button type="button"  onclick="caseOpened()" class="btn btn-info">Case Opened</button>
           </div>
 
@@ -863,6 +869,18 @@
             }
 
 
+           //CUSTOMER TESTED
+           async function customerTested(){
+               loading(true);
+               await axios.get('/api/orders/customer-tested?id='+document.getElementById('model-id').value.toString().trim())
+                   .then(response => {
+                       makeGetRequest(30);
+                       $('#exampleModal').modal('hide');
+
+                   })
+                   .catch(error => {  console.log(error)  })
+               loading(false);
+           }
 
             async function caseOpened(){
                 loading(true);

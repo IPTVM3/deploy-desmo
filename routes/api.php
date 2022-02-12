@@ -299,18 +299,87 @@ Route::get('/orders/case', function (Request $request) {
 });
 
 
+use GlobalPayments\Api\ServiceConfigs\Gateways\GpEcomConfig;
+use GlobalPayments\Api\ServicesContainer;
+use GlobalPayments\Api\Entities\Exceptions\ApiException;
+use GlobalPayments\Api\PaymentMethods\CreditCardData;
+
+Route::get('/globalpayment/testing', function (Request $request) {
+
+
+    $config = new GpEcomConfig();
+    $config->merchantId = "MER_7e3e2c7df34f42819b3edee31022ee3f";
+    $config->accountId = "TRA_c9967ad7d8ec4b46b6dd44a61cde9a91";
+    $config->sharedSecret = "mMcWlNUGoMebtuCd";
+    $config->serviceUrl = "https://api.sandbox.realexpayments.com/epage-remote.cgi";
+    ServicesContainer::configureService($config);
+
+    // create the card object
+    $card = new CreditCardData();
+    $card->number = "4263970000005262";
+    $card->expMonth = 12;
+    $card->expYear = 2025;
+    $card->cvn = "131";
+    $card->cardHolderName = "James Mason";
+
+    try {
+        // process an auto-capture authorization
+        $response = $card->charge(19.99)
+            ->withCurrency("EUR")
+            ->execute();
+    } catch (ApiException $e) {
+
+        return response([
+            'response'=> $e,
+        ], 401)->header('Content-Type', 'application/json');
+    }
+
+    if (isset($response)) {
+        $result = $response->responseCode; // 00 == Success
+        $message = $response->responseMessage; // [ test system ] AUTHORISED
+
+        // get the details to save to the DB for future requests
+        $orderId = $response->orderId; // N6qsk4kYRZihmPrTXWYS6g
+        $authCode = $response->authorizationCode; // 12345
+        $paymentsReference = $response->transactionId; // pasref: 14610544313177922
+        $schemeReferenceData = $response->schemeId; // MMC0F00YE4000000715
+
+
+        return response([
+            'response'=> $response,
+        ], 200)->header('Content-Type', 'application/json');
+    }
+
+
+});
+
 
 Route::get('/orders/case/close', function (Request $request) {
 
-    $order = Order::findOrFail($request->id);
-    $order->case = 'closed'; 
-    $order->update();
- 
 
-     return response([
-       'isSuccessful'=> true,
-       'message' => 'Case Closed'
-     ], 200)->header('Content-Type', 'application/json');
+    $order = Order::findOrFail($request->id);
+    $order->case = 'closed';
+    $order->update();
+
+
+    return response([
+        'isSuccessful'=> true,
+        'message' => 'Case Closed'
+    ], 200)->header('Content-Type', 'application/json');
+});
+
+
+Route::get('/orders/customer-tested', function (Request $request) {
+
+    $order = Order::findOrFail($request->id);
+    $order->tested = '1';
+    $order->update();
+
+
+    return response([
+        'isSuccessful'=> true,
+        'message' => 'Customer Tested'
+    ], 200)->header('Content-Type', 'application/json');
 });
 
 
@@ -409,6 +478,7 @@ Route::get('/frais', function () {
             }
 
 Route::get('/overview','API\PaymentController@index' );
+Route::get('/overview/getTopCountriesRecievedAmountByDay/{datestart}/{dateend}','API\PaymentController@getTopCountriesRecievedAmountByDay' );
 
 
 

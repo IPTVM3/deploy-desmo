@@ -304,18 +304,39 @@
         <!--/row-->
         <div id="tableoforders"></div>
 
-        <div class="row mb-3">
-          <div class="col">
+            <div id="chars_dev">
+        <div class="row">
+            <div class="col-7">
+            <div class="form-group ">
+                <label for="exampleFormControlSelect2">Recieved Amount For Each Day Group By Countries</label>
+
+                <div class="input-group input-daterange">
+                    <input type="text" class="form-control" value="2022-01-01"  id="selectamount_recieved_by_countrys_datestart">
+                    <div class="input-group-addon">to</div>
+                    <input type="text" class="form-control" value="2022-01-15"  id="selectamount_recieved_by_countrys_dateend">
+                    <button   class="btn btn-success" onclick="getRecievedAmountByCountry()" >Check</button>
+                </div>
+            </div>
+          <canvas id="pie-chart-api-byday" width="800" height="450"></canvas>
+            </div>
+
+            <div class="col-5">
+                <canvas id="pie-chart" width="500" height="450"></canvas>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-5">
              <canvas id="bar-chart" width="500" height="450"></canvas>
 
           </div>
-          <div class="col">
-            <canvas id="pie-chart" width="500" height="450"></canvas>
+          <div class="col-7">
+              <canvas id="doughnut-chart" width="800" height="450"></canvas>
+
           </div>
         </div>
-        <div class="row">
-        <canvas id="doughnut-chart" width="800" height="450"></canvas>
-        </div>
+
+            </div>
         <!--/row-->
 
 
@@ -404,10 +425,12 @@
          function loading(bol){
           if(bol){
             document.getElementById('loading').style.display = 'block';
-            document.getElementById('tableoforders').style.display = 'none';
+              document.getElementById('tableoforders').style.display = 'none';
+              document.getElementById('chars_dev').style.display = 'none';
           }else{
             document.getElementById('loading').style.display = 'none';
-            document.getElementById('tableoforders').style.display = 'block';
+              document.getElementById('tableoforders').style.display = 'block';
+              document.getElementById('chars_dev').style.display = 'block';
           }
         }
 
@@ -416,6 +439,7 @@
                        .then(response => {
                          getBarCharts(response.data.orders);
                          getPieCharts(response.data.country);
+                           getRecievedAmountByCountry();
                          getBarVerticalCharts(response.data.typeorders);
                          document.getElementById('todayOrders').innerHTML = response.data.todayOrders.toFixed(2)+'€ <br> '+response.data.todayOrders_count+' Orders' ;
                          document.getElementById('lastDayOrders').innerHTML = response.data.lastDayOrders.toFixed(2)+'€ <br> '+response.data.lastDayOrders_count+' Orders' ;
@@ -491,6 +515,55 @@
         });
 
         }
+
+
+        async function getRecievedAmountByCountry(){
+
+             var dataStart = $('#selectamount_recieved_by_countrys_datestart').val();
+             var dateEnd= $('#selectamount_recieved_by_countrys_dateend').val();
+            loading(true);
+            await axios.get('/api/overview/getTopCountriesRecievedAmountByDay/'+dataStart+'/'+dateEnd)
+                .then(response => {
+                    let country = response.data.country_BY_TODAY;
+                    let labels = [];
+                    let counts = [];
+                    country.forEach( e=>{
+
+                        labels.push(e.card_number);
+                        counts.push(e.totalamount);
+
+
+                    })
+
+                    new Chart(document.getElementById("pie-chart-api-byday"), {
+                        type: 'pie',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: "Total Amount",
+                                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e85cd", "#8e5ea7","#3cbc9f","#e8crb9","#c45950"],
+                                data: counts
+                            }]
+                        },
+                        options: {
+                            title: {
+                                display: true,
+                                text: 'Top 10 Countries BETWEEN '+dataStart+' AND '+dateEnd
+                            }
+                        }
+                    });
+                    loading(false);
+                }).catch(error => {
+                    console.log(error)
+                })
+
+
+
+
+        }
+
+
+
         function getBarCharts(orders){
              let labels = [];
              let amounts = [];
@@ -530,8 +603,10 @@
         //MAIN
         $(document).ready(function(){
 
+            document.getElementById('chars_dev').style.display = 'none';
             makeGetRequest();
             //insertOrders(orders);
+
 
         });
 </script>
