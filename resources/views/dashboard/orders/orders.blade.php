@@ -481,6 +481,13 @@
                 <option value="http://mag.crystalott.net/c/">http://mag.crystalott.net/c/</option>
                 <option value="http://promaxhd.com:8080/c/">http://promaxhd.com:8080/c/</option>
                 <option value="http://dream4ktv.info:2082/c">http://dream4ktv.info:2082/c</option>
+
+
+                <option value="http://ip.sltv.be:8080/c">http://ip.sltv.be:8080/c</option>
+                <option value="http://line.4k-eu.com/c/">http://line.4k-eu.com/c/</option>
+
+
+
                 <option value="http://link4tv.info:2082/c">http://link4tv.info:2082/c</option>
                 <option value="http://king365-tv.cf:2103/c/">http://king365-tv.cf:2103/c/</option>
             </select>
