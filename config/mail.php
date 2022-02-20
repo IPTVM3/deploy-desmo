@@ -11,7 +11,7 @@ return [
     ],
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
     'username'   => 'contact.bobres@gmail.com',
-    'password'   => 'ffhnofwrdmjeenuf',
+    'password'   => 'tgpplfajpacgcftu',
     'sendmail'   => '/usr/sbin/sendmail -bs',
 
     'markdown' => [
