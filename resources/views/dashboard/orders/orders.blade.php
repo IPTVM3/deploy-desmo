@@ -489,7 +489,7 @@
 
 
                 <option value="http://link4tv.info:2082/c">http://link4tv.info:2082/c</option>
-                <option value="http://king365-tv.cf:2103/c/">http://king365-tv.cf:2103/c/</option>
+                                                                    <option value="http://mag.pro-gold.net/c">http://mag.pro-gold.net/c</option> 
             </select>
           </div>
           </div>
