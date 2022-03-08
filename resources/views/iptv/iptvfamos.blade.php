@@ -31,42 +31,7 @@
 	
 	<!-- Global site tag (gtag.js) - Google Ads: 398007435 -->
    <!-- Facebook Pixel Code -->
-   <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2511487865548827');
-        fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2511487865548827&ev=PageView&noscript=1"
-      /></noscript>
-      <!-- End Facebook Pixel Code -->
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY98F9S9HS"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-JY98F9S9HS');
-        </script>
-
-        <!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-647729613');
-        </script>
+   
 
 
 </head>
@@ -134,7 +99,7 @@
     <div class="container" id="HOME">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#collapse-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="/home"><img src="{{ asset('iptv_update/images/logo_light_up.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptv_update/images/logo_dark_up.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
+        <a class="navbar-brand" href="/home"><img src="{{ asset('iptvamos/images/logo-light.png')}}" alt="Image" class="logo-light"> <img src="{{ asset('iptvamos/images/logo-dark.png')}}" alt="Image" class="logo-dark"><span class="since">08<br>
         <small>years</small></span> </a> 
 	  </div>
       <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="collapse-nav">
@@ -1404,7 +1369,7 @@
 	  <div class="row">
 		<div class="col-xs-12">
 			<h6 style="padding-bottom: 9px;">@lang('amos.pricing_header_desc')</h6> 
-			<h2 style="margin-bottom: 8px;">@lang('amos.pricing_headerp')<a style="background:#ff3f58;color:white;margin-left:2px;font-size: 10px; border:1px solid #ff3f58;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >@lang('amos.more_offers')</a></h2>
+			<h2 style="margin-bottom: 8px;">@lang('amos.pricing_headerp')</h2>
 		
 			<div class="pricing-switcher">
 			<p class="fieldset">
@@ -1485,13 +1450,13 @@
 				<div class="demo"> 
 					<div class="row text-center" id="onedevice">
 
-					@foreach($products as $product)
-						@if($product->Categorie->id == 1)
+				 
+					 
 						<div class="col-md-3 col-sm-6 ">
-							<div class="pricingTable {{ $product->description }} ">
+							<div class="pricingTable  blue ">
 								<div class="pricingTable-header">
-									<b>{{ $product->html_details }} </b>
-									<div class="price-value">  ‎€{{ $product->price_after }} <span class="month">{{ $product->band }} @lang('amos.month')</span> </div>
+								<b><a style="background:blue;color:white;margin-left:2px;font-size: 10px; border:1px solid blue;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Economic</a></b>
+									<div class="price-value">   €59.99 <span class="month">12 @lang('amos.month')</span> </div>
 								</div>
 								<div class="pricing-content text-center">
 								<ul>
@@ -1506,13 +1471,84 @@
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
-									<a href="{{ url('payments/'.$product->id) }}">@lang('amos.buy_now')</a>
+									<a href=" ">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div> 
-						@endif
-					 @endforeach
+					 
+		 
 
+					 
+						<div class="col-md-3 col-sm-6 ">
+							<div class="pricingTable  red">
+								<div class="pricingTable-header">
+									<b><a style="background:#ff3f58;color:white;margin-left:2px;font-size: 10px; border:1px solid #ff3f58;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+									<div class="price-value">   €49.99 <span class="month">6 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li>  
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href=" ">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+
+					 
+						<div class="col-md-3 col-sm-6 ">
+							<div class="pricingTable  green ">
+								<div class="pricingTable-header">
+								<b><a style="background:green;color:white;margin-left:2px;font-size: 10px; border:1px solid green;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+								<div class="price-value">   €31.99 <span class="month">3 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href=" ">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+
+					 
+						<div class="col-md-3 col-sm-6 ">
+							<div class="pricingTable  ">
+								<div class="pricingTable-header">
+								<b><a style="background:orange;color:white;margin-left:2px;font-size: 10px; border:1px solid orange;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Trial Test</a></b>
+									<div class="price-value">   €18.99 <span class="month">30 Days Package</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
 
 					</div>
 
@@ -1573,8 +1609,8 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h6>@lang('amos.reseller_header')</h6>
-        <h2>@lang('amos.reseller_dsc')</h2>
+        <h6 style="color:black;">@lang('amos.reseller_header')</h6>
+        <h2 style="color:black;">@lang('amos.reseller_dsc')</h2>
         <a href="/resseling">@lang('amos.header1_btn')</a> </div>
       <!-- end col-12 --> 
     </div>
@@ -1593,45 +1629,58 @@
 
 	
 
-      </div>
 		<!-- end col-12 -->
 
 
+				<div class="form-row text-center" >
+                    <div class="col-md-4"  >
+                        <select id="package" class="form-control" name="package" style="font-weight: 800">
+                            <option disabled>@lang('new.multidevice_option1')</option>
+                            <option selected value="59">@lang('iptv.prim')</option>
+                            <option value="69">Sport</option>
+                            <option value="49">@lang('iptv.basic')</option>
+                        </select>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <select id="multidevicex" class="form-control" name="multidevicex" style="font-weight: 800">
+                            <option disabled>@lang('new.multidevice_option2')</option>
+                            <option selected value="2">2 @lang('new.device')</option>
+                            <option value="3">3 @lang('new.device')</option>
+                            <option value="4">4 @lang('new.device')</option>
+                            <option value="5">5 @lang('new.device')</option>
+                            <option value="6">6 @lang('new.device')</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select id="periods" class="form-control" name="periods" style="font-weight: 800;">
+                            <option disabled>@lang('new.multidevice_option3')</option>
+                            <option value="3">3 @lang('iptv.mounth')</option>
+                            <option value="6">6 @lang('iptv.mounth')</option>
+                            <option selected value="12">1 @lang('iptv.yr')</option>
+                        </select>
+                    </div>
 
-		@foreach($products as $product)
-			@if($product->Categorie->id == 11)
+                </div>
+				<br>
+				<br>
+				<br>
 
-			<div class="col-md-4 col-sm-4 col-xs-12">
-				<div class="price-box">
-				<div class="price-header">
-					<h3>{{ $product->band }}x @lang('amos.devices')</h3>
-					<h5>@lang('amos.devices_separated')</h5>
-				</div>
-				<!-- end price-header --> 
-				<span class="price"><span>€</span>{{ $product->price_after }} <small>1 @lang('amos.year')</small></span> 
-				
-					<i class="glyph-icon flaticon-072-bank-1"></i>
-				<ul>
-					<li>@lang('amos.prop_2')</li> 
-					<li>@lang('amos.prop_3')</li> 
-					<li>@lang('amos.pprop_3')</li> 
-					<li>@lang('amos.pprop_4')</li> 
-					<li>@lang('amos.prop_5')</li> 
-					<li>@lang('amos.prop_4')</li> 
-					<li>@lang('amos.prop_6')</li> 
-					<li>@lang('amos.prop_1')</li> 
-				</ul>
-				
-				<a href="{{ url('payments/'.$product->id) }}">@lang('amos.buy_now')</a>
-				</div>
-				<!-- end price-box --> 
-      		</div> 
-
-										
-
-	  			@endif
-			@endforeach
-    
+			 
+				<a style="height: 56px; 
+    line-height: 52px;
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    background: #8a39ee;
+    font-weight: 700;
+    border-radius: 56px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
+    border: 2px solid transparent;
+    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+						 
+		 
+								</div>
       <!-- end col-4 --> 
 		</div>
 		<!-- end row -->
@@ -1641,13 +1690,20 @@
 
 
 
-<section class="support-bar transition">
+
+
+
+<section class="quote transition" id="reseller">
+ <div class="video-bg">
+ 	<video src="videos/video.mp4" muted="" loop="" autoplay=""></video>
+ </div>
+ <!-- end video-bg -->
   <div class="container">
     <div class="row">
-      <div class="col-xs-12"> <a target="_blank"  href="/contact">@lang('amos.get_intouch')  </a> <img src="{{ asset('iptvamos/images/icon-support.png') }}" alt="Image">
-        <h4>@lang('amos.anyquestion')</h4>
-        <h6>@lang('amos.anyquestion_desc') </h6>
-      </div>
+      <div class="col-xs-12">
+        <h6 style="color:black;">@lang('new.sport_new_package')</h6>
+        <h2 style="color:black;">@lang('new.sport_new_package_desc')</h2>
+        <a href="">@lang('new.sport_package_button') - 79 euros</a> </div>
       <!-- end col-12 --> 
     </div>
     <!-- end row --> 
@@ -1655,69 +1711,7 @@
   <!-- end container --> 
 </section>
 
-
-
-<section class="pricing" style="margin-bottom: -130px;" id="products">
-	<div class="container">
-		<div class="row text-center" >
-		<div class="col-xs-12">
-        <h6>@lang('amos.boxs_desc')</h6>
-        <h2>@lang('amos.boxs_header')  </h2>
-
-	
-
-      </div>
-		<!-- end col-12 -->
-
-
-
-		@foreach($products as $product)
-			@if($product->Categorie->id == 21)
-
-		 
-			<div class="col-md-4 col-sm-4 col-xs-12" >
-		 
-      <div class="card price-box">
-        <img class="card-img" src="{{ asset('img/'.$product->img1) }}" alt="Vans">
-       
-		<span class="card-notify-year">@lang('amos.plus_one')</span>
-
-        <div class="card-body">
-          <h4 class="card-title">   {{$product->title}}     </h4>
-		  <div class="ratings">
-                  <p>
-				  <i class="glyphicon glyphicon-star"></i>
-				  <i class="glyphicon glyphicon-star"></i>
-				  <i class="glyphicon glyphicon-star"></i>
-				  <i class="glyphicon glyphicon-star"></i>
-				  <i class="glyphicon glyphicon-star"></i>
-                     ( {{$product->order}}  @lang('amos.reviews'))
-                  </p>
-                </div>
-				<h3 class="cost">    <span style="color:#ff3f58;">€  {{$product->price_after}} </span>  <small class="pre-cost"> €   {{$product->price_before}}   </small></h3>
-                        
-          <p class="card-text">
-            {{$product->description}}           </p>
-          
-          <div class="buy d-flex justify-content-between align-items-center">
-		 
-		  <a class="pur_button" href="{{ url('payments/'.$product->id) }}">@lang('amos.buy_now')</a> 
-						 
-          </div>
-        </div>
-      </div>
-    </div>
-										
-
-	  			@endif
-			@endforeach
-    
-      <!-- end col-4 --> 
-		</div>
-		<!-- end row -->
-	</div>
-	<!-- end container -->
-</section>
+ 
 
 <style>
 .like {
@@ -1832,7 +1826,7 @@
  
 
    <!-- stats -->
-   <section class="fun-facts" id="counter" style="background-color: #ff3f58 !important;color:black;">
+   <section class="fun-facts" id="counter" style="background-color: gold !important;color:black;">
 	<div class="row">
 	  <div class="col-md-4 col-sm-4 col-xs-12">
 		<div class="feature-box"> <i style="color:black;" class="flaticon-014-smartphone-3" aria-hidden="true"></i>
@@ -1946,7 +1940,164 @@
         </div>
   </section>
 
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="support-bar transition" >
+    <div class="container" >
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <!-- SECTION TITLE -->
+                <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                    <h2>Get in touch</h2>
+                    <p>
+                        We believe in the timeliness of customer service, and would like to do everything to satisfy our customers. If you have any problems, comments or suggestions, please contact our customer service representatives.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-7 col-sm-10">
+                <!-- CONTACT FORM HERE -->
+                <div class="wow fadeInUp" data-wow-delay="0.4s">
+                    <div style="display:none;" class="alert alert-danger" id="error_message" role="alert">  </div>
+                    <form id="contact-form" action="#" method="get">
+                        <div class="col-md-6 col-sm-6">
+                            <input type="text" class="form-control" name="ordernumber" id="ordernumber" placeholder="Order Number" >
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <select type="text" class="form-control" id="Subject" name="Subject" placeholder="Subject" required="">
+
+                              <option value="subscibed-no-order">I subscibed, but I did recieved my order !</option>
+                              <option value="subscibed-no-service">I subscibed, but service is not working !</option>
+                              <option value="interssted-reselling">Im interssted in reselling plan</option>
+                              <option value="need-informations">I want to subscribe but i need first some informations</option>
+                              <option value="need-tria">Im interssted in your service but i need few hours trial test</option>
+                              <option value="other">other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message" required=""></textarea>
+                        </div>
+
+
+				<br>
+				<br>
+				<br>
+
+			 
+				<button style="height: 56px; 
+    line-height: 52px;
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    background: #8a39ee;
+    font-weight: 700;
+    border-radius: 56px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
+    border: 2px solid transparent;
+    margin: 12px 0;"  id="submit_button" type="button" class="form-control" name="submit"  >Submit Message </button>
+                        
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 col-sm-8">
+                <!-- CONTACT INFO -->
+                <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
+                    <div class="section-title">
+                        <h2>Contact Info</h2>
+                        <p>
+                            All subscription (accounts) will send to your email, please check carefully.
+                            If you don't find anything, please check the junk mail!
+                            Or send message to this email: contact.lordlyiptv@gmail.com, we will response to you within 24 hours!
+                        </p>
+                    </div>
+<br>
+                    <p><i class="fa fa-map-marker"></i> 13 Rue Paul Déroulède, 06000 Nice, FRANCE</p>
+                    <p><i class="fa fa-comment"></i> contact.lordlyiptv@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+	<br>
+				<br>
+</section>
+
+<style>
+    /*---------------------------------------
+  Contact section
+-----------------------------------------*/
+	.contactxx {
+        background-color:gold;
+    }
+
+    .contact-info .fa {
+        padding-right: 5px;
+    }
+
+    #contact .form-control {
+        border: none;
+        border-bottom: 2px solid #f0f0f0;
+        border-radius: 0px;
+        box-shadow: none;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-transition: all ease-in-out 0.4s;
+        transition: all ease-in-out 0.4s;
+    }
+
+    #contact .form-control:focus {
+        border-bottom-color: #999999;
+    }
+
+    #contact input {
+        height: 55px;
+    }
+
+    #contact button#submit {
+        background: #2b2b2b;
+        border: none;
+        border-radius: 50px;
+        color: #ffffff;
+        height: 50px;
+        margin-top: 24px;
+    }
+
+    #contact button#submit:hover {
+        background: #7682cc;
+        color: #ffffff;
+    }
+
+
+</style>
  
+
+  <section class="support-bar transition">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12"> <a target="_blank"  href="/contact">@lang('amos.get_intouch')  </a> <img src="{{ asset('iptvamos/images/icon-support.png') }}" alt="Image">
+        <h4>@lang('amos.anyquestion')</h4>
+        <h6>@lang('amos.anyquestion_desc') </h6>
+      </div>
+      <!-- end col-12 --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+
 <!-- end featured-projects -->
 <!-- end support-bar -->
 <footer class="footer transition">
@@ -1970,8 +2121,8 @@
         <!-- end col-3 -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <address>
-          <i class="fa fa-map-marker" aria-hidden="true"></i>2 Rue victor hugo
-		   <small>Paris, FRANCE</small>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>13 Rue Paul Déroulède
+		   <small>06000 Nice, FRANCE</small>
           </address>
         </div>
         <!-- end col-3 --> 
@@ -2228,6 +2379,115 @@ $(window).load(function() {
 				 $( "#multidevice" ).show();
 				 $( "#onedevice" ).hide();
 			});
+
+
+
+
+			$(document).ready(function() {
+
+				function setPrice(){
+					var itemPrice = parseFloat($('#package').val());
+					var qty = $('#multidevicex').val();
+					var time = $('#periods').val();
+
+					console.log(itemPrice);
+					console.log(qty);
+					console.log(time);
+
+					let priceStepOne = 0 ;
+
+					let fees = Math.round(0.35 + (itemPrice * 4.4 / 100), 2) ;
+
+
+					priceStepOne = itemPrice + ((itemPrice*79.42/100) * ( qty-1)) - fees ;
+
+
+					if(time == 6)   priceStepOne = priceStepOne * 80/100;
+					else if(time == 3)   priceStepOne = priceStepOne * 70/100;
+
+					var txt = time+" Months "+$( "#package option:selected" ).text()+" Service for "+qty+" devices";
+
+					$('#pricevalue').text(priceStepOne.toFixed(2)+" euro");
+
+					var a = document.getElementById('pricevalueMM'); //or grab it by tagname etc
+					//a.href = "/payments/"+priceStepOne.toFixed(2)+"/"+txt;
+					a.href = "/payments/"+priceStepOne.toFixed(2)+"/"+txt;
+					return [priceStepOne.toFixed(2),txt];
+				}
+
+				setPrice();
+
+				$('#package').change(function() {
+				setPrice();
+				});
+				$('#multidevice').change(function() {
+					setPrice();
+				});
+				$('#periods').change(function() {
+					setPrice();
+				});
+
+
+
+
+
+
+
+				});
+
+
+
+
+
+$(document).ready(function() {
+        $("#submit_button").click(function (){
+            var order_number = $("#ordernumber").val();
+            var subject = $("#Subject").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
+
+            if(message != "" && subject != "" && email != ""){
+
+
+                return fetch('/api/contact/message', {
+                    method: 'post',
+                    headers: {
+                        'content-type': 'application/json',
+                        "X-Requested-With": "XMLHttpRequest",
+                    },
+                    body: JSON.stringify({
+                        order_number:order_number,
+                        subject: subject,
+                        email:email,
+                        message:message
+                    })
+                })
+                    .then(function(response){
+                        // redirect to the completed page if paid
+                        $("#error_message").css("display", "none");
+
+                        console.log(response);
+                        $("#ordernumber").val('');
+                        $("#Subject").val('');
+                        $("#email").val('');
+                        $("#message").val('');
+                         alert("Message Sended");
+
+                    })
+                    .catch(function(error) {
+                        $("#error_message").text("Contact Message Failed !") ;
+                        $("#error_message").css("display", "block");
+
+
+                    });
+            }else{
+                $("#error_message").text("All Field Are Required !") ;
+                        $("#error_message").css("display", "block");
+            }
+
+
+        });
+    });
 
 		</script>
 </body>
