@@ -54,7 +54,7 @@ class HomeController extends Controller
         $multidevice = [Product::find(181),Product::find(201)];
 
         $product_prm = [Product::find(111),Product::find(121),Product::find(131)];
-        return view('home' ,compact('store','products','seelected_product','product_prm','month','multidevice','products_boxs'));
+        return view('iptv.iptvfamos' ,compact('store','products','seelected_product','product_prm','month','multidevice','products_boxs'));
     }
 
     public function tohome(){
