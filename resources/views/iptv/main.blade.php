@@ -13,7 +13,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <meta name="verification" content="349278a8fd82d8e1efbdd2873f9295" />
-    <title>Bobres - The Best IPTV Service Provider for 2022 | Channel list (2022) </title>
+    <title>Lordly - The Best IPTV Service Provider for 2022 | Channel list (2022) </title>
     <meta name="description" content="The best IPTV provider in 2022 !! Get Access to thousands of IPTV channels through one IPTV Subscription. bobres.co is the best premium IPTV subscription service provider in the market" />
     <meta name="keywords" content="best iptv provider for USA, best iptv deal, secure payment, iptv reseller, american channels, asian channels list, 
                                  european channels list, how to install iptv, channel list, arabic channels list, iptv subscription, holidays offer, better than netflix, iptv smarters, iptv box, iptv player,cobra,king 365,ott,m3u,mag,smart iptv,test,messi

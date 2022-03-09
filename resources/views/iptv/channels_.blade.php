@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bobres - @lang('amos.ChannelList') (2022)</title>
+    <title>Lordly - @lang('amos.ChannelList') (2022)</title>
 
     <meta name="verification" content="349278a8fd82d8e1efbdd2873f9295" />
     <meta name="google-site-verification" content="TMke9839CMeHz5lagagBuWa3qE9OaV4GMwkHsfL5q14" />
