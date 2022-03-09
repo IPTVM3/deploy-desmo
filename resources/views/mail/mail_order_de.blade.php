@@ -241,7 +241,7 @@
                             <tbody>
                               <tr>
                                 <td align="center" valign="top" style="padding: 10px;">
-                                  <a href="https://www.bobres.com/en/iptv" style="text-decoration: none;"><img src="https://www.bobres.com/iptv_update/images/logo_light.png" width="130" height="" alt="" style="height: auto; max-width: 100%; border: 0; line-height: 100%; outline: 0; -ms-interpolation-mode: bicubic; color: #ffffff; font-size: 14px;"></a>
+                                  <a href="https://www.lordly-iptv.comm/en/iptv" style="text-decoration: none;"><img src="https://www.lordly-iptv.comm/iptv_update/images/logo_light.png" width="130" height="" alt="" style="height: auto; max-width: 100%; border: 0; line-height: 100%; outline: 0; -ms-interpolation-mode: bicubic; color: #ffffff; font-size: 14px;"></a>
                                 </td>
                               </tr>
                             </tbody>
@@ -613,7 +613,7 @@
                                               </tbody>
                                               <tbody>
                                                 <tr>
-                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">Wenn Sie ein Problem oder eine Frage haben, kontaktieren Sie uns bitte <br><strong>contact.bobres@gmail.com</strong> <br><strong>Www.bobres.com</strong></td>
+                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">Wenn Sie ein Problem oder eine Frage haben, kontaktieren Sie uns bitte <br><strong>contact.lordly@gmail.com</strong> <br><strong>Www.lordly-iptv.comm</strong></td>
                                                 </tr>
                                                 <tr>
                                                   <td class="pc-sm-h-20" height="15" style="line-height: 1px; font-size: 1px">&nbsp;</td>

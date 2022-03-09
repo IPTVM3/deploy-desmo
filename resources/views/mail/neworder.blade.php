@@ -7,7 +7,7 @@
   <!--LOGO-->
   <link rel="icon" href="{{asset('img/'.\App\Store::first()->logo)}}">
   <link rel="stylesheet" href="{{ asset('iptv_update/css/bootstrap.min.css') }} ">
-  <title>Bobres System</title>
+  <title>lordly System</title>
 </head>
 <body>
   
@@ -37,7 +37,7 @@
   <hr> 
 
 *** IF YOU HAVE ANY PROBLEM PLEASE CONTACT US ON WHATSAPP ***  <br>
-https://www.bobres.co/en/support <br>
+https://www.lordly-iptv.co/en/support <br>
 
 </body>
 </html>
