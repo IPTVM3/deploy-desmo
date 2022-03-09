@@ -1374,9 +1374,9 @@
 			<div class="pricing-switcher">
 			<p class="fieldset">
 				<input type="radio" name="duration-1" value="monthly" id="radio1" checked>
-				<label for="radio1">@lang('amos.onedevice')</label>
+				<label for="radio1">@lang('iptv.prim')</label>
 				<input type="radio" name="duration-1" value="yearly" id="radio2">
-				<label for="radio2">@lang('amos.twodevices')</label>
+				<label for="radio2">@lang('iptv.basic')</label>
 				<span class="switch"></span>
 			</p>
 		</div>
@@ -1471,7 +1471,7 @@
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
-									<a href=" ">@lang('amos.buy_now')</a>
+									<a href="/payments/59.99/Premium Package - 1 Year IPTV Subscription">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div> 
@@ -1497,7 +1497,7 @@
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
-									<a href=" ">@lang('amos.buy_now')</a>
+									<a href="/payments/49.99/Premium Package - 6 Months IPTV Subscription">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div> 
@@ -1521,7 +1521,7 @@
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
-									<a href=" ">@lang('amos.buy_now')</a>
+									<a href="/payments/31.99/Premium Package - 3 months IPTV Subscription">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div> 
@@ -1544,7 +1544,7 @@
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
-									<a href="">@lang('amos.buy_now')</a>
+									<a href="/payments/18.99/Trial Package - 1 Month IPTV Subscription">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div> 
@@ -1555,13 +1555,68 @@
 				 
 					<div class="row text-center" id="multidevice" >
 
-					@foreach($products as $product)
-						@if($product->Categorie->id == 31)
-						<div class="col-md-4 col-sm-6 "  >
-							<div class="pricingTable {{ $product->description }}">
+				  
+					 
+
+						 
+
+					 
+						<div class="col-md-4 col-sm-6 ">
+							<div class="pricingTable  green ">
 								<div class="pricingTable-header">
-									<b>{{ $product->html_details }} </b>
-									<div class="price-value">  ‎€{{ $product->price_after }} <span class="month">{{ $product->band }} @lang('amos.month')</span> </div>
+								<b><a style="background:green;color:white;margin-left:2px;font-size: 10px; border:1px solid green;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+								<div class="price-value">   €29.99 <span class="month">3 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/29.99/Basic Package - 3 months IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+					 
+						<div class="col-md-4 col-sm-6 ">
+							<div class="pricingTable  red">
+								<div class="pricingTable-header">
+									<b><a style="background:#ff3f58;color:white;margin-left:2px;font-size: 10px; border:1px solid #ff3f58;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+									<div class="price-value">   €39.99 <span class="month">6 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li>  
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/39.99/Basic Package - 6 Months IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					
+
+					 
+					
+
+						
+						<div class="col-md-4 col-sm-6 ">
+							<div class="pricingTable  blue ">
+								<div class="pricingTable-header">
+								<b><a style="background:blue;color:white;margin-left:2px;font-size: 10px; border:1px solid blue;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Economic</a></b>
+									<div class="price-value">   €49.99 <span class="month">12 @lang('amos.month')</span> </div>
 								</div>
 								<div class="pricing-content text-center">
 								<ul>
@@ -1576,12 +1631,14 @@
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
-									<a href="{{ url('payments/'.$product->id) }}">@lang('amos.buy_now')</a>
+									<a href="/payments/49.99/Basic Package - 1 Year IPTV Subscription">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div> 
-						@endif
-					 @endforeach
+					 
+		 
+
+					 
 
 
 					</div>
