@@ -2077,12 +2077,12 @@
                         <p>
                             All subscription (accounts) will send to your email, please check carefully.
                             If you don't find anything, please check the junk mail!
-                            Or send message to this email: contact.lordlyiptv@gmail.com, we will response to you within 24 hours!
+                            Or send message to this email: service.lordlyiptviptv@gmail.com, we will response to you within 24 hours!
                         </p>
                     </div>
 <br>
                     <p><i class="fa fa-map-marker"></i> 13 Rue Paul Déroulède, 06000 Nice, FRANCE</p>
-                    <p><i class="fa fa-comment"></i> contact.lordlyiptv@gmail.com</p>
+                    <p><i class="fa fa-comment"></i> service.lordlyiptviptv@gmail.com</p>
                 </div>
             </div>
 

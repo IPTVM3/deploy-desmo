@@ -219,7 +219,7 @@ Route::post('/orders/completed', function (Request $request) {
 
               Mail::send('mail.order_m3u', $data , function($message) use ($request)
                  {
-                   $message->to($request->email ,'Bobres IPTV | N21-'.$request->id)->subject('Bobres IPTV | N21-'.$request->id);
+                   $message->to($request->email ,'Bobres IPTV | L22R-'.$request->id)->subject('Bobres IPTV | L22R-'.$request->id);
                });
 
 
@@ -237,7 +237,7 @@ Route::post('/orders/completed', function (Request $request) {
 
             Mail::send('mail.order_mag', $data , function($message) use ($request)
              {
-                  $message->to($request->email ,'Bobres IPTV | N21-'.$request->id)->subject('Bobres IPTV | N21-'.$request->id);
+                  $message->to($request->email ,'Bobres IPTV | L22R-'.$request->id)->subject('Bobres IPTV | L22R-'.$request->id);
             });
         }
         $order->exp_date = Carbon::now();
@@ -288,7 +288,7 @@ Route::get('/orders/case', function (Request $request) {
 
   Mail::send('mail.mail_cases', $data , function($message) use ($order)
    {
-        $message->to($order->email ,'Bobres IPTV - Resolve Subscription Problems')->subject('Bobres IPTV - Resolve Subscription Problems | N21-'.$order->id);
+        $message->to($order->email ,'Bobres IPTV - Resolve Subscription Problems')->subject('Bobres IPTV - Resolve Subscription Problems | L22R-'.$order->id);
   });
 
 
@@ -399,7 +399,7 @@ Route::get('/orders/notify', function (Request $request) {
 
         Mail::send('mail.mail_undone', $data , function($message) use ($request) {
 
-            $message->to($request->email ,'Bobres IPTV | N21-'.$request->id)->subject('Bobres IPTV | N21-'.$request->id);
+            $message->to($request->email ,'Bobres IPTV | L22R-'.$request->id)->subject('Bobres IPTV | L22R-'.$request->id);
         });
 
      return response([

@@ -72,7 +72,7 @@ class PaymentController extends Controller
                        //Code to Email Book To User
                        
                        $this->mail = $request['payerEmail'];
-                       $this->orderID = 'N21-'. $order->id;
+                       $this->orderID = 'L22R-'. $order->id;
                        $this->price = $request['price'].' ‎‎€';
                        
                        $data = [

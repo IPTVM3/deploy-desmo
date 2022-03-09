@@ -333,7 +333,7 @@
                                                       <tr>
                                                           
                                                             
-                                                            <br> OrderID: <strong>N21-{{ $id }}</strong><br>Portal: <strong>{{ $portal }}</strong><br>MAC Address: <strong>{{ $mac }}</strong>
+                                                            <br> OrderID: <strong>L22R-{{ $id }}</strong><br>Portal: <strong>{{ $portal }}</strong><br>MAC Address: <strong>{{ $mac }}</strong>
                                                         </tr>
                                                     </tbody>
                                                   </table>
@@ -420,7 +420,7 @@
                                               </tbody>
                                               <tbody>
                                                 <tr>
-                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">If You Have Any Problem Or Question Please Contact Us <br><strong>contact.lordly@gmail.com</strong> <br><strong>Www.lordly-iptv.com</strong></td>
+                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">If You Have Any Problem Or Question Please Contact Us <br><strong>service.lordlyiptv@gmail.com</strong> <br><strong>Www.lordly-iptv.com</strong></td>
                                                 </tr>
                                                 <tr>
                                                   <td class="pc-sm-h-20" height="15" style="line-height: 1px; font-size: 1px">&nbsp;</td>

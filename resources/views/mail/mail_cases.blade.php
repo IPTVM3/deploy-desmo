@@ -22,7 +22,7 @@ https://www.lordly-iptv.com/en/terms <br>
 Si tiene algún problema o pregunta, puede contactarnos, estaremos encantados de ayudarle: <br>
 <br>
 Cuentas de Whatsapp: <a href="https://www.lordly-iptv.com/en/support"> Aquí </a> <br>
-Correo electrónico: contact.lordly@gmail.com <br>
+Correo electrónico: service.lordlyiptv@gmail.com <br>
 saludos <br>
 
 @elseif ($local == 'DE') 
@@ -46,7 +46,7 @@ https://www.lordly-iptv.com/en/terms<br>
 Bei Problemen oder Fragen können Sie uns kontaktieren, wir unterstützen Sie sehr gerne:<br>
 <br>
 WhatsApp-Konten: <a href="https://www.lordly-iptv.com/en/support">Hier</a><br>
-E-Mail: contact.lordly@gmail.com<br>
+E-Mail: service.lordlyiptv@gmail.com<br>
 Grüße<br>
 
 @else 
@@ -69,7 +69,7 @@ https://www.lordly-iptv.com/en/terms<br>
 If You Have Any Problems Or Questions , you can Contact Us , we will be very happy to support you :<br>
 <br>
 Whatsapp Accounts :  <a href="https://www.lordly-iptv.com/en/contact">Here</a><br>
-Email :  contact.lordly@gmail.com<br>
+Email :  service.lordlyiptv@gmail.com<br>
 regards<br>
 
 

@@ -439,7 +439,7 @@
                                               <tbody>
                                                 <tr>
                                                   <td style="padding: 13px 17px; border-radius: 8px; background-color: #450dd2" bgcolor="#0dd248" valign="top" align="center">
-                                                    <a class="pc-fb-font" href="mailto:contact.bobres@gmail.com" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">contact.bobres@gmail.com</a>
+                                                    <a class="pc-fb-font" href="mailto:support.lordlyiptv@gmail.com" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">support.lordlyiptv@gmail.com</a>
                                                   </td>
                                                 </tr>
                                               </tbody>
@@ -532,7 +532,7 @@
                                               </tbody>
                                               <tbody>
                                                 <tr>
-                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">If You Have Any Problem Or Question Please Contact Us <br><strong>contact.bobres@gmail.com</strong> <br><strong>Www.bobres.co</strong></td>
+                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">If You Have Any Problem Or Question Please Contact Us <br><strong>support.lordlyiptv@gmail.com</strong> <br><strong>Www.lordly-iptv.como</strong></td>
                                                 </tr>
                                                 <tr>
                                                   <td class="pc-sm-h-20" height="15" style="line-height: 1px; font-size: 1px">&nbsp;</td>

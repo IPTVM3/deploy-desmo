@@ -310,7 +310,7 @@
   <script type="text/javascript">
 
       //GLOBAL VARIABLES
-      var year = "N21-";
+      var year = "L22R-";
       var user = {!! auth()->user()->toJson() !!};
       let orders = [];
 

@@ -157,7 +157,7 @@ class OrderController extends Controller
 
         Mail::send('mail.mail_undone', $data , function($message){
                 
-            $message->to($this->email ,'Bobres IPTV | N21-'.$this->id)->subject('Bobres IPTV | N21-'.$this->id);  
+            $message->to($this->email ,'Lordly IPTV | L22R-'.$this->id)->subject('Lordly IPTV | L22R-'.$this->id);  
         });
 
         return redirect()->route('orders.index');
@@ -179,7 +179,7 @@ class OrderController extends Controller
          
          Mail::send('mail.mail_expired', $data , function($message) {
                 
-            $message->to($this->email ,'Bobres IPTV')->subject('Bobres IPTV');  
+            $message->to($this->email ,'Lordly IPTV')->subject('Lordly IPTV');  
         });
 
         return redirect()->route('orders.index');
@@ -223,7 +223,7 @@ class OrderController extends Controller
     
             
             Mail::send('mail.mail_expired', $data , function($message) {
-               $message->to($this->email ,'Bobres IPTV')->subject('Bobres IPTV');  
+               $message->to($this->email ,'Lordly IPTV')->subject('Lordly IPTV');  
            });
         }
        
@@ -277,7 +277,7 @@ class OrderController extends Controller
                 
                 Mail::send('mail.order_m3u', $data , function($message)
                 {
-                    $message->to($this->mail ,'Bobres IPTV | N21-'.$this->id)->subject('Bobres IPTV | N21-'.$this->id);  
+                    $message->to($this->mail ,'Lordly IPTV | L22R-'.$this->id)->subject('Lordly IPTV | L22R-'.$this->id);  
                 });
  
 
@@ -294,7 +294,7 @@ class OrderController extends Controller
                 $order->support = $request->portal;
                 Mail::send('mail.order_mag', $data , function($message)
                 {
-                    $message->to($this->mail ,'Bobres IPTV | N21-'.$this->id)->subject('Bobres IPTV | N21-'.$this->id);  
+                    $message->to($this->mail ,'Lordly IPTV | L22R-'.$this->id)->subject('Lordly IPTV | L22R-'.$this->id);  
                 });
             }
             $order->exp_date = Carbon::now();

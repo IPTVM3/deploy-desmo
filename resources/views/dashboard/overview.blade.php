@@ -364,7 +364,7 @@
   <script type="text/javascript">
 
       //GLOBAL VARIABLES
-      var year = "N21-";
+      var year = "L22R-";
       let orders = [];
 
       let spiner = false;

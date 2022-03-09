@@ -334,13 +334,13 @@ class IptvController extends Controller
                 'header' =>'New UnPaid Order Recieved PayPal ! From : '.$request['email'],
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at contact.bobres@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('contact.bobres@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
             }); 
             // This will print the detailed information on the exception.
             //REALLY HELPFUL FOR DEBUGGING
@@ -379,13 +379,13 @@ class IptvController extends Controller
                     'header' =>'New Paid Order Recieved PayPal ! From : '.$order->email.' At : '.$order->created_at.' Totale : '.$order->total,
                     'btn' =>'Ckeck Now',
                     'btn_url' => 'https://www.bobres.com/en/login',
-                    'footer' => 'If you have any questions, contact us at contact.bobres@gmail.com or at +33 7 83 80 64 12.',
+                    'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
                     'bye' => 'Lordly Team.',
                 ];
         
                 Mail::send('mail.neworder', $data , function($message)
                 {
-                    $message->to('contact.bobres@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
+                    $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
                 }); 
                 
                 return redirect()->route('formdetails',$order->id);
@@ -398,13 +398,13 @@ class IptvController extends Controller
                 'header' =>'New UnPaid Order Recieved PayPal ! ',
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at contact.bobres@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('contact.bobres@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
             }); 
             // This will print the detailed information on the exception.
             //REALLY HELPFUL FOR DEBUGGING
@@ -421,13 +421,13 @@ class IptvController extends Controller
             'header' =>'New UnPaid Order Recieved PayPal !',
             'btn' =>'Ckeck Now',
             'btn_url' => 'https://www.bobres.com/en/login',
-            'footer' => 'If you have any questions, contact us at contact.bobres@gmail.com or at +33 7 83 80 64 12.',
+            'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
             'bye' => 'Lordly Team.',
         ];
 
         Mail::send('mail.neworder', $data , function($message)
         {
-            $message->to('contact.bobres@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+            $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
         }); 
         return view('iptv.cancled');
     }
@@ -485,13 +485,13 @@ class IptvController extends Controller
                 'header' =>'New Paid Order Recieved Stripe ! From : '.$order->email.' At : '.$order->created_at.' Totale : '.$order->total,
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at contact.bobres@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('contact.bobres@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
+                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
             }); 
 
 
@@ -504,13 +504,13 @@ class IptvController extends Controller
                 'header' =>'New UnPaid Order Recieved Stripe ! From : '.$request['email'],
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at contact.bobres@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('contact.bobres@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
             }); 
             return view('iptv.cancled');
         }
@@ -592,7 +592,7 @@ class IptvController extends Controller
         }
           
         $this->mail = $order->email;
-        $this->orderID = 'N21-'. $order->id;
+        $this->orderID = 'L22R-'. $order->id;
         $this->price = $order->total.' ‎‎€';
 
         $data = [
@@ -759,7 +759,7 @@ class IptvController extends Controller
  
           
         $this->mail = $order->email;
-        $this->orderID = 'N21-'. $order->id;
+        $this->orderID = 'L22R-'. $order->id;
         $this->price = $order->total.' ‎‎€';
         
      
@@ -886,7 +886,7 @@ class IptvController extends Controller
  
           
         $this->mail = $order->email;
-        $this->orderID = 'N21-'. $order->id;
+        $this->orderID = 'L22R-'. $order->id;
         $this->price = $order->total.' ‎‎€';
         
      
