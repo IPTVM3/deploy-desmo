@@ -117,7 +117,7 @@
           <li><a href="#PRICING">@lang('amos.pricing')</a></li> 
           <li><a href="#reseller">@lang('amos.reseller')</a></li>
           <li><a href="#MULTIPLEDEVICE">@lang('amos.multidevice')</a></li>
-		  <li><a  href="#CONTACT"> @lang('amos.contact') </a></li>
+		  <li><a  href="#CONTACTs"> @lang('amos.contact') </a></li>
         </ul>
  
         <!-- end navbar-nav -->         
@@ -1468,6 +1468,7 @@
 										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
 										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li> 
 										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
@@ -1494,6 +1495,7 @@
 										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
 										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
 										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li>  
+										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
@@ -1518,6 +1520,7 @@
 										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li>  
 										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
 										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
 									</ul>
 								</div>
 								<div class="pricingTable-signup">
@@ -2189,7 +2192,7 @@
     <!-- end container --> 
   </div>
   <!-- end footer-bar -->
-  <div class="container" id="CONTACT">
+  <div class="container" id="CONTACT CONTACTs">
     <div class="row">
       <div class="col-md-7 col-sm-12 col-xs-12">
         <h4 class="footer-title">@lang('amos.conatct_newsletter')</h4>
