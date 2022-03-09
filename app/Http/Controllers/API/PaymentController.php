@@ -89,14 +89,14 @@ class PaymentController extends Controller
                   
                             Mail::send('mail.mail_order_es', $data , function($message)
                             {
-                                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+                                $message->to($this->mail ,'Lordly IPTV | '.$this->orderID)->subject('Lordly IPTV | '.$this->orderID);  
                             });
                           
                         }elseif($local == 'de'){
                   
                             Mail::send('mail.mail_order_de', $data , function($message)
                             {
-                                $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+                                $message->to($this->mail ,'Lordly IPTV | '.$this->orderID)->subject('Lordly IPTV | '.$this->orderID);  
                             });
                   
                         }else{
@@ -104,7 +104,7 @@ class PaymentController extends Controller
                            
                           Mail::send('mail.mail_order_en', $data , function($message)
                           {
-                              $message->to($this->mail ,'Bobres IPTV | '.$this->orderID)->subject('Bobres IPTV | '.$this->orderID);  
+                              $message->to($this->mail ,'Lordly IPTV | '.$this->orderID)->subject('Lordly IPTV | '.$this->orderID);  
                           }); 
                   
                         }

@@ -7,7 +7,7 @@ return [
     'port'       => env('MAIL_PORT', 587),
     'from' => [
         'address' => 'service.lordlyiptv@gmail.com',
-        'name' => 'Bobres Support',
+        'name' => 'LordlyIPTV Support',
     ],
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
     'username'   => 'service.lordlyiptv@gmail.com',
