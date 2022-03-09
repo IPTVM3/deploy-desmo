@@ -6,12 +6,12 @@ return [
     'host'       => 'smtp.gmail.com',
     'port'       => env('MAIL_PORT', 587),
     'from' => [
-        'address' => 'contact.bobres@gmail.com',
+        'address' => 'service.lordlyiptv@gmail.com',
         'name' => 'Bobres Support',
     ],
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-    'username'   => 'contact.bobres@gmail.com',
-    'password'   => 'tgpplfajpacgcftu',
+    'username'   => 'service.lordlyiptv@gmail.com',
+    'password'   => 'vevdjncmszhvkcyi',
     'sendmail'   => '/usr/sbin/sendmail -bs',
 
     'markdown' => [
