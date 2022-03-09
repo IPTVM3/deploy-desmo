@@ -117,7 +117,7 @@
           <li><a href="#PRICING">@lang('amos.pricing')</a></li> 
           <li><a href="#reseller">@lang('amos.reseller')</a></li>
           <li><a href="#MULTIPLEDEVICE">@lang('amos.multidevice')</a></li>
-		  <li><a  href="#CONTACTs"> @lang('amos.contact') </a></li>
+		  <li><a  href="#Subject"> @lang('amos.contact') </a></li>
         </ul>
  
         <!-- end navbar-nav -->         
@@ -752,7 +752,7 @@
 			data-paddingleft="[0,0,0,0]"
 			style="z-index: 20; min-width: 480px; max-width: 480px; white-space: normal; font-size: 25px; line-height: 35px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">@lang('amos.header2_desc')		</div>
           <a class="tp-caption rev-btn  tp-resizeme" 
-		href="https://wa.me/33751250679" 	 id="slide-66-layer-7" 
+		href="https://lordly-iptv.com/en/contact" target="_blank"	 id="slide-66-layer-7" 
 			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 			data-y="['middle','middle','middle','middle']" data-voffset="['200','200','160','120']" 
 			data-width="250"
@@ -767,7 +767,7 @@
 			data-paddingright="[50,50,50,50]"
 			data-paddingbottom="[0,0,0,0]"
 			data-paddingleft="[50,50,50,50]"
-			style="z-index: 21; white-space: nowrap; cursor:pointer;text-decoration: none;">@lang('amos.header2_btn')</a> </li>
+			style="z-index: 21; white-space: nowrap; cursor:pointer;text-decoration: none;">@lang('iptv.contact')</a> </li>
         <li data-index="rs-68" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="600"  data-thumb="../../assets/images/reachout_bg-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent"> <img src="https://sm.mashable.com/mashable_pk/photo/default/926877b60613584219fc2fbb857c8599_sz46.jpg"  alt="Image"  data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
           <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme" 
 			id="slide-68-layer-9" 
@@ -1086,7 +1086,7 @@
 			data-paddingright="[50,50,50,50]"
 			data-paddingbottom="[0,0,0,0]"
 			data-paddingleft="[50,50,50,50]"
-			style="z-index: 21; white-space: nowrap; cursor:pointer;text-decoration: none;">@lang('amos.header3_btn')</a> </li>
+			style="z-index: 21; white-space: nowrap; cursor:pointer;text-decoration: none;">@lang('amos.features_header')</a> </li>
       </ul>
       <div class="tp-bannertimer tp-bottom" style="height: 3px; background:#8a39ee"></div>
     </div>
@@ -2192,7 +2192,7 @@
     <!-- end container --> 
   </div>
   <!-- end footer-bar -->
-  <div class="container" id="CONTACT CONTACTs">
+  <div class="container" id="CONTACT">
     <div class="row">
       <div class="col-md-7 col-sm-12 col-xs-12">
         <h4 class="footer-title">@lang('amos.conatct_newsletter')</h4>
@@ -2225,7 +2225,7 @@
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12">Copyright © 2013 - @php echo date('Y'); @endphp </div>
         <!-- end col-6 -->
-        <div class="col-md-6 col-sm-6 col-xs-12 text-right">Site Created with <span>♥</span> by <a href="#">Recod</a></div>
+        <div class="col-md-6 col-sm-6 col-xs-12 text-right">Site Created with <span>♥</span> by <a href="https://degitalhub.com/">DegitalHUB.com</a></div>
         <!-- end col-6 --> 
       </div>
       <!-- end row --> 
