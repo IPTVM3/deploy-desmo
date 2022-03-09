@@ -202,7 +202,7 @@ class IptvController extends Controller
 
                     if ($value->id == $store->unit_system) {
 
-                        return redirect($bas_url."/en/payments?price=".$price."&txt=".$txt."&clientid=".$client_id."&tested=0&fees=0");
+                        return redirect($bas_url."/en/lordly/payments?price=".$price."&txt=".$txt."&clientid=".$client_id."&tested=0&fees=0");
                         //return redirect($bas_url."/en/payments/new?price=".$price."&txt=".$txt."&clientid=".$client_id);
                     }
                 }
