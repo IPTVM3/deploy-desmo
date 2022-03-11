@@ -360,7 +360,7 @@
 <section class="support-bar transition">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12"> <a href="#">@lang('amos.get_intouch')  </a> <img src="{{ asset('iptvamos/images/icon-support.png') }}" alt="Image">
+      <div class="col-xs-12"> <a href="/contact">@lang('amos.get_intouch')  </a> <img src="{{ asset('iptvamos/images/icon-support.png') }}" alt="Image">
         <h4>@lang('amos.anyquestion')</h4>
         <h6>@lang('amos.anyquestion_desc') </h6>
       </div>

@@ -3,11 +3,39 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> {{config('app.name')}}  | @lang('amos.title')</title>
-	<meta name="author" content="IPTVAMOS">
-	<meta name="description" content="IPTVamos "> 
+	<title> {{config('app.name')}}  | The Best IPTV Service Provider for 2022 | Channel list (2022)</title>
+	<meta name="author" content="LORDLYIPTV">
+	 
 
-	
+	<meta name="description" content="For €14 a Month | 151.000 Live & Movies | 2500 Full Series through one IPTV Subscription. The Amazing TV is The Best IPTV Service, well known now as a great reliable IPTV Provider. It is in fa..."> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="verification" content="349278a8fd82d8e1efbdd2873f9295" />
+    <title>Lordly - The Best IPTV Service Provider for 2022 | Channel list (2022) </title>
+    <meta name="description" content="The best IPTV provider in 2022 !! Get Access to thousands of IPTV channels through one IPTV Subscription. lordly-iptv.com is the best premium IPTV subscription service provider in the market" />
+    <meta name="keywords" content="best iptv provider for USA, best iptv deal, secure payment, iptv reseller, american channels, asian channels list, 
+                                 european channels list, how to install iptv, channel list, arabic channels list, iptv subscription, holidays offer, better than netflix, iptv smarters, iptv box, iptv player,cobra,king 365,ott,m3u,mag,smart iptv,test,messi
+                                 iptv price, iptv box, best iptv provider, best iptv alternative, quality, premium iptv subscription, 12 months premium iptv subscription, best iptv provider for 2022, full channel list, iptv on firestick 4k, iptv reddit, iptv smarters pro" />
+    <meta property="og:site_name" content="IPTV provider" />
+    <meta property="og:url" content="lordly-iptv.com"/>
+    <meta property="og:title" content="IPTV Provider | The best IPTV Service Provider" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="The Best IPTV Providers for Android TV, MAG, Roku, Kodi, Apple TV 4K and Fire TV !! Watch Sports, Movies, and PPV at low prices. The Amazing TV lordly-iptv.com is the best premium IPTV subscription service provider in the market." />
+    <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@lordlyIPTV" />
+<meta name="twitter:title" content="IPTV Provider | The best IPTV Service Provider" />
+<meta name="twitter:description" content="Watch Sports, Movies, and PPV at low prices. The Amazing TV lordly-iptv.com is the best IPTV service provider in the market." />
+<meta name="twitter:image" content="//cdn.shopify.com/s/files/1/0297/2670/3756/files/logo_transparent_crop_8cae8a43-7297-413b-98dc-b6836a7405f1_1200x1200.png" />  
+<meta name="twitter:image:width" content="1000" />
+<meta name="twitter:image:height" content="655" />
+<meta name="twitter:image:alt" content="iptv streaming provider m3u"> 
+
+<meta property="og:site_name" content="Best IPTV Service Provider">
+<meta property="og:url" content="https://lordly-iptv.com/">
+<meta property="og:title" content="Best IPTV Service Provider for FireStick /Android BOX / PC">
+<meta property="og:type" content="website">
+<meta property="og:description" content="For €14 a Month | 151.000 Live & Movies | 2500 Full Series through one IPTV Subscription. The Amazing TV is The Best IPTV Service, well known now as a great reliable IPTV Provider. It is in fact the Best IPTV for English TV and Sports, providing the Best International IPTV, and Sports.">
+
 	
 	<link href="{{ asset('iptvamos/ico/favicon.png') }}" rel="shortcut icon">
 
