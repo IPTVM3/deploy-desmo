@@ -384,7 +384,7 @@
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12">Copyright © 2013 - @php echo date('Y'); @endphp </div>
         <!-- end col-6 -->
-        <div class="col-md-6 col-sm-6 col-xs-12 text-right">Site Created with <span>♥</span> by <a href="#">Recod</a></div>
+        <div class="col-md-6 col-sm-6 col-xs-12 text-right">Site Created with <span>♥</span> by <a href="https://degitalhub.com/">DegitalHUB.com</a></div>
         <!-- end col-6 --> 
       </div>
       <!-- end row --> 
