@@ -32,43 +32,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-      <!-- Facebook Pixel Code -->
-      <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2511487865548827');
-        fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2511487865548827&ev=PageView&noscript=1"
-      /></noscript>
-      <!-- End Facebook Pixel Code -->
+      <!-- Facebook Pixel Code --> 
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY98F9S9HS"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-JY98F9S9HS');
-        </script>
-
-        <!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-647729613');
-        </script>
+    
 
         
 </head>
@@ -90,7 +57,7 @@
           </div>
           <!-- end col-6 -->
           <div class="col-md-6 col-sm-6 col-xs-12">
-           <span class="social-text">contact.bobres@gmail.com</span> 
+           <span class="social-text">support.lordly@gmail.com</span> 
             <!-- end social-text --> 
         
             <!-- end social-media -->
@@ -329,15 +296,12 @@
       <b>Minimum to become a reseller is 350 EUR, the credit does not expire at all you can keep credit until you sell all.</b><br>
       <br><br><b> How Can I Purchase Credits </b>
       <br><br>
-      <b>Send exactly " € 350.99 or € 599.99 or € 820.99 " depending on offer that you prefer by a bank transfer ( our bank account detials is in this text  below ) . <b><br>
+      <b>Send exactly " € 350.99 or € 599.99 or € 820.99 " depending on offer that you prefer through your personal PayPal account, ( ⚠️ you have to choose it's as “Friends and Family” payment and please don't write anything in the description of the transaction, if not the transaction will be refunded it immediately, ) .<b><br>
        <b>Then contact us on email or whatsapp ( provide us the screenshot of the transaction ).</b>
 
         <br><br>
-        <b>OUR WISE BANK DETAILS : </b><br>
-        Name: <b style="color:red;">Othmane LACHAGR</b><br>
-        BIC: <b style="color:red;">TRWIBEB1XXX</b><br>
-        IBAN: <b style="color:red;">BE53 9671 8597 7153</b><br>
-        ADDRESS: <b style="color:red;">TransferWise Europe SA Avenue Louise 54, Room S52 Brussels 1050 Belgium</b>
+        <b>OUR PAYPAL EMAIL ADDRESS: </b><br>
+        <b style="color:red;">howells.kate.97@gmail.com</b><br> 
 
         <br><br>
         <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
