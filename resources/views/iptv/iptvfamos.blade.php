@@ -57,15 +57,8 @@
             </ul>
             <!-- end top-menu --> 
           </div>
-
-		  <div class="col-md-6 col-sm-6 col-xs-6">
-           <span class="social-text">@lang('amos.connect')</span> 
-            <!-- end social-text --> 
-            <ul class="social-media">
-              <li><a href="#"><i style="color:blue;" class="fa fa-facebook" aria-hidden="true"></i></a></li> 
-              <li><a href="#"><i style="color:red;" class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
+ 
+           
             <!-- end social-media --> 
             <div class="language"> <span>@lang('amos.capital')</span>
             <!--<div class="dropdown"> 
@@ -2480,7 +2473,7 @@ $(window).load(function() {
 				$('#package').change(function() {
 				setPrice();
 				});
-				$('#multidevice').change(function() {
+				$('#multidevicex').change(function() {
 					setPrice();
 				});
 				$('#periods').change(function() {
