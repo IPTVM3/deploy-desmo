@@ -201,8 +201,8 @@ class IptvController extends Controller
                     $client_id = $value->api_key;
 
                     if ($value->id == $store->unit_system) {
-
-                        return redirect($bas_url."/en/lordly/payments?price=".$price."&txt=".$txt."&clientid=".$client_id."&tested=0&fees=0");
+                        return view('iptv.payment', compact('client_id','price','txt'));
+                        //return redirect($bas_url."/en/lordly/payments?price=".$price."&txt=".$txt."&clientid=".$client_id."&tested=0&fees=0");
                         //return redirect($bas_url."/en/payments/new?price=".$price."&txt=".$txt."&clientid=".$client_id);
                     }
                 }
@@ -334,13 +334,13 @@ class IptvController extends Controller
                 'header' =>'New UnPaid Order Recieved PayPal ! From : '.$request['email'],
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at iptv21m3u@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+                $message->to('iptv21m3u@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
             }); 
             // This will print the detailed information on the exception.
             //REALLY HELPFUL FOR DEBUGGING
@@ -379,13 +379,13 @@ class IptvController extends Controller
                     'header' =>'New Paid Order Recieved PayPal ! From : '.$order->email.' At : '.$order->created_at.' Totale : '.$order->total,
                     'btn' =>'Ckeck Now',
                     'btn_url' => 'https://www.bobres.com/en/login',
-                    'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
+                    'footer' => 'If you have any questions, contact us at iptv21m3u@gmail.com or at +33 7 83 80 64 12.',
                     'bye' => 'Lordly Team.',
                 ];
         
                 Mail::send('mail.neworder', $data , function($message)
                 {
-                    $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
+                    $message->to('iptv21m3u@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
                 }); 
                 
                 return redirect()->route('formdetails',$order->id);
@@ -398,13 +398,13 @@ class IptvController extends Controller
                 'header' =>'New UnPaid Order Recieved PayPal ! ',
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at iptv21m3u@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+                $message->to('iptv21m3u@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
             }); 
             // This will print the detailed information on the exception.
             //REALLY HELPFUL FOR DEBUGGING
@@ -421,13 +421,13 @@ class IptvController extends Controller
             'header' =>'New UnPaid Order Recieved PayPal !',
             'btn' =>'Ckeck Now',
             'btn_url' => 'https://www.bobres.com/en/login',
-            'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
+            'footer' => 'If you have any questions, contact us at iptv21m3u@gmail.com or at +33 7 83 80 64 12.',
             'bye' => 'Lordly Team.',
         ];
 
         Mail::send('mail.neworder', $data , function($message)
         {
-            $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+            $message->to('iptv21m3u@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
         }); 
         return view('iptv.cancled');
     }
@@ -485,13 +485,13 @@ class IptvController extends Controller
                 'header' =>'New Paid Order Recieved Stripe ! From : '.$order->email.' At : '.$order->created_at.' Totale : '.$order->total,
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at iptv21m3u@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
+                $message->to('iptv21m3u@gmail.com', 'Bobres Notification')->subject('Bobres Store | New Paid Order Recieved!');  
             }); 
 
 
@@ -504,13 +504,13 @@ class IptvController extends Controller
                 'header' =>'New UnPaid Order Recieved Stripe ! From : '.$request['email'],
                 'btn' =>'Ckeck Now',
                 'btn_url' => 'https://www.bobres.com/en/login',
-                'footer' => 'If you have any questions, contact us at service.lordlyiptv@gmail.com or at +33 7 83 80 64 12.',
+                'footer' => 'If you have any questions, contact us at iptv21m3u@gmail.com or at +33 7 83 80 64 12.',
                 'bye' => 'Lordly Team.',
             ];
     
             Mail::send('mail.neworder', $data , function($message)
             {
-                $message->to('service.lordlyiptv@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
+                $message->to('iptv21m3u@gmail.com', 'Bobres Notification')->subject('Bobres Store | New UnPaid Order Recieved!');  
             }); 
             return view('iptv.cancled');
         }

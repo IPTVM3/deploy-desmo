@@ -6,12 +6,12 @@ return [
     'host'       => 'smtp.gmail.com',
     'port'       => env('MAIL_PORT', 587),
     'from' => [
-        'address' => 'service.lordlyiptv@gmail.com',
-        'name' => 'LordlyIPTV Support',
+        'address' => 'iptv21m3u@gmail.com',
+        'name' => 'IPTVM3U Support',
     ],
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-    'username'   => 'service.lordlyiptv@gmail.com',
-    'password'   => 'vevdjncmszhvkcyi',
+    'username'   => 'iptv21m3u@gmail.com',
+    'password'   => 'medhmxneipbycjse',
     'sendmail'   => '/usr/sbin/sendmail -bs',
 
     'markdown' => [

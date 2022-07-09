@@ -27,7 +27,7 @@
  <br>
 
 
- WHATSAPP: www.lordly-iptv.com/en/support
+ WHATSAPP: www.iptvm3u.fr/en/support
 
 </body>
 </html>

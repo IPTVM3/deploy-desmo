@@ -285,9 +285,9 @@
                                       </tr>
                                       <tr>
 <<<<<<< HEAD
-                                        <td class="pc-xs-fs-30 pc-xs-lh-42 pc-fb-font" valign="top" style="padding: 13px 10px 0; letter-spacing: -0.7px; line-height: 46px; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; color: #f0b92d">We're changing our domain to lordly-iptv.com</td>
+                                        <td class="pc-xs-fs-30 pc-xs-lh-42 pc-fb-font" valign="top" style="padding: 13px 10px 0; letter-spacing: -0.7px; line-height: 46px; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; color: #f0b92d">We're changing our domain to iptvm3u.fr</td>
 =======
-                                        <td class="pc-xs-fs-30 pc-xs-lh-42 pc-fb-font" valign="top" style="padding: 13px 10px 0; letter-spacing: -0.7px; line-height: 46px; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; color: #f0b92d">We're changing our website to lordly-iptv.com</td>
+                                        <td class="pc-xs-fs-30 pc-xs-lh-42 pc-fb-font" valign="top" style="padding: 13px 10px 0; letter-spacing: -0.7px; line-height: 46px; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; color: #f0b92d">We're changing our website to iptvm3u.fr</td>
 >>>>>>> 3ea1ff39ff23ba99db3afcb5ee2aadd860d78dbc
                                       </tr>
                                     </tbody>
@@ -397,7 +397,7 @@
                                               <tbody>
                                                 <tr>
                                                   <td style="padding: 13px 17px; border-radius: 8px; background-color: #f4aa28" bgcolor="#f4aa28" valign="top" align="center">
-                                                    <a class="pc-fb-font" href="https://www.lordly-iptv.com" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">Our Store</a>
+                                                    <a class="pc-fb-font" href="https://www.iptvm3u.fr" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">Our Store</a>
                                                   </td>
                                                 </tr>
                                               </tbody>
@@ -417,7 +417,7 @@
                                               <tbody>
                                                 <tr>
                                                   <td style="padding: 13px 17px; border-radius: 8px; background-color: #0dd248" bgcolor="#0dd248" valign="top" align="center">
-                                                    <a class="pc-fb-font" href="https://www.lordly-iptv.com/en/contact" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">Contact</a>
+                                                    <a class="pc-fb-font" href="https://www.iptvm3u.fr/en/contact" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">Contact</a>
                                                   </td>
                                                 </tr>
                                               </tbody>
@@ -472,7 +472,7 @@
                                               </tbody>
                                               <tbody>
                                                 <tr>
-                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8;" valign="top">www.lordly-iptv.com/en/contact</td>
+                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8;" valign="top">www.iptvm3u.fr/en/contact</td>
                                                 </tr>
                                                 <tr>
                                                   <td class="pc-sm-h-20" height="56" style="line-height: 1px; font-size: 1px;">&nbsp;</td>
@@ -505,7 +505,7 @@
                                               </tbody>
                                               <tbody>
                                                 <tr>
-                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">If You Have Any Problem Or Question Please Contact Us <br><strong>contact.lordly@gmail.com</strong> <br><strong>Www.lordly-iptv.com</strong></td>
+                                                  <td class="pc-fb-font" style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; letter-spacing: -0.2px; color: #D8D8D8" valign="top">If You Have Any Problem Or Question Please Contact Us <br><strong>iptv21m3u@gmail.com</strong> <br><strong>Www.iptvm3u.fr</strong></td>
                                                 </tr>
                                                 <tr>
                                                   <td class="pc-sm-h-20" height="15" style="line-height: 1px; font-size: 1px">&nbsp;</td>

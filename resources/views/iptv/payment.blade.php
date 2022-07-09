@@ -2,45 +2,41 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <title>{{ \App\Store::first()->name }} | @lang('iptv.payment')</title>
+ 
+    <title>IPTV M3U | @lang('iptv.payment')</title>
+ 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Font-->
-    <link rel="icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
-    
-    
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0269/0056/2053/files/103847834_1337631189764615_5454143490239517351_n_f24f3220-9d8f-4e8b-96fe-b933c0f213b9_260x.png?v=1592339453" type="image/x-icon">
+     
+     
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
    
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg=="
-          crossorigin="anonymous">
-     <!-- 
-          <script src="https://www.paypal.com/sdk/js?client-id=AdvRzlPdGjjy8BqPzTel5Hz1ivHNYw5afb-pbbqhGjdr7hOSvTNX2k79RE4eduAHxgqqd7BtszA11CNo&currency=EUR"></script>
-     
-
-        shit <script src="https://www.paypal.com/sdk/js?client-id=AZ9biz-p-nI_M77P-pXWJr_hwnBgs_Fud3sy3oji2he7KKCZDQOU029SuTPGbNwTkmbt7xORsmRrlvaP&currency=EUR"></script>
-     
-       <script src="https://www.paypal.com/sdk/js?client-id=AUiEqkr0c9K1XlNLsNjHRG-mAPyCfbnLOK2kWj8iMQxng9QX4Tb69HwvuDGUlQoW2mtwGsY_7VtMV38w&currency=EUR"></script>
-    
-   -->
+          crossorigin="anonymous"> 
+ 
    <script src="https://widget.unitpay.money/unitpay.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id={{$client_id}}&currency=EUR"></script>
 
     <meta name="_token" content="{!! csrf_token() !!}" />
+ 
     <!-- Noty -->
     <link href="{{ asset('plugins/noty/noty.css') }}" rel="stylesheet">
-    <script src="{{ asset('plugins/noty/noty.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('plugins/noty/noty.js') }}" type="text/javascript"></script> 
   
     <script src="https://js.stripe.com/v3/"></script>
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-
-        .body {
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);   
+ 
+        .body { 
         / / custom fonts, etcetera can go here
-        }
-
+        }  
+  
         .jumbotron-flat {
-            background-color: solid #4DB8FFF;
+            background-color: solid #4DB8FFF; 
             height: 100%;
             border: 1px solid #4DB8FF;
             background: white;
@@ -72,22 +68,54 @@
                padding-top: 21px;
             }
         }
-    </style>
-
-
-<!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+        </style> 
+ 
+<!-- Global site tag (gtag.js) - Google Ads: 472459539 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-472459539"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-647729613');
+  gtag('config', 'AW-472459539');
+</script>
+
+
+ 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-564CX5N');</script>
+<!-- End Google Tag Manager -->
+
+ 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-564CX5N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ 
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J001CWVQY2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J001CWVQY2');
 </script>
 
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif;">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-564CX5N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!--
 <div class="snipper">
      
@@ -119,10 +147,8 @@
 <hr class="featurette-divider"></hr> 
 
  
-<header class="text-center">
-    <img src="{{  asset('iptv_update/images/logo_dark.png') }}" alt="logo" class="logo-light default">
-</header>
-
+ 
+ 
 <br><br>
 <div class="container text-center" >
    
@@ -133,23 +159,43 @@
                 <div class="col-sm-6 col-sm-offset-3">
                 <h1 style="color:#0fad00">@lang('new.thinks_pay')</h1>
                 <p>@lang('new.thinks_hd_1')</p>
-                <p >@lang('new.thinks_hd_2')</p> 
+                <p >@lang('new.thinks_hd_2') <b><span id="payemremail"></span></b> @lang('new.thinks_hd_3')</p> 
                 <p >@lang('new.thinks_contact')</p>
  
-                    <div class="btn-group " role="group" aria-label="First group">
-                        <button type="button" class="btn btn-primary" onclick="location.href = 'mailto:contact.bobres@gmail.com';">contact.bobres@gmail.com</button>
+               
+
+              
+                   
+                    <div class="btn-group " role="group" aria-label="First group"> 
+                        <button type="button" class="btn btn-primary" onclick="location.href = 'mailto:iptv21m3u@gmail.com';">iptv21m3u@gmail.com</button>
                 
-                        <button type="button" class="btn btn-success" onclick="location.href = 'https://api.whatsapp.com/send?phone=33753133255'">+33 7 531 332 55</button>
-                        <button type="button" class="btn btn-success" onclick="location.href = 'https://api.whatsapp.com/send?phone=33751364857'">+33 7 513 648 57</button>
+                        <button type="button" class="btn btn-success" onclick="location.href = 'https://api.whatsapp.com/send?phone=33610080489'">+33 610080489</button> 
+ 
                     </div> 
               
 
+ 
             
      
                 </div>
                 
             </div>
-      
+            <hr>
+           <!-- <div class="cta-section bg-pink text-center" >
+                <div class="container">
+                  <div class="row text-center">
+                    <div class="col-sm-12 " style="visibility: visible; animation-name: fadeInUp;">
+                        <h1 >@lang('new.gift_hd')</h1>
+                        <p>@lang('new.gift_desc')</p> 
+                        <p >@lang('new.descount_code'):jjj <span style=" font-weight:  ld;    font-size: 19px;  color: black;"> IPTV20 </span></p>
+                            
+                            <a class="btn btn-lg btn-default btn-rounded btn-wide bg-amber " href="https://relaxinos.info"  >@lang('new.gift_btn_1')</a> 
+                        
+                    </div> 
+                  </div>
+                </div>
+            </div>
+        -->
             <br><br>
             <style>
                 .cta-section {
@@ -205,327 +251,31 @@
 
             
             <div class="alert alert-info" style="    font: caption;            "> 
-              @lang('new.terms_d')  <a href="{{ route('terms') }}"  >terms and conditions</a>
+              @lang('new.terms_d')  <a href="{{ url('/conditions') }}" target="_blank"  >terms and conditions</a>
             </div>
-            <br>
-            <div class="btn-group-vertical btn-block" style="display: none">
-                <a class="btn btn-primary" style="text-align: left;" href="#paypal" id="paypal_btn">PayPal</a> 
-                <a class="btn btn-success" style="text-align: left;" href="#stripe" id="stripe_btn"> @lang('iptv.credircard')</a>
-            </div>
-
-            <!--
-            <div   id="pay_con">
-                <div id="paypal-button-container"></div>
-           </div> 
-           -->
-           <!--
-           <div   id="pay_con">
-            <form action="https://unitpay.money/pay/368521-e4d9d">
-                <input type="text" name="account" value="demo">
-                <input type="text" name="sum" value="{{$product->price_after}}">
-                <input type="hidden" name="desc" value="Payment description">
-                <input type="hidden" name="signature" value="23f107d5aefc756154963e943f541dd0">
-                <input class="btn paypal-button paypal-button-number-0 paypal-button-layout-vertical paypal-button-shape-rect paypal-button-number-multiple paypal-button-env-production paypal-button-color-gold paypal-button-text-color-black paypal-logo-color-blue " type="submit" value="PayNow">
-                </form>
-                
-
-           </div> 
-
-        <form action="https://unitpay.money/pay/368521-e4d9d">
-        <input type="hidden" name="account" value="demo">
-        <input type="hidden" name="sum" value="{{$product->price_after}}">
-        <input type="hidden" name="desc" value="Payment description">
-        <input type="hidden" name="signature" value="{{$signature}}">
-        <input type="hidden" name="locale" value="en">
-        <input class="btn btn-primary btn-block" type="submit" value="Pay">
-        </form>
-
-          -->
-        
-          <div  class="tab-pane fade in active">
-                
-                <div class='row'>
-                    <div class="col-md-6">
-                        <div class='form-group required'>
-
-                            <label class='control-label'>@lang('iptv.email') *</label>
-                            <input class='form-control' size='4' type='email' id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-
-                        <div class='form-group card required'>
-                            <label class='control-label'> @lang('iptv.ch_card_name') </label>
-                            <input autocomplete='off' class='form-control' size='20' type='text' id="name"
-                                name="name">
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class='form-row'>
-                    <div class='form-group card required'>
-                        <div class='form-group card '>
-                            <label class='control-label'> @lang('iptv.country') *</label>
-                            <input autocomplete='off' class='form-control' size='20' type='text' id="city"
-                                required name="country">
-                        </div> 
-                    </div>
-                </div>
-                <button id="paynow" class='form-control btn btn-success submit-button' 
-                        type='button'> @lang('iptv.continue') →
-                </button>
-
- 
-         
-                </div>
- 
-                       
-                    
+            <br> 
           
            <br>
+            <div id="paypal-button-container">
+
+                <!-- <button type="button" class="btn btn-primary    data-toggle="modal" data-target="#exampleModal"">Bank Transfer</button>
+ -->
+            </div>
+
 
             <div class="jumbotron jumbotron-flat">
                    
-                @lang('iptv.balance')
+                 {{$txt}}
                
-               
-                <div class="paymentAmt">  ‎€ {{$product->price_after}}</div>
-         
+                <div class="paymentAmt">  ‎€ {{$price}}</div>
+ 
 
             </div>
         </div>
 
  
-
-        
-  
-
-        
-      
-        <div class="col-sm-6"  style="display: none;">
-            <div class="tab-content">
-                <!--
-                <div id="stripe" style="display: none;">
-
-                    <form accept-charset="UTF-8"  
-                          id="payment-form"
-                          method="post">
-                        {{ csrf_field() }}
-                        {{ method_field('POST') }}
-
-                        <br>
-                        <div class='error form-group  '>
-                            @include('partials._errors')
-
-                        </div>
-
-                        <input type="hidden" name="_token" value="{!! csrf_token() !!}">
-                        
-                        <div class='row'>
-                            <div class="col-md-6">
-                                <div class='form-group required'>
-
-                                    <label class='control-label'>@lang('iptv.email') *</label>
-                                    <input class='form-control' size='4' type='email' id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class='form-group card required'>
-                                    <label class='control-label'> @lang('iptv.name_on_card') *</label>
-                                    <input autocomplete='off' class='form-control' size='20' type='text'
-                                           id="name_on_card" required name="name">
-                                </div>
  
-                            </div>
-                        </div>
-
-                        <div class='row'>
-                            <div class="col-md-6">
-                                <div class='form-group card '>
-                                    <label class='control-label'> @lang('iptv.phone') </label>
-                                    <input autocomplete='off' class='form-control' size='20' type='text' id="phone"
-                                           name="phone">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class='form-group card '>
-                                    <label class='control-label'> @lang('iptv.city') *</label>
-                                    <input autocomplete='off' class='form-control' size='20' type='text' id="city"
-                                           required name="city">
-                                </div>
-                               
-                            </div>
-                        </div>
-
-                        <div class='row'>
-                            <div class="col-md-6">
-                                <div class='form-group card '>
-                                    <label class='control-label'> @lang('iptv.address') *</label>
-                                    <input autocomplete='off' class='form-control' size='20' type='text' id="address"
-                                           name="address">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class='form-group card '>
-                                    <label class='control-label'> @lang('iptv.country')  </label>
-                                    <input autocomplete='off' class='form-control' size='20' type='text' id="country"
-                                             name="country">
-                                </div>
-                               
-                            </div>
-                        </div>
  
-  
-                        <div class='form-row'>
-                            <div class='form-group card required'>
-                                <label class='control-label'>@lang('iptv.ch_card_num') </label>
-                                <input autocomplete='off' class='form-control card-number' size='20' type='text'
-                                       required name="number_card">
-                            </div>
-                        </div>
-                        <div class='form-row'>
-                            <div class='form-group cvc required'>
-                                <label class='control-label'>CVC</label>
-                                <input autocomplete='off' class='form-control card-cvc' placeholder='ex. 311' size='4'
-                                       required name="cvc"
-                                       type='text'>
-                            </div>
-                            <div class='form-group expiration required'>
-                                <label class='control-label'>@lang('iptv.exp')</label>
-                                <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'
-                                       required name="exp_mm">
-                            </div>
-                            <div class='form-group expiration required'>
-                                <label class='control-label'>@lang('iptv.yr')</label>
-                                <input class='form-control card-expiry-year' placeholder='YYYY' size='4' type='text'
-                                       required name="exp_yy">
-                            </div>
-                        </div>
-                          
-                        <div class="form-group">
-                            <label for="card-element">
-                                @lang('iptv.creditordb')
-                            </label>
-                            <div id="card-element">
-                              
-                            </div>
-
-                         
-                            <div id="card-errors" role="alert"></div>
-                        </div>
-                        <style>
- 
-                            .StripeElement {
-                                box-sizing: border-box;
-
-                                height: 40px;
-
-                                padding: 10px 12px;
-
-                                border: 1px solid transparent;
-                                border-radius: 4px;
-                                background-color: white;
-
-                                box-shadow: 0 1px 3px 0 #e6ebf1;
-                                -webkit-transition: box-shadow 150ms ease;
-                                transition: box-shadow 150ms ease;
-                            }
-
-                            .StripeElement--focus {
-                                box-shadow: 0 1px 3px 0 #cfd7df;
-                            }
-
-                            .StripeElement--invalid {
-                                border-color: #fa755a;
-                            }
-
-                            .StripeElement--webkit-autofill {
-                                background-color: #fefde5 !important;
-                            }
-                        </style>
-                        <div class='form-row'>
-                            <div class='form-group'>
-                                <label class='control-label'></label>
-
-                                <button class='form-control btn btn-primary' type='submit'>@lang('iptv.continue')→
-                                </button>
-
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-             -->
-             <div id="stripe" > 
-
-                <!-- Set up a container element for the button -->
-             </div>
-                <div id="paypal" style="display: none" class="tab-pane fade in active">
-
-                    <form  id="paypalForm" method="POST">
-                        {{ csrf_field() }}
-                        {{ method_field('POST') }}
-
-                        <div class="paypalResult"><!-- content will load here --></div>
-                        <input type="hidden" name="_token" value="{!! csrf_token() !!}">
-                        <br>
-                        <input type="hidden" id="action" value="paypal"></input>
-                        <input type="hidden" id="token" value="token-supersecuretoken123123123"></input>
-                        <a href="#paypal"><img
-                                    src="https://fleure.ma/wp-content/uploads/2017/11/Paypal-logo-20141.png"
-                                    alt="paypal" width="100%"></a>
-                        <br><br><br>
-                        <div class='error form-group  '>
-                            @include('partials._errors')
-
-                        </div>
-                        <div class='row'>
-                            <div class="col-md-6">
-                                <div class='form-group required'>
-
-                                    <label class='control-label'>@lang('iptv.email') *</label>
-                                    <input class='form-control' size='4' type='email' id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-
-                                <div class='form-group card required'>
-                                    <label class='control-label'> @lang('iptv.phone') </label>
-                                    <input autocomplete='off' class='form-control' size='20' type='text' id="phone"
-                                           name="phone">
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class='form-row'>
-                            <div class='form-group card required'>
-                                <div class='form-group card '>
-                                    <label class='control-label'> @lang('iptv.country') *</label>
-                                    <input autocomplete='off' class='form-control' size='20' type='text' id="city"
-                                           required name="country">
-                                </div> 
-                            </div>
-                        </div>
-                        <button id="paypal_btn_sub" class='form-control btn btn-primary submit-button'
-                                type='submit'> @lang('iptv.continue') →
-                        </button>
-
-                    </form>
-                    <br>
-                    <p id="loading" style="display: none">@lang('iptv.wait')</p>
-                </div>
-
-            </div>
-
-
-        </div>
-
               <!-- Modal -->
               <div class="modal fade" id="exampleModalpayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -539,14 +289,23 @@
                     <div class="modal-body"> 
                        Please Try Again . If You Have Any Problem With Payment Proccess Please Try To Contact Us, And We Will Fix It Immediately
                        <br>  <br>
-                       Email :<b> Contact.bobres@gmail.com</b><br>
-                       Whatsapp :<b>  +33 7 53 13 32 55 </b>/<b>  +33 7 51 36 48 57</b><br>
+                       Email :<b> iptv21m3u@gmail.com</b><br>
+                       Whatsapp :<b>  +33 610 080 489</b><br>
                     </div> 
                   </div>
+ 
                 </div>
+                <div class="modal-body"> 
+                   Please Try Again . If You Have Any Problem With Payment Proccess Please Try To Contact Us, And We Will Fix It Immediately
+                   <br>  <br>
+                   Email :<b> iptv21m3u@gmail.com</b><br>
+                   Whatsapp :<b> +33610080489 </b><br>
+                </div> 
               </div>
-    
+            </div>
+          </div>
 
+     
 
             <!-- jQuery ----------------------------------------------------------------------------------------------------------------------------->
             <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
@@ -658,25 +417,25 @@
             </script>
 
 
-            <script>
+            <script> 
 
-/*
                
 
                 paypal.Buttons({
                     createOrder: function(data, actions) {
                     // This function sets up the details of the transaction, including the amount and line item details.
                         var local = {!! json_encode(App::isLocale('en')) !!} 
-                        var value = {!! json_encode($product->price_after) !!} 
-                        if(local)  value = {!! json_encode($product->price_after) !!} 
+                        var value = {!! json_encode($price) !!}
+                        if(local)  value = {!! json_encode($price) !!}
+ 
                     return actions.order.create({
                         application_context: {
-                            brand_name :  {!! json_encode($product->title) !!} ,
+                            brand_name :  'Dev App',
                             user_action : 'PAY_NOW',
                         },
                         purchase_units: [{
                             amount: {
-                                value:  value ,
+                                value:  {!! json_encode($price) !!}  ,
                             }
                         }],
                     });
@@ -688,13 +447,14 @@
                 // This function captures the funds from the transaction.
                 return actions.order.capture().then(function(details) {
                     if(details.status == 'COMPLETED'){ 
-                        var local = {!! json_encode(App::isLocale('en')) !!} 
-                        var value = {!! json_encode($product->price_after) !!} 
-                        if(local)  value = {!! json_encode($product->price_after) !!} 
+ 
+                        var local = {!! json_encode(App::isLocale('en')) !!}
+                            var value = {!! json_encode($price) !!}
+                            var txt = {!! json_encode($txt) !!}
                         $('#success').show(); 
                         $('#pay_con').hide();  
                         $('#paypal-button-container').remove();
-                        return fetch('https://www.bobres.info/api/checkout/paypal/order/completed', {
+                        return fetch('/api/checkout/paypal/order/completed', {
                                 method: 'post',
                                 headers: {
                                     'content-type': 'application/json', 
@@ -705,23 +465,26 @@
                                     status: details.status,
                                     payerEmail: details.payer.email_address,
                                     country: details.payer.address.country_code,
-                                    price: value
+                                    price: {!! json_encode($price) !!} 
                                 })
                             })
                             .then(status)
                             .then(function(response){
                                 // redirect to the completed page if paid
-                                $('#success').show(); 
-                                $('#pay_con').hide();  
-                                $('#paypal-button-container').remove();
-
-                                gtag('event', 'conversion',{
-                                    'send_to': 'AW-647729613/GZiICIesmNkBEM2j7rQC',
-                                    'transaction_id': ''
-                                });
+                                alert("Payment is under process do not refresh or close this window");
+                                gtag('event', 'conversion', {
+                                'send_to': 'AW-472459539/7_avCPrQufECEJPSpOEB',
+                                'transaction_id': ''
+                                                        });
+                                document.location.href = 'https://www.iptvm3u.fr/en/payments/paypal/completed/'+details.payer.email_address+'/'+value+'/'+details.payer.address.country_code+'/'+details.status+'/'+txt+'/0';
+ 
+                           
+ 
 
                             })
                             .catch(function(error) {
+                                // redirect to failed page if internal error occurs
+                                
                                 $('#exampleModalpayment').modal('show');
 
                              
@@ -748,18 +511,15 @@
                 } 
                 return res;
                 } 
-
- */
+ 
 
 
             </script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.0/sjcl.min.js"></script>
 <script type="text/javascript">
  
-
-
- function getSignature(account,currency,desc,sum,secretkey){
-        
+ 
+         
         var hash_base = account+'{up}'+currency+'{up}'+desc+'{up}'+sum+'{up}'+secretkey;
         var bitArray = sjcl.hash.sha256.hash(hash_base);
         return sjcl.codec.hex.fromBits(bitArray); 
@@ -775,7 +535,7 @@ $('#paynow').click(function(){
         var email = $('#email').val();
         var currency = 'EUR';
         var desc = 'Product description';
-        var sum = {!! json_encode($product->price_after) !!};
+        var sum = {!! json_encode($price) !!};
         var signature_ =  getSignature(email,currency,desc,sum,'23f107d5aefc756154963e943f541dd0');
      
       
@@ -794,7 +554,7 @@ $('#paynow').click(function(){
         payment.success(function (params) {
                 console.log(params);
                 var email = $('#email').val(); 
-                document.location.href = 'https://www.bobres.co/en/payments/paypal/completed/'+email+'/'+{!! json_encode($product->price_after) !!} +'/US/COMPLETED';
+                document.location.href = 'https://www.IPTVM3U.co/en/payments/paypal/completed/'+email+'/'+{!! json_encode($price) !!} +'/US/COMPLETED';
 
         });
         payment.error(function (message, params) {
@@ -804,7 +564,7 @@ $('#paynow').click(function(){
  
         } 
     });
+ 
 </script>
-
 </body>
 </html>

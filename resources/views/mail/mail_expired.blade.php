@@ -26,7 +26,7 @@ Servicio premium de 6 meses por 48 €: <a href = "https://www.re-cod.com/en/lor
 Si tiene algún problema o pregunta, puede contactarnos, estaremos encantados de ayudarle: <br>
 <br>
 Cuentas de Whatsapp: <a href="https://www.lordly-iptv/en/support"> Aquí </a> <br>
-Correo electrónico: service.lordlyiptv@gmail.com <br>
+Correo electrónico: iptv21m3u@gmail.com <br>
 saludos <br>
 
 @elseif ($local == 'DE') 
@@ -54,7 +54,7 @@ Oder besuchen Sie unsere Website, um alle neuen Updates zu erhalten! <br>
 Bei Problemen oder Fragen können Sie uns kontaktieren, wir unterstützen Sie sehr gerne:<br>
 <br>
 WhatsApp-Konten: <a href="https://www.lordly-iptv/en/support">Hier</a><br>
-E-Mail: service.lordlyiptv@gmail.com<br>
+E-Mail: iptv21m3u@gmail.com<br>
 Grüße<br>
 
 @else 
@@ -82,7 +82,7 @@ Or you can visit our website to get all the new updates ! <br>
 If You Have Any Problems Or Questions , you can Contact Us , we will be very happy to support you :<br>
 <br>
 Whatsapp Accounts :  <a href="https://www.lordly-iptv/en/support">Here</a><br>
-Email :  service.lordlyiptv@gmail.com<br>
+Email :  iptv21m3u@gmail.com<br>
 regards<br>
 
 
