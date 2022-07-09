@@ -31,7 +31,7 @@ saludos <br>
 
 @elseif ($local == 'DE') 
 
-Hallo, das ist das Lordly IPTV-Team.<br>
+Hallo, das ist das IPTVM3U-Team.<br>
 Wir freuen uns sehr, dass Sie sich für unser Unternehmen entschieden haben<br>
 Ihr aktuelles IPTV-Abonnement:<br><br>
  BESTELLNUMMER : <b>{{$id}}</b> <br>
@@ -59,7 +59,7 @@ Grüße<br>
 
 @else 
 
-Hello, This Is The Lordly IPTV Team.<br>
+Hello, This Is The IPTVM3U Team.<br>
 We are very happy that you choosed our company<br>
 Your current IPTV subscription:<br><br>
  ORDER NUMBER : <b>{{$id}}</b> <br>

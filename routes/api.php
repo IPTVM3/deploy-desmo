@@ -219,7 +219,7 @@ Route::post('/orders/completed', function (Request $request) {
 
               Mail::send('mail.order_m3u', $data , function($message) use ($request)
                  {
-                   $message->to($request->email ,'Lordly IPTV | L22R-'.$request->id)->subject('Lordly IPTV | L22R-'.$request->id);
+                   $message->to($request->email ,'IPTVM3U | L22R-'.$request->id)->subject('IPTVM3U | L22R-'.$request->id);
                });
 
 
@@ -237,7 +237,7 @@ Route::post('/orders/completed', function (Request $request) {
 
             Mail::send('mail.order_mag', $data , function($message) use ($request)
              {
-                  $message->to($request->email ,'Lordly IPTV | L22R-'.$request->id)->subject('Lordly IPTV | L22R-'.$request->id);
+                  $message->to($request->email ,'IPTVM3U | L22R-'.$request->id)->subject('IPTVM3U | L22R-'.$request->id);
             });
         }
         $order->exp_date = Carbon::now();
@@ -288,7 +288,7 @@ Route::get('/orders/case', function (Request $request) {
 
   Mail::send('mail.mail_cases', $data , function($message) use ($order)
    {
-        $message->to($order->email ,'Lordly IPTV - Resolve Subscription Problems')->subject('Lordly IPTV - Resolve Subscription Problems | L22R-'.$order->id);
+        $message->to($order->email ,'IPTVM3U - Resolve Subscription Problems')->subject('IPTVM3U - Resolve Subscription Problems | L22R-'.$order->id);
   });
 
 
@@ -399,7 +399,7 @@ Route::get('/orders/notify', function (Request $request) {
 
         Mail::send('mail.mail_undone', $data , function($message) use ($request) {
 
-            $message->to($request->email ,'Lordly IPTV | L22R-'.$request->id)->subject('Lordly IPTV | L22R-'.$request->id);
+            $message->to($request->email ,'IPTVM3U | L22R-'.$request->id)->subject('IPTVM3U | L22R-'.$request->id);
         });
 
      return response([
@@ -432,7 +432,7 @@ Route::post('/messages/send', function (Request $request) {
 
         Mail::send('mail.mail_answermessage', $data , function($message) use ($request) {
 
-            $message->to($request->email ,'Lordly IPTV About Your Question')->subject('Lordly IPTV ');
+            $message->to($request->email ,'IPTVM3U About Your Question')->subject('IPTVM3U ');
         });
 
 });

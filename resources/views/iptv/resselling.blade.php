@@ -57,7 +57,7 @@
           </div>
           <!-- end col-6 -->
           <div class="col-md-6 col-sm-6 col-xs-12">
-           <span class="social-text">support.lordly@gmail.com</span> 
+           <span class="social-text">iptv21m3u@gmail.com</span> 
             <!-- end social-text --> 
         
             <!-- end social-media -->
@@ -300,8 +300,7 @@
        <b>Then contact us on email or whatsapp ( provide us the screenshot of the transaction ).</b>
 
         <br><br>
-        <b>OUR PAYPAL EMAIL ADDRESS: </b><br>
-        <b style="color:red;">howells.kate.97@gmail.com</b><br> 
+      
 
         <br><br>
         <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
