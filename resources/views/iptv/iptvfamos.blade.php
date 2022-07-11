@@ -2243,7 +2243,7 @@
         <h6 style="color:black;">@lang('new.sport_new_package')</h6>
         <h2 style="color:black;">@lang('new.sport_new_package_desc')</h2>
         <a href="/payments/79.99/Sport Package - 1 Year IPTV Subscription">@lang('new.sport_package_button') - 79 euros</a> </div>
-      <!-- end col-12 --> 
+      <!-- end col-12 -->  
     </div>
     <!-- end row --> 
   </div>
