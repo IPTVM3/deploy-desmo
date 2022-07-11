@@ -2179,7 +2179,7 @@
   <!-- end container --> 
 </section>
 
-<!--
+
 <section class="pricing" id="MULTIPLEDEVICE">
 	<div class="container">
 		<div class="row">
