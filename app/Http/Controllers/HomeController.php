@@ -24,37 +24,8 @@ class HomeController extends Controller
     {
 
    
-
-        $store = Store::first();
-        //$contact = Trial::find($store->apartement);
-        $ip = $this->getIp();
-        $x = Visitor::where("address",$ip)->first();
-        if(!$x){ 
-            $news = Visitor::create();
-            $news->address = $ip;
-            $news->home = 1; 
-            $news->date = Carbon::now(); 
-            $news->update();  
-        }else{
-            $x->delete();
-            $news = Visitor::create();
-            $news->address = $ip;
-            $news->home = 1; 
-            $news->date = Carbon::now(); 
-            $news->update();  
-        }
-         
-        
-        $products_boxs = [Product::find(214),Product::find(224),Product::find(234)];
-
-         
-        $products = [Product::find(111),Product::find(121),Product::find(131)];
-        $seelected_product = [Product::find(11),Product::find(31),Product::find(51)];
-        $month = [Product::find(161),Product::find(191)];
-        $multidevice = [Product::find(181),Product::find(201)];
-
-        $product_prm = [Product::find(111),Product::find(121),Product::find(131)];
-        return view('iptv.iptvfamos' ,compact('store','products','seelected_product','product_prm','month','multidevice','products_boxs'));
+ 
+        return view('iptv.iptvfamos');
     }
 
     public function tohome(){
