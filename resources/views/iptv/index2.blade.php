@@ -327,7 +327,7 @@
 
 <!--about section end-->
 
- <!-- 
+
 <div class="modal" id="exampleModalnormalss" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -398,8 +398,7 @@
     </div>
   </div>
 
-   -->
-  <!-- 
+ 
 <section id="trial" class="parallex-section parallax parallaxie img-size" style="background-image: url(https://images.unsplash.com/photo-1551101674-b7fe1fe084ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-size: cover; background-repeat: no-repeat; ">
     <div class="container-fluid">
         <div class="row">
