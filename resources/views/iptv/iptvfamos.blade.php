@@ -1152,52 +1152,7 @@
   <!-- end work-process -->
 
 
-  <!-- FEATURES  -->
-  <section class="featured-services transition" id="FEATURES" style="background: url({{ asset('iptvamos/images/167581.jpg')}})" >
-	<div class="container">
-	  <div class="row">
-		<div class="col-md-4 col-sm-12 col-xs-12">
-		  <h6>@lang('amos.features_header_desc')</h6>
-		  <h2>@lang('amos.features_header')</h2>
-		</div>
-		<!-- end col-4 -->
-		<div class="col-md-8  col-sm-12 col-xs-12">
-		  <div class="row inner">
-			<div class="col-md-6 col-sm-6 col-xs-12" > <i class="flaticon-001-wallet-1" aria-hidden="true"></i>
-			  <h4>@lang('amos.featured_1_header')</h4>
-			  <p>@lang('amos.featured_1_header_desc')</p>
-			</div>
-			<!-- end col-6 -->
-			<div   class="fea col-md-6 col-sm-6 col-xs-12"> <i class="flaticon-010-pie-chart" aria-hidden="true"></i>
-				<h4>@lang('amos.featured_2_header')</h4>
-				<p>@lang('amos.featured_2_header_desc')</p>
-			</div>
-			<!-- end col-6 -->
-			<div  class="fea col-md-6 col-sm-6 col-xs-12"> <i class="flaticon-019-credit-card-1" aria-hidden="true"></i>
-				<h4>@lang('amos.featured_3_header')</h4>
-				<p>@lang('amos.featured_3_header_desc')</p>
-			</div>
-			<!-- end col-6 -->
-			
-			<div   class="fea col-md-6 col-sm-6 col-xs-12"><i class="flaticon-022-pound-sterling-1" aria-hidden="true"></i>
-				<h4>@lang('amos.featured_4_header')</h4>
-				<p>@lang('amos.featured_4_header_desc')</p>
-			</div>
-			<!-- end col-6 -->
-			<div  class="fea col-md-6 col-sm-6 col-xs-12"> <i class="flaticon-038-money-3" aria-hidden="true"></i>
-				<h4>@lang('amos.featured_5_header')</h4>
-				<p>@lang('amos.featured_5_header_desc')</p>
-			</div>
-			<!-- end col-6 -->
-		  </div>
-		  <!-- end row inner --> 
-		</div>
-		<!-- end col-8 --> 
-	  </div>
-	  <!-- end row --> 
-	</div>
-	<!-- end container --> 
-  </section>
+  
 
 
   <style>
@@ -2251,48 +2206,7 @@
 </section>
 
   
-<div class="container-fluid">
-        <div class="row"> 
-            <div class="col-lg-12 text-center text-white">
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;">Multi Devices package</h2>
-                <p class="parallex-para text-center text-white"><span style="font: caption;color: white !important;font-size:19px !important;font-weight: bold;">Enjoy our premium IPTV services on many devices , with reduced price !</span> </p>
-                <br>
-                <div class="form-row" style="width:60%;margin-left: 20%;">
-                    <div class="col-md-6" style="display: none;">
-                        <select id="package" class="form-control" name="package" style="font-weight: bold">
-                            <option disabled="">Choose Package Type</option>
-                            <option selected="" value="59">Premium</option>
-                            <option value="69">Sport</option>
-                            <option value="49">Basic</option>
-                        </select>
-                    </div>
-                
-                    <div class="col-md-6">
-                        <select id="multidevice" class="form-control" name="multidevice" style="font-weight: bold">
-                            <option disabled="">Choose Number Of Devices ( Screens or Persons )</option>
-                            <option selected="" value="2">2 Devices</option>
-                            <option value="3">3 Devices</option>
-                            <option value="4">4 Devices</option>
-                            <option value="5">5 Devices</option>
-                            <option value="6">6 Devices</option>
-                        </select>
-                    </div>
-                    <div class="col">
-                        <select id="periods" class="form-control" name="periods" style="font-weight: bold">
-                            <option disabled="">Choose The Period of Subscription</option>
-                            <option value="3">3 MONTH</option>
-                            <option value="6">6 MONTH</option>
-                            <option selected="" value="12">1 Year</option>
-                        </select>
-                    </div>
 
-                </div>
-                <br>
-                <a style="font: caption; background: gold !important; visibility: visible;" id="pricevalueMM" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" href="/payments/102.86/12 Months Premium Service for 2 devices">Get The Offer Now - <span id="pricevalue" style="color:red;">102.86 euro</span></a>
-
-            </div>
-        </div>
-    </div>
 
 <style>
 .like {
