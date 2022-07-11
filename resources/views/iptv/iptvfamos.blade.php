@@ -1709,7 +1709,7 @@
 
 	
 
-		<!-- end col-12 -->
+		<!-- end col-12
 
 
 				<div class="form-row text-center" >
@@ -1761,16 +1761,496 @@
 						 
 		 
 								</div>
-      <!-- end col-4 --> 
+    end col-4 
 		</div>
-		<!-- end row -->
-	</div>
-	<!-- end container -->
+		<end row -->
+	   
+
+
+
+
+ <!-- end header -->
+ <section class="highlights" id="PRICING">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xs-12">
+			<h6>@lang('amos.pricing_header_desc')</h6>
+			<h2>@lang('amos.pricing_header')</h2>
+		  </div>
+		  </div> 
+			<div class="demo"> 
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="pricingTable">
+								<div class="pricingTable-header">
+									<b>@lang('amos.conte_nue') </b>
+                  <div class="price-value"> ‎€49.99 <span class="month">12 @lang('amos.months')</span> </div>
+								</div>
+							<!-- <h3 class="heading">@lang('amos.economy')</h3> -->
+								<div class="pricing-content">
+                <ul class="packages">
+
+<li><i class="fa fa-check" aria-hidden="true"></i>@lang('amos.prop_1')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_2') </li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_3')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_4')</li>
+
+                            <li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_5')</li>
+    
+    <li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.propp_3')</li>
+    <li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.pprop_4')</li>
+	
+	<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_6')</li> 
+
+
+</ul>					</div>
+								<div class="pricingTable-signup">
+                <a data-toggle="modal" data-target="#product_view12">PURCHASE NOW</a>
+								</div>
+							</div>
+						</div>
+			
+						<div class="col-md-3 col-sm-6">
+							<div class="pricingTable green">
+								<div class="pricingTable-header">
+								<b>@lang('amos.conte_nue') </b>
+                  <div class="price-value"> ‎€39.99 <span class="month">6 @lang('amos.months')</span> </div>
+					</div>
+							<!-- <h3 class="heading">@lang('amos.economy')</h3> -->
+								<div class="pricing-content">
+								<ul class="packages">
+
+<li><i class="fa fa-check" aria-hidden="true"></i>@lang('amos.prop_1')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_2') </li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_3')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_4')</li>
+
+                            <li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_5')</li>
+							<li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>-------</li>
+    <li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>-------</li>
+
+	<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_6')</li> 
+   
+
+</ul>
+			
+								</div>
+								<div class="pricingTable-signup">
+                <a data-toggle="modal" data-target="#product_view6">PURCHASE NOW</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="pricingTable blue">
+								<div class="pricingTable-header">
+								<b>@lang('amos.conte_nue') </b>
+                  <div class="price-value"> ‎€29.99 <span class="month">3 @lang('amos.months')</span> </div>
+	
+								</div>
+							<!-- <h3 class="heading">@lang('amos.economy')</h3> -->
+								<div class="pricing-content">
+								<ul class="packages">
+
+<li><i class="fa fa-check" aria-hidden="true"></i>@lang('amos.prop_1')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_2') </li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_3')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_4')</li>
+
+                            <li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_5')</li>
+							<li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>-------</li>
+    <li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>-------</li>
+
+	<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_6')</li> 
+   
+
+</ul>
+								</div>
+								<div class="pricingTable-signup">
+                <a data-toggle="modal" data-target="#product_view3">PURCHASE NOW</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="pricingTable red">
+								<div class="pricingTable-header">
+								<b>@lang('amos.conte_nue')</b>
+                  <div class="price-value"> 18.99 <span class="month">1 @lang('amos.month')</span> </div>
+								</div>
+								<!-- <h3 class="heading">@lang('amos.economy')</h3> -->
+								<div class="pricing-content">
+								<ul class="packages">
+
+<li><i class="fa fa-check" aria-hidden="true"></i>@lang('amos.prop_1')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_2') </li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_3')</li>
+<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_4')</li>
+
+                            <li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_5')</li>
+							<li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>-------</li>
+    <li style="color: #f2c900;"><i class="fa fa-check text-capitalize" aria-hidden="true"></i>-------</li>
+
+	<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_6')</li> 
+   
+
+</ul>
+								</div>
+								<div class="pricingTable-signup">
+                <a data-toggle="modal" data-target="#product_view1">PURCHASE NOW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+
+	 </div>
 </section>
 
 
 
 
+
+<!--Model Product-->
+ 
+<div  class="modal fade " id="product_view12">
+    <div class="modal-dialog">
+        <div class="modal-content">
+		<div class="modal-header">
+                <h3 class="modal-title"> 
+                                     12 @lang('amos.months')  
+                            
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span style="    top: -6px; left: -4px; ">×</span></button>
+            
+              </h3>
+            </div>
+            <div class="modal-body">
+                <div class="row"> 
+                    <div class="col-md-12 product_content" style="margin-bottom: -19px;"> 
+       
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Features</th>
+                                <th scope="col" style="color:#24c1dd;" style="text-center">Basic </th>
+                                <th scope="col" style="color:#ffc107;" style="text-center">@lang('amos.ttest') </th> 
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr  >
+                                <th scope="row">@lang('amos.propp_3') </th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_1')</th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_7')</th>
+                                <td class="text-center"></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+ 
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_77')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"> <i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.pprop_4')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                            </tbody>
+                          </table>
+                      
+               
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group-vertical" style="    width: 100%;">
+
+                    
+                                        <a style="width: 100%;    border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/payments/41" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 59.98</a>
+             
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=49.99&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 49.99</a>
+            
+                   
+
+     
+
+                    
+
+
+                
+             
+                  </div>
+                
+              </div> 
+        </div>
+    </div>
+</div>
+<div  class="modal fade " id="product_view6">
+    <div class="modal-dialog">
+        <div class="modal-content">
+		<div class="modal-header">
+                <h3 class="modal-title"> 
+                                     6 @lang('amos.months')  
+                            
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span style="    top: -6px; left: -4px; ">×</span></button>
+            </h3>
+            </div>
+            </h3>
+            </div>
+            <div class="modal-body">
+                <div class="row"> 
+                    <div class="col-md-12 product_content" style="margin-bottom: -19px;"> 
+					<table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Features</th>
+                                <th scope="col" style="color:#24c1dd;" style="text-center">Basic </th>
+                                <th scope="col" style="color:#ffc107;" style="text-center">@lang('amos.ttest') </th> 
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr  >
+                                <th scope="row">@lang('amos.propp_3') </th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_1')</th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_7')</th>
+                                <td class="text-center"></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+ 
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_77')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"> <i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.pprop_4')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                            </tbody>
+                          </table>
+               
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group-vertical" style="    width: 100%;">
+
+                    
+                                        <a style="width: 100%;    border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/payments/51" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 49.99</a>
+             
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=39.99&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 39.99</a>
+           
+                   
+
+
+
+ 
+                    
+
+
+               
+             
+                  </div>
+                
+              </div> 
+        </div>
+    </div>
+</div>
+
+<div  class="modal fade " id="product_view3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+		<div class="modal-header">
+                <h3 class="modal-title"> 
+                                     3 @lang('amos.months')  
+                            
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span style="    top: -6px; left: -4px; ">×</span></button>
+            </h3>
+            </div>
+            </h3>
+            </div>
+            <div class="modal-body">
+                <div class="row"> 
+                    <div class="col-md-12 product_content" style="margin-bottom: -19px;"> 
+       
+					<table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Features</th>
+                                <th scope="col" style="color:#24c1dd;" style="text-center">Basic </th>
+                                <th scope="col" style="color:#ffc107;" style="text-center">@lang('amos.ttest') </th> 
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr  >
+                                <th scope="row">@lang('amos.propp_3') </th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_1')</th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_7')</th>
+                                <td class="text-center"></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+ 
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_77')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"> <i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.pprop_4')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                            </tbody>
+                          </table>
+                 
+                       
+                    </div>  
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group-vertical" style="    width: 100%;">
+
+                    
+                                        <a style="width: 100%;    border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/payments/31" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 39.99</a>
+             
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=29.98&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 29.98</a>
+           
+                   
+
+
+ 
+
+                    
+
+
+               
+             
+                  </div>
+                
+              </div> 
+        </div>
+    </div>
+</div>
+
+<div  class="modal fade " id="product_view1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+		<div class="modal-header">
+                <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                <h3 class="modal-title"> 
+                                     1 @lang('amos.months')  
+            </h3>
+            </div>
+              </h3>
+            </div>
+            <div class="modal-body">
+                <div class="row"> 
+                    <div class="col-md-12 product_content" style="margin-bottom: -19px;"> 
+					<table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Features</th>
+                                <th scope="col" style="color:#24c1dd;" style="text-center">Basic </th>
+                                <th scope="col" style="color:#ffc107;" style="text-center">@lang('amos.ttest') </th> 
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr  >
+                                <th scope="row">@lang('amos.propp_3') </th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_1')</th>
+                                <td class="text-center"><i style="color:#24c1dd;" class="fa fa-check"></i></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.prop_7')</th>
+                                <td class="text-center"></td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+ 
+                              <tr  > 
+                                <th scope="row">@lang('amos.prop_77')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"> <i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+
+                              <tr  >
+                                <th scope="row">@lang('amos.pprop_4')</th>
+                                <td class="text-center"> </td>
+                                <td class="text-center"><i style="color:#ffc107;" class="fa fa-check text-capitalize" aria-hidden="true"></i></td> 
+                              </tr>
+                            </tbody>
+                          </table>
+                      
+               
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group-vertical" style="    width: 100%;">
+
+                    
+                                        <a style="width: 100%;    border-radius: 50px 20px;" href="https://www.iptvm3u.fr/payments/61" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 22.98</a>
+             
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=18.99&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 18.99</a>
+            
+                   
+
+
+
+
+                    
+
+
+               
+             
+                  </div>
+                
+              </div> 
+        </div>
+    </div>
+</div>
+
+ 
+	<!-- end container -->
+
+ 
 
 
 <section class="quote transition" id="reseller">
