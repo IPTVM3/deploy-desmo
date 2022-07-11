@@ -27,7 +27,7 @@ class GetewayController extends Controller
                 array(
                     "PAYPAL MOBARAK",
                     "Adgp471Afe81Sa8Ed4lH58osYyI1dRWTKeccGe28YoRb_sKI_ge_N0Sr4v3HBN_oOZsRe-4lhZAbEkwL"
-                ),
+                )
              
  
               );
