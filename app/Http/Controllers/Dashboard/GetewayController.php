@@ -23,14 +23,35 @@ class GetewayController extends Controller
        
 
 
-            $paypal = array( 
-                array(
-                    "PAYPAL MOBARAK",
-                    "Adgp471Afe81Sa8Ed4lH58osYyI1dRWTKeccGe28YoRb_sKI_ge_N0Sr4v3HBN_oOZsRe-4lhZAbEkwL"
-                )
-             
- 
-              );
+        $paypal = array( 
+
+            array(
+                "PAYPAL MOBARAK",
+                "Adgp471Afe81Sa8Ed4lH58osYyI1dRWTKeccGe28YoRb_sKI_ge_N0Sr4v3HBN_oOZsRe-4lhZAbEkwL"
+            ),
+         
+            array(
+                "PAYPAL AFS4-patonroberteoin1970",
+                "AWR1gcpgpJdPUjex_9e9uY5EEnF-6lXeMiRgy7QWXKI1dZbUpRlyBLsdY4gk8MoQJZpG7oJdRhLC6NS5"
+            ),
+            array(
+                "PAYPAL AFS4-opponglord19727",
+                "AXcCLHkoYa2zEw-zJqMiG5AzkMUyoNWvCldYQc7HYQYAn8ag2ET0CERRQwBm_HvvyvEL9Yw2SekMHuNi"
+            ),
+            array(
+                "PAYPAL AFS4-loschebenjamin242",
+                "ARxJXKriozMdRPM6yGbcYQeJvNDojddm9yFvEZYnHHNrgmBinY1PjO7EhmSMoSuQXMuMG20NSLk8Bneg"
+            ),
+            array(
+                "PAYPAL AFS4-wilsonlee1973",
+                "AfksiIjKgl_igwXqq_Dgl3vqADjGMc8aqRuPR-qLHqjUg1Wkzwm2h1nOJO1rhXxRM6MyxF9kH0WKnMKl"
+            ),
+            array(
+                "PAYPAL AFS4-danialliuno1977",
+                "AUldKZu4mHrfABsZg1OUhd4fK5yY6dc_PkbYbQtzuK1hRZ_YkVqhXX3U0Sed1A0-hnEUtJfW_jNvg8mz"
+            ),
+
+          );
           
 
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
