@@ -25,68 +25,10 @@ class GetewayController extends Controller
 
             $paypal = array( 
                 array(
-                    "PPLMAROC 3 (pplmaroc3@outlook.com)",
-                    "AVFpw_weyQPl1mu9499iT678qEguMUGBt-qRX6WtIjd882FRvJYAUtih5oYpuRexaThkOhkRWGn9P8XP"
-                )
-            ,
-                array(
-                    "PPLMAROC 2 (pplmaroc2@outlook.com)",
-                    "AQ2Exy1ssF5qRpK5wt0PYptuIsyjKnmS7NClVVBOwS2quqR2G5G4-5yRGUvOw2gYs2lqd3iLeSsknO6J"
-                )
-            ,
-                array(
-                    "PPLMAROC 7 (pplmaroc7@outlook.com)",
-                    "AUDYODHm4kDZfR8J66MRYkXUpWW8W-F3WDmE7u0E1u0-LkdTquLrKcHiTbJp3ybnf3ngpCpJmcjQj2cG"
-                )
-            ,
-                array(
-                    "UK 1 (howells.kate.97@gmail.com)",
-                    "AevrKMEYncxar9TGOi63wElDkPSHp5rmnnDs9ql5bLnb3qyE1d5IU8rkLBbg6HEON2FsfHv44VyKrpqH"
-                ) 
-                ,
-                array(
-                    "paypal hemza maroc ( hemzaalilou@gmail.com )",
-                    "AYJp58GxGCHrV-Q7vVxliZhtdNbOX7yWG4jQfhIyQy5dkg6RsIkeEYwEUQ1UXoNYkL-2EpdFp6D41maN"
-                ) 
-                ,
-                array(
-                    "paypal bnbihi",
-                    "AdfAF_Et7FsT0XaFiRnojjSByq-ShnQkULfe1xQyR-HNYRNAUAdKXLr__JRLMb5FNnqz5pF260LY9tYd"
-                )
-
-                ,
-                array(
-                    "paypal khadija (pplkhadija@outlook.com)",
-                    "AZSLDfjLfrBacuVmkOIjUA9vFGiVHgSkuO3yluX6l9_hpNigAkLacz_UpZ3kjCc6Mx8O0mkzIIkzS2st"
-                )
-
-                ,
-                array(
-                    "paypal chafik ( pplchafik@outlook.com )",
-                    "AWhPhTxl4gtr9ArEL4lN_-i_59ZF-h1KxQaPbIVLSNprWOnalZk2RocAvc67HPC8Bj-j9L4vxKw-e1-O"
-                )
-
-                ,
-                array(
-                    "paypal ilyas (pplilyas@outlook.com )",
-                    "Adana9-DQql8WNnt30S1-CdY2-DNMZnyRt5qZb7IPkHX0uebFaQLkvueNe0VxgiFVt6X0NCsD_2kKOv5"
-                )
-
- 
-
-                ,
-                array(
-                    "paypal khalid ( pplkhalid@outlook.com )",
-                    "AYLqV6bkACzfPBDv2h0oRmgPy3qQhqC5MPNVPWR4XGl9rAClbo2OboFK5zt0heDNCRfgf4oU_OwSTUOZ"
-                )
-
- 
-
-                ,
-                array(
-                    "paypal BnBihi 2 ( mohamed4benbihi@gmail.com )",
-                    "AcZucxo3JxFQgzMsE4BacC2rs8bV7TwrQlodVDAJkoIXOV-8Bjwk4vsWjJGxFCaTyuNtKcYFc0hUSCVi"
-                )
+                    "PAYPAL MOBARAK",
+                    "Adgp471Afe81Sa8Ed4lH58osYyI1dRWTKeccGe28YoRb_sKI_ge_N0Sr4v3HBN_oOZsRe-4lhZAbEkwL"
+                ),
+             
  
               );
           
