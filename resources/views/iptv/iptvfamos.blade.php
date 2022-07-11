@@ -1383,7 +1383,7 @@
 
 <!-- Premium -->
 
-<!-- end header -->
+<!-- end header  
 <section class="highlights" id="PRICING">
 	<div class="container">
 	  <div class="row">
@@ -1401,7 +1401,7 @@
 			</p>
 		</div>
 
-		
+	  Premium -->
 		<style>
 		.pricing-switcher {
 			text-align: center;
@@ -1463,313 +1463,7 @@
 
 		</style>
 
-		  </div>
-		  </div> 
-		  
 
-				<div class="demo"> 
-					<div class="row text-center" id="onedevice">
-
-				 
-					 
-						<div class="col-md-3 col-sm-6 ">
-							<div class="pricingTable  blue ">
-								<div class="pricingTable-header">
-								<b><a style="background:blue;color:white;margin-left:2px;font-size: 10px; border:1px solid blue;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Economic</a></b>
-									<div class="price-value">   €59.99 <span class="month">12 @lang('amos.month')</span> </div>
-								</div>
-								<div class="pricing-content text-center">
-								<ul>
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
-										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
-									</ul>
-								</div>
-								<div class="pricingTable-signup">
-									<a href="/payments/59.99/Premium Package - 1 Year IPTV Subscription">@lang('amos.buy_now')</a>
-								</div>
-							</div>
-						</div> 
-					 
-		 
-
-					 
-						<div class="col-md-3 col-sm-6 ">
-							<div class="pricingTable  red">
-								<div class="pricingTable-header">
-									<b><a style="background:#ff3f58;color:white;margin-left:2px;font-size: 10px; border:1px solid #ff3f58;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
-									<div class="price-value">   €49.99 <span class="month">6 @lang('amos.month')</span> </div>
-								</div>
-								<div class="pricing-content text-center">
-								<ul>
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li>  
-										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
-									</ul>
-								</div>
-								<div class="pricingTable-signup">
-									<a href="/payments/49.99/Premium Package - 6 Months IPTV Subscription">@lang('amos.buy_now')</a>
-								</div>
-							</div>
-						</div> 
-					 
-
-					 
-						<div class="col-md-3 col-sm-6 ">
-							<div class="pricingTable  green ">
-								<div class="pricingTable-header">
-								<b><a style="background:green;color:white;margin-left:2px;font-size: 10px; border:1px solid green;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
-								<div class="price-value">   €31.99 <span class="month">3 @lang('amos.month')</span> </div>
-								</div>
-								<div class="pricing-content text-center">
-								<ul>
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li>  
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
-										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
-									</ul>
-								</div>
-								<div class="pricingTable-signup">
-									<a href="/payments/31.99/Premium Package - 3 months IPTV Subscription">@lang('amos.buy_now')</a>
-								</div>
-							</div>
-						</div> 
-					 
-
-					 
-						<div class="col-md-3 col-sm-6 ">
-							<div class="pricingTable  ">
-								<div class="pricingTable-header">
-								<b><a style="background:orange;color:white;margin-left:2px;font-size: 10px; border:1px solid orange;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Trial Test</a></b>
-									<div class="price-value">   €18.99 <span class="month">30 Days Package</span> </div>
-								</div>
-								<div class="pricing-content text-center">
-								<ul>
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li>  
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
-									</ul>
-								</div>
-								<div class="pricingTable-signup">
-									<a href="/payments/18.99/Trial Package - 1 Month IPTV Subscription">@lang('amos.buy_now')</a>
-								</div>
-							</div>
-						</div> 
-					 
-
-					</div>
-
-				 
-					<div class="row text-center" id="multidevice" >
-
-				  
-					 
-
-						 
-
-					 
-						<div class="col-md-4 col-sm-6 ">
-							<div class="pricingTable  green ">
-								<div class="pricingTable-header">
-								<b><a style="background:green;color:white;margin-left:2px;font-size: 10px; border:1px solid green;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
-								<div class="price-value">   €29.99 <span class="month">3 @lang('amos.month')</span> </div>
-								</div>
-								<div class="pricing-content text-center">
-								<ul>
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li>  
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
-									</ul>
-								</div>
-								<div class="pricingTable-signup">
-									<a href="/payments/29.99/Basic Package - 3 months IPTV Subscription">@lang('amos.buy_now')</a>
-								</div>
-							</div>
-						</div> 
-					 
-					 
-						<div class="col-md-4 col-sm-6 ">
-							<div class="pricingTable  red">
-								<div class="pricingTable-header">
-									<b><a style="background:#ff3f58;color:white;margin-left:2px;font-size: 10px; border:1px solid #ff3f58;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
-									<div class="price-value">   €39.99 <span class="month">6 @lang('amos.month')</span> </div>
-								</div>
-								<div class="pricing-content text-center">
-								<ul>
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li>  
-									</ul>
-								</div>
-								<div class="pricingTable-signup">
-									<a href="/payments/39.99/Basic Package - 6 Months IPTV Subscription">@lang('amos.buy_now')</a>
-								</div>
-							</div>
-						</div> 
-					
-
-					 
-					
-
-						
-						<div class="col-md-4 col-sm-6 ">
-							<div class="pricingTable  blue ">
-								<div class="pricingTable-header">
-								<b><a style="background:blue;color:white;margin-left:2px;font-size: 10px; border:1px solid blue;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Economic</a></b>
-									<div class="price-value">   €49.99 <span class="month">12 @lang('amos.month')</span> </div>
-								</div>
-								<div class="pricing-content text-center">
-								<ul>
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li> 
-										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
-									</ul>
-								</div>
-								<div class="pricingTable-signup">
-									<a href="/payments/49.99/Basic Package - 1 Year IPTV Subscription">@lang('amos.buy_now')</a>
-								</div>
-							</div>
-						</div> 
-					 
-		 
-
-					 
-
-
-					</div>
-				 
-
-
-
-				</div>
-
-			 
-		  </div> 
-
-
-	 </div>
-</section>
-
-
-
-
-<section class="quote transition" id="reseller">
- <div class="video-bg">
- 	<video src="videos/video.mp4" muted="" loop="" autoplay=""></video>
- </div>
- <!-- end video-bg -->
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h6 style="color:black;">@lang('amos.reseller_header')</h6>
-        <h2 style="color:black;">@lang('amos.reseller_dsc')</h2>
-        <a href="/resseling">@lang('amos.header1_btn')</a> </div>
-      <!-- end col-12 --> 
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-</section>
-
-<!--
-<section class="pricing" id="MULTIPLEDEVICE">
-	<div class="container">
-		<div class="row">
-		<div class="col-xs-12 text-center">
-        <h6>@lang('amos.multidevice_desc')</h6>
-        <h2>@lang('amos.multidevice_header')  </h2>
-
-	
-
- end col-12
-
-
-				<div class="form-row text-center" >
-                    <div class="col-md-4"  >
-                        <select id="package" class="form-control" name="package" style="font-weight: 800">
-                            <option disabled>@lang('new.multidevice_option1')</option>
-                            <option selected value="59">@lang('iptv.prim')</option>
-                            <option value="69">Sport</option>
-                            <option value="49">@lang('iptv.basic')</option>
-                        </select>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <select id="multidevicex" class="form-control" name="multidevicex" style="font-weight: 800">
-                            <option disabled>@lang('new.multidevice_option2')</option>
-                            <option selected value="2">2 @lang('new.device')</option>
-                            <option value="3">3 @lang('new.device')</option>
-                            <option value="4">4 @lang('new.device')</option>
-                            <option value="5">5 @lang('new.device')</option>
-                            <option value="6">6 @lang('new.device')</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <select id="periods" class="form-control" name="periods" style="font-weight: 800;">
-                            <option disabled>@lang('new.multidevice_option3')</option>
-                            <option value="3">3 @lang('iptv.mounth')</option>
-                            <option value="6">6 @lang('iptv.mounth')</option>
-                            <option selected value="12">1 @lang('iptv.yr')</option>
-                        </select>
-                    </div>
-
-                </div>
-				<br>
-				<br>
-				<br>
-
-			 
-				<a style="height: 56px; 
-    line-height: 52px;
-    padding: 0 40px;
-    display: inline-block;
-    color: #fff;
-    background: #8a39ee;
-    font-weight: 700;
-    border-radius: 56px;
-    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
-    border: 2px solid transparent;
-    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
-						 
-		 
-								</div>
-    end col-4 
-		</div>
-		<end row -->
-	   
-
-
-
-		
-	<!-- end container -->
 
  <!-- end header -->
  <section class="highlights" id="PRICING">
@@ -2248,9 +1942,311 @@
         </div>
     </div>
 </div>
+<!-- Premium 
+		  </div>
+		  </div> 
+		  
+<
+				<div class="demo"> 
+					<div class="row text-center" id="onedevice">
 
- 
- 
+				 
+					 
+						<div class="col-md-3 col-sm-6 ">
+							<div class="pricingTable  blue ">
+								<div class="pricingTable-header">
+								<b><a style="background:blue;color:white;margin-left:2px;font-size: 10px; border:1px solid blue;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Economic</a></b>
+									<div class="price-value">   €59.99 <span class="month">12 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/59.99/Premium Package - 1 Year IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+		 
+
+					 
+						<div class="col-md-3 col-sm-6 ">
+							<div class="pricingTable  red">
+								<div class="pricingTable-header">
+									<b><a style="background:#ff3f58;color:white;margin-left:2px;font-size: 10px; border:1px solid #ff3f58;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+									<div class="price-value">   €49.99 <span class="month">6 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li>  
+										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/49.99/Premium Package - 6 Months IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+
+					 
+						<div class="col-md-3 col-sm-6 ">
+							<div class="pricingTable  green ">
+								<div class="pricingTable-header">
+								<b><a style="background:green;color:white;margin-left:2px;font-size: 10px; border:1px solid green;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+								<div class="price-value">   €31.99 <span class="month">3 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+										<li><i class="fa fa-check"></i>  @lang('iptv.Refound')</li>
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/31.99/Premium Package - 3 months IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+
+					 
+						<div class="col-md-3 col-sm-6 ">
+							<div class="pricingTable  ">
+								<div class="pricingTable-header">
+								<b><a style="background:orange;color:white;margin-left:2px;font-size: 10px; border:1px solid orange;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Trial Test</a></b>
+									<div class="price-value">   €18.99 <span class="month">30 Days Package</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/18.99/Trial Package - 1 Month IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+
+					</div>
+
+				 
+					<div class="row text-center" id="multidevice" >
+
+				  
+					 
+
+						 
+
+					 
+						<div class="col-md-4 col-sm-6 ">
+							<div class="pricingTable  green ">
+								<div class="pricingTable-header">
+								<b><a style="background:green;color:white;margin-left:2px;font-size: 10px; border:1px solid green;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+								<div class="price-value">   €29.99 <span class="month">3 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li>  
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/29.99/Basic Package - 3 months IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+					 
+						<div class="col-md-4 col-sm-6 ">
+							<div class="pricingTable  red">
+								<div class="pricingTable-header">
+									<b><a style="background:#ff3f58;color:white;margin-left:2px;font-size: 10px; border:1px solid #ff3f58;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >popular</a></b>
+									<div class="price-value">   €39.99 <span class="month">6 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li>  
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/39.99/Basic Package - 6 Months IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					
+
+					 
+					
+
+						
+						<div class="col-md-4 col-sm-6 ">
+							<div class="pricingTable  blue ">
+								<div class="pricingTable-header">
+								<b><a style="background:blue;color:white;margin-left:2px;font-size: 10px; border:1px solid blue;padding:3px;border-radius: 25px;" class="tp-caption rev-btn  tp-resizeme rs-hover-ready" >Economic</a></b>
+									<div class="price-value">   €49.99 <span class="month">12 @lang('amos.month')</span> </div>
+								</div>
+								<div class="pricing-content text-center">
+								<ul>
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_1')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_2')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_3')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.pprop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_4')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_5')</li> 
+										<li><i class="fa fa-check"></i>  @lang('amos.prop_6')</li>
+									</ul>
+								</div>
+								<div class="pricingTable-signup">
+									<a href="/payments/49.99/Basic Package - 1 Year IPTV Subscription">@lang('amos.buy_now')</a>
+								</div>
+							</div>
+						</div> 
+					 
+		 
+
+					 
+
+
+					</div>
+				 
+
+
+
+				</div>
+
+			 
+		  </div> 
+
+
+	 </div>
+</section>
+
+-->
+
+
+<section class="quote transition" id="reseller">
+ <div class="video-bg">
+ 	<video src="videos/video.mp4" muted="" loop="" autoplay=""></video>
+ </div>
+ <!-- end video-bg -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h6 style="color:black;">@lang('amos.reseller_header')</h6>
+        <h2 style="color:black;">@lang('amos.reseller_dsc')</h2>
+        <a href="/resseling">@lang('amos.header1_btn')</a> </div>
+      <!-- end col-12 --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+
+<!--
+<section class="pricing" id="MULTIPLEDEVICE">
+	<div class="container">
+		<div class="row">
+		<div class="col-xs-12 text-center">
+        <h6>@lang('amos.multidevice_desc')</h6>
+        <h2>@lang('amos.multidevice_header')  </h2>
+
+	
+
+ end col-12
+
+
+				<div class="form-row text-center" >
+                    <div class="col-md-4"  >
+                        <select id="package" class="form-control" name="package" style="font-weight: 800">
+                            <option disabled>@lang('new.multidevice_option1')</option>
+                            <option selected value="59">@lang('iptv.prim')</option>
+                            <option value="69">Sport</option>
+                            <option value="49">@lang('iptv.basic')</option>
+                        </select>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <select id="multidevicex" class="form-control" name="multidevicex" style="font-weight: 800">
+                            <option disabled>@lang('new.multidevice_option2')</option>
+                            <option selected value="2">2 @lang('new.device')</option>
+                            <option value="3">3 @lang('new.device')</option>
+                            <option value="4">4 @lang('new.device')</option>
+                            <option value="5">5 @lang('new.device')</option>
+                            <option value="6">6 @lang('new.device')</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select id="periods" class="form-control" name="periods" style="font-weight: 800;">
+                            <option disabled>@lang('new.multidevice_option3')</option>
+                            <option value="3">3 @lang('iptv.mounth')</option>
+                            <option value="6">6 @lang('iptv.mounth')</option>
+                            <option selected value="12">1 @lang('iptv.yr')</option>
+                        </select>
+                    </div>
+
+                </div>
+				<br>
+				<br>
+				<br>
+
+			 
+				<a style="height: 56px; 
+    line-height: 52px;
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    background: #8a39ee;
+    font-weight: 700;
+    border-radius: 56px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
+    border: 2px solid transparent;
+    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+						 
+		 
+								</div>
+    end col-4 
+		</div>
+		<end row -->
+	   
+
+
 
 
 <section class="quote transition" id="reseller">
