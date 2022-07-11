@@ -1699,7 +1699,7 @@
   <!-- end container --> 
 </section>
 
-
+<!--
 <section class="pricing" id="MULTIPLEDEVICE">
 	<div class="container">
 		<div class="row">
@@ -1709,7 +1709,7 @@
 
 	
 
-		<!-- end col-12
+ end col-12
 
 
 				<div class="form-row text-center" >
@@ -1768,6 +1768,8 @@
 
 
 
+		
+	<!-- end container -->
 
  <!-- end header -->
  <section class="highlights" id="PRICING">
@@ -2248,8 +2250,6 @@
 </div>
 
  
-	<!-- end container -->
-
  
 
 
