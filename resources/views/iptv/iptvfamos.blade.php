@@ -2161,24 +2161,6 @@
 -->
 
 
-<section class="quote transition" id="reseller">
- <div class="video-bg">
- 	<video src="videos/video.mp4" muted="" loop="" autoplay=""></video>
- </div>
- <!-- end video-bg -->
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h6 style="color:black;">@lang('amos.reseller_header')</h6>
-        <h2 style="color:black;">@lang('amos.reseller_dsc')</h2>
-        <a href="/resseling">@lang('amos.header1_btn')</a> </div>
-      <!-- end col-12 --> 
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-</section>
-
 
 <section class="pricing" id="MULTIPLEDEVICE">
 	<div class="container">
@@ -2189,7 +2171,7 @@
 
 	
 
- end col-12
+ 
 
 
 				<div class="form-row text-center" >
@@ -2241,12 +2223,13 @@
 						 
 		 
 								</div>
-    end col-4 
+  
 		</div>
 		<end row -->
 	   
 
 
+	</section >
 
 
 <section class="quote transition" id="reseller">
