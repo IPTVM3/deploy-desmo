@@ -1629,8 +1629,8 @@
 				
                                         <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/59.99/Premium Package - 1 Year IPTV Subscription" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 59.98</a>
              
-                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/49.99/Basic Package - 1 Year IPTV Subscription"><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 49.99</a>
-            
+										<a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/49.99/basic Package - 6 Months IPTV Subscription" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 49.99</a>
+           
                    
 
      
@@ -1796,7 +1796,8 @@
                     
                                         <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/39.99/Premium Package - 3 Months IPTV Subscription" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 39.99</a>
              
-                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/29.99/basic Package - 3 Months IPTV Subscription"> <span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 29.98</a>
+										<a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/29.99/basic Package - 3 Months IPTV Subscription" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 29.99</a>
+           
            
                    
 
