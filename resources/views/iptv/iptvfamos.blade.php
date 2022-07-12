@@ -1626,11 +1626,10 @@
             </div>
             <div class="modal-footer">
                 <div class="btn-group-vertical" style="    width: 100%;">
-				<a href="/payments/59.99/Premium Package - 1 Year IPTV Subscription">@lang('amos.buy_now')</a>
-                    
+				
                                         <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/59.99/Premium Package - 1 Year IPTV Subscription" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 59.98</a>
              
-                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=49.99&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 49.99</a>
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/49.99/Basic Package - 1 Year IPTV Subscription"></span> Basic - € 49.99</a>
             
                    
 
@@ -1710,9 +1709,9 @@
                 <div class="btn-group-vertical" style="    width: 100%;">
 
                     
-                                        <a style="width: 100%;    border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/payments/51" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 49.99</a>
+                                        <a style="width: 100%;    border-radius: 50px 20px;"href="/payments/49.99/Premium Package - 1 Year IPTV Subscription" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 49.99</a>
              
-                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=39.99&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 39.99</a>
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/39.99/basic Package - 1 Year IPTV Subscription" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 39.99</a>
            
                    
 
@@ -1795,9 +1794,9 @@
                 <div class="btn-group-vertical" style="    width: 100%;">
 
                     
-                                        <a style="width: 100%;    border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/payments/31" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 39.99</a>
+                                        <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/39.99/Premium Package - 1 Year IPTV Subscription" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 39.99</a>
              
-                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=29.98&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 29.98</a>
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/29.99/basic Package - 1 Year IPTV Subscription"></span> Basic - € 29.98</a>
            
                    
 
@@ -1879,9 +1878,9 @@
                 <div class="btn-group-vertical" style="    width: 100%;">
 
                     
-                                        <a style="width: 100%;    border-radius: 50px 20px;" href="https://www.iptvm3u.fr/payments/61" class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 22.98</a>
+                                        <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/29.99/Premium Package - 1 Year IPTV Subscription"class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 22.98</a>
              
-                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="https://www.iptvm3u.fr/en/custome?pr=18.99&amp;ti=Plano" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 18.99</a>
+                                        <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/18.99/basic Package - 1 Year IPTV Subscription" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 18.99</a>
             
                    
 
