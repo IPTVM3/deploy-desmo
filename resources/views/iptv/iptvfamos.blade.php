@@ -2212,6 +2212,22 @@
 </section>
 
   
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style="margin-top: 1px;margin-bottom: 1px;"  >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >BECOME AN IPTV RESELLER</h2>
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
+                Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
+                    </p>
+                <br>
+                <a href="/resseling" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">INFO</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
 
 
 <style>
