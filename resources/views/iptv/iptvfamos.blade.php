@@ -1434,7 +1434,7 @@
 						<div class="col-md-3 col-sm-6">
 							<div class="pricingTable">
 								<div class="pricingTable-header">
-									<b>@lang('amos.conte_nue') </b>
+									<b>@lang('new.conte_nue') </b>
                   <div class="price-value"> ‎€49.99 <span class="month">12 @lang('amos.months')</span> </div>
 								</div>
 							<!-- <h3 class="heading">@lang('amos.economy')</h3> -->
