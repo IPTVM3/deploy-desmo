@@ -1915,32 +1915,8 @@
     </div>
 
 </section>
-
 <style>
-    .cover-img::before {
-        content: "";
-        background-image: url({{ asset('iptv_update/images/sport.jpg') }});
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px; 
-    }
-
-    .cover-img-sport::before {
-        content: "";
-        background-image: url({{ asset('iptv_update/images/new.jpg') }});
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px; 
-    }
-    .cover-img-trial::before {
+	.cover-img-trial::before {
         content: "";
         background-image: url({{ asset('iptv_update/images/lll.jpg') }});
         background-size: cover;
@@ -1951,18 +1927,7 @@
         bottom: 0px;
         left: 0px; 
     }
-    .cover-img-reselling::before {
-        content: "";
-        background-image: url(https://www.oec.oil.gov.iq/uploads/files/planning.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px; 
-    }
-</style>
+	</style>
 
 
 <!-- Premium 
