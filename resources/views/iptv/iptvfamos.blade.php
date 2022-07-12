@@ -2468,6 +2468,301 @@
         </div>
   </section>
 
+ 
+ 
+
+<!-- SPECIAL OFFERS -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 style="    color: black !important;font-size: 35px;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated font-weight-bold" >🔥 @lang('new.3free') 🔥</h2>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- SPORT PACKAGE -->
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.sport_new_package')</h2>
+                <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_new_package_desc')</p>
+                <br>
+
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button') - 79 euros</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- MULTI DEVICE -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-sport"  style="margin-top: 1px;margin-bottom: 1px;" >
+    <div class="container-fluid">
+        <div class="row"> 
+            <div class="col-lg-12 text-center text-white">
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important;"  >@lang('new.multidevice')</h2>
+                <p class="parallex-para text-center text-white" ><span style="font: caption;color: white !important;font-size:19px !important;font-weight: bold;" >@lang('new.multidevice_desc')</span> </p>
+                <br>
+                <div class="form-row" style="width:60%;margin-left: 20%;">
+                    <div class="col-md-6" style="display: none;">
+                        <select id="package" class="form-control" name="package" style="font-weight: bold">
+                            <option disabled>@lang('new.multidevice_option1')</option>
+                            <option selected value="59">@lang('iptv.prim')</option>
+                            <option value="69">Sport</option>
+                            <option value="49">@lang('iptv.basic')</option>
+                        </select>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <select id="multidevice" class="form-control" name="multidevice" style="font-weight: bold">
+                            <option disabled>@lang('new.multidevice_option2')</option>
+                            <option selected value="2">2 @lang('new.device')</option>
+                            <option value="3">3 @lang('new.device')</option>
+                            <option value="4">4 @lang('new.device')</option>
+                            <option value="5">5 @lang('new.device')</option>
+                            <option value="6">6 @lang('new.device')</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select id="periods" class="form-control" name="periods" style="font-weight: bold">
+                            <option disabled>@lang('new.multidevice_option3')</option>
+                            <option value="3">3 @lang('iptv.mounth')</option>
+                            <option value="6">6 @lang('iptv.mounth')</option>
+                            <option selected value="12">1 @lang('iptv.yr')</option>
+                        </select>
+                    </div>
+
+                </div>
+                <br>
+                <a  style="background:gold !important;FONT:caption;" id="pricevalueMM" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;font-weight: bold;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:red;"></span></a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- TRIAL TEST -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-trial"  style="margin-top: 1px;margin-bottom: 1px;" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >30-day package ! </h2>
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
+                        @lang('new.test_trial')
+                    </p>
+                <br>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- RESELLING TEST -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style="margin-top: 1px;margin-bottom: 1px;"  >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >BECOME AN IPTV RESELLER</h2>
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
+                Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
+                    </p>
+                <br>
+                <a href="/resseling" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">INFO</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<style>
+    .cover-img::before {
+        content: "";
+        background-image: url({{ asset('iptv_update/images/sport.jpg') }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
+
+    .cover-img-sport::before {
+        content: "";
+        background-image: url({{ asset('iptv_update/images/new.jpg') }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
+    .cover-img-trial::before {
+        content: "";
+        background-image: url({{ asset('iptv_update/images/lll.jpg') }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
+    .cover-img-reselling::before {
+        content: "";
+        background-image: url(https://www.oec.oil.gov.iq/uploads/files/planning.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
+</style>
+
+
+
+<!-- BOXs Section -->
+
+
+
+
+
+<section class="pricing"   id="products">
+    <div class="container">
+        <div class="row text-center" >
+            <div class="col-xs-12" style="margin-bottom: 50px;">
+                
+                <h2>@lang('amos.boxs_header')  </h2>
+
+
+
+            </div>
+            <!-- end col-12 -->
+
+
+
+            @foreach($products_boxs as $product)
+
+
+
+                    <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom:30px;" >
+
+                        <div class="card price-box">
+                            <img class="card-img" src="{{ asset('img/'.$product->img1) }}"  title="The Best IPTV Boxes Available" alt="The Best IPTV Boxes Available">
+
+                            <span class="card-notify-year">@lang('amos.plus_one')</span>
+
+                            <div class="card-body">
+                                <h4 class="card-title">   {{$product->title}}     </h4>
+                                <div class="ratings">
+                                    <p>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        ( {{$product->order}}  @lang('amos.reviews'))
+                                    </p>
+                                </div>
+                                <h3 class="cost">    <span style="color:#ff3f58;">€  {{$product->price_after}} </span>  <small class="pre-cost"> €   {{$product->price_before}}   </small></h3>
+
+                                <p class="card-text" style="margin-bottom: 20px;">
+                                    {{$product->description}}           </p>
+
+
+                               <a class="pur_button"  href="https://www.bobres.co/{{ app()->getLocale() }}/payments/{{$product->id}}" >@lang('amos.buy_now')</a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+        @endforeach
+
+        <!-- end col-4 -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>
+
+<style>
+    .like {
+        font-size: 1.5rem;
+    }
+
+
+
+    .pur_button{
+        height: 50px;
+        line-height: 52px;
+        padding: 0 40px;
+        display: inline-block;
+        color: black;
+        background: rgb(36, 193, 221) !important;
+        font-weight: 500;
+        border-radius: 56px; 
+        border: 2px solid transparent;
+    }
+
+    .pur_button:hover{
+        height: 50px;
+        line-height: 52px;
+        padding: 0 40px;
+        display: inline-block;
+        color: black;
+        background: rgb(36, 193, 221) !important;
+        font-weight: 500;
+        border-radius: 56px; 
+        border: 2px solid transparent;
+    }
+
+    
+
+
+    .card-notify-year {
+
+        position: absolute;
+        left: -10px;
+        top: -20px;
+        background: #f2d900;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color: #000;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .glyphicon {
+        font-size: 13px !important;
+        display: contents !important;
+        color: #8a39ee;
+    }
+
+
+</style>
+
 
 
 
