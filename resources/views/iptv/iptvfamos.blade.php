@@ -2628,7 +2628,32 @@
     <!-- end container --> 
   </div>
   <!-- end footer-bar -->
-  
+  <div class="container" id="CONTACT">
+    <div class="row">
+      <div class="col-md-7 col-sm-12 col-xs-12">
+        <h4 class="footer-title">@lang('amos.conatct_newsletter')</h4>
+		<form class="newsletter" role="form" method="POST" action="{{ route('maillist.store') }}"
+                    enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    {{ method_field('POST') }}
+        
+          <input type="text" placeholder="@lang('iptv.entre_em')..." name="email">
+          <button type="submit">@lang('amos.submit')</button>
+          <small>@lang('amos.submit_desc')</small>
+        </form>
+        <h4 class="footer-title">{{config('app.name')}} </h4>
+        <p>@lang('amos.iptvamos_desc')</p>
+      </div>
+      <!-- end col-4 -->
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        <h4 class="footer-title">@lang('amos.promo_video')</h4>
+        <div class="video"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Black_Screen.jpg" alt="Image"> <a href="https://www.youtube.com/embed/CvkyKS5Jjyo?controls=0" class="play-btn fancybox" data-type="iframe" ><i class="fa fa-play" aria-hidden="true"></i></a> </div>
+        <!-- end video --> </div>
+     
+      <!-- end col-4 --> 
+    </div>
+    <!-- end row --> 
+  </div>
 
   <!-- end container -->
   <div class="sub-footer">
