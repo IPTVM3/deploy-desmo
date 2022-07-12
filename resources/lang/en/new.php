@@ -40,6 +40,7 @@ return [
     'contact_us'=>'Contact Us',
     'get_in_touch'=>'Get ready To watch',
     'view'=>'View',
+    'conte_nue' => ' Sports, News, Cartoon, Movie, Series, Adult .. ',
     'clients'=>'Clients',
     'happy_client'=>'Happy Client',
     'stati'=>'Statistical Numbers',

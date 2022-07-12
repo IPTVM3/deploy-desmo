@@ -21,6 +21,7 @@ return [
     'Instant_Activation'=>'Sofortige Aktivierung!',
     'Instant_Activation_desc'=>'Wenige Augenblicke nach Ihrer Bestellung ist der Service bereit und Sie erhalten vollen Zugriff auf alle Funktionen.',
     'MONTH'=>'MONATE',
+    'conte_nue' => 'Sport, Nachrichten, Cartoon, Film, Serie, Erwachsene .. ',
     'all_format'=>'M3U & MAG & Enigma Format',
     'online'=>'24/7 Online',
     'Uptime'=>'Technologie 99,9% Betriebszeit',

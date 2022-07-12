@@ -15,6 +15,7 @@ return [
     'try_befor'=>'Essayez le service avant d\'acheter',
     'try_now'=>'Essayez maintenant',
     'live_and_vods'=>'+ 121 000 Live & VOD',
+    'conte_nue' => ' Sports, Actualités, Dessins animés, Films, Séries, Adultes .. ',
     'get_full_access'=>' Bénéficiez d\'un accès complet à plus de 10 000 chaînes de télévision et également de 10 000 à 121 000 vidéos à la demande (films populaires, séries et ...)',
     'fast_support'=>'Support rapide',
     'different'=>'Nous proposons différentes méthodes de contact. Vous pouvez donc nous contacter à tout moment. Rejoignez le chat en direct ou laissez un message',
