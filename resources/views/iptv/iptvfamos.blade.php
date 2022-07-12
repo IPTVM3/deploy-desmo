@@ -1918,7 +1918,7 @@
 <style>
 	.cover-img-trial::before {
         content: "";
-        background-image: url({{ asset('iptv_update/images/lll.jpg') }});
+		background-image: url(https://www.oec.oil.gov.iq/uploads/files/planning.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
