@@ -1421,7 +1421,7 @@
 
 
  <!-- end header -->
- <section class="highlights" id="PRICING">
+ <section class="highlights" id="PRICING"  style="background-color: gold !important;color:black;">
 	<div class="container">
 	  <div class="row">
 		<div class="col-xs-12">
