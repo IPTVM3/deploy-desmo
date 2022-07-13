@@ -300,7 +300,8 @@
        <b>Then contact us on email or whatsapp ( provide us the screenshot of the transaction ).</b>
 
         <br><br>
-      
+        OUR PAYPAL EMAIL ADDRESS :
+        Email: hicham22belciad@gmail.com
 
         <br><br>
         <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>

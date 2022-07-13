@@ -135,7 +135,7 @@
           <li><a href="#PLAYLIST">@lang('amos.playlist')</a></li>
           <li><a href="#FEATURES">@lang('amos.features')</a></li>
           <li><a href="#PRICING">@lang('amos.pricing')</a></li> 
-          <li><a href="/reseller">@lang('amos.reseller')</a></li>
+          <li><a href="/resseling">@lang('amos.reseller')</a></li>
           <li><a href="#MULTIPLEDEVICE">@lang('amos.multidevice')</a></li>
 		  <li><a  href="#Subject"> @lang('amos.contact') </a></li>
         </ul>
