@@ -225,6 +225,13 @@
           </li>
 
 
+
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/settings/paypal">PAYPALs</a>
+          </li>
+
+
+
           <li class="nav-item">
             <a class="nav-link" href="/logout">LogOut</a>
           </li>
