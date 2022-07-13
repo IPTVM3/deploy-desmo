@@ -17,9 +17,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg=="
           crossorigin="anonymous"> 
- 
-   <script src="https://widget.unitpay.money/unitpay.js"></script>
-    <script src="https://www.paypal.com/sdk/js?client-id={{$client_id}}&currency=EUR"></script>
+  
 
     <meta name="_token" content="{!! csrf_token() !!}" />
  
@@ -417,6 +415,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </script>
 
 
+            <script src="https://www.paypal.com/sdk/js?client-id={{$client_id}}&currency=EUR"></script>
             <script> 
 
                
@@ -424,9 +423,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 paypal.Buttons({
                     createOrder: function(data, actions) {
                     // This function sets up the details of the transaction, including the amount and line item details.
-                        var local = {!! json_encode(App::isLocale('en')) !!} 
-                        var value = {!! json_encode($price) !!}
-                        if(local)  value = {!! json_encode($price) !!}
+                     var value = {!! json_encode($price) !!} 
  
                     return actions.order.create({
                         application_context: {
@@ -515,56 +512,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
             </script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.0/sjcl.min.js"></script>
-<script type="text/javascript">
- 
- 
-         
-        var hash_base = account+'{up}'+currency+'{up}'+desc+'{up}'+sum+'{up}'+secretkey;
-        var bitArray = sjcl.hash.sha256.hash(hash_base);
-        return sjcl.codec.hex.fromBits(bitArray); 
-    
- }
-$('#paynow').click(function(){
-    
-
-    if(typeof sjcl === 'undefined') {
-        alert("Please wait for library to load...");
-    } else {
-  
-        var email = $('#email').val();
-        var currency = 'EUR';
-        var desc = 'Product description';
-        var sum = {!! json_encode($price) !!};
-        var signature_ =  getSignature(email,currency,desc,sum,'23f107d5aefc756154963e943f541dd0');
-     
-      
-        var payment = new UnitPay();
-        payment.createWidget({
-            publicKey: "368521-e4d9d",
-            sum: sum ,
-            account: email,
-            domainName: "unitpay.money",
-            signature: signature_,
-            desc: desc,
-            locale: "en",
-            currency: currency
-        });
-    
-        payment.success(function (params) {
-                console.log(params);
-                var email = $('#email').val(); 
-                document.location.href = 'https://www.IPTVM3U.co/en/payments/paypal/completed/'+email+'/'+{!! json_encode($price) !!} +'/US/COMPLETED';
-
-        });
-        payment.error(function (message, params) {
-            $('#exampleModalpayment').modal('show');
-        });
-        return false;
- 
-        } 
-    });
- 
-</script>
+            
 </body>
 </html>
