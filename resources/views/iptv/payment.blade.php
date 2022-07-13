@@ -435,7 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         },
                         purchase_units: [{
                             amount: {
-                                value:  {!! json_encode($price) !!}  ,
+                                value:  value ,
                             }
                         }],
                     });
