@@ -27,7 +27,7 @@
  <br>
 
 
- WHATSAPP: www.iptvm3u.fr/en/support
+ WHATSAPP: www.iptvm3u.fr/en/contact
 
 </body>
 </html>
