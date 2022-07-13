@@ -448,27 +448,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         var local = {!! json_encode(App::isLocale('en')) !!}
                             var value = {!! json_encode($price) !!}
                             var txt = {!! json_encode($txt) !!}
-                        $('#success').show(); 
-                        $('#pay_con').hide();  
-                        $('#paypal-button-container').remove();
-                        return fetch('/api/checkout/paypal/order/completed', {
-                                method: 'post',
-                                headers: {
-                                    'content-type': 'application/json', 
-                                    "X-Requested-With": "XMLHttpRequest", 
-                                },
-                                body: JSON.stringify({ 
-                                    id : details.id,
-                                    status: details.status,
-                                    payerEmail: details.payer.email_address,
-                                    country: details.payer.address.country_code,
-                                    price: {!! json_encode($price) !!} 
-                                })
-                            })
-                            .then(status)
-                            .then(function(response){
-                                // redirect to the completed page if paid
-                                alert("Payment is under process do not refresh or close this window");
+                         
+                        alert("Payment is under process do not refresh or close this window");
                                 gtag('event', 'conversion', {
                                 'send_to': 'AW-472459539/7_avCPrQufECEJPSpOEB',
                                 'transaction_id': ''
@@ -476,16 +457,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 document.location.href = 'https://www.iptvm3u.fr/en/payments/paypal/completed/'+details.payer.email_address+'/'+value+'/'+details.payer.address.country_code+'/'+details.status+'/'+txt+'/0';
  
                            
- 
-
-                            })
-                            .catch(function(error) {
-                                // redirect to failed page if internal error occurs
-                                
-                                $('#exampleModalpayment').modal('show');
-
-                             
-                            });
+                         
+                            
                     }else{
                         $('#exampleModalpayment').modal('show');
                     }
