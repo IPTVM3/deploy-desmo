@@ -301,6 +301,7 @@
 
         <br><br>
         OUR PAYPAL EMAIL ADDRESS :
+        <br>
         Email: hicham22belciad@gmail.com
 
         <br><br>
@@ -311,7 +312,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>        
-         <a type="button" class="btn btn-primary" href="/contact">WHATSAPP SUPPORT</a>
+         <a type="button" class="btn btn-primary" href="https://wa.me/33610080489">WHATSAPP SUPPORT</a>
 
       </div>
     </div>
@@ -360,7 +361,7 @@
 <section class="support-bar transition">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12"> <a href="/contact">@lang('amos.get_intouch')  </a> <img src="{{ asset('iptvamos/images/icon-support.png') }}" alt="Image">
+      <div class="col-xs-12"> <a href="https://wa.me/33610080489">@lang('amos.get_intouch')  </a> <img src="{{ asset('iptvamos/images/icon-support.png') }}" alt="Image">
         <h4>@lang('amos.anyquestion')</h4>
         <h6>@lang('amos.anyquestion_desc') </h6>
       </div>
