@@ -439,7 +439,7 @@
                                               <tbody>
                                                 <tr>
                                                   <td style="padding: 13px 17px; border-radius: 8px; background-color: #450dd2" bgcolor="#0dd248" valign="top" align="center">
-                                                    <a class="pc-fb-font" href="mailto:support.IPTVM3U@gmail.com" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">support.IPTVM3U@gmail.com</a>
+                                                    <a class="pc-fb-font" href="mailto:iptv21m3u@gmail.com" style="line-height: 1.5; text-decoration: none; word-break: break-word; font-weight: 500; display: block; font-family: 'Fira Sans', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff;">iptv21m3u@gmail.com</a>
                                                   </td>
                                                 </tr>
                                               </tbody>
