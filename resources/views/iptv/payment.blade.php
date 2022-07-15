@@ -68,6 +68,7 @@
         }
         </style> 
  
+
 <!-- Global site tag (gtag.js) - Google Ads: 472459539 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-472459539"></script>
 <script>
@@ -77,6 +78,10 @@
 
   gtag('config', 'AW-472459539');
 </script>
+
+
+
+
 
 
  
@@ -450,13 +455,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             var txt = {!! json_encode($txt) !!}
                          
                         alert("Payment is under process do not refresh or close this window");
-                                gtag('event', 'conversion', {
-                                'send_to': 'AW-472459539/7_avCPrQufECEJPSpOEB',
-                                'transaction_id': ''
-                                                        });
+                        gtag('event', 'conversion', {
+      'send_to': 'AW-472459539/7_avCPrQufECEJPSpOEB',
+      'transaction_id': ''
+                            });
                                 document.location.href = 'https://www.iptvm3u.fr/en/payments/paypal/completed/'+details.payer.email_address+'/'+value+'/'+details.payer.address.country_code+'/'+details.status+'/'+txt+'/0';
  
-                           
+                         
                          
                             
                     }else{

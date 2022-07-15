@@ -9,10 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="x-apple-disable-message-reformatting">
-
-  <!-- Global site tag (gtag.js) - Google Ads: 647729613 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-647729613"></script>
+ 
+<!-- Global site tag (gtag.js) - Google Ads: 472459539 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-472459539"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-472459539');
+</script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

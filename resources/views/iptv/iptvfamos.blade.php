@@ -57,9 +57,16 @@
 
 	<!-- Google Tag Manager -->
 	
-	<!-- Global site tag (gtag.js) - Google Ads: 398007435 -->
-   <!-- Facebook Pixel Code -->
-   
+	 
+<!-- Global site tag (gtag.js) - Google Ads: 472459539 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-472459539"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-472459539');
+</script>
 
 
 </head>
