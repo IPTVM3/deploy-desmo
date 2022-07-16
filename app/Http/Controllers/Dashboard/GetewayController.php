@@ -54,7 +54,10 @@ class GetewayController extends Controller
                 "PAYPAL AFS4-vandenbergan",
                 "AZuSVmD4iGwYVT0euJrAChg1zkUf7YsvJeDQilLhBA3OWvFxu7RfD9Qke83mPUu0fRhAGdfSMBhdDP7n"
             ),
-
+            array(
+                "PAYPAL MAR-elmazadi22anour",
+                "AWcu5_BMx4DX4H2NgwcqruTvxDHRzOx8nPu-zs7soh8x7cGbCvrkSh6q-JQTshBJ0q9MCbtlFkEeDsc8"
+            ),
           );
           
 
