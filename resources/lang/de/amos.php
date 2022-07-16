@@ -38,7 +38,7 @@ return  [
    'prop_4' => 'Smart TV & Smartphone & PC',
    'prop_5'=>'Technologie 99,9 % Betriebszeit',
    'prop_6'=>'Server immer verfügbar',
-   'propp_3'=>'Automatisches Update (TV und VOD)',
+   'propp_3'=>'Automatisches Update ',
    'pprop_4'=>'Unterstützung',
    'prop_7'=>'Wiedergefunden',
    'prop_77'=>'HD | FHD',
