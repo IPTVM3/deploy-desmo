@@ -31,14 +31,6 @@ class GetewayController extends Controller
             ),
          
             array(
-                "PAYPAL AFS4-patonroberteoin1970",
-                "AWR1gcpgpJdPUjex_9e9uY5EEnF-6lXeMiRgy7QWXKI1dZbUpRlyBLsdY4gk8MoQJZpG7oJdRhLC6NS5"
-            ),
-            array(
-                "PAYPAL AFS4-opponglord19727",
-                "AXcCLHkoYa2zEw-zJqMiG5AzkMUyoNWvCldYQc7HYQYAn8ag2ET0CERRQwBm_HvvyvEL9Yw2SekMHuNi"
-            ),
-            array(
                 "PAYPAL AFS4-loschebenjamin242",
                 "ARxJXKriozMdRPM6yGbcYQeJvNDojddm9yFvEZYnHHNrgmBinY1PjO7EhmSMoSuQXMuMG20NSLk8Bneg"
             ),
@@ -57,6 +49,15 @@ class GetewayController extends Controller
             array(
                 "PAYPAL MAR-elmazadi22anour",
                 "AWcu5_BMx4DX4H2NgwcqruTvxDHRzOx8nPu-zs7soh8x7cGbCvrkSh6q-JQTshBJ0q9MCbtlFkEeDsc8"
+            ),
+            array(
+                "PAYPAL MAR-medbaha2121",
+                "AYW10kP1zIfSxEvdN0EeYV2vhmTX4BWvL57wWkXfTQXkm1lHgHRENgMMpFpk5HdUQqOY19Ey45qWtfEG"
+            ),
+            
+            array(
+                "PAYPAL MAR-zboklbok01",
+                "AccF8iqMqP7qXSyd6wg3lsKM2ToIDFgifqkak2OI6tIc8flPs8u_ybwC-TPToeZ_wUi4nmTzY0Ih4Zlg"
             ),
           );
           
