@@ -89,7 +89,7 @@ return [
    'prop_4'=>'Smart TV & Téléphone Portable & PC',
    'prop_5'=>'Technologie 99,9% de disponibilité',
    'prop_6'=>'Serveur toujours disponible',
-   'propp_3'=>'Mise à jour automatique (TV et VOD)',
+   'propp_3'=>'Mise à jour automatique',
    'pprop_4'=>'Assistance AntiFreeze',
    'prop_7'=>'Remboursement ',
    'prop_77'=>'HD | FHD',
