@@ -2147,7 +2147,7 @@
                         <select id="package" class="form-control" name="package" style="font-weight: 800">
                             <option disabled>@lang('new.multidevice_option1')</option>
                             <option selected value="59">@lang('iptv.prim')</option> 
-                            <option value="49">@lang('iptv.basic')</option>
+                            
                         </select>
                     </div>
                 
