@@ -302,13 +302,12 @@
         <br><br>
         OUR PAYPAL EMAIL ADDRESS :
         <br>
-        Email: hicham22belciad@gmail.com
+        Email: <b style="color:red;">hicham22belciad@gmail.com </b>
 
         <br><br>
         <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
 
-<style>
-.bob: background-color:red  !important; </style>
+
         </p>
       </div>
       <div class="modal-footer">
