@@ -202,7 +202,7 @@
 					<h5>@lang('amos.prop_3')</h5>
 				</div>
 				<!-- end price-header --> 
-				<span class="price"><span>€</span>350<small>.99</small></span> 
+				<span class="price"><span>€</span>299<small>.99</small></span> 
 				
 					<i class="glyph-icon flaticon-072-bank-1"></i>
 				<ul>
@@ -227,7 +227,7 @@
 					<h5>@lang('amos.prop_3')</h5>
 				</div>
 				<!-- end price-header --> 
-				<span class="price"><span>€</span>599<small>.99</small></span> 
+				<span class="price"><span>€</span>549<small>.99</small></span> 
 				
 					<i class="glyph-icon flaticon-072-bank-1"></i>
 				<ul>
@@ -253,7 +253,7 @@
 					<h5>@lang('amos.prop_3')</h5>
 				</div>
 				<!-- end price-header --> 
-				<span class="price"><span>€</span>820<small>.99</small></span> 
+				<span class="price"><span>€</span>739<small>.99</small></span> 
 				
 					<i class="glyph-icon flaticon-072-bank-1"></i>
 				<ul>
@@ -293,10 +293,10 @@
       <div class="modal-body">
       
       <p><b>To be our Official IPTV Reseller, you will need to purchase Credits, after buying credits we will send you your login and access for the reseller panel </b><br>
-      <b>Minimum to become a reseller is 350 EUR, the credit does not expire at all you can keep credit until you sell all.</b><br>
+      <b>Minimum to become a reseller is 299 EUR, the credit does not expire at all you can keep credit until you sell all.</b><br>
       <br><br><b> How Can I Purchase Credits </b>
       <br><br>
-      <b>Send exactly " € 350.99 or € 599.99 or € 820.99 " depending on offer that you prefer through your personal PayPal account, ( ⚠️ you have to choose it's as “Friends and Family” payment and please don't write anything in the description of the transaction, if not the transaction will be refunded it immediately, ) .<b><br>
+      <b>Send exactly " € 299.99 or € 549.99 or € 739.99 " depending on offer that you prefer through your personal PayPal account, ( ⚠️ you have to choose it's as “Friends and Family” payment and please don't write anything in the description of the transaction, if not the transaction will be refunded it immediately, ) .<b><br>
        <b>Then contact us on email or whatsapp ( provide us the screenshot of the transaction ).</b>
 
         <br><br>
@@ -307,7 +307,8 @@
         <br><br>
         <b>IF YOU NEED ANY INFORMATONS OR YOU PREFER OTHER WAY TO PAY PLEASE CONTACT US ON  WHATSAPP </b>
 
-
+<style>
+.bob: background-color:red  !important; </style>
         </p>
       </div>
       <div class="modal-footer">
