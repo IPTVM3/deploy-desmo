@@ -779,7 +779,7 @@
 			data-paddingleft="[0,0,0,0]"
 			style="z-index: 20; min-width: 480px; max-width: 480px; white-space: normal; font-size: 25px; line-height: 35px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">@lang('amos.header2_desc')		</div>
           <a class="tp-caption rev-btn  tp-resizeme" 
-		href="https://iptvm3u.fr/en/contact" target="_blank"	 id="slide-66-layer-7" 
+		href="https://www.iptvm3u.fr/contact" target="_blank"	 id="slide-66-layer-7" 
 			data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 			data-y="['middle','middle','middle','middle']" data-voffset="['200','200','160','120']" 
 			data-width="250"
