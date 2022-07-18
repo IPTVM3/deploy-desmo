@@ -2314,7 +2314,7 @@
 				<h5> Elise Niveau</h5>
 			  <span class="rates"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </span>
 				<p>
-					 Meilleure abonnement IPTV et une inscroyable assistance 24/7, j'ai partagé votre site à mes amis.Merci
+				Bestes IPTV-Abonnement und erstaunlicher Support rund um die Uhr. Ich habe Ihre Website mit meinen Freunden geteilt. Danke
 					</p>
 				</div>
 			  <!-- end testimonial-box --> </div>
