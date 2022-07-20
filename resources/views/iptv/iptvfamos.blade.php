@@ -140,7 +140,6 @@
         <ul class="nav navbar-nav">
 		  <li><a href="#rev_slider_24_1_wrapper">@lang('amos.home')</a></li> 
           <li><a href="#PLAYLIST">@lang('amos.playlist')</a></li>
-          <li><a href="#FEATURES">@lang('amos.features')</a></li>
           <li><a href="#PRICING">@lang('amos.pricing')</a></li> 
           <li><a href="/resseling">@lang('amos.reseller')</a></li>
           <li><a href="#MULTIPLEDEVICE">@lang('amos.multidevice')</a></li>
