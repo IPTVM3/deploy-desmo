@@ -75,8 +75,16 @@ class GetewayController extends Controller
                 "PAYPAL CA4-my.buslove23",
                 " AcTT4D-4tqBmewm4clrOkDmp18PTpl9l7sL1kmMPV9t9_SchgvYA0wk4yQgfTlwjevqLCuOzPSe75uhm"
             ),
+            array(
+                "PAYPAL AF4-petrovdimitar65",
+                "Ac4vHSazCVy_i9bwLFt0pdMUmwkOG5y_TLnWIara6wFBZNmyiNH3VqD1I4UZcBZ_JaMwchfWO9XmXHTj"
+            ),
+            array(
+                "PAYPAL AF4-asenovaleksanar11",
+                "AYBSj_EQdZJ5m4YOl1Ss04qAQbv43Q_RID-Ffu1EscLeCQw-lqkGLFgtPkahzd6cork1KNoRwDEjI1X0"
+            ),
           );
-         
+          
 
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
     }
