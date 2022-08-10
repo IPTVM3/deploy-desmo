@@ -25,10 +25,7 @@ class GetewayController extends Controller
 
         $paypal = array( 
 
-            array(
-                "PAYPAL MOBARAK",
-                "Adgp471Afe81Sa8Ed4lH58osYyI1dRWTKeccGe28YoRb_sKI_ge_N0Sr4v3HBN_oOZsRe-4lhZAbEkwL"
-            ),
+        
          
             array(
                 "PAYPAL AFS4-loschebenjamin242",
@@ -82,6 +79,10 @@ class GetewayController extends Controller
             array(
                 "PAYPAL AF4-asenovaleksanar11",
                 "AYBSj_EQdZJ5m4YOl1Ss04qAQbv43Q_RID-Ffu1EscLeCQw-lqkGLFgtPkahzd6cork1KNoRwDEjI1X0"
+            ),
+            array(
+                "PAYPAL AF4-Rustenburg8",
+                "ARDmNE0j1qJelSO1-5t_p5LE7eST_iwJoa52GerfTyX78gCHUOvAk59FcHTtvqqVmKcbhWQCmH2JBcZM"
             ),
           );
           
