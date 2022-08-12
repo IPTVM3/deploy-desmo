@@ -83,6 +83,9 @@ class GetewayController extends Controller
             array(
                 "PAYPAL AF4-Rustenburg8",
                 "ARDmNE0j1qJelSO1-5t_p5LE7eST_iwJoa52GerfTyX78gCHUOvAk59FcHTtvqqVmKcbhWQCmH2JBcZM"
+            ),array(
+                "PAYPAL AF4-LUKSICIVAN22",
+                "AZvEbA7oyIEEuQDgMogWMxCfFEqYkjzoElNIjdiBJ7tmNWibM_f7casnibVzn_Deuht-Ln2CXlMlrHIf"
             ),
           );
           
