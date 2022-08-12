@@ -100,7 +100,7 @@ class GetewayController extends Controller
                 $mygetGeteway = Geteway::find($request->client_id);
                 $lastgetway = Geteway::all()->last();
                 $mygetGeteway->delete();
-                if($lastgetway->id != $mygetGeteway->id){
+                if($lastgetway->id != $mygetGeteway->id){ 
                     $lastgetway->id = $request->client_id;
                     $lastgetway->update();
                 }
