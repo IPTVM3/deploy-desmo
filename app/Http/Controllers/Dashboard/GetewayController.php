@@ -100,7 +100,9 @@ class GetewayController extends Controller
                 "PAYPAL AF4'-soumanmouha",
                 "AQj0mrtlF0A1PkL5Lq_1FRSheKKV1XAti5ddhRRTL_Vm7iFvtuC4fkFPWNlFEPtLmDUaCTsbbLrd70q8"
             ),
-           
+            "PAYPAL AF4'-soumanmouhazz",
+            "AdyB-Uf6ch5U8k_T7ts_lFnNBTuKPGKMiOnQg3pjftZdjOi1gLQcVDFP8fSspo4UaNkSXYSprDlqhf7i"
+        ),
           );
 
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
