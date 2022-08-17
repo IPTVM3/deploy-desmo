@@ -28,6 +28,10 @@ class GetewayController extends Controller
         
          
             array(
+                "PAYPAL MIMO",
+                "Adgp471Afe81Sa8Ed4lH58osYyI1dRWTKeccGe28YoRb_sKI_ge_N0Sr4v3HBN_oOZsRe-4lhZAbEkwL"
+            ),
+            array(
                 "PAYPAL AFS4-loschebenjamin242",
                 "ARxJXKriozMdRPM6yGbcYQeJvNDojddm9yFvEZYnHHNrgmBinY1PjO7EhmSMoSuQXMuMG20NSLk8Bneg"
             ),
