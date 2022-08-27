@@ -28,6 +28,7 @@ class GetewayController extends Controller
         
          
             array(
+                
                 "PAYPAL MIMO",
                 "Adgp471Afe81Sa8Ed4lH58osYyI1dRWTKeccGe28YoRb_sKI_ge_N0Sr4v3HBN_oOZsRe-4lhZAbEkwL"
             ),
@@ -111,6 +112,18 @@ class GetewayController extends Controller
         array(
             "PAYPAL US4'-juliegonzalez08",
             "AZ2fIwojPft071Vj58LHLUE77LFudHgKt0ay9Z16pxJ5K_peM0SPMZW264ouh4ye-JS0fw2LJkEV5Q-f"
+        ),
+        array(
+            "PAYPAL US4-luchanskaaglika57",
+            "AX5X_aaVLHJy8GUDRLpgM_QINDbh_ZDzUhepRwlVwyWnCsXAfnzO2X25E5A_YmyEICZAjwxjsjKDmR0d"
+        ),
+        array(
+            "PAYPAL US4-naydenova13",
+            "AeCPjE3EH2JRsIFKafa2fCHzpiDvtgK4abA_5QaFZPXWakGE1JCP6WE5XFFcnlMRWhMKPBdck_D_IsuY"
+        ),
+        array(
+            "PAYPAL US4-stoichkovdimitar34",
+            "AdkL3tJgwD9yc6bdIpOOCnr4CCfsOoK7_feNmggJ5w2YSvsxANmHN8dMgBvb6MUCwVxDSTek4lXgyts9"
         ),
           );
           
