@@ -151,7 +151,11 @@ class GetewayController extends Controller
         ),
         array(
             "PAYPAL SW4-richfield3r45",
-            "i36d7I9pXX9oIPvAn7VdNVe6l34RNFbkIZQJ9y26MzzH1YDa9BYbFKCU1PdwlBXCkzKL4nxS4EKA"
+            "AWs-i36d7I9pXX9oIPvAn7VdNVe6l34RNFbkIZQJ9y26MzzH1YDa9BYbFKCU1PdwlBXCkzKL4nxS4EKA"
+        ),
+        array(
+            "PAYPAL SW4-nuguidjaeallen6r5",
+            "AfPlAt5AvbTzOxxmTqrK-i5KGLDbc9k3Kf12GJJ3NzWwj8aAHQHCZEfzjnSkqjIhZpk26yIHDbdwggEG"
         ),
           );
           
