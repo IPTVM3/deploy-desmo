@@ -62,7 +62,7 @@ class GetewayController extends Controller
                 "AccF8iqMqP7qXSyd6wg3lsKM2ToIDFgifqkak2OI6tIc8flPs8u_ybwC-TPToeZ_wUi4nmTzY0Ih4Zlg"
             ),
             array(
-                "PAYPAL AFS4-sebelljefferey",
+                "PAYPAL ",
                 "ATxlaP73U7VQSkbGTVB0KxodwuHtfB8EIKDsvIBIp1loUcDHeOYb_OFQuJjw6bujJ0GDLBdUu8hJ15NT"
             ),
             array(
@@ -156,6 +156,10 @@ class GetewayController extends Controller
         array(
             "PAYPAL SW4-nuguidjaeallen6r5",
             "AfPlAt5AvbTzOxxmTqrK-i5KGLDbc9k3Kf12GJJ3NzWwj8aAHQHCZEfzjnSkqjIhZpk26yIHDbdwggEG"
+        ),
+        array(
+            "PAYPAL uK4-mohammedoubadi21",
+            "AbF8sU0WvKcV7Yz3nDSZLINS9_kcBjleuk7JGN-i7qy2CcltFVinilz4SximhcyQra0ilsToF3Y1uZj1"
         ),
           );
           
