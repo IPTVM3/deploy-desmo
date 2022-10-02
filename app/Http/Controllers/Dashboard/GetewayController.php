@@ -161,8 +161,12 @@ class GetewayController extends Controller
             "PAYPAL uK4-mohammedoubadi21",
             "AbF8sU0WvKcV7Yz3nDSZLINS9_kcBjleuk7JGN-i7qy2CcltFVinilz4SximhcyQra0ilsToF3Y1uZj1"
         ),
+        array(
+            "PAYPAL 4D-Vasiliollilis105",
+            " Ab7OMiAOrFvMINlXUyo20hO75KlpA0eLF92kBuGtZxoWtP0IiksQA4GgfyiuqqoqNfVpzBbzrBdp8RKO"
+        ),
           );
-          
+         
           
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
     }
