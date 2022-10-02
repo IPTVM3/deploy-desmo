@@ -173,7 +173,7 @@ class GetewayController extends Controller
 
     public function paypal_change(Request $request){
         $store = Store::first();
-
+ 
         if($request->operation_delete == 'operation_delete') {
                 $mygetGeteway = Geteway::find($request->client_id);
                 $lastgetway = Geteway::all()->last();
