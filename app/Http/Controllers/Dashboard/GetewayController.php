@@ -169,6 +169,10 @@ class GetewayController extends Controller
             "PAYPAL 4D-greyson.brock820",
             " AVbCYC4EFtoI9z_KOqswa55bU3C9LW6mrzJHkC8IIjhEH7erksgduhcWjgE4L-1NdcddrXsqyd1X4SDs"
         ),
+        array(
+            "PAYPAL Nicolas.george90",
+            "ATUmoC-rwrlR6yXLeW8rJh2wX-T-tAE3lPUll-L2zoQl3GLT9tlqKs-rh-Jl2TIXs6fqqoxINSBXIu4g"
+        ),
           );
          
           
