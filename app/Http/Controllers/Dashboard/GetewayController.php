@@ -162,7 +162,7 @@ class GetewayController extends Controller
             "AbF8sU0WvKcV7Yz3nDSZLINS9_kcBjleuk7JGN-i7qy2CcltFVinilz4SximhcyQra0ilsToF3Y1uZj1"
         ),
         array(
-            "PAYPAL 4D-Vasiliollilis105",
+            "PAYPAL PH4D-Vasiliollilis105",
             " Ab7OMiAOrFvMINlXUyo20hO75KlpA0eLF92kBuGtZxoWtP0IiksQA4GgfyiuqqoqNfVpzBbzrBdp8RKO"
         ),
         array(
@@ -170,8 +170,16 @@ class GetewayController extends Controller
             " AVbCYC4EFtoI9z_KOqswa55bU3C9LW6mrzJHkC8IIjhEH7erksgduhcWjgE4L-1NdcddrXsqyd1X4SDs"
         ),
         array(
-            "PAYPAL Nicolas.george90",
+            "PAYPAL F4D-Nicolas.george90",
             "ATUmoC-rwrlR6yXLeW8rJh2wX-T-tAE3lPUll-L2zoQl3GLT9tlqKs-rh-Jl2TIXs6fqqoxINSBXIu4g"
+        ),
+        array(
+            "PAYPAL CD4-Jacop.peoples3021",
+            "Ac36s950TzBZGd_shIwQAlSCF7QI9jK667PLvpN2H4XotclNlcmtWrOlm0M7Q3ce8M_JITdSPRVokJg4"
+        ),
+        array(
+            "PAYPAL CD4-Sergio.howell5319",
+            "AYYpketcy82Byy0xFF9e4p1n9-JmhCALGaTU3O2Z0tDCKErG0Wzm577bvP70sttgfnSp_N9rr-Wohmg8"
         ),
           );
          
