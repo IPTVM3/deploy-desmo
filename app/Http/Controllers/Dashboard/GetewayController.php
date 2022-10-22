@@ -205,6 +205,10 @@ class GetewayController extends Controller
             "PAYPAL SFD-TREMBATH.JOSH",
             "GsDd4LybldikXvxfkIm8jhxsjcei9gmS7Da279tcPOoFH3DGji5mAvqe5IjQeU6VViMSp"
         ),
+        array(
+            "PAYPAL SFD-Raul.Olgera",
+            "AfFMtY9GYEL9jAfMFiDld5pNkStgKMjpA2J4dSxvzsIywsA4CDRNIMSzU73E5OgKOXA3aLXioWIHuvXg"
+        ),
           );
 
          
