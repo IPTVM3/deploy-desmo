@@ -186,11 +186,11 @@ class GetewayController extends Controller
             "ARRPo4aTqd5-PR_4EMU4kek1WIiIWsfjZQSYHdy5Y7nRvJQizH_pFwAcdZ-vmO1j0qtnE5gYf6PU04QF"
         ),
         array(
-            "PAYPAL SPD-YASSLIM0DOERE",
+            "PAYPAL SPD-Idriouich.abdessamad89",
             "AYPmDbCYoYJ2lY9FWDnKE3GE-oUvJ-TNq3RSzfWeBWAStMEHgtgDgDKwHqRAU2mA5SgWGtW5m6ZM44F2"
         ),
         array(
-            "PAYPAL MONd-Idriouich.abdessamad89",
+            "PAYPAL MONd-YASSLIM0DOERE",
             "Acx0zFu_FSm-SuTFgOK870kzBJDcQgEp2U7GI9Vo8mEx9NEI9vpL1DLgFaIb1kvNf6E2MsQRGTgXjWQ6"
         ),
         array(
@@ -201,7 +201,12 @@ class GetewayController extends Controller
             "PAYPAL UKD-dallasperez",
             "AfFRl3dr2kNz5ryVqeNQcaI39PpLvJJQ13h7hDPe5_0HSmhn8S6qTJb7REgyHl1zo892wktK59-Led3h"
         ),
+        array(
+            "PAYPAL SFD-TREMBATH.JOSH",
+            "GsDd4LybldikXvxfkIm8jhxsjcei9gmS7Da279tcPOoFH3DGji5mAvqe5IjQeU6VViMSp"
+        ),
           );
+
          
           
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
