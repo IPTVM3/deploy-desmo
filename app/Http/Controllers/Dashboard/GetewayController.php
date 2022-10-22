@@ -209,9 +209,17 @@ class GetewayController extends Controller
             "PAYPAL SFD-Raul.Olgera",
             "AfFMtY9GYEL9jAfMFiDld5pNkStgKMjpA2J4dSxvzsIywsA4CDRNIMSzU73E5OgKOXA3aLXioWIHuvXg"
         ),
+        array(
+            "PAYPAL SFD-gamila.zatkivb",
+            "AZl4lojrBNk9_DRCVKfhAWvjoUjNL0gYiR2Nd3sWK7Wqi3-zKfOc25tC2eODTsmlotJWa9SyEjp0XRu3"
+        ),
+        array(
+            "PAYPAL SFD-lwartdoauw17",
+            "ASceK2KBxYFrwKcDSfSuVlOoYM-4f13hicLjeweijoc1DUn6vUESZQKcV6S1nzurTmiV_0Rvxu4DtuaQ"
+        ),
           );
 
-         
+          
           
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
     }
