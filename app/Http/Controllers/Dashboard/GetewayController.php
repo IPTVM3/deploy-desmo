@@ -210,12 +210,24 @@ class GetewayController extends Controller
             "AfFMtY9GYEL9jAfMFiDld5pNkStgKMjpA2J4dSxvzsIywsA4CDRNIMSzU73E5OgKOXA3aLXioWIHuvXg"
         ),
         array(
-            "PAYPAL SFD-gamila.zatkivb",
+            "PAYPAL ISD-gamila.zatkivb",
             "AZl4lojrBNk9_DRCVKfhAWvjoUjNL0gYiR2Nd3sWK7Wqi3-zKfOc25tC2eODTsmlotJWa9SyEjp0XRu3"
         ),
         array(
-            "PAYPAL SFD-lwartdoauw17",
+            "PAYPAL ISD-lwartdoauw17",
             "ASceK2KBxYFrwKcDSfSuVlOoYM-4f13hicLjeweijoc1DUn6vUESZQKcV6S1nzurTmiV_0Rvxu4DtuaQ"
+        ),
+        array(
+            "PAYPAL ISD-LOPER9VRESFE",
+            "AUPpkrPpB1hk3emzMpGphH4UUPUuceorqjNlZ5dPZ5_s-duvpjGvY5TJdo2oPMcq3sV8ciVM2m35mWJd"
+        ),
+        array(
+            "PAYPAL ISD-DOLIKER5BIRESSA",
+            "AchhcG6JVTFhIHTTc-6b9fak542O-r_xhv5UFK_ybkV7nsyd92yqRHumaBZUVHlOMskM2zQwKf6EPLCN"
+        ),
+        array(
+            "PAYPAL ISD-GORGIE5BRISREA",
+            "AchW_AAH_rWWg79FykUqY_4N0zXnSnTb1DErvTYIWZzZO2Yq6iwWx17z2Cp7Vbr6MnCo9yB87QmR_WoD"
         ),
           );
 
