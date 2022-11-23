@@ -94,7 +94,7 @@ class GetewayController extends Controller
                 "AZvEbA7oyIEEuQDgMogWMxCfFEqYkjzoElNIjdiBJ7tmNWibM_f7casnibVzn_Deuht-Ln2CXlMlrHIf"
             ),
             array(
-                "PAYPAL IS4'-ASONGANYIDERICK44",
+                "PAYPAL  ",
                 "AVtspBiCXebkVXN-mLei2oQVilaUFMxmU-NjbHOu1Gc6FMBix-PQd72YAjAATbw5rUMLbvhotmdQne8l"
             ),
             array(
@@ -228,6 +228,22 @@ class GetewayController extends Controller
         array(
             "PAYPAL ISD-GORGIE5BRISREA",
             "AchW_AAH_rWWg79FykUqY_4N0zXnSnTb1DErvTYIWZzZO2Yq6iwWx17z2Cp7Vbr6MnCo9yB87QmR_WoD"
+        ),
+        array(
+            "PAYPAL ISD-GORGIE5BRISREA",
+            "AchW_AAH_rWWg79FykUqY_4N0zXnSnTb1DErvTYIWZzZO2Yq6iwWx17z2Cp7Vbr6MnCo9yB87QmR_WoD"
+        ),
+        array(
+            "PAYPAL SHD-saundersmitchell22",
+            "Aare3m8oj1z7HHqTBDf2dkBDPIG1vGwYLd3s-ROG5ohBbPZcoOl3BD6FMPcMY6C3XBCFQ_vxdt5mv00h"
+        ),
+        array(
+            "PAYPAL MRD-optionservice.nett",
+            "ATl4Hb2oWIB7-wjinHRyIGc39l9V2azydubbt_YnnDMh8BD6JTuAoP7DSAu0V5lJCWDigrShd9ThRrqA"
+        ),
+        array(
+            "PAYPAL MRD-optionbusiness2",
+            "AdSqdz6jPJYwv4DvPKVFCdwySnkhtDwmuAzKRlLO2QIYoCJzL-bKM49IUTDkm_HuuCdy2H9BPybZIsW9"
         ),
           );
 
