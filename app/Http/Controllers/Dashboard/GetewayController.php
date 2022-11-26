@@ -255,7 +255,7 @@ class GetewayController extends Controller
         ),
         array(
             "PAYPAL SFD-BATHILYSECKOU4",
-            ""
+            "Af4LZkF1N761gWrwEGzy4HWi7Hizp2aHEXXehuZILsEb6iS10UV8XXg-zesK0WtfOaD4QbcjEldoHOXb"
         ),
         array(
             "PAYPAL ISD-meulmanmarkies",
