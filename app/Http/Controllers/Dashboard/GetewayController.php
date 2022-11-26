@@ -245,9 +245,25 @@ class GetewayController extends Controller
             "PAYPAL MRD-optionbusiness2",
             "AdSqdz6jPJYwv4DvPKVFCdwySnkhtDwmuAzKRlLO2QIYoCJzL-bKM49IUTDkm_HuuCdy2H9BPybZIsW9"
         ),
+        array(
+            "PAYPAL SFD-sabbahanthony4y",
+            "AUuvIza2A24z4JzCIAj3iBCU0xaOFFydsdGkSxGfDrUACSRo3qqG-HXKPXQZVAEx5Dg6nia3aVHh4haS"
+        ),
+        array(
+            "PAYPAL SFD-shindongyoung501",
+            "AdSu-eMWnUDJWwP7YLVELNSZAatVEOIbfg27wfEGubtpQ9_mCr5hqv3gvO_gbPfP3eLsGnmOQjeyKdDq"
+        ),
+        array(
+            "PAYPAL SFD-BATHILYSECKOU4",
+            ""
+        ),
+        array(
+            "PAYPAL ISD-meulmanmarkies",
+            "AQUViKdU5yPkMrkQecpH1f5b8rxfVIvFAUmwJvhWMqeXK6CLONIYRlzzEAloOeVkQdOGkvUR0FFoigCW"
+        ),
           );
 
-          
+         
           
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
     }
