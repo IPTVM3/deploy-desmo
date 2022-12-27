@@ -289,6 +289,10 @@ class GetewayController extends Controller
             "PAYPAL SDAF-charlesnicolaspaul",
             "ARGqx0BX_0y6DkdCCDu1Vr1802-qO9reTAaoy1nhHilCPzdBdBa4x_ahb3ZR9DTmiaI1kJfg1YiSUJXX"
         ),
+        array(
+            "PAYPAL SDAF-tom.yngve.johansen",
+            "AbqnLdsNvR3BHb7z333KEBUTb_IBnyRrxlD4TdvECk1O0n9qBRSo4MqzGA7CvQPrH_XJ5k6FaQw315a1"
+        ),
           );
 
          
