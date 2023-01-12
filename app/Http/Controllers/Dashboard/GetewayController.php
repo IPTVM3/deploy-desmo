@@ -325,7 +325,12 @@ class GetewayController extends Controller
             "PAYPAL SDF-andrew.d.bradley",
             "AcbPW67PZx6rEgnwJMrd_mhkPc20sxNKgWucQo13xbNH9-mwdc8ZFZ0Oyy7HvyENhp2RjcVS9H3FGqee"
         ),
-          );
+        array(
+            "PAYPAL MRC-DOLIKER0IRSSAN" ,
+            "ARtZFg0zTip6Ku5gZ1i2IaY1-BTLhnS3T3HSPwuXpRRoLD4o1hDzWEMr52OnB17hbFc6XW_iIzCdla65"
+        ),
+      
+        );
 
          
            
