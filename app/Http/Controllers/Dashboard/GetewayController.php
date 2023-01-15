@@ -329,7 +329,15 @@ class GetewayController extends Controller
             "PAYPAL MRC-DOLIKER0IRSSAN" ,
             "ARtZFg0zTip6Ku5gZ1i2IaY1-BTLhnS3T3HSPwuXpRRoLD4o1hDzWEMr52OnB17hbFc6XW_iIzCdla65"
         ),
-      
+        array(
+            "PAYPAL MRC-elhyadifatima91" ,
+            "AaBO5RHUnnUwSgI8qiIHZeQSoPpBQYIBk7YURAuEvCPqxbwPBhkv6R_sryqhbOlkTx2uvhuKHdrgocs7"
+        ),
+        array(
+            "PAYPAL UK-clarence.jacobb22" ,
+            "AXP4sDTyBF8oM6YQpSzeCNzVC_1bKVYClUEQkviO11azrS36AaQYEqmiu9ydBSd1xe_oJ0yQ1iFTjrI7"
+        ),
+    
         );
 
          
