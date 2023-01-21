@@ -357,6 +357,19 @@ class GetewayController extends Controller
             "PAYPAL NZI-ettinger.urs3000" ,
             "AWp244fkZVIE6huBAAiaN1NZQmPgByFTbNcR4AVYhX8LkH12NyEQ2ZRtADoMoKHMkj_6znfvVjNlJque"
         ),
+        array(
+            "PAYPAL MAR-mostafaablefakh" ,
+            "AcWDnEEPnHXqw2kyZaoGgfX8EuTt4b-vvwK0ujocoZUut6R-sd-SeISaMSTfDCJrkO_8ij1TIcGJ3C0q"
+        ),
+        array(
+            "PAYPAL MAR-tarikbekraoui" ,
+            "AVch--Gec7iYNIrw_NQBdbLXa_Ky_Mj0TL70j2ywjSyRgvvlm2-FFeFbVogsM2WepznMQ_o1TF5e6AC2"
+        ),
+        array(
+            "PAYPAL SAF-jorge.vera.frasquet.00" ,
+            "AU_j3SMVq9O1xaLQ5hKaHmLrTa_sv39F5w-xIQqfVvihLZYsVEwspHvChSQG0Kd41hc2HCPwr2TLXxIT"
+        ),
+
 
     
         );
