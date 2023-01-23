@@ -373,12 +373,12 @@ class GetewayController extends Controller
             "PAYPAL MAR-alaoui.steph" ,
             "AXw0E-zm54DFM94l70rbGZpgxccwwD9rKU9D-AUEKwEd-JPjHV2FyTV70AR0EHvrDm0eKQCw1OEjDZ0t"
         ),
+        
 
         
     
         );
 
-         
            
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
     }
