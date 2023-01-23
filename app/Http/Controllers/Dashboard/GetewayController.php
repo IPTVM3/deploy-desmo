@@ -378,7 +378,7 @@ class GetewayController extends Controller
         
     
         );
-
+ 
            
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
     }
