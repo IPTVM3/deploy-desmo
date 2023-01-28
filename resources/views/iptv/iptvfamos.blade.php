@@ -1885,7 +1885,7 @@
                 <div class="btn-group-vertical" style="    width: 100%;">
 
                     
-                                        <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/29.99/Premium Package - 1 Month IPTV Subscription"class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 22.98</a>
+                                        <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/29.99/Premium Package - 1 Month IPTV Subscription"class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 29.98</a>
              
                                         <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/18.99/basic Package - 1 Month IPTV Subscription" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 18.99</a>
             
