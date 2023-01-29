@@ -377,9 +377,20 @@ class GetewayController extends Controller
             "PAYPAL MAR-aitcadiabdeljalil" ,
             "AXoQWo3hxIHNreufhAGtRdqlzMS6zZGEy9IirRcUreV-iDA8X_sYL39husKaxakyYuXfx-KNiQ_qOCQt"
         ),
-         
-
-        ); 
+        array(
+            "PAYPAL MAR-aymanbahman047" ,
+            "AZl7fsfokbL9Am4NFVP37tDuK03i6RCoax8ag_OJo27IkfQooJT4jkR7jRQR3Jnu-8DxXS838oFutwwQ"
+        ),
+        array(
+            "PAYPAL MAR-chahirielmehdi9" ,
+            "ASafEuVWLAdhaRO3P5hx_ao9vedesYDsVfW5PmzHtJon2VPyaHlPcK17Kdma6M8s8Rg5Vi6TkEL8FNG6"
+        ),
+        array(
+            "PAYPAL MAR-hakimnora287" ,
+            "AR3Bm8VvgRQi90Zoh8LiZJnPpKKymuZXNEkvY4HMP4bHk2sCg9wHi2UNGgW15XxDzBscVo6uwvwCmbYx"
+        ),
+        
+  ); 
   
            
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
