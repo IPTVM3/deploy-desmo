@@ -67,9 +67,18 @@
             }
         }
         </style> 
- 
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11033410187"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!-- Global site tag (gtag.js) - Google Ads: 472459539 -->
+  gtag('config', 'AW-11033410187');
+</script>
+<!-- Google Tag Manager (noscript) -->
+
+<!-- Global site tag (gtag.js) - Google Ads: 472459539 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-472459539"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -80,7 +89,7 @@
 </script>
 
 
-
+-->
 
 
 

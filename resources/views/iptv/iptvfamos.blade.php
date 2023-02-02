@@ -57,8 +57,17 @@
 
 	<!-- Google Tag Manager -->
 	
-	 
-<!-- Global site tag (gtag.js) - Google Ads: 472459539 -->
+	 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11033410187"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11033410187');
+</script>
+<!-- Google Tag Manager (noscript) -->
+<!-- Global site tag (gtag.js) - Google Ads: 472459539 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-472459539"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -67,11 +76,11 @@
 
   gtag('config', 'AW-472459539');
 </script>
-
+-->
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+
 
  
 <div class="preloader"> <svg class="spinner" id="pageloader_anime" width="32px" height="32px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
