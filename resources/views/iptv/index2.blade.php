@@ -16,7 +16,7 @@
 
             <div class="side-nav-btn" id="sidemenu_toggle">
                 <span></span>
-                <span></span>
+                <span></span> git remote-v
                 <span></span>
             </div>
 
@@ -43,7 +43,7 @@
                     <li class="nav-item"> 
                         <a class="nav-link scroll" href="#trial" data-toggle="modal" data-target="#testmoremodel">@lang('new.Test_Trial') </a>
                     </li> 
--->
+--> 
                 </ul>
 
 
