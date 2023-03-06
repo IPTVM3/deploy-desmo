@@ -32,7 +32,7 @@
                         <a class="nav-link scroll" href="#price">@lang('new.Pricing') </a>
                     </li>  
 
- 
+  
 
 
                     <li class="nav-item">
