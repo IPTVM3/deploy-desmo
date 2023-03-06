@@ -40,7 +40,7 @@
                     </li>
                  
  <!--
-                    <li class="nav-item">
+                    <li class="nav-item"> 
                         <a class="nav-link scroll" href="#trial" data-toggle="modal" data-target="#testmoremodel">@lang('new.Test_Trial') </a>
                     </li> 
 -->
