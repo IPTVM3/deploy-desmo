@@ -413,10 +413,10 @@ class GetewayController extends Controller
             "PAYPAL SAF-dardos.sandor" ,
             "AXQlV2SEnHNazbQ2grBSJO94jHyGdG_7qVoWRKAiRwhGeh5WPc-bMdTKJyJ63rGOtnxkagLZJFvyXIlR"
         ),
-        "PAYPAL MAR-optionbusiness.2" ,
-        "AYvrZCDKYhba1X-ghI7_XswGaGJihF2eWoCWTMCOLQfOQqN6U_sOFqcmdaAG0kyc4f5ZlgOjKk_PLSuH"
-    ),
-
+        array(
+            "PAYPAL MAR-optionbusiness.2" ,
+            "AYvrZCDKYhba1X-ghI7_XswGaGJihF2eWoCWTMCOLQfOQqN6U_sOFqcmdaAG0kyc4f5ZlgOjKk_PLSuH"
+        ),
   ); 
   
            
