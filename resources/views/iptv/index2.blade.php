@@ -234,7 +234,7 @@
                              data-transform_out="s:900;e:Power2.easeInOut;s:900;e:Power2.easeInOut;"
                              data-type="button" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
                             <a href="#price" class="custom-btn green hvr-shutter-out-horizontal-blk btn btn-large btn btn-medium btn-rounded green-background">@lang('new.shop_now') </a>
-                            <a href="https://wa.me/33753133255"  class="custom-btn blue hvr-shutter-out-horizontal-blk btn btn-large btn btn-medium btn-rounded green-background">@lang('new.contact_us') </a>
+                            <a href="https://wa.me/33745641235"  class="custom-btn blue hvr-shutter-out-horizontal-blk btn btn-large btn btn-medium btn-rounded green-background">@lang('new.contact_us') </a>
                         </div>
                     </li>
                     <!-- SLIDE 3  -->

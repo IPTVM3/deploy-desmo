@@ -375,7 +375,7 @@
                     <div class="address-box wow fadeInUp" data-wow-delay="300">
                         <h2 class="text-capitalize">@lang('new.bob_office'), Paris </h2>
                         <p class="pt-3 pb-3">14 Rue Léone Gennevilliers, Paris ,France</p>
-                        <p>@lang('new.office_tele')  : +33 7 513 648 57 / +33 7 531 332 55                        </p>
+                        <p>@lang('new.office_tele')  : +33 7 456 412 35                        </p>
                       <!--  <p>Whatsapp : <a href="https://wa.me/+33753133255" style="color:green">@lang('new.just_click')</a></p>-->
                         <p>@lang('new.email') : contact.bobres@gmail.com</p> 
                         <br>
