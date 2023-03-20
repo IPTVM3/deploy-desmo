@@ -65,7 +65,7 @@ Route::group([
             }); 
         });
             //TRIALS LIST
-            Route::get('/contact',  function(){  return redirect('https://api.whatsapp.com/send?phone=33610080489'); });
+            Route::get('/contact',  function(){  return redirect('https://api.whatsapp.com/send?phone=33745641235'); });
             Route::get('/support', ['as' => 'whatsapp.fastsupport', 'uses' => 'TrialController@fastsupport']);
             Route::get('/trials', ['as' => 'trials.index', 'uses' => 'TrialController@index']);
             Route::post('/whastapp/save', ['as' => 'whatsapp.save', 'uses' => 'TrialController@store']);
