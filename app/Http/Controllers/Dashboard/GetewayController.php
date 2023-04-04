@@ -385,10 +385,7 @@ class GetewayController extends Controller
             "PAYPAL MAR-chahirielmehdi9" ,
             "ASafEuVWLAdhaRO3P5hx_ao9vedesYDsVfW5PmzHtJon2VPyaHlPcK17Kdma6M8s8Rg5Vi6TkEL8FNG6"
         ),
-        array(
-            "PAYPAL MAR-hakimnora287" ,
-            "AR3Bm8VvgRQi90Zoh8LiZJnPpKKymfuZXNEkvY4HMP4bHk2sCg9wHi2UNGgW15XxDzBscVo6uwvwCmbYx"
-        ),
+        
         array(
             "PAYPAL PRO-lozayevhe4n" ,
             "AZIkWeSUK1-Zxhs0kfTUQOM5wE8SACp9WmUv84bS4EuhOWG5oSUhw6f2yC4nnuARBqMqER6lFapv7u77"
@@ -420,6 +417,15 @@ class GetewayController extends Controller
         array(
             "PAYPAL MAR-abdoelbassri974" ,
             "AYMgQKloCDvT2ZffHQuyySMIwUxOGCd-FyoixefkYEh8yqI3LYcp9gz49jodJnBravVlEV5B6mNhGJYN"
+        ),
+
+        array(
+            "PAYPAL MAR-hakimnora287" ,
+            "AcKcOq7vhFgIj-XGTTVdO9r-MGIjb5EaCCNOR4KYArGBRcYFEXTU7ebWRpmdfMi_CS0t6iZn3l8TY6p7"
+        ),
+        array(
+            "PAYPAL MAR-hibalaridi4" ,
+            "AXXMli1VAXmz--VbSAF828-BA3bSjw1aQI26uSC-dRZcjHKojQ0LVmZjR5z0i50uiqTRbk3VdBUfaacQ"
         ),
   ); 
   
