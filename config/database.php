@@ -37,16 +37,15 @@ return [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
-        ],
-
+        ], 
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'us-cdbr-east-05.cleardb.net',
+            'host' => 'us-cdbr-east-06.cleardb.net',
             'port' => '3306',
-            'database' => 'heroku_7575bc52e396a7a',
-            'username' => 'bbee6e7d7473b5',
-            'password' => 'a7a67da5',
+            'database' => 'heroku_0df5a60e4f18de0',
+            'username' => 'b828b9e4df5d0f',
+            'password' => 'c4f163c1',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
