@@ -451,7 +451,7 @@ class GetewayController extends Controller
         }
 
         if($request->operation_create == 'operation_create') {
-            $id = 10;
+            $id = Geteway::all()->last()->id + 10;
             $getos = Geteway::create();
             $getos->client_account = $request->name;
             $getos->api_key = $request->api_key;
