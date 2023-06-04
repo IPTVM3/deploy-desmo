@@ -39,13 +39,13 @@ return [
             'prefix' => '',
         ], 
 
-         'mysql' => [
+        'mysql' => [
             'driver' => 'mysql',
-            'host' => 'sql992.main-hosting.eu',
+            'host' => 'srv560.hstgr.io',
             'port' => '3306',
             'database' => 'u952834981_relax',
             'username' => 'u952834981_sho',
-            'password' => 'ylrzgahfvcyfjodq',
+            'password' => 'D|H8~G*#z4B',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
