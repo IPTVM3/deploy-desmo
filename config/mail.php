@@ -11,7 +11,7 @@ return [
     ],
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
     'username'   => 'iptv21m3u@gmail.com',
-    'password'   => 'qyqcxardyuddvwvi',
+    'password'   => 'ehdwmwzyskoskjcz',
     'sendmail'   => '/usr/sbin/sendmail -bs',
 
     'markdown' => [
