@@ -431,6 +431,10 @@ class GetewayController extends Controller
             "PAYPAL MAR-abdoboutou469" ,
             "AdG_eTD1emawYSxD1w33rEhkD84n1_zpPH92WTQ18-kawzCw9MHM4hk9cHBDn7JT2rZ1DilrYT47XR3b"
         ),
+        array(
+            "PAYPAL MAR-othmanmakram" ,
+            "AdI3vR0dWiXFiV7AmR_i7rMx5oKhjgBu_MFSr9VVC6B1Rs4p_QXuGus8dzG0ll43T6TY26N52FEnLJYY"
+        ),
        
   ); 
   
