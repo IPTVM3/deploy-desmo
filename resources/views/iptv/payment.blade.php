@@ -65,6 +65,7 @@
             #paypal-button-container {
                padding-top: 21px;
             }
+            margin: auto;
         }
         </style> 
   <!-- Google tag (gtag.js) -->
