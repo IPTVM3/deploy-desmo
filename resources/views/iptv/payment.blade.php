@@ -61,14 +61,13 @@
   width: 40%;
 }
 
-.paypal-button-container {
+.button-container {
     margin: auto !important;
 }
   /* Media query for desktop viewport */
   @media screen and (min-width: 400px) {
             #paypal-button-container {
                padding-top: 21px;
-               margin: auto !important;
                
             }
             
