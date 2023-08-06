@@ -2340,7 +2340,55 @@
 	  <!-- TUTO -->
 
 
+<!--Model Product-->
+@foreach($products as $product)
+<div  class="modal fade " id="product_view{{ $product->id }}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                <h3 class="modal-title"> 
+                    @if($product->band == 1)
+                    @lang('new.Test_Trial')
+                @else
+                 {{ $product->band }} @lang('iptv.mounth')  
+                @endif
+            
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span style="    top: -6px; left: -4px; ">&times;</span></button>
+            </h3>
+            </div>
 
+
+			<section id="trial" class="parallex-section parallax parallaxie img-size" style="background:white;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 style="    color: black !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.pack_sport_header') €69 </h2>
+                <p style="    color: black !important;"  class="parallex-para text-center text-white">@lang('new.pack_sport_body')  </p>
+                <br>
+                <a data-toggle="modal" data-target="#whatsapp_model_yy"    style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.view')</a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+ 
+ 
+<section id="trial" class="parallex-section parallax parallaxie img-size"  style="background-image: url(https://images.unsplash.com/photo-1551101674-b7fe1fe084ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-size: cover; background-repeat: no-repeat; ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <p class="parallex-para text-center text-white" style="color: black !important" ><span style="font: caption;"  >@lang('new.new_store_desc')</span> </p>
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 "  >@lang('new.new_store_header')  </h2>
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/181" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('iptv.purchase_now') - €99</a>
+         
+            </div>
+        </div>
+    </div>
+ 
+</section>
+ -->
+ 
 
  
 
