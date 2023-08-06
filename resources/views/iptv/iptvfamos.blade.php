@@ -2380,8 +2380,7 @@
             <div class="col-lg-12 text-center text-white">
                 <p class="parallex-para text-center text-white" style="color: black !important" ><span style="font: caption;"  >@lang('new.new_store_desc')</span> </p>
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 "  >@lang('new.new_store_header')  </h2>
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/181" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('iptv.purchase_now') - €99</a>
-         
+                <
             </div>
         </div>
     </div>
