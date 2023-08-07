@@ -2224,33 +2224,8 @@
   </div>
   <!-- end container --> 
 </section>
-   
 
-
-
-
-<section style="background-image: url(https://www.bobres.net/iptv_update/images/sport.jpg); background-size: cover; background-repeat: no-repeat; " class="parallex-section parallax parallaxie img-size" id="trial">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center text-white">
- 
-               
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.test_des') </h2>
-            
-                
-                <p class="parallex-para text-center text-white">@lang('new.test_why')   
-
-              
-                  <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a> </p>
-           
-                <br>
   
-       
-               <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('iptv.get_ur_trial') </h2>
-                <a data-toggle="modal" data-target="#whatsapp_model" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.just_click')</a>
-             
-             <p class="parallex-para text-center text-white">@lang('new.try_befor') </p>
-              </div></div></div></section>
 
 
 <style>
