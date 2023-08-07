@@ -2225,7 +2225,37 @@
   <!-- end container --> 
 </section>
 
+
+
+
+<!-- SPORT PACKAGE -->
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.sport_new_package')</h2>
+                <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_new_package_desc')</p>
+                <br>
+
+                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button') - 79 euros</a>
+            </div>
+        </div>
+    </div>
+
+</section>
   
+<style>
+    .cover-img::before {
+        content: "";
+        background-image: url({{ asset('iptv_update/images/sport.jpg') }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
 
 
 <style>
