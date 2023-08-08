@@ -1897,15 +1897,6 @@
                                         <a style="width: 100%;    border-radius: 50px 20px;" href="/payments/29.99/Premium Package - 1 Month IPTV Subscription"class="btn btn-warning  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Premuim - € 29.98</a>
              
                                         <a style="width: 100%;   margin-top: 3px; background:#24c1dd; color:black;  border-radius: 50px 20px;" href="/payments/18.99/basic Package - 1 Month IPTV Subscription" class="btn  btn-lg "><span class="glyphicon glyphicon-shopping-cart"></span> Basic - € 18.99</a>
-            
-                   
-
-
-
-
-                    
-
-
                
              
                   </div>
@@ -1914,6 +1905,9 @@
         </div>
     </div>
 </div>
+
+
+
 
 
 
@@ -2132,11 +2126,50 @@
 
 
 	 </div>
+</section>-->
+
+
+
+
+
+<!-- SPECIAL OFFERS -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 style="    color: black !important;font-size: 35px;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated font-weight-bold" >🔥 @lang('new.3free') 🔥</h2>
+            </div>
+        </div>
+    </div>
+
 </section>
 
--->
 
+<style>
 
+element.style {
+    font-size: 35px;
+    color: black !important;
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.custom-btn.green {
+    background: gold !important;
+    border: none;
+}
+.btn.btn-rounded {
+    border-radius: 50px;
+}
+.btn.btn-large {
+    /* font-size: 14px; */
+    padding: 9px 34px;
+    /* line-height: 25px; */
+}
+</style>
 
 <section class="pricing" id="MULTIPLEDEVICE">
 	<div class="container">
