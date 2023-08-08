@@ -2174,17 +2174,58 @@ element.style {
 
 
 <!-- SPORT PACKAGE -->
-<<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);" id="trial" class="parallex-section parallax parallaxie img-size cover-img">
+
+<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);  id=">
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
 <h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special 4K / FHD and PPV Events</h2>
+<div class="form-row text-center">
+<div class="col-md-4">
+<select id="package" class="form-control" name="package" style="font-weight: 800">
+<option disabled="">Choose Package Type</option>
+<option selected="" value="59">Premium</option>
+</select>
+</div>
+<div class="col-md-4">
+<select id="multidevicex" class="form-control" name="multidevicex" style="font-weight: 800">
+<option disabled="">Choose Number Of Devices ( Screens or Persons )</option>
+<option selected="" value="2">2 Devices</option>
+<option value="3">3 Devices</option>
+<option value="4">4 Devices</option>
+<option value="5">5 Devices</option>
+<option value="6">6 Devices</option>
+</select>
+</div>
+<div class="col-md-4">
+<select id="periods" class="form-control" name="periods" style="font-weight: 800;">
+<option disabled="">Choose The Period of Subscription</option>
+<option value="3">3 MONTH</option>
+<option value="6">6 MONTH</option>
+<option selected="" value="12">1 Year</option>
+</select>
+</div>
+</div>
 <br>
-<a href="" style="font-style: ; font-variant: normal; font-stretch: ; font-size: ; line-height: ; font-family: ; font-optical-sizing: ; font-kerning: ; font-feature-settings: ; font-variation-settings: ; font-weight: bold; color: black; background: gold !important; visibility: visible;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated">Get It Now! - 79 euros</a>
-</div>
-</div>
-</div>
-</section>
+<a style="height: 56px; 
+    line-height: 52px;
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    background: #8a39ee; font-weight: 700; border-radius: 56px; box-shadow: 0 20px 30px rgb(0 0 0 / 5%); border: 2px solid transparent; margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+						 
+		 
+	</div> </div>
+		<end row -->
+	   
+</section >
+
+<!--fin SPORT PACKAGE -->
+
+
+
+
+
 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-trial" style="margin-top: 1px; margin-bottom: 1px; background-image: none; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 174.647px;">
@@ -2245,62 +2286,8 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
  
 
-
-				<div  style=" background-color: #ffffff12;"  class="form-row text-center" >
-                    <div class="col-md-4"  >
-                        <select id="package" class="form-control" name="package" style="font-weight: 800">
-                            <option disabled>@lang('new.multidevice_option1')</option>
-                            <option selected value="59">@lang('iptv.prim')</option> 
-                            
-                        </select>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <select id="multidevicex" class="form-control" name="multidevicex" style="font-weight: 800">
-                            <option disabled>@lang('new.multidevice_option2')</option>
-                            <option selected value="2">2 @lang('new.device')</option>
-                            <option value="3">3 @lang('new.device')</option>
-                            <option value="4">4 @lang('new.device')</option>
-                            <option value="5">5 @lang('new.device')</option>
-                            <option value="6">6 @lang('new.device')</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <select id="periods" class="form-control" name="periods" style="font-weight: 800;">
-                            <option disabled>@lang('new.multidevice_option3')</option>
-                            <option value="3">3 @lang('iptv.mounth')</option>
-                            <option value="6">6 @lang('iptv.mounth')</option>
-                            <option selected value="12">1 @lang('iptv.yr')</option>
-                        </select>
-                    </div>
-
-                </div>
-				<br>
-				<br>
-				<br>
-
 			 
-				<a style="height: 56px; 
-    line-height: 52px;
-    padding: 0 40px;
-    display: inline-block;
-    color: #fff;
-    background: #8a39ee;
-    font-weight: 700;
-    border-radius: 56px;
-    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
-    border: 2px solid transparent;
-    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
-						 
-		 
-								</div>
-  
-		</div>
-		<end row -->
-	   
-
-
-	</section >
+				
 
 
 <section class="quote transition" id="reseller">
