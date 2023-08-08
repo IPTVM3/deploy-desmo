@@ -2211,6 +2211,27 @@ element.style {
 </div>
 </div>
 </div>
+<a style="height: 56px; 
+    line-height: 52px;
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    background: #8a39ee;
+    font-weight: 700;
+    border-radius: 56px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
+    border: 2px solid transparent;
+    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+						 
+		 
+								</div>
+  
+		</div>
+		<end row -->
+	   
+
+
+	</section >
 </section>
 
 
@@ -2296,27 +2317,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 				<br>
 
 			 
-				<a style="height: 56px; 
-    line-height: 52px;
-    padding: 0 40px;
-    display: inline-block;
-    color: #fff;
-    background: #8a39ee;
-    font-weight: 700;
-    border-radius: 56px;
-    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
-    border: 2px solid transparent;
-    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
-						 
-		 
-								</div>
-  
-		</div>
-		<end row -->
-	   
-
-
-	</section >
+	
 
 
 <section class="quote transition" id="reseller">
