@@ -2239,7 +2239,7 @@ element.style {
     position: absolute;
     top: 0px;
     right: 0px;
-    bottom: 0px;
+	bottom: 42px;
     left: 0px;
 }
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next ul {
