@@ -2176,7 +2176,7 @@ element.style {
 <!-- SPORT PACKAGE 
 
 <section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);   background-size: cover; background-repeat: no-repeat; ">-->
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-immg"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
@@ -2215,7 +2215,7 @@ element.style {
 </section>
 
 <style>
- .cover-img::before {
+ .cover-immg::before {
         content: "";
         background-image: url({{ asset('iptv_update/images/b3.jpg') }});
         background-size: cover;
