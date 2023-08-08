@@ -2175,7 +2175,7 @@ element.style {
 
 <!-- SPORT PACKAGE -->
 
-<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);  id=">
+<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);   background-size: cover; background-repeat: no-repeat; ">>
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
@@ -2239,7 +2239,7 @@ element.style {
     position: absolute;
     top: 0px;
     right: 0px;
-	bottom: 42px;
+    bottom: 0px;
     left: 0px;
 }
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next ul {
