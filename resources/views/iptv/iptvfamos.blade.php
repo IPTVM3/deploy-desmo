@@ -2173,10 +2173,10 @@ element.style {
 </style>
 
 
-<!-- SPORT PACKAGE 
+<!-- SPORT PACKAGE  -->
 
-<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);   background-size: cover; background-repeat: no-repeat; ">-->
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-immg"style="margin-top: 1px;margin-bottom: 1px;" >
+<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);   background-size: cover; background-repeat: no-repeat; bottom: 33px; ">
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
@@ -2214,10 +2214,12 @@ element.style {
 </div>
 </section>
 
+
+
+
 <style>
- .cover-immg::before {
+ .cover-img::before {
         content: "";
-        background-image: url({{ asset('iptv_update/images/b3.jpg') }});
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -2236,18 +2238,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 }
 </style>
 
-
-
 <!--fin SPORT PACKAGE -->
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2269,7 +2260,8 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
     </div>
 
 </section>
-<
+
+
 
 
 
