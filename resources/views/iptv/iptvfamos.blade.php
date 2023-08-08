@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> {{config('app.name')}}  | The Best IPTV Service Provider for 2022 | Channel list (2022)</title>
+	<title> {{config('app.name')}}  | The Best IPTV Service Provider for 2022 | Channel list (2023)</title>
 	<meta name="author" content="IPTVM3U">
 	 
 
@@ -11,7 +11,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <meta name="verification" content="349278a8fd82d8e1efbdd2873f9295" />
-    <title>IPTVM3U - The Best IPTV Service Provider for 2022 | Channel list (2022) </title>
+    <title>IPTVM3U - The Best IPTV Service Provider for 2022 | Channel list (2023) </title>
     <meta name="description" content="The best IPTV provider in 2022 !! Get Access to thousands of IPTV channels through one IPTV Subscription. iptvm3u.fr is the best premium IPTV subscription service provider in the market" />
     <meta name="keywords" content="best iptv provider for USA, best iptv deal, secure payment, iptv reseller, american channels, asian channels list, 
                                  european channels list, how to install iptv, channel list, arabic channels list, iptv subscription, holidays offer, better than netflix, iptv smarters, iptv box, iptv player,cobra,king 365,ott,m3u,mag,smart iptv,test,messi
@@ -2228,6 +2228,88 @@
 
 
 
+
+
+
+ 
+<section id="trial" class="parallex-section parallax parallaxie img-size" style="background-image: url(https://images.unsplash.com/photo-1551101674-b7fe1fe084ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); background-size: cover; background-repeat: no-repeat; ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+ 
+               
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.test_des') </h2>
+            
+                
+                <p class="parallex-para text-center text-white">@lang('new.test_why')   
+
+              
+                  <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a> </p>
+           
+                <br>
+  
+       
+               <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('iptv.get_ur_trial') </h2>
+                <a  data-toggle="modal" data-target="#whatsapp_model" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.just_click')</a>
+             
+             <p class="parallex-para text-center text-white">@lang('new.try_befor') </p>
+              
+                <a href="https://www.bobres.com/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">1 @lang('new.MONTH') Test - {{ $month[0]->price_after}} euro</a>
+     
+ 
+       <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.few_hours_trial_test_header') </h2>
+       <p class="parallex-para text-center text-white">@lang('new.test_des')   <br>
+        
+  
+         </p> 
+          
+            <br>     
+       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>  
+        <a href="{{route('whatsapp.contact')}}" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn')</a> 
+       
+
+
+
+        <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('new.test_one_month')   </h2>
+              
+        <p class="parallex-para text-center text-white">@lang('new.test_why')   
+
+              <a href="#" data-toggle="modal" data-target="#testmoremodel" style="color: #47a2ae;">@lang('new.test_more')</a></a> 
+        </p>
+
+       <br>
+       <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/161" style="background:rgb(36, 193, 221) !important" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>  
+     
+              
+        
+         </div>
+        </div>
+    </div> 
+    -->
+    <!-- end container-->
+    <!-- Modal -->
+<div class="modal fade" id="testmoremodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header"> 
+            <h5 class="modal-title">@lang('new.test_why')</h5>
+        
+        </div>
+        <div class="modal-body"> 
+            @lang('new.test_body') <br> 
+   
+        </div> 
+        <div class="modal-footer">
+            <button style="width: 100%;   margin-top: 3px;  border-radius: 50px 20px;"  type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+          </div>
+    </div>
+  </div>
+</section>
+
+<!--End Parallax Section--> 
+
+
 <!-- SPORT PACKAGE -->
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
     <div class="container-fluid">
@@ -2237,7 +2319,7 @@
                 <p style="    color: white !important;font-size:19px !important;font-weight: bold;"  class="parallex-para text-center text-white">@lang('new.sport_new_package_desc')</p>
                 <br>
 
-                <a href="https://www.bobres.co/{{ app()->getLocale() }}/payments/211"   style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button') - 79 euros</a>
+                <a href="https://www.bobres.co/ style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated" style="visibility: visible; animation-name: fadeInUp;">@lang('new.sport_package_button') - 79 euros</a>
             </div>
         </div>
     </div>
