@@ -2175,27 +2175,32 @@ element.style {
 
 <!-- SPORT PACKAGE  -->
 
-<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);   background-size: cover; background-repeat: no-repeat; bottom: 33px; ">
+<section style="
+    background-image: linear-gradient(
+    to bottom,
+    rgb(255 255 0 / 59%),
+    rgb(0 164 255 / 2%)
+  ), url(https://www.mystarr.de/iptv_update/images/b3.jpg);  background-size: cover; background-repeat: no-repeat; bottom: 33px; ">
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
-<h2 style="    color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special 4K / FHD and PPV Events</h2>
+<h2 style="    color: #000 !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special 4K / FHD and PPV Events</h2>
 <div class="form-row text-center">
 <div class="col-md-4">
 <select id="package" class="form-control" name="package" style="font-weight: 800">
-<option disabled="">Choose Package Type</option>
-<option selected="" value="59">Premium</option>
+<option style=" text-align: center; color: #fff; " disabled="">Choose Package Type</option>
+<option style=" text-align: center; color: #fff; "  selected="" value="59">Premium</option>
 </select>
 </div>
 <div class="col-md-4">
-<select id="multidevicex" class="form-control" name="multidevicex" style="font-weight: 800">
-<option disabled="">Choose Number Of Devices ( Screens or Persons )</option>
-<option selected="" value="2">2 Devices</option>
-<option value="3">3 Devices</option>
-<option value="4">4 Devices</option>
-<option value="5">5 Devices</option>
-<option value="6">6 Devices</option>
+<select id="multidevicex" class="form-control" name="multidevicex" style=" background-color: #ffffff36; font-weight: 800; ">
+<option style=" text-align: center; color: #fff; "  disabled="">Choose Number Of Devices ( Screens or Persons )</option>
+<option style=" text-align: center; color: #fff;"  selected="" value="2">2 Devices</option>
+<option style=" text-align: center; color: #fff; "  value="3">3 Devices</option>
+<option style=" text-align: center; color: #fff;"  value="4">4 Devices</option>
+<option style=" text-align: center; color: #fff;"  value="5">5 Devices</option>
+<option style=" text-align: center; color: #fff;"  value="6">6 Devices</option>
 </select>
 </div>
 <div class="col-md-4">
@@ -2239,8 +2244,6 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 </style>
 
 <!--fin SPORT PACKAGE -->
-
-
 
 
 
