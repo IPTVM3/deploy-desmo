@@ -2287,25 +2287,7 @@
     </div> 
     -->
     <!-- end container-->
-    <!-- Modal -->
-<div class="modal fade" id="testmoremodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header"> 
-            <h5 class="modal-title">@lang('new.test_why')</h5>
-        
-        </div>
-        <div class="modal-body"> 
-            @lang('new.test_body') <br> 
-   
-        </div> 
-        <div class="modal-footer">
-            <button style="width: 100%;   margin-top: 3px;  border-radius: 50px 20px;"  type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-          </div>
-    </div>
-  </div>
-</section>
+    
 
 <!--End Parallax Section--> 
 
