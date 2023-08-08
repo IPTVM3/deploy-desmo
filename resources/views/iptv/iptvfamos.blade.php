@@ -2173,9 +2173,10 @@ element.style {
 </style>
 
 
-<!-- SPORT PACKAGE -->
+<!-- SPORT PACKAGE 
 
-<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);   background-size: cover; background-repeat: no-repeat; ">>
+<section style=" background-image: url(https://www.mystarr.de/iptv_update/images/b3.jpg);   background-size: cover; background-repeat: no-repeat; ">-->
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
@@ -2213,7 +2214,44 @@ element.style {
 </div>
 </section>
 
+<style>
+ .cover-img::before {
+        content: "";
+        background-image: url({{ asset('iptv_update/images/b3.jpg') }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
+a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+</style>
+
+
+
 <!--fin SPORT PACKAGE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-trial" style="margin-top: 1px; margin-bottom: 1px; background-image: none; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 174.647px;">
@@ -2231,28 +2269,7 @@ element.style {
     </div>
 
 </section>
-<style>
-	cover-img::before {
-    content: "";
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}
-a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-</style>
-
-
+<
 
 
 
