@@ -2279,10 +2279,11 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style="  top: 6px;
-    right: 4px; margin-block: -2px 2px; background-image: linear-gradient(
+    right: 4px;     margin-top: -33px;  margin-bottom: -46px;
+} background-image: linear-gradient(
     to bottom,
 	rgb(255 255 0 / 0%), rgb(234 240 241 / 7%)
-  ), url(https://www.mystarr.de/iptv_update/images/new.jpg);  margin-top: 1px;margin-bottom: 1px;"  >
+  ), url(https://www.mystarr.de/iptv_update/images/sport.jpg);  margin-top: 1px;margin-bottom: 1px;"  >
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
