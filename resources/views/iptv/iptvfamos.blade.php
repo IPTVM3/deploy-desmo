@@ -2181,7 +2181,6 @@ element.style {
     to bottom,
     rgb(255 255 0 / 29%), rgb(234 240 241 / 7%)
   ), url(https://www.mystarr.de/iptv_update/images/b3.jpg);  background-size: cover; background-repeat: no-repeat; bottom: 33px; ">
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
@@ -2211,22 +2210,14 @@ element.style {
 <option style=" text-align: center; color: #fff; " selected="" value="12">1 Year</option>
 </select>
 </div>
-</div>
+</div>   </div>
+  </div>
+
 <br>
 <br>
-
-
-						 
-			 <a target="_blank" id="pricevalueMM" href="/contact" style=" margin: 13px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
-
-								</div>
-  
-		</div>
-		<end row>
-	   
-
-
-	</section > 
+	 <a target="_blank" id="pricevalueMM" href="/contact" style=" margin: 13px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+	</div></div>
+		<end row>	</section > 
 
 
 <style>
