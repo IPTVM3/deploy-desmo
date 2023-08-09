@@ -2260,7 +2260,6 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
  .cover-img-reselling::before {
         content: "";
-        background-image: url(https://www.oec.oil.gov.iq/uploads/files/planning.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -2316,7 +2315,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-
+<!-- netflix TEST 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-trial" style="margin-top: 1px; margin-bottom: 1px; background-image: none; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 174.647px;">
     <div class="container-fluid">
