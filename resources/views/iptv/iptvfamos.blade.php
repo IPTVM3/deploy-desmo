@@ -2230,7 +2230,7 @@ element.style {
 		</div>
 		<end row>
 	   
- 
+
 
 	</section >  </section>
 
@@ -2283,7 +2283,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 } background-image: linear-gradient(
     to bottom,
 	rgb(255 255 0 / 0%), rgb(234 240 241 / 7%)
-  ), url(https://www.mystarr.de/iptv_update/images/sport.jpg);  margin-top: 1px;margin-bottom: 1px;"  >
+  ), url(https://www.mystarr.de/iptv_update/images/new.jpg);  margin-top: 1px;margin-bottom: 1px;"  >
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center text-white">
