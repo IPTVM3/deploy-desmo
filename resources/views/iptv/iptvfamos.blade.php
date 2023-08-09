@@ -2130,7 +2130,7 @@
 
 
 
-
+<br><br>
 
 <!-- SPECIAL OFFERS -->
 
@@ -2171,7 +2171,7 @@ element.style {
     /* line-height: 25px; */
 }
 </style>
-
+<br><br>
 
 <!-- SPORT PACKAGE  -->
 
@@ -2184,7 +2184,7 @@ element.style {
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
-<h2 style="    color: #000 !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special 4K / FHD and PPV Events</h2>
+<h2 style="    color: #000 !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special 4K / FHD and PPV Events</h2><br>
 <div class="form-row text-center">
 <div class="col-md-4">
 <select id="package" class="form-control" name="package" style="font-weight: 800">
@@ -2212,10 +2212,9 @@ element.style {
 </div>
 </div>
 <br>
-<br><br>
+<br>
 
-			 
-				<a style="height: 56px; 
+	<a style="height: 56px; 
     line-height: 52px;
     padding: 0 40px;
     display: inline-block;
