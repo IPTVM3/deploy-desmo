@@ -2186,10 +2186,11 @@ element.style {
     to bottom,
     rgb(255 255 0 / 29%), rgb(234 240 241 / 7%)
   ), url(https://www.mystarr.de/iptv_update/images/b3.jpg);  background-size: cover; background-repeat: no-repeat; bottom: 33px; ">
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
-<h2 style=" color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('amos.multidevice_header') </h2> <br>
+<h2 style=" color: #gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('amos.multidevice_header') </h2> <br>
 <div class="form-row text-center">
 <div class="col-md-4">
 <select id="package" class="form-control" name="package" style=" background-color: #ffffff54; font-weight: 800">
@@ -2204,7 +2205,7 @@ element.style {
 <option style=" text-align: center; color: #fff; "  value="3">3 Devices</option>
 <option style=" text-align: center; color: #fff;"  value="4">4 Devices</option>
 <option style=" text-align: center; color: #fff;"  value="5">5 Devices</option>
-<option style=" text-align: center; color: ##fff;"  value="6">6 Devices</option>
+<option style=" text-align: center; color: #fff;"  value="6">6 Devices</option>
 </select>
 </div>
 <div class="col-md-4">
@@ -2220,7 +2221,7 @@ element.style {
 
 <br>
 <br>
-<a target="_blank" id="pricevalueMM" href="/contact" style=" background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+<a target="_blank" id="pricevalueMM" href="/contact" style= "background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
 
 </div></div>
 		<end row>	</section> </section> 
@@ -2263,7 +2264,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-<!-- RESELLING TEST -->
+<!-- RESELLING TEST 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style=" background-image: linear-gradient(
     to bottom,
@@ -2290,7 +2291,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-
+-->
 
 
 
