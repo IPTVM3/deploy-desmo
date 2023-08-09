@@ -2214,19 +2214,10 @@ element.style {
 <br>
 <br>
 
-		<a style="height: 56px; 
-    line-height: 52px;
-    padding: 0 40px;
-    display: inline-block;
-    color: #fff;
-    background: #8a39ee;
-    font-weight: 700;
-    border-radius: 56px;
-    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
-    border: 2px solid transparent;
-    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+
 						 
-		 
+			 <a target="_blank" id="pricevalueMM" href="/contact" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+
 								</div>
   
 		</div>
