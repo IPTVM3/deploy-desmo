@@ -2184,7 +2184,7 @@ element.style {
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
-<h2 style="    color: #gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('amos.multidevice_header') /h2><br>
+<h2 style="    color: #gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('amos.multidevice_header') <br>
 <div class="form-row text-center">
 <div class="col-md-4">
 <select id="package" class="form-control" name="package" style=" background-color: #ffffff54; font-weight: 800">
@@ -2230,7 +2230,7 @@ element.style {
 								</div>
   
 		</div>
-		<end row
+		<end row>
 	   
 
 
