@@ -2216,7 +2216,7 @@ element.style {
 
 
 						 
-			 <a target="_blank" id="pricevalueMM" href="/contact" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.few_hours_trial_test_btn1') {{ $month[0]->price_after}} euro</a>
+			 <a target="_blank" id="pricevalueMM" href="/contact" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
 
 								</div>
   
@@ -2226,7 +2226,6 @@ element.style {
 
 
 	</section > 
-
 
 
 <style>
