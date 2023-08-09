@@ -2173,7 +2173,7 @@ element.style {
 </style>
 <br><br>
 
-<!-- SPORT PACKAGE  -->
+<!-- SPORT PACKAGE  
 
 <section style="
     background-image: linear-gradient(
@@ -2230,11 +2230,11 @@ element.style {
 								</div>
   
 		</div>
-		<end row -->
+		<end row
 	   
 
 
-	</section >
+	</section > -->
 
 
 
@@ -2274,7 +2274,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-<!-- RESELLING TEST -->
+<!-- RESELLING TEST 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style=" background-image: linear-gradient(
     to bottom,
@@ -2301,7 +2301,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-
+-->
 
 
 
