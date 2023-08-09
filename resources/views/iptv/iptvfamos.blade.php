@@ -2173,7 +2173,7 @@ element.style {
 </style>
 <br><br>
 
-<!-- SPORT PACKAGE  
+<!-- SPORT PACKAGE  -->
 
 <section style="
     background-image: linear-gradient(
@@ -2214,12 +2214,12 @@ element.style {
 <br>
 <br>
 
-	<a style="height: 45px; 
+		<a style="height: 56px; 
     line-height: 52px;
     padding: 0 40px;
     display: inline-block;
     color: #fff;
-    background: #ffd700;
+    background: #8a39ee;
     font-weight: 700;
     border-radius: 56px;
     box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
@@ -2234,7 +2234,7 @@ element.style {
 	   
 
 
-	</section > -->
+	</section > 
 
 
 
