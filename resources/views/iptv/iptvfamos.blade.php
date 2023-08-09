@@ -2184,7 +2184,7 @@ element.style {
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
-<h2 style="    color: #000 !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special 4K / FHD and PPV Events</h2><br>
+<h2 style="    color: #gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('amos.multidevice_header') /h2><br>
 <div class="form-row text-center">
 <div class="col-md-4">
 <select id="package" class="form-control" name="package" style=" background-color: #ffffff54; font-weight: 800">
@@ -2288,7 +2288,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
                 Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
                     </p>
                 <br>
-                <a href="/resseling" style=" margin: 7px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">INFO</a>
+                <a href="/resseling" style=" margin: 7px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:#fff;">INFO</a>
 
             </div>
         </div>
