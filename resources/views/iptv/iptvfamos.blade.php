@@ -2214,12 +2214,12 @@ element.style {
 <br>
 <br>
 
-	<a style="height: 56px; 
+	<a style="height: 45px; 
     line-height: 52px;
     padding: 0 40px;
     display: inline-block;
     color: #fff;
-    background: #8a39ee;
+    background: #ffd700;
     font-weight: 700;
     border-radius: 56px;
     box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
@@ -2288,7 +2288,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
                 Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
                     </p>
                 <br>
-                <a href="/resseling" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">INFO</a>
+                <a href="/resseling" style=" margin: 7px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">INFO</a>
 
             </div>
         </div>
