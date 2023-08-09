@@ -2211,14 +2211,31 @@ element.style {
 </select>
 </div>
 </div>
-<br>href="/contact"
+<br>
+<br><br>
 
-<a  target="_blank" id="pricevalueMM" href="/contact" style="font-style: ; font-variant: normal; font-stretch: ; font-size: ; line-height: ; font-family: ; font-optical-sizing: ; font-kerning: ; font-feature-settings: ; font-variation-settings: ; font-weight: bold; color: black; background: gold !important; visibility: visible;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated">Get It Now! - 79 euros</a>
-</div>
-</div>
-</div>
-</section>
+			 
+				<a style="height: 56px; 
+    line-height: 52px;
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    background: #8a39ee;
+    font-weight: 700;
+    border-radius: 56px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 5%);
+    border: 2px solid transparent;
+    margin: 12px 0;" target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+						 
+		 
+								</div>
+  
+		</div>
+		<end row -->
+	   
 
+
+	</section >
 
 
 
