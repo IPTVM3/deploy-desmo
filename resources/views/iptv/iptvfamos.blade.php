@@ -2187,13 +2187,13 @@ element.style {
 <h2 style="    color: #000 !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">Special 4K / FHD and PPV Events</h2><br>
 <div class="form-row text-center">
 <div class="col-md-4">
-<select id="package" class="form-control" name="package" style="font-weight: 800">
+<select id="package" class="form-control" name="package" style=" background-color: #ffffff54; font-weight: 800">
 <option style=" text-align: center; color: #fff; " disabled="">Choose Package Type</option>
 <option style=" text-align: center; color: #fff; "  selected="" value="59">Premium</option>
 </select>
 </div>
 <div class="col-md-4">
-<select id="multidevicex" class="form-control" name="multidevicex" style=" background-color: #ffffff36; font-weight: 800; ">
+<select id="multidevicex" class="form-control" name="multidevicex" style=" background-color: #ffffff54; font-weight: 800; ">
 <option style=" text-align: center; color: #fff; "  disabled="">Choose Number Of Devices ( Screens or Persons )</option>
 <option style=" text-align: center; color: #fff;"  selected="" value="2">2 Devices</option>
 <option style=" text-align: center; color: #fff; "  value="3">3 Devices</option>
@@ -2203,11 +2203,11 @@ element.style {
 </select>
 </div>
 <div class="col-md-4">
-<select id="periods" class="form-control" name="periods" style="font-weight: 800;">
+<select id="periods" class="form-control" name="periods" style=" background-color: #ffffff54; font-weight: 800;">
 <option disabled="">Choose The Period of Subscription</option>
-<option value="3">3 MONTH</option>
-<option value="6">6 MONTH</option>
-<option selected="" value="12">1 Year</option>
+<option style=" text-align: center; color: #fff; " value="3">3 MONTH</option>
+<option style=" text-align: center; color: #fff; " value="6">6 MONTH</option>
+<option style=" text-align: center; color: #fff; " selected="" value="12">1 Year</option>
 </select>
 </div>
 </div>
