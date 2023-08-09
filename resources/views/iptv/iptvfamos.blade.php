@@ -2172,7 +2172,7 @@ element.style {
 }
 </style>
 
-<br><br>
+
 <!-- SPORT PACKAGE  -->
 
 <section style="
@@ -2180,6 +2180,7 @@ element.style {
     to bottom,
     rgb(255 255 0 / 29%), rgb(234 240 241 / 7%)
   ), url(https://www.mystarr.de/iptv_update/images/b3.jpg);  background-size: cover; background-repeat: no-repeat; bottom: 33px; ">
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-12 text-center text-white">
@@ -2210,16 +2211,15 @@ element.style {
 </select>
 </div>
 </div>
-<br>
-target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
-<a  style="font-style: ; font-variant: normal; font-stretch: ; font-size: ; line-height: ; font-family: ; font-optical-sizing: ; font-kerning: ; font-feature-settings: ; font-variation-settings: ; font-weight: bold; color: black; background: gold !important; visibility: visible;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated"
- target="_blank" id="pricevalueMM" href="/contact">@lang('new.multidevice_desc_button')>Get It Now! </a>
+<br>href="/contact"
+
+<a  target="_blank" id="pricevalueMM" href="/contact" style="font-style: ; font-variant: normal; font-stretch: ; font-size: ; line-height: ; font-family: ; font-optical-sizing: ; font-kerning: ; font-feature-settings: ; font-variation-settings: ; font-weight: bold; color: black; background: gold !important; visibility: visible;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated">Get It Now! - 79 euros</a>
 </div>
 </div>
 </div>
 </section>
 
-<br>
+
 
 
 <style>
@@ -2265,13 +2265,13 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 </section>
 
 
--->
 
 
 
 
 
-<!--
+
+
 
 
 
@@ -2320,9 +2320,8 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 				<br>
 				<br>
 
-			 
-				-->
-
+			 -->
+				
 
 
 <section class="quote transition" id="reseller">
