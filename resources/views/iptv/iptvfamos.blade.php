@@ -2257,9 +2257,60 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 *, ::after, ::before {
     box-sizing: border-box;
 }
+
+.cover-img-reselling::before {
+        content: "";
+        background-image: url(https://www.oec.oil.gov.iq/uploads/files/planning.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px; 
+    }
 </style>
 
-<!--fin SPORT PACKAGE 
+<!--fin SPORT PACKAGE -->
+
+
+
+<!-- RESELLING TEST -->
+
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style="margin-top: 1px;margin-bottom: 1px;"  >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >BECOME AN IPTV RESELLER</h2>
+                <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
+                Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
+                    </p>
+                <br>
+                <a href="/resseling" style="background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">INFO</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2278,7 +2329,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
         </div>
     </div>
 
-</section>
+</section>-->
 
 
 
@@ -2288,56 +2339,6 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-
-
-
-<section class="pricing" id="MULTIPLEDEVICE">
-	<div class="container">
-		<div class="row">
-		<div class="col-xs-12 text-center">
-        <h6>@lang('amos.multidevice_desc')</h6>
-        <h2>@lang('amos.multidevice_header')  </h2>
-
-	
-
- 
-
-
-				<div  style=" background-color: #ffffff12;"  class="form-row text-center" >
-                    <div class="col-md-4"  >
-                        <select id="package" class="form-control" name="package" style="font-weight: 800">
-                            <option disabled>@lang('new.multidevice_option1')</option>
-                            <option selected value="59">@lang('iptv.prim')</option> 
-                            
-                        </select>
-                    </div>
-                
-                    <div class="col-md-4">
-                        <select id="multidevicex" class="form-control" name="multidevicex" style="font-weight: 800">
-                            <option disabled>@lang('new.multidevice_option2')</option>
-                            <option selected value="2">2 @lang('new.device')</option>
-                            <option value="3">3 @lang('new.device')</option>
-                            <option value="4">4 @lang('new.device')</option>
-                            <option value="5">5 @lang('new.device')</option>
-                            <option value="6">6 @lang('new.device')</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <select id="periods" class="form-control" name="periods" style="font-weight: 800;">
-                            <option disabled>@lang('new.multidevice_option3')</option>
-                            <option value="3">3 @lang('iptv.mounth')</option>
-                            <option value="6">6 @lang('iptv.mounth')</option>
-                            <option selected value="12">1 @lang('iptv.yr')</option>
-                        </select>
-                    </div>
-
-                </div>
-				<br>
-				<br>
-				<br>
-
-			 -->
-				
 
 
 <section class="quote transition" id="reseller">
