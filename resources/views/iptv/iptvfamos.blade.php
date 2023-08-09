@@ -2211,14 +2211,23 @@ element.style {
 <option style=" text-align: center; color: #fff; " selected="" value="12">1 Year</option>
 </select>
 </div>
-</div>   </div>
-  </div>
+</div>
+<br>
+<br>
 
-<br>
-<br>
-	 <a target="_blank" id="pricevalueMM" href="/contact" style=" margin: 13px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
-	</div></div>
-		<end row>	</section> </section> 
+
+						 
+			 <a target="_blank" id="pricevalueMM" href="/contact" style=" margin: 13px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:black;">@lang('new.multidevice_desc_button') - <span id="pricevalue" style="color:orange;"></span> </a>
+
+								</div>
+  
+		</div>
+		<end row>
+	   
+
+
+	</section > 
+
 
 <style>
  .cover-img::before {
