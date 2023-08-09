@@ -2339,28 +2339,20 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-
+ <!-- end video-bg 
 
 
 
 <section class="quote transition" id="reseller">
  <div class="video-bg">
  	<video src="videos/video.mp4" muted="" loop="" autoplay=""></video>
- </div>
- <!-- end video-bg -->
-  <div class="container">
+ </div>  <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <h6 style="color:black;">@lang('new.sport_new_package')</h6>
         <h2 style="color:black;">@lang('new.sport_new_package_desc')</h2>
         <a href="/payments/79.99/Sport Package - 1 Year IPTV Subscription">@lang('new.sport_package_button') - 79 euros</a> </div>
-      <!-- end col-12 -->  
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-</section>
-
+-->
 
 
 
