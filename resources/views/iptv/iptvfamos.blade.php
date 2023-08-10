@@ -2132,7 +2132,7 @@
 
 <br><br>
 
-<!-- SPECIAL OFFERS 
+<!-- SPECIAL OFFERS -->
 
 <section id="trial" class="parallex-section parallax parallaxie img-size" >
     <div class="container-fluid">
@@ -2148,13 +2148,7 @@
 
 <style>
 
-element.style {
-	margin-block: 66px;
-    font-size: 35px;
-    color: black !important;
-    visibility: visible;
-    animation-name: fadeInUp;
-}
+
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
@@ -2178,10 +2172,9 @@ element.style {
 
 
 
-<!-- SPORT PACKAGE 
+<!-- SPORT PACKAGE  -->
 
-<section style="margin-block: -2px 2px; top: 6px;
-    right: 4px;
+<section style="margin-block: -2px px; 
     writing-mode: horizontal-tb;
     background-image: linear-gradient(
     to bottom,
@@ -2275,14 +2268,11 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-<!-- RESELLING TEST 
+<!-- RESELLING TEST -->
 
 
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style=" margin-block: -2px 34px; top: 6px;
-    right: 4px;
-    writing-mode: horizontal-tb;
-
-} background-image: linear-gradient(
+<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style="  top: 6px;
+    right: 4px; margin-block: -2px 2px; background-image: linear-gradient(
     to bottom,
 	rgb(255 255 0 / 0%), rgb(234 240 241 / 7%)
   ), url(https://www.mystarr.de/iptv_update/images/sport.jpg);  margin-top: 1px;margin-bottom: 1px;"  >
@@ -2301,10 +2291,6 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
     </div>
 
 </section>
-
-
-
--->
 
 
 
