@@ -1468,10 +1468,10 @@
 	
 	<li><i class="fa fa-check text-capitalize" aria-hidden="true"></i>@lang('amos.prop_6')</li> 
 
-
+	
 </ul>					</div>
 								<div class="pricingTable-signup">
-                <a data-toggle="modal" data-target="#product_view12">PURCHASE NOW</a>
+                <a data-toggle="modal" data-target="#product_view12">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div>
@@ -1502,7 +1502,7 @@
 			
 								</div>
 								<div class="pricingTable-signup">
-                <a data-toggle="modal" data-target="#product_view6">PURCHASE NOW</a>
+                <a data-toggle="modal" data-target="#product_view6">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div>
@@ -1532,7 +1532,7 @@
 </ul>
 								</div>
 								<div class="pricingTable-signup">
-                <a data-toggle="modal" data-target="#product_view3">PURCHASE NOW</a>
+                <a data-toggle="modal" data-target="#product_view3">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div>
@@ -1561,7 +1561,7 @@
 </ul>
 								</div>
 								<div class="pricingTable-signup">
-                <a data-toggle="modal" data-target="#product_view1">PURCHASE NOW</a>
+                <a data-toggle="modal" data-target="#product_view1">@lang('amos.buy_now')</a>
 								</div>
 							</div>
 						</div>
@@ -2283,7 +2283,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 				@lang('amos.Start_making')
                     </p>
                 <br>
-                <a href="/resseling" style=" margin: 7px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:#fff;">INFO</a>
+                <a href="/resseling" style=" margin: 7px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:#fff;">@lang('amos.info')</a>
 
             </div>
         </div>

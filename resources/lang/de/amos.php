@@ -142,8 +142,8 @@ return  [
    'reviews' => 'Bewertungen',
    'plus_one' => '+ 1 Jahr IPTV-Abonnement', 
    'twodevices' => 'Zwei',
-    'onedevice' => 'Standard'
-    ,
+    'onedevice' => 'Standard' ,
+     'info'=>' Weitere Informationen',
     'reseller_headerdescription' => 'Sie können in die iptv-Geschäftswelt einsteigen, indem Sie ein Reseller-Panel kaufen. Im dedizierten iptvamos-Bereich haben Sie verschiedene Funktionen. ',
     'number personne '=>'Wählen Sie die Anzahl der Geräte ( Bildschirme oder Personen )',
     'type'=>' Wählen Sie den Pakettyp',
