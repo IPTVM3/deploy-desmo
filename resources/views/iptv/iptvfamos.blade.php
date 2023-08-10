@@ -2180,7 +2180,7 @@
     to bottom,
 	rgb(255 255 0 / 0%), rgb(234 240 241 / 7%)
   ), url(https://www.mystarr.de/iptv_update/images/b3.jpg);  background-size: cover; background-repeat: no-repeat; bottom: 33px; ">
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
+
 <div class="container-fluid">
 <div class="row">
 <div class=" text-center text-white">
@@ -2225,7 +2225,7 @@
 	   
 
 
-	</section >  </section>
+	</section > 
 
 
 
@@ -2271,7 +2271,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 <!-- RESELLING TEST -->
 
 
-<section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style="  top: 6px;
+<section style="  top: 6px;
     right: 4px; margin-block: -2px 2px; background-image: linear-gradient(
     to bottom,
 	rgb(255 255 0 / 0%), rgb(234 240 241 / 7%)
