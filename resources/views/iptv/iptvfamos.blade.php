@@ -2132,7 +2132,7 @@
 
 <br><br>
 
-<!-- SPECIAL OFFERS -->
+<!-- SPECIAL OFFERS 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size" >
     <div class="container-fluid">
@@ -2178,7 +2178,7 @@ element.style {
 
 
 
-<!-- SPORT PACKAGE  -->
+<!-- SPORT PACKAGE 
 
 <section style="margin-block: -2px 2px; top: 6px;
     right: 4px;
@@ -2275,7 +2275,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-<!-- RESELLING TEST -->
+<!-- RESELLING TEST 
 
 
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img-reselling" style=" margin-block: -2px 34px; top: 6px;
@@ -2304,7 +2304,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
 
 
 
-
+-->
 
 
 
