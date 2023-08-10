@@ -2171,7 +2171,6 @@
 
 
 
-
 <!-- SPORT PACKAGE  -->
 
 <section style="margin-block: -2px px; 
@@ -2188,26 +2187,26 @@
 <div class="form-row text-center">
 <div class="col-md-4">
 <select id="package" class="form-control" name="package" style=" background-color: #ffffff54; font-weight: 800">
-<option style=" text-align: center; color: #fff; " disabled="">Choose Package Type</option>
+<option style=" text-align: center; color: #fff; " disabled="">@lang('amos.type') </option>
 <option style=" text-align: center; color: #fff; "  selected="" value="59">Premium</option>
 </select>
 </div>
 <div class="col-md-4">
 <select id="multidevicex" class="form-control" name="multidevicex" style=" background-color: #ffffff54; font-weight: 800; ">
-<option style=" text-align: center; color: #fff; "  disabled="">Choose Number Of Devices ( Screens or Persons )</option>
-<option style=" text-align: center; color: #fff;"  selected="" value="2">2 Devices</option>
-<option style=" text-align: center; color: #fff; "  value="3">3 Devices</option>
-<option style=" text-align: center; color: #fff;"  value="4">4 Devices</option>
-<option style=" text-align: center; color: #fff;"  value="5">5 Devices</option>
-<option style=" text-align: center; color: #fff;"  value="6">6 Devices</option>
+<option style=" text-align: center; color: #fff; "  disabled="">@lang('amos.number_personne')</option>
+<option style=" text-align: center; color: #fff;"  selected="" value="2">2 @lang('amos.devices') </option>
+<option style=" text-align: center; color: #fff; "  value="3">3 @lang('amos.devices') </option>
+<option style=" text-align: center; color: #fff;"  value="4">4 @lang('amos.devices') </option>
+<option style=" text-align: center; color: #fff;"  value="5">5 @lang('amos.devices') </option>
+<option style=" text-align: center; color: #fff;"  value="6">6 @lang('amos.devices') </option>
 </select>
 </div>
 <div class="col-md-4">
 <select id="periods" class="form-control" name="periods" style=" background-color: #ffffff54; font-weight: 800;">
 <option disabled="">Choose The Period of Subscription</option>
-<option style=" text-align: center; color: #fff; " value="3">3 MONTH</option>
-<option style=" text-align: center; color: #fff; " value="6">6 MONTH</option>
-<option style=" text-align: center; color: #fff; " selected="" value="12">1 Year</option>
+<option style=" text-align: center; color: #fff; " value="3">3 @lang('amos.months') </option>
+<option style=" text-align: center; color: #fff; " value="6">6 @lang('amos.months') </option>
+<option style=" text-align: center; color: #fff; " selected="" value="12">1 @lang('amos.year')</option>
 </select>
 </div>
 </div>
@@ -2279,9 +2278,9 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
     <div class="container-fluid">
         <div class="row">
             <div class=" text-center text-white">
-                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >BECOME AN IPTV RESELLER</h2>
+                <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >@lang('amos.reseller_header')</h2>
                 <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
-                Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
+				@lang('amos.Start_making')
                     </p>
                 <br>
                 <a href="/resseling" style=" margin: 7px; background:gold !important;FONT:caption;font-weight: bold;;color:black;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated animated" style="visibility: visible; animation-name: fadeInUp;color:#fff;">INFO</a>

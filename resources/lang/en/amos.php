@@ -184,6 +184,10 @@ return [
    'twodevices'=>'Two devices',
    'onedevice'=>'Standard',
    'legal'=>'Legal',
+   'number personne '=>'Choose Number Of Devices ( Screens or Persons )',
+   'type'=>' Choose Package Type',
+   'Start_making'=>' Verdienen Sie jetzt Geld mit dem IPTV-Reseller-Programm, der besten Wahl für Sie, um Ihren Lebensstil noch heute zu ändern. Holen Sie sich Ihr eigenes Panel zum günstigen Preis',
+
 
 
    'refundpolyc'=>'<div class="vc_tta-panel-body" style="">

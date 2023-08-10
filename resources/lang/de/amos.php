@@ -145,7 +145,10 @@ return  [
     'onedevice' => 'Standard'
     ,
     'reseller_headerdescription' => 'Sie können in die iptv-Geschäftswelt einsteigen, indem Sie ein Reseller-Panel kaufen. Im dedizierten iptvamos-Bereich haben Sie verschiedene Funktionen. ',
-   
+    'number personne '=>'Wählen Sie die Anzahl der Geräte ( Bildschirme oder Personen )',
+    'type'=>' Wählen Sie den Pakettyp',
+    'Start_making'=>' Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price',
+
    
    
     'reseling_header' => 'Wählen Sie Ihr Guthaben hinzufügen',
