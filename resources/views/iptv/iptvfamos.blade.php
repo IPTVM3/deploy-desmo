@@ -2137,7 +2137,7 @@
 <section id="trial" class="parallex-section parallax parallaxie img-size" >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 text-center text-white">
+            <div class="text-center text-white">
                 <h2 style="    color: black !important;font-size: 35px;" class="custom-btn green hvr-shutter-out-horizontal-blk wow fadeInUp btn btn-large btn btn-medium btn-rounded animated font-weight-bold" >🔥 @lang('new.3free') 🔥</h2>
             </div>
         </div>
@@ -2183,7 +2183,7 @@
 <section id="trial" class="parallex-section parallax parallaxie img-size cover-img"style="margin-top: 1px;margin-bottom: 1px;" >
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-12 text-center text-white">
+<div class=" text-center text-white">
 <h2 style=" color: gold !important;" class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3">@lang('amos.multidevice_header') </h2> <br>
 <div class="form-row text-center">
 <div class="col-md-4">
@@ -2278,7 +2278,7 @@ a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bulle
   ), url(https://www.mystarr.de/iptv_update/images/sport.jpg);  margin-top: 1px;margin-bottom: 1px;"  >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 text-center text-white">
+            <div class=" text-center text-white">
                 <h2 class="parallex-heading text-center font-weight-bold text-white pb-20 pt-3 " style="color: gold !important"  >BECOME AN IPTV RESELLER</h2>
                 <p class="parallex-para text-center text-white" style="color: white !important;font-size:19px !important;font-weight: bold;" >
                 Start making money now with IPTV Reseller program, the best choice for you to change your lifestyle today. Get your own panel at low-cost price
