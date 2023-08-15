@@ -4,53 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lordly - @lang('amos.ChannelList') (2022)</title>
+    <title>Lordly - @lang('amos.ChannelList') (2023)</title>
 
     <meta name="verification" content="349278a8fd82d8e1efbdd2873f9295" />
     <meta name="google-site-verification" content="TMke9839CMeHz5lagagBuWa3qE9OaV4GMwkHsfL5q14" />
 
-    <link rel="icon" href="{{ asset('iptv_update/images/logo_light_up.png') }} ">
+    <link rel="icon" href=" ">
 
 
 
-    <meta name="description" content="Over 150000 TV channels list and also 100000 to 240000 VODs and series all available on bobres.co. Get a test account and see if your channel is available.">
+    <meta name="description" content="Over 150000 TV channels list and also 100000 to 240000 VODs and series all available on mystarr.de. Get a test account and see if your channel is available.">
     <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://www.bobres.co/en/iptv-channels-list">
+    <link rel="canonical" href="https://www.mystarr.de/en/iptv-channels-list">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="IPTV Channels List - The Best IPTV Service">
-    <meta property="og:description" content="Over 150000 TV channels list and also 100000 to 240000 VODs and series all available on bobres.co. Get a test account and see if your channel is available.">
-    <meta property="og:url" content="https://www.bobres.co/">
+    <meta property="og:description" content="Over 150000 TV channels list and also 100000 to 240000 VODs and series all available on mystarr.de. Get a test account and see if your channel is available.">
+    <meta property="og:url" content="https://www.mystarr.co/">
     <meta property="og:site_name" content="The Best IPTV Service">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="Over 150000 TV channels list and also 100000 to 240000 VODs and series all available on bobres.co. Get a test account and see if your channel is available.">
+    <meta name="twitter:description" content="Over 150000 TV channels list and also 100000 to 240000 VODs and series all available on mystarr.de. Get a test account and see if your channel is available.">
     <meta name="twitter:title" content="IPTV Channels List - The Best IPTV Service">
     
     <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//s.w.org">
-    <link rel="alternate" type="application/rss+xml" title="The Best IPTV Service » Feed" href="https://www.bobres.co">
-    <link rel="alternate" type="application/rss+xml" title="The Best IPTV Service » Comments Feed" href="https://www.bobres.co">
+    <link rel="alternate" type="application/rss+xml" title="The Best IPTV Service » Feed" href="https://www.mystarr.de">
+    <link rel="alternate" type="application/rss+xml" title="The Best IPTV Service » Comments Feed" href="https://www.mystarr.de">
 
 
 
 
     <meta property="og:site_name" content="IPTV provider" />
-    <meta property="og:url" content="bobres.co"/>
+    <meta property="og:url" content="mystarr.de"/>
     <meta property="og:title" content="IPTV Provider | The best IPTV Service Provider" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="The Best IPTV Providers for Android TV, MAG, Roku, Kodi, Apple TV 4K and Fire TV !! Watch Sports, Movies, and PPV at low prices. The Amazing TV bobres.co is the best premium IPTV subscription service provider in the market." />
+    <meta property="og:description" content="The Best IPTV Providers for Android TV, MAG, Roku, Kodi, Apple TV 4K and Fire TV !! Watch Sports, Movies, and PPV at low prices. The Amazing TV mystarr.de is the best premium IPTV subscription service provider in the market." />
     <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@bobres" />
+<meta name="twitter:site" content="@mystarr" />
 <meta name="twitter:title" content="IPTV Provider | The best IPTV Service Provider" />
-<meta name="twitter:description" content="Watch Sports, Movies, and PPV at low prices. The Amazing TV bobres.co is the best IPTV service provider in the market." />
+<meta name="twitter:description" content="Watch Sports, Movies, and PPV at low prices. The Amazing TV mystarr.de is the best IPTV service provider in the market." />
 <meta name="twitter:image" content="//cdn.shopify.com/s/files/1/0297/2670/3756/files/logo_transparent_crop_8cae8a43-7297-413b-98dc-b6836a7405f1_1200x1200.png" />  
 <meta name="twitter:image:width" content="1000" />
 <meta name="twitter:image:height" content="655" />
 <meta name="twitter:image:alt" content="iptv streaming provider m3u"> 
 
 <meta property="og:site_name" content="Best IPTV Service Provider">
-<meta property="og:url" content="https://bobres.co/">
+<meta property="og:url" content="https://mystarr.de/">
 <meta property="og:title" content="Best IPTV Service Provider for FireStick /Android BOX / PC">
 <meta property="og:type" content="website">
 <meta property="og:description" content="For €14 a Month | 151.000 Live & Movies | 2500 Full Series through one IPTV Subscription. The Amazing TV is The Best IPTV Service, well known now as a great reliable IPTV Provider. It is in fact the Best IPTV for English TV and Sports, providing the Best International IPTV, and Sports.">
@@ -141,7 +141,7 @@
 <section id="cover" class="min-vh-100" style="padding-top: 50px;">
 
     <div>
-        <h2 class="d-inline-flex" id="titre">@lang('amos.ChannelList') (2022)</h2>
+        <h2 class="d-inline-flex" id="titre">@lang('amos.ChannelList') (2023)</h2>
     </div>
     <div  class="container" style="padding-top: 30px;">
 
