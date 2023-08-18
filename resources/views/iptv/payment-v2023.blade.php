@@ -538,93 +538,74 @@ body {
 
    
 paypal.Buttons({
-            createOrder: function(data, actions) {
-                // This function sets up the details of the transaction, including the amount and line item details.
-                var value = {
-                    !!json_encode($price) !!
-                }
+    createOrder: function(data, actions) {
+        // This function sets up the details of the transaction, including the amount and line item details.
+        var value = <?php echo json_encode($price); ?>;
 
-                return actions.order.create({
-                    application_context: {
-                        brand_name: 'Dev App',
-                        user_action: 'PAY_NOW',
-                    },
-                    purchase_units: [{
-                        amount: {
-                            value: value,
-                        }
-            }],
-                });
+        return actions.order.create({
+            application_context: {
+                brand_name: 'Dev App',
+                user_action: 'PAY_NOW',
             },
+            purchase_units: [{
+                amount: {
+                    value: value,
+                }
+            }],
+        });
+    },
 
-            onApprove: function(data, actions) {
+    onApprove: function(data, actions) {
+        // This function captures the funds from the transaction.
+        return actions.order.capture().then(function(details) {
+            if (details.status == 'COMPLETED') {
+                var local = <?php echo json_encode(App::isLocale('en')); ?>;
+                var value = <?php echo json_encode($price); ?>;
+                var txt = <?php echo json_encode($txt); ?>;
 
-
-                // This function captures the funds from the transaction.
-                return actions.order.capture().then(function(details) {
-                            if (details.status == 'COMPLETED') {
-
-                                var local = {
-                                    !!json_encode(App::isLocale('en')) !!
-                                }
-                                var value = {
-                                    !!json_encode($price) !!
-                                }
-                                var txt = {
-                                    !!json_encode($txt) !!
-                                }
-
-                                      $.ajax({
-                                        url: "/api/checkout/paypal/order/completed/create",
-                                        type: "POST",
-                                        dataType: "json",
-                                        data: JSON.stringify({
-                                            email: details.payer.email_address,
-                                            amount: value,
-                                            country: details.payer.address.country_code,
-                                            status: details.status,
-                                            txt: txt
-                                        }),
-                                        contentType: "application/json",
-                                        headers: {
-                                            "Access-Control-Allow-Origin": "*",
-                                            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-                                            "Access-Control-Allow-Headers": "Content-Type",
-                                        },
-                                        success: function(response) {
-                                            requestSent = true;
-                                            document.location.href = "https://www.iptvm3u.fr/en/order/steps/" + response.orderID;
-                                        },
-                                        error: function(xhr, status, error) {
-                                            $('#exampleModalpayment').modal('show');
-                                        });
-
-
-
-
-                                }
-                                else {
-                                    $('#exampleModalpayment').modal('show');
-                                }
-                            }
+                $.ajax({
+                    url: "/api/checkout/paypal/order/completed/create",
+                    type: "POST",
+                    dataType: "json",
+                    data: JSON.stringify({
+                        email: details.payer.email_address,
+                        amount: value,
+                        country: details.payer.address.country_code,
+                        status: details.status,
+                        txt: txt
+                    }),
+                    contentType: "application/json",
+                    headers: {
+                        "Access-Control-Allow-Origin": "*",
+                        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+                        "Access-Control-Allow-Headers": "Content-Type",
                     },
-
-                    onCancel: function(data) {
+                    success: function(response) {
+                        requestSent = true;
+                        document.location.href = "https://www.iptvm3u.fr/en/order/steps/" + response.orderID;
+                    },
+                    error: function(xhr, status, error) {
                         $('#exampleModalpayment').modal('show');
-
                     }
-
-
-
-            }).render('#paypal-button-container');
-        // This function displays Smart Payment Buttons on your web page.
-
-        function status(res) {
-            if (!res.ok) {
-                throw new Error(res.statusText);
+                });
+            } else {
+                $('#exampleModalpayment').modal('show');
             }
-            return res;
-        }
+        });
+    },
+
+    onCancel: function(data) {
+        $('#exampleModalpayment').modal('show');
+    }
+}).render('#paypal-button-container');
+
+// This function displays Smart Payment Buttons on your web page.
+function status(res) {
+    if (!res.ok) {
+        throw new Error(res.statusText);
+    }
+    return res;
+}
 
 
 </script>
