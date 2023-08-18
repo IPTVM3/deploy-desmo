@@ -513,12 +513,7 @@ body {
                   </div>
  
                 </div>
-                <div class="modal-body"> 
-                   Please Try Again . If You Have Any Problem With Payment Proccess Please Try To Contact Us, And We Will Fix It Immediately
-                   <br>  <br>
-                   Email :<b> iptv21m3u@gmail.com</b><br>
-                   Whatsapp :<b> +33745641235 </b><br>
-                </div> 
+             
               </div>
             </div>
           </div>
