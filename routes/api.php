@@ -28,7 +28,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
  
 
-Route::post('/checkout/paypal/order/completed/create', 'API\PaymentController@completed_create');
+Route::get('/checkout/paypal/order/completed/create', 'API\PaymentController@completed_create');
 Route::post('/checkout/paypal/order/completed', 'API\PaymentController@completed');
 Route::post('/sendmail', 'API\PaymentController@sendMail');
 Route::post('/contact/message', function (Request $request){ 
