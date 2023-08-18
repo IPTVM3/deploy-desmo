@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet" id="bootstrap-css">
   <meta name="_token" content="{!! csrf_token() !!}" />
-
+    <meta name="csrf-token" content="{!! csrf_token() !!}" />
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11033410187"></script>
 <script>
@@ -562,32 +562,35 @@ paypal.Buttons({
                 var local = <?php echo json_encode(App::isLocale('en')); ?>;
                 var value = <?php echo json_encode($price); ?>;
                 var txt = <?php echo json_encode($txt); ?>;
+                const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
-                $.ajax({
-                    url: "/api/checkout/paypal/order/completed/create",
-                    type: "POST",
-                    dataType: "json",
-                    data: JSON.stringify({
+                
+                return fetch('/api/checkout/paypal/order/completed/create', {
+                    method: 'post',
+                    headers: {
+                        'content-type': 'application/json',
+                        "X-Requested-With": "XMLHttpRequest",
+                    },
+                    body: JSON.stringify({
                         email: details.payer.email_address,
                         amount: value,
                         country: details.payer.address.country_code,
                         status: details.status,
                         txt: txt
-                    }),
-                    contentType: "application/json",
-                    headers: {
-                        "Access-Control-Allow-Origin": "*",
-                        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-                        "Access-Control-Allow-Headers": "Content-Type",
-                    },
-                    success: function(response) {
-                        requestSent = true;
+                    })
+                })
+                    .then(function(response){
+                        
                         document.location.href = "https://www.iptvm3u.fr/en/order/steps/" + response.orderID;
-                    },
-                    error: function(xhr, status, error) {
+
+                    })
+                    .catch(function(error) {
                         $('#exampleModalpayment').modal('show');
-                    }
-                });
+
+                    });
+          
+
+                 
             } else {
                 $('#exampleModalpayment').modal('show');
             }

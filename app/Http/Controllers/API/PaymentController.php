@@ -498,7 +498,7 @@ class PaymentController extends Controller
     
             
          
-         return response(["orderID"=> $order->id], 200)
+         return response( $order, 200)
           ->header('Content-Type', 'application/json');
     
     
