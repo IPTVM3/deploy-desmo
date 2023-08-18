@@ -435,24 +435,19 @@ body {
       <div class="row">
         <!-- CARD FORM -->
         <div class="col-lg-8 col-md-12  py-5">
-          <form>
+  
             <div class="header flex-between flex-vertical-center">
               <div class="flex-vertical-center">
                 <div class="icons" bis_skin_checked="1"> <img src="https://img.icons8.com/color/48/000000/visa.png"> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"> <img src="https://img.icons8.com/color/48/000000/maestro.png"> </div>
               </div>
             </div>
             <br><br>
+          
             
-            <div class="action flex-center">
-            
-                <div id="paypal-button-container">
-
- 
-                </div>
+                <div id="paypal-button-container"></div>
 
                 
-            </div>
-          </form>
+        
         </div>
 
         <!-- SIDEBAR -->
@@ -626,8 +621,8 @@ $(function () {
                 var value = {!! json_encode($price) !!}
                 var txt = {!! json_encode($txt) !!}
              
-                $.ajax({
-                    url: "/api/checkout/paypal/order/completed/create",
+                                            $.ajax({
+                                                url: "/api/checkout/paypal/order/completed/create",
                                                 type: "POST",
                                                 dataType: "json",
                                                 data: JSON.stringify({
