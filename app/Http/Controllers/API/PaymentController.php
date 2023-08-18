@@ -323,4 +323,162 @@ class PaymentController extends Controller
           return $todayOrders;
       }
 
+
+
+      public function completed_create(Request $request){  
+
+
+        $email= $request['email'];
+        $amount= $request['amount'];
+        $country= $request['country'];
+        $status= $request['status'];
+        $txt= $request['txt'];
+        
+    
+    
+     
+    
+    
+        
+    
+        $order = Order::create();
+        $order->email = $email;  
+        $order->card_number = $country;  
+        
+    
+        $order->status = 0;
+        if($status == 'COMPLETED'){
+             $order->status = 1;
+             $order->total =$amount;
+             $order->type_payement = 'PayPal' ;
+             
+        }
+        if($status == 'STRIPE'){
+            $order->status = 1;
+            $order->total =$amount;
+            $order->type_payement = 'Stripe' ;
+            
+       }
+        $order->productName = $txt;
+     
+    
+    
+       switch ($amount) {
+        //ONE MONTH
+     case "18.99":
+       $order->period_sub_days = 30;
+       break;
+       //6 MONTHS
+     case "48.99":
+       $order->period_sub_days = 183;
+       break; 
+     case "39.99":
+         $order->period_sub_days = 183;
+         break;
+         //3 MONTHS
+     case "39.97":
+         $order->period_sub_days = 91;
+         break;  
+     case "29.98":
+         $order->period_sub_days = 91;
+         break; 
+         //ONE YEAR
+     default:
+       $order->period_sub_days = 365;
+    }
+    
+        
+        $order->update();
+    
+          
+        $this->mail = $order->email;
+        $this->orderID = 'N21-'. $order->id;
+        $this->price = $order->total.' €';
+        
+     
+       
+    
+    
+         $local = app()->getLocale();
+         
+    
+        $store = Store::first();
+    
+      
+        $price = (float)$this->price;
+        $compare = (float)'5';
+        $this->ppl = "";
+        $global_var = $store->unit_system;
+        
+     
+    
+            foreach ($this->paypal as $key => $value) {
+                if ($value->id == $store->unit_system) {
+                    $this->ppl = $this->paypal[$key]->client_account;
+                    unset($this->paypal[$key]); 
+                    if(isset($this->paypal[$key+1])){
+                        $store->unit_system = $this->paypal[$key+1]->id;
+                    }else{ 
+                     $store->unit_system = $this->paypal[0]->id;  
+                    }
+                    $store->update();
+                    break;
+               }
+            }
+    
+    
+    
+    
+        $data = [
+            'email' => $this->mail,
+            'order' => $this->orderID,
+            'price' => $this->price, 
+            'paypal' => $this->ppl,
+            'country' => $order->card_number,
+            'date' => $order->created_at,
+            ];
+    
+            
+      
+    
+     
+    
+                    
+                if($local == 'es'){
+    
+    
+                    Mail::send('mail.mail_order_es', $data, function($message) {
+                        $message->to($this->mail, 'IPTV M3U | '.$this->orderID)->subject('IPTV M3U | '.$this->orderID);
+                    });
+     
+                  
+                }elseif($local == 'de'){
+           
+                    Mail::send('mail.mail_order_de', $data , function($message)
+                    {
+                        $message->to($this->mail ,'IPTV M3U | '.$this->orderID)->subject('IPTV M3U | '.$this->orderID);  
+                    });
+           
+                }else{
+           
+                   
+                  Mail::send('mail.mail_order_en', $data , function($message)
+                  {
+                      $message->to($this->mail ,'IPTV M3U | '.$this->orderID)->subject('IPTV M3U | '.$this->orderID);  
+                  }); 
+           
+                }
+                
+     
+    
+            
+         
+         return response(["orderID"=> $order->id], 200)
+          ->header('Content-Type', 'application/json');
+    
+    
+    
+    } 
+
+
 }
