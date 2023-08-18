@@ -469,6 +469,10 @@ body {
                 <span>Fees</span>
                 <strong>0.00$</strong>
               </li>
+
+              <p><span style="
+    font-weight: 800;
+">Important</span> By purchasing our product you are accepting automatically our Refund Policy</p>
           
             </ul>
           </div>
