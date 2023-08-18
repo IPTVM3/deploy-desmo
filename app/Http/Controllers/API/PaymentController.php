@@ -10,13 +10,38 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\DB;
 
+use App\Notifications\SimpleMail;
+ 
+use App\Product;
+use App\Store;
+use App\User;
+use App\Visitor;   
+use mysql_xdevapi\Exception;
+use PayPal\Api\Amount;
+use PayPal\Api\Item;
+use PayPal\Api\ItemList;
+use PayPal\Api\Payer;
+use PayPal\Api\Payment;
+use PayPal\Api\PaymentExecution;
+use PayPal\Api\RedirectUrls;
+use PayPal\Api\Transaction;
+use PayPal\Auth\OAuthTokenCredential;
+use PayPal\Exception\PayPalConnectionException;
+use PayPal\Rest\ApiContext;
+use Cartalyst\Stripe\Laravel\Facades\Stripe;
+use Exception as GlobalException; 
 
-use App\Visitor;
+ 
 
 class PaymentController extends Controller
 {
-
     public $mail,$orderID,$price ;
+    private $apiContext;
+    private $clientId = 'AYxYt3joHLZXzfYlkTvnSeEmLGA-aQDWz4E-wCLN7GgFMj7jKNgxXteTtI4Bb4ayEspohYuWufPHz8uI';
+    private $secret = 'ECMjLzYAAkipnAfu7Nx2kXO5PTQ1GEIaEY24Oatl0FU-AAJ8pcHwmPlFFd6yRC_W-sp5ueKMeHCCmvag';
+    private $paypal = [];
+    private $ppl = "";
+    private $stripe_token;
 
     public function create(Request $request){
         $order = Order::create();
