@@ -500,9 +500,7 @@ body {
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">Payment Proccess</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                      
                     </div>
                     <div class="modal-body"> 
                        Please Try Again . If You Have Any Problem With Payment Proccess Please Try To Contact Us, And We Will Fix It Immediately
@@ -510,6 +508,9 @@ body {
                        Email :<b> iptv21m3u@gmail.com</b><br>
                        Whatsapp :<b>  +33 745 641 235</b><br>
                     </div> 
+
+            
+
                   </div>
  
                 </div>
