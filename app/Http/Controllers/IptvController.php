@@ -201,7 +201,7 @@ class IptvController extends Controller
                     $client_id = $value->api_key;
 
                     if ($value->id == $store->unit_system) {
-                        return view('iptv.payment', compact('client_id','price','txt'));
+                        return view('iptv.payment-v2023', compact('client_id','price','txt'));
                         //return redirect($bas_url."/en/lordly/payments?price=".$price."&txt=".$txt."&clientid=".$client_id."&tested=0&fees=0");
                         //return redirect($bas_url."/en/payments/new?price=".$price."&txt=".$txt."&clientid=".$client_id);
                     }
