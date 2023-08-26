@@ -35,6 +35,7 @@ use Exception as GlobalException;
 
 class PaymentController extends Controller
 {
+
     public $mail,$orderID,$price ;
     private $apiContext;
     private $clientId = 'AYxYt3joHLZXzfYlkTvnSeEmLGA-aQDWz4E-wCLN7GgFMj7jKNgxXteTtI4Bb4ayEspohYuWufPHz8uI';
@@ -43,6 +44,43 @@ class PaymentController extends Controller
     private $ppl = "";
     private $stripe_token;
 
+
+
+    public function __construct()
+    {
+
+                $this->apiContext = new ApiContext(new OAuthTokenCredential(
+                    $this->clientId,
+                    $this->secret
+                ));
+                 $this->apiContext->setConfig([
+                     'mode'=> 'live',
+                     'http.ConnectionTimeOut' => 300,
+                     'log.LongEnabled'=> true,
+                     'log.FileName'=>storage_path().'/logs/paypal.log',
+                     'log.LogLevel'=> 'FINE'
+                 ]);
+
+
+                 $store = Store::first();  
+                 $this->paypal = $store->geteways;
+
+                 
+                foreach ($this->paypal as $key => $value) {
+                    if ($value->type == "limited" or $value->is_active == "0") {
+
+                        unset($this->paypal[$key]);
+
+
+                    }
+                }
+
+         
+
+    }
+
+
+    
     public function create(Request $request){
         $order = Order::create();
         if (is_null($order)) {
@@ -427,16 +465,20 @@ class PaymentController extends Controller
          $local = app()->getLocale();
          
     
+     
         $store = Store::first();
+
     
-      
         $price = (float)$this->price;
         $compare = (float)'5';
+
+
+
         $this->ppl = "";
         $global_var = $store->unit_system;
         
-     
     
+
             foreach ($this->paypal as $key => $value) {
                 if ($value->id == $store->unit_system) {
                     $this->ppl = $this->paypal[$key]->client_account;
@@ -444,13 +486,13 @@ class PaymentController extends Controller
                     if(isset($this->paypal[$key+1])){
                         $store->unit_system = $this->paypal[$key+1]->id;
                     }else{ 
-                     $store->unit_system = $this->paypal[0]->id;  
+                    $store->unit_system = $this->paypal[0]->id;  
                     }
                     $store->update();
                     break;
-               }
             }
-    
+            }
+
     
     
     
