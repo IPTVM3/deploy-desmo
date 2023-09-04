@@ -58,13 +58,13 @@
 	<!-- Google Tag Manager -->
 	
 	 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11033410187"></script>
+	 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11123631465"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-11033410187');
+  gtag('config', 'AW-11123631465');
 </script>
 <!-- Google Tag Manager (noscript) -->
 <!-- Global site tag (gtag.js) - Google Ads: 472459539 
