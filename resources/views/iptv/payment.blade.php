@@ -69,7 +69,7 @@
             #paypal-button-container {
                padding-top: 21px;
                
-            }
+            } 
             
         }
         </style> 
