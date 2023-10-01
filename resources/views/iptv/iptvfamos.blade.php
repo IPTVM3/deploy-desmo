@@ -1575,7 +1575,7 @@
 
 
 
-<!--Model Product-->
+<!--Model Product-
  
 <div  class="modal fade " id="product_view12">
     <div class="modal-dialog">
@@ -1908,15 +1908,15 @@
 
 
 
+-->
+   
 
 
-
-
-<!-- Premium 
+<!-- Premium
 		  </div>
 		  </div> 
 		  
-<
+
 				<div class="demo"> 
 					<div class="row text-center" id="onedevice">
 
@@ -2126,7 +2126,7 @@
 
 
 	 </div>
-</section>-->
+</section>
 
 
 
