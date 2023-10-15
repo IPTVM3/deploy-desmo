@@ -461,7 +461,7 @@ array(
   "AT8VJp6vmcCT2qeQFl0tnR11aYv2R7R3lw7DVKOMq1tsILyY0B53-lvGllLpdJSH7Nv3MxjcvdtC1-J0"
 ),
   ); 
-    
+     
            
         return view('dashboard.settings.paypal', compact(['store','geteways','paypal']));
     }
