@@ -26,7 +26,7 @@
 <meta name="twitter:title" content="IPTV Provider | The best IPTV Service Provider" />
 <meta name="twitter:description" content="Watch Sports, Movies, and PPV at low prices. The Amazing TV iptvm3u.fr is the best IPTV service provider in the market." />
 <meta name="twitter:image" content="//cdn.shopify.com/s/files/1/0297/2670/3756/files/logo_transparent_crop_8cae8a43-7297-413b-98dc-b6836a7405f1_1200x1200.png" />  
-<meta name="twitter:image:width" content="1000" />
+<meta name="twitter:image:width" content="1000" /> 
 <meta name="twitter:image:height" content="655" />
 <meta name="twitter:image:alt" content="iptv streaming provider m3u"> 
 
